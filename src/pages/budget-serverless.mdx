@@ -1,0 +1,91 @@
+---
+title: Budget Serverless
+description: The cheapest stack for building serverless applications, great for side projects and anyone on a tight budget
+date: 2019-03-05
+contributors:
+  - name: dzello
+    url: https://github.com/dzello
+  - name: patrickjwoods
+    url: https://github.com/patrickjwoods
+categories:
+  - name: Function-as-a-Service tools
+    tools:
+      - name: Webtask
+        stackshare_id: Slash-Webtasks
+        description: Completely free, lightweight and live-reloading of local code.
+      - name: AWS Lambda
+        stackshare_id: AWS-Lambda
+        description: Not free but cheap, and ideal if you're already part of the AWS ecosystem.
+  - name: Processing Forms
+    tools:
+      - name: Typeform
+        stackshare_id: Typeform
+        description: The amount of integrations is super impressive and even non-technical folks on your team can use it.
+      - name: Formstack
+        stackshare_id: Formstack
+        description: The form builder saves you a ton of CSS and HTML headache.
+  - name: Sending Email
+    tools:
+      - name: SendGrid
+        stackshare_id: SendGrid
+        description: >-
+          SendGrid gives you up to 10,000 emails a month for free and has an integration for everything.
+      - name: Mailjet
+        stackshare_id: Mailjet
+        description: Mailjet gives you up to 20,000 emails a month for free.
+      - name: SparkPost
+        stackshare_id: SparkPost
+        description: Up to 50,000 emails a month for free and good documentation.
+  - name: Utilities
+    tools:
+      - name: automated-cost-controls
+        github_url: https://github.com/aws-samples/serverless-automated-cost-controls
+        description: Sample implementation using AWS Budgets, Amazon SNS and AWS Lambda.
+        github_stats:
+          GitHubStars: 1.2k
+          GitHubForks: 274
+        topics:
+          - name: serverless
+            url: https://github.com/topics/serverless
+          - name: java
+            url: https://github.com/topics/java
+      - name: IOpipe
+        stackshare_id: IOpipe
+        description: Useful for monitoring Lambda. Don't miss their handy servers.lol calculator.
+---
+
+import Category from "components/category"
+
+export const meta = {
+  title: "Post Title"
+}
+
+## Introduction
+
+Serverless promises on-demand, optimal performance for a fixed cost. Yet, we see that the current serverless platforms do not always hold up this promise in practice; serverless applications can suffer from cold starts, platform overhead, and unreliable performance.
+
+If you're cost-sensitive, these problems can really add up. But don't worry, this awesome stack shows you the right tools and techniques to avoid accidentally getting a 5-figure AWS bill
+
+## Function-as-a-Service tools
+
+Even though your front-end might be static, your application will usually still need to run some dynamic code, like for user authentication or running background tasks. Rather than provisioning servers that cost money every hour, every day, you can pay for only the actual execution of code that you run. This pattern is known as "function-as-a-service" and their are are quite a few platforms for it now. Here are a few of the least expensive tools, which still offer a lot of power and flexibility.
+
+<Category name="Function-as-a-Service" />
+
+## Processing forms
+
+Rather than use a custom FaaS for catching form submissions, you can use a service that already exists and will save you the headache of manually storing the data. Here are a few tools that can be used for free and have a developer-friendly API.
+
+<Category name="Processing forms" />
+
+## Sending email
+
+Sending email has traditionally been a back-end task, but can easily be done by combining a serverless function with an email-sending service. The services below have been selected because they have a generous free tier for developers.
+
+<Category name="Sending email" />
+
+## Utilities
+
+These tools and packages will help you keep an eye on your serverless spending. Cost calculators can be configured to stop your processing if costs exceed a preset threshold. This can save you lots of money if your project ends up on the front page of Hacker News.
+
+<Category name="Utilities" />

@@ -18,23 +18,37 @@ export default ({ data }) => {
   )
 }
 
+// src/components/posts-page-layout.js
 export const pageQuery = graphql`
-  query($postRoute: String!) {
-    mdx(fields: { route: { eq: $postRoute } }) {
+  query BlogPostQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      id
       frontmatter {
         title
       }
-      fields {
-        route
-      }
-      rawBody
-      internal {
-        content
-      }
       code {
         body
-        scope
       }
     }
   }
-`
+`;
+// export const pageQuery = graphql`
+//   query($postRoute: String!) {
+//     mdx(fields: { route: { eq: $postRoute } }) {
+//       frontmatter {
+//         title
+//       }
+//       fields {
+//         route
+//       }
+//       rawBody
+//       internal {
+//         content
+//       }
+//       code {
+//         body
+//         scope
+//       }
+//     }
+//   }
+// `
