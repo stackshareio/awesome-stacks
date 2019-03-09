@@ -41,17 +41,9 @@ function StackLayout({ data }) {
     </Layout>
   );
 }
+// this will query our new node type which contains all the GitHub and StackShare references
 export const pageQuery = graphql`
-  query StackQuery($id: String, $owner: String!, $name: String!) {
-    github {
-      repository(owner: $owner, name: $name) {
-        name
-        description
-        stargazers {
-          totalCount
-        }
-      }
-    }
+  query StackQuery($id: String) {
     mdx(id: { eq: $id }) {
       id
       frontmatter {

@@ -1,4 +1,5 @@
-const path = require("path")
+const path = require("path");
+const crypto = require("crypto");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 // to support relative paths in sass files
@@ -35,6 +36,48 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
+// pick back up here
+// exports.sourceNodes = ({ graphql, actions }) => {
+//   const { createNode } = actions;
+//   return new Promise((resolve, reject) => {
+//     resolve(
+//       graphql(
+//         `
+//           {
+//             allMdx(filter: { fields: { sourceName: { eq: "stacks" } } }) {
+//               edges {
+//                 node {
+//                   id
+//                   fields {
+//                     tools
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         `
+//       ).then(result => {
+//         if (result.errors) {
+//           console.error(result.errors);
+//           reject(result.errors);
+//         }
+
+//         return Promise.all(result.data.allMdx.edges.map(({ node: { tools } }) => {
+//           const repoNode = {
+//             tools
+//           };
+//           const contentDigest = crypto
+//             .createHash(`md5`)
+//             .update(JSON.stringify(repoNode))
+//             .digest(`hex`);
+//           repoNode.internal.contentDigest = contentDigest;
+//           createNode(repoNode);
+//         }));
+
+//       }));
+//   });
+// };
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return new Promise((resolve, reject) => {
@@ -55,22 +98,15 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `
       ).then(result => {
-        // this is some boilerlate to handle errors
         if (result.errors) {
           console.error(result.errors);
           reject(result.errors);
         }
-        // We'll call `createPage` for each result
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
-            // This is the slug we created before
-            // (or `node.frontmatter.slug`)
             path: node.fields.slug,
-            // This component will wrap our MDX content
             component: path.resolve(`./src/components/stack-layout.js`),
-            // We can use the values in this context in
-            // our page layout component graphql query
-            context: { id: node.id, owner: "dzello", name: "reveal-hugo" }
+            context: { id: node.id }
           });
         });
       })
