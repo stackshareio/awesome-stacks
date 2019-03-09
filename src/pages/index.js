@@ -17,9 +17,18 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div className="container">
-        <div className="has-margin-top-40"></div>
+      <div className="section">
         <div className="container">
+          <div className="columns is-centered">
+            <div className="column is-10">
+              <div className="message">
+                <div className="message-body">
+                  <h1 className="is-size-3 has-margin-bottom-10">About Awesome Stacks</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="has-margin-top-40"></div>
           <div className="columns is-centered">
             <div className="column has-text-centered">
               <h1 className="is-size-3">Stacks</h1>
