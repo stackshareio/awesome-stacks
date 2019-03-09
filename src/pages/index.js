@@ -51,7 +51,7 @@ export const pageQuery = graphql`
   query {
     allMdx(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { fields: { sourceName: { eq: "pages" } } }
+      filter: { fields: { sourceName: { eq: "stacks" } } }
       ) {
       edges {
         node {

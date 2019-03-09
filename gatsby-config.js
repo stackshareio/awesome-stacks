@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
+        name: `stacks`,
+        path: `${__dirname}/src/stacks`,
       },
     },
     {
@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/components/no-layout.js"),
+          default: require.resolve("./src/components/noLayout.js"),
           pages: require.resolve("./src/components/layout.js"),
         },
       },

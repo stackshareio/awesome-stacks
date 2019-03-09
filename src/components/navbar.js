@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
-const Navbar = ({ }) => (
+const Navbar = () => (
   <StaticQuery
     render={data => {
       const Tags = data.allMdx.edges.map(edge => <a className="tag is-medium" key={edge.node.id} href={`/${edge.node.parent.name}`}>{edge.node.frontmatter.title}</a>);
@@ -24,8 +24,8 @@ const Navbar = ({ }) => (
             </div>
             <div className="navbar-menu" id="#navbarMenuHeroA">
               <div className="navbar-end">
-                <div className="navbar-item has-dropdown is-active">
-                  <a className="navbar-link">🔥 &nbsp; Stacks</a>
+                <div className="navbar-item has-dropdown isnt-active">
+                  <a href="#top" className="navbar-link"><span role="img" aria-label="fire">🔥</span> &nbsp; Stacks</a>
                   <div className="navbar-dropdown" style={{ width: "300px" }}>
                     <div className="navbar-item">
                       <div className="tags">
@@ -60,7 +60,7 @@ const Navbar = ({ }) => (
         }
         allMdx(
           sort: { order: DESC, fields: [frontmatter___date] },
-          filter: { fields: { sourceName: { eq: "pages" } } }) {
+          filter: { fields: { sourceName: { eq: "stacks" } } }) {
           edges {
             node {
               ...MdxFields
