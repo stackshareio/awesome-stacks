@@ -8,29 +8,29 @@ function StackLayout({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <div class="section">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8 is-offset-1">
-              <h1 class="is-size-1">{mdx.frontmatter.title}</h1>
-              <p class="is-size-5">{mdx.frontmatter.description}</p>
+      <div className="section">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-8 is-offset-1">
+              <h1 className="is-size-1">{mdx.frontmatter.title}</h1>
+              <p className="is-size-5">{mdx.frontmatter.description}</p>
             </div>
-            <div class="column is-2 has-text-right">
-              <p><span class="is-strong">Maintained by</span></p>
-              <ul class="has-margin-bottom-15">
-                {mdx.frontmatter.contributors.map(contributor => <li><a href={contributor.url} key={contributor.name}>&nbsp; @{contributor.name}</a></li>)}
+            <div className="column is-2 has-text-right">
+              <p><span className="is-strong">Maintained by</span></p>
+              <ul className="has-margin-bottom-15">
+                {mdx.frontmatter.contributors.map(contributor => <li key={contributor.name}><a href={contributor.url}>&nbsp; @{contributor.name}</a></li>)}
               </ul>
-              <p class="has-margin-bottom-5"><span class="is-strong">Last updated</span></p>
-              <p class="has-margin-bottom-15">{mdx.frontmatter.date}</p>
+              <p className="has-margin-bottom-5"><span className="is-strong">Last updated</span></p>
+              <p className="has-margin-bottom-15">{mdx.frontmatter.date}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="section has-padding-top-5">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-10">
-              <div class="content">
+      <div className="section has-padding-top-5">
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column is-10">
+              <div className="content">
                 <MDXRenderer mdxData={mdx}>{mdx.code.body}</MDXRenderer>
               </div>
             </div>

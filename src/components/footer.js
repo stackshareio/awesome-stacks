@@ -6,12 +6,12 @@ const Footer = () => (
   <StaticQuery
     render={data => {
       return (
-        <footer class="hero is-light">
-          <div class="hero-body">
-            <div class="container">
-              <div class="columns is-centered">
-                <div class="column is-half has-text-centered">
-                  <div class="has-margin-bottom-20">
+        <footer className="hero is-light">
+          <div className="hero-body">
+            <div className="container">
+              <div className="columns is-centered">
+                <div className="column is-half has-text-centered">
+                  <div className="has-margin-bottom-20">
                     Made with
                     <span role="img" aria-label="blue-heart">💙</span>
                     by

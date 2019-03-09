@@ -6,11 +6,11 @@ import Contributing from "../snippets/contributing"
 const ContributingPage = () => (
   <Layout>
     <SEO title="Contributing" />
-    <div class="section">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-10">
-            <div class="content">
+    <div className="section">
+      <div className="container">
+        <div className="columns is-centered">
+          <div className="column is-10">
+            <div className="content">
               <Contributing />
             </div>
           </div>

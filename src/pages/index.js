@@ -12,38 +12,38 @@ const IndexPage = ({
   },
 }) => {
   const StackCards = edges.map(edge =>
-    <div key={edge.node.id} class="column is-4 is-3-widescreen">
+    <div key={edge.node.id} className="column is-4 is-3-widescreen">
       <StackCard node={edge.node} />
     </div>
   );
   return (
     <Layout>
       <SEO title="Home" keywords={[`awesome`, `techstack`, `stackshare`]} />
-      <div class="section">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-10">
-              <div class="message">
-                <div class="message-body">
-                  <h1 class="is-size-3 has-margin-bottom-10">About {title}</h1>
-                  <div class="content">
+      <div className="section">
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column is-10">
+              <div className="message">
+                <div className="message-body">
+                  <h1 className="is-size-3 has-margin-bottom-10">About {title}</h1>
+                  <div className="content">
                     <About />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="has-margin-top-40"></div>
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h1 class="is-size-3">Stacks</h1>
+          <div className="has-margin-top-40"></div>
+          <div className="columns is-centered">
+            <div className="column has-text-centered">
+              <h1 className="is-size-3">Stacks</h1>
             </div>
           </div>
-          <div class="columns is-multiline is-centered">
+          <div className="columns is-multiline is-centered">
             {StackCards}
           </div>
         </div>
-        <div class="has-margin-top-40"></div>
+        <div className="has-margin-top-40"></div>
       </div>
     </Layout>);
 }
