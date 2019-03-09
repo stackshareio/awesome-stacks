@@ -58,18 +58,20 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-github-api`,
+      resolve: "gatsby-source-graphql",
       options: {
-        token: process.env.GITHUB_ACCESS_TOKEN,
-        graphQLQuery: `
-          query {
-            repository(owner:"dzello", name: "reveal-hugo"){
-              description
-            }
-          }
-        `,
-        variables: {}
-      }
+        typeName: "GitHub",
+        fieldName: "github",
+        // Url to query from
+        url: "https://api.github.com/graphql",
+        // HTTP headers
+        headers: {
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          Authorization: `bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
+        },
+        // Additional options to pass to node-fetch
+        fetchOptions: {},
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -4,7 +4,8 @@ import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
-function StackLayout({ data: { mdx } }) {
+function StackLayout({ data }) {
+  const mdx = data.mdx;
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
@@ -31,7 +32,7 @@ function StackLayout({ data: { mdx } }) {
           <div className="columns is-centered">
             <div className="column is-10">
               <div className="content">
-                <MDXRenderer mdxData={mdx}>{mdx.code.body}</MDXRenderer>
+                <MDXRenderer data={data}>{mdx.code.body}</MDXRenderer>
               </div>
             </div>
           </div>
@@ -41,11 +42,13 @@ function StackLayout({ data: { mdx } }) {
   );
 }
 export const pageQuery = graphql`
-  query StackQuery($id: String) {
-    githubData {
-      data {
-        repository {
-          description
+  query StackQuery($id: String, $owner: String!, $name: String!) {
+    github {
+      repository(owner: $owner, name: $name) {
+        name
+        description
+        stargazers {
+          totalCount
         }
       }
     }

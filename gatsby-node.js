@@ -69,8 +69,8 @@ exports.createPages = ({ graphql, actions }) => {
             // This component will wrap our MDX content
             component: path.resolve(`./src/components/stack-layout.js`),
             // We can use the values in this context in
-            // our page layout component
-            context: { id: node.id }
+            // our page layout component graphql query
+            context: { id: node.id, owner: "dzello", name: "reveal-hugo" }
           });
         });
       })
