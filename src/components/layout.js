@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from "./bulma/navbar"
+import Footer from "./footer"
 import "../css/layout.sass"
 
 const Layout = ({ children }) => (
@@ -19,6 +20,7 @@ const Layout = ({ children }) => (
       <>
         <Navbar></Navbar>
         <main>{children}</main>
+        <Footer></Footer>
       </>
     )}
   />

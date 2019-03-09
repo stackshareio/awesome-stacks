@@ -1,28 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import StackCard from "../components/bulma/stackCard"
 import { graphql } from 'gatsby'
-
-const PostLink = ({ node }) => (
-  <div>
-    <Link to={node.parent.name}>
-      {node.frontmatter.title}
-    </Link>
-  </div>
-)
 
 const IndexPage = ({
   data: {
     allMdx: { edges },
   },
 }) => {
-  const Posts = edges.map(edge => <PostLink key={edge.node.id} node={edge.node} />)
+  const StackCards = edges.map(edge =>
+    <div key={edge.node.id} className="column is-4 is-3-widescreen">
+      <StackCard node={edge.node} />
+    </div>
+  );
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      {Posts}
+      <div className="container">
+        <div className="has-margin-top-40"></div>
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column has-text-centered">
+              <h1 className="is-size-3">Stacks</h1>
+            </div>
+          </div>
+          <div className="columns is-multiline is-centered">
+            {StackCards}
+          </div>
+        </div>
+        <div className="has-margin-top-40"></div>
+      </div>
     </Layout>);
 }
 
@@ -48,6 +56,11 @@ export const mdxQuery = graphql`
     }
     frontmatter {
       title
+      description
+      contributors {
+        name
+        url
+      }
     }
   }
 `

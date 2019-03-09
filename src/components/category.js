@@ -2,7 +2,7 @@ import React from "react"
 
 class Category extends React.Component {
   componentDidMount() {
-    const { name, tools } = this.props
+    const { } = this.props
   }
 
   render() {

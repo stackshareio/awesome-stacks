@@ -4,40 +4,18 @@ import Img from "gatsby-image"
 
 const Navbar = ({ }) => (
   <StaticQuery
-    query={graphql`
-      query {
-        brandImage: file(relativePath: { eq: "awesome-logo.png" }) {
-          childImageSharp {
-            fixed(height: 32) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        site {
-          siteMetadata {
-            title
-          }
-        }
-        allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
-          edges {
-            node {
-              ...MdxFields
-            }
-          }
-        }
-      }`}
     render={data => {
-      const Tags = data.allMdx.edges.map(edge => <Link className="tag is-medium" key={edge.node.id} to={edge.node.parent.name}>{edge.node.frontmatter.title}</Link>);
+      const Tags = data.allMdx.edges.map(edge => <a className="tag is-medium" key={edge.node.id} href={`/${edge.node.parent.name}`}>{edge.node.frontmatter.title}</a>);
       return (
         <div className="nav navbar is-fixed-top has-shadow has-background-white">
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item" href="/">
+              <Link className="navbar-item" to="/">
                 <Img fixed={data.brandImage.childImageSharp.fixed} />
                 <div className="is-size-4 has-margin-left-10">
                   {data.site.siteMetadata.title}
                 </div>
-              </a>
+              </Link>
               <div className="span navbar-burger burger" data-target="navbarMenuHeroA">
                 <span />
                 <span />
@@ -66,6 +44,28 @@ const Navbar = ({ }) => (
       );
     }
     }
+    query={graphql`
+      query {
+        brandImage: file(relativePath: { eq: "awesome-logo.png" }) {
+          childImageSharp {
+            fixed(height: 32) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        site {
+          siteMetadata {
+            title
+          }
+        }
+        allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+          edges {
+            node {
+              ...MdxFields
+            }
+          }
+        }
+      }`}
   />
 )
 
