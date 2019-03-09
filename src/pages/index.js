@@ -5,10 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 
-const PostLink = ({ post }) => (
+const PostLink = ({ node }) => (
   <div>
-    <Link to={post.frontmatter.path}>
-      {post.frontmatter.title}
+    <Link to={node.parent.name}>
+      {node.frontmatter.title}
     </Link>
   </div>
 )
@@ -18,7 +18,7 @@ const IndexPage = ({
     allMdx: { edges },
   },
 }) => {
-  const Posts = edges.map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+  const Posts = edges.map(edge => <PostLink key={edge.node.id} node={edge.node} />)
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -31,13 +31,23 @@ export const pageQuery = graphql`
     allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          id
-          frontmatter {
-            path
-            title
-          }
+          ...MdxFields
         }
       }
+    }
+  }
+`
+
+export const mdxQuery = graphql`
+  fragment MdxFields on Mdx {
+    id
+    parent {
+      ... on File {
+        name
+      }
+    }
+    frontmatter {
+      title
     }
   }
 `

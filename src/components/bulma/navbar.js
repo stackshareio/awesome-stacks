@@ -21,17 +21,13 @@ const Navbar = ({ }) => (
         allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
           edges {
             node {
-              id
-              frontmatter {
-                path
-                title
-              }
+              ...MdxFields
             }
           }
         }
       }`}
     render={data => {
-      const Tags = data.allMdx.edges.map(edge => <Link className="tag is-medium" key={edge.node.id} to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>);
+      const Tags = data.allMdx.edges.map(edge => <Link className="tag is-medium" key={edge.node.id} to={edge.node.parent.name}>{edge.node.frontmatter.title}</Link>);
       return (
         <div className="nav navbar is-fixed-top has-shadow has-background-white">
           <div className="container">
