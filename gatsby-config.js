@@ -1,3 +1,5 @@
+require('dotenv').config({ path: '.env.development' });
+
 module.exports = {
   siteMetadata: {
     title: `Awesome Stacks`,
@@ -53,6 +55,20 @@ module.exports = {
         google: {
           families: ['Lato:400,400i,700', 'Merriweather:300,700']
         }
+      }
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: process.env.GITHUB_ACCESS_TOKEN,
+        graphQLQuery: `
+          query {
+            repository(owner:"dzello", name: "reveal-hugo"){
+              description
+            }
+          }
+        `,
+        variables: {}
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -12,32 +12,14 @@ import Tool from "components/tool"
 
 ## Introduction
 
-Serverless promises on-demand, optimal performance for a fixed cost. Yet, we see that the current serverless platforms do not always hold up this promise in practice; serverless applications can suffer from cold starts, platform overhead, and unreliable performance.
+A good site search helps keep visitors on your site instead of going back to Google to narrow in on what they were looking for and potentially ending up somewhere else. There are other benefits to having your own site search too, like the ability to surface the content that you really want people to see. Even with those benefits, for many developers site search is still a nice-to-have feature because it seems like a lot of effort and because drop-in solutions like Google Custom Search shows ads and have a poor UX.
 
-If you're cost-sensitive, these problems can really add up. But don't worry, this awesome stack shows you the right tools and techniques to avoid accidentally getting a 5-figure AWS bill.
+This Awesome Stack contains the tools and resources that can be used together to add a site search without much hassle, in a way that should work for a large variety of sites. Where things can be done in multiple languages, we will highlight the JavaScript and Python methods as they are currently the two languages most known by developers building serverless apps.
 
-## Function-as-a-Service tools
+## Search engine
 
-Even though your front-end might be static, your application will usually still need to run some dynamic code, like for user authentication or running background tasks. Rather than provisioning servers that cost money every hour, every day, you can pay for only the actual execution of code that you run. This pattern is known as "function-as-a-service" and their are are quite a few platforms for it now. Here are a few of the least expensive tools, which still offer a lot of power and flexibility.
+This Awesome Stack is the “Algolia way to do it” so Algolia will be where we store the data and perform queries against it. Algolia stores objects in JSON format, which makes it easy for most applications to model and upload their data.
 
 <Category name="Function-as-a-Service">
   <Tool url="https://github.com/algolia"></Tool>
 </Category>
-
-## Processing forms
-
-Rather than use a custom FaaS for catching form submissions, you can use a service that already exists and will save you the headache of manually storing the data. Here are a few tools that can be used for free and have a developer-friendly API.
-
-<Category name="Processing forms" />
-
-## Sending email
-
-Sending email has traditionally been a back-end task, but can easily be done by combining a serverless function with an email-sending service. The services below have been selected because they have a generous free tier for developers.
-
-<Category name="Sending email" />
-
-## Utilities
-
-These tools and packages will help you keep an eye on your serverless spending. Cost calculators can be configured to stop your processing if costs exceed a preset threshold. This can save you lots of money if your project ends up on the front page of Hacker News.
-
-<Category name="Utilities" />

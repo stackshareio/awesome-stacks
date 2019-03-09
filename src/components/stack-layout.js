@@ -31,7 +31,7 @@ function StackLayout({ data: { mdx } }) {
           <div class="columns is-centered">
             <div class="column is-10">
               <div class="content">
-                <MDXRenderer>{mdx.code.body}</MDXRenderer>
+                <MDXRenderer mdxData={mdx}>{mdx.code.body}</MDXRenderer>
               </div>
             </div>
           </div>
@@ -42,6 +42,13 @@ function StackLayout({ data: { mdx } }) {
 }
 export const pageQuery = graphql`
   query StackQuery($id: String) {
+    githubData {
+      data {
+        repository {
+          description
+        }
+      }
+    }
     mdx(id: { eq: $id }) {
       id
       frontmatter {

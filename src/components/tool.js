@@ -5,6 +5,8 @@ class Tool extends React.Component {
   }
 
   render() {
+    console.log(this)
+    console.log(this.context)
     return (
       <div class="card is-tool-card">
         <div class="card-content has-text-centered">
