@@ -7,6 +7,7 @@ import About from "../snippets/about"
 
 const IndexPage = ({
   data: {
+    site: { siteMetadata: { title } },
     allMdx: { edges },
   },
 }) => {
@@ -24,7 +25,7 @@ const IndexPage = ({
             <div className="column is-10">
               <div className="message">
                 <div className="message-body">
-                  <h1 className="is-size-3 has-margin-bottom-10">About Awesome Stacks</h1>
+                  <h1 className="is-size-3 has-margin-bottom-10">About {title}</h1>
                   <div className="content">
                     <About />
                   </div>
@@ -49,6 +50,11 @@ const IndexPage = ({
 
 export const pageQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMdx(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { fields: { sourceName: { eq: "stacks" } } }
