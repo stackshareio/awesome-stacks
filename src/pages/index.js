@@ -17,7 +17,7 @@ const IndexPage = ({
   );
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Home" keywords={[`awesome`, `techstack`, `stackshare`]} />
       <div className="section">
         <div className="container">
           <div className="columns is-centered">
