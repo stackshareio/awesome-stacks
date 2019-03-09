@@ -58,7 +58,9 @@ const Navbar = ({ }) => (
             title
           }
         }
-        allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMdx(
+          sort: { order: DESC, fields: [frontmatter___date] },
+          filter: { fields: { sourceName: { eq: "pages" } } }) {
           edges {
             node {
               ...MdxFields

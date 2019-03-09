@@ -1,8 +1,9 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import StackCard from "../components/bulma/stackCard"
-import { graphql } from 'gatsby'
+import StackCard from "../components/stackCard"
+import About from "../snippets/about"
 
 const IndexPage = ({
   data: {
@@ -24,6 +25,9 @@ const IndexPage = ({
               <div className="message">
                 <div className="message-body">
                   <h1 className="is-size-3 has-margin-bottom-10">About Awesome Stacks</h1>
+                  <div className="content">
+                    <About />
+                  </div>
                 </div>
               </div>
             </div>
@@ -45,7 +49,10 @@ const IndexPage = ({
 
 export const pageQuery = graphql`
   query {
-    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { fields: { sourceName: { eq: "pages" } } }
+      ) {
       edges {
         node {
           ...MdxFields
