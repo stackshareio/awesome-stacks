@@ -1,10 +1,10 @@
 import React from "react"
 
-function Tool({ data }) {
+function Tool({ key, name, data }) {
   return (
     <div className="card is-tool-card">
       <div className="card-content has-text-centered">
-        {data.github.repository.description}
+        {name}
       </div>
     </div>
   );
