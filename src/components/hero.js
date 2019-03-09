@@ -1,8 +1,8 @@
 import React from "react"
 
 const Hero = ({ children }) => (
-  <div className="hero">
-    <div className="hero-head">
+  <div class="hero">
+    <div class="hero-head">
       {children}
     </div>
   </div>
