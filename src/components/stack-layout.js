@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./layout";
-import SEO from "../components/seo";
+import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 

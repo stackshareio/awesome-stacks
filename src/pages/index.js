@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import StackCard from "../components/stackCard"
+import StackCard from "../components/stack-card"
 import About from "../snippets/about"
 
 const IndexPage = ({

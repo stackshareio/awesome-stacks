@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/components/noLayout.js"),
+          default: require.resolve("./src/components/no-layout.js"),
           pages: require.resolve("./src/components/layout.js"),
         },
       },
