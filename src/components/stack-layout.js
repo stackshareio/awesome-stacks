@@ -17,7 +17,7 @@ function StackLayout({ data }) {
         <div className="container">
           <div className="columns">
             <div className="column is-8 is-offset-1">
-              <h1 className="is-size-1">{mdx.frontmatter.title}</h1>
+              <h1 className="is-size-2">{mdx.frontmatter.title}</h1>
               <p className="is-size-5">{mdx.frontmatter.description}</p>
             </div>
             <div className="column is-2 has-text-right">
@@ -65,6 +65,8 @@ export const pageQuery = graphql`
                 totalCount
               }
               updatedAt
+              url
+              homepageUrl
             }
           }
         }
