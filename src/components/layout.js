@@ -7,9 +7,9 @@ import Footer from "./footer"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCommentAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCommentAlt, faStar, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faCommentAlt)
+library.add(fab, faCommentAlt, faStar, faCodeBranch)
 
 const Layout = ({ children }) => (
   <StaticQuery

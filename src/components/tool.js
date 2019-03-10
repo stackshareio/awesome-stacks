@@ -19,12 +19,29 @@ function Tool({ name, data, children }) {
     <>
       <div className="card is-tool-card">
         <div className="card-content has-text-centered">
-          <a className="is-size-2 has-text-grey" href={githubRepo.url}>
-            <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
+          <a href={githubRepo.url}>
+            <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#7a7a7a" />
           </a>
-          <a className="is-size-5 has-text-grey" href={githubRepo.url}>
-            {githubRepo.name}
-          </a>
+          <div className="is-size-5 has-margin-top-5">
+            <a href={githubRepo.url}>
+              {githubRepo.name}
+            </a>
+          </div>
+          <div className="level is-mobile has-margin-top-10 has-margin-bottom-20">
+            <div className="level-item">
+              <a href={`${githubRepo.url}/stargazers`}>
+                <FontAwesomeIcon icon="star" fixedWidth /> <span>{githubRepo.stargazers.totalCount}</span>
+              </a>
+            </div>
+            <div className="level-item">
+              <a href={`${githubRepo.url}/network/members`}>
+                <FontAwesomeIcon icon="code-branch" fixedWidth /> <span>{githubRepo.forks.totalCount}</span>
+              </a>
+            </div>
+          </div>
+          {/* <div className="tags justify-center">
+            <a className="tag" href="">foo</a>
+          </div> */}
         </div>
       </div>
       {children ? 
