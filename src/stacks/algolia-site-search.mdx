@@ -6,11 +6,9 @@ contributors:
   - name: dzello
     url: https://github.com/dzello
 tools:
-  - dzello/reveal-hugo
+  - algolia/awesome-algolia
+  - algolia/instantsearch.js
 ---
-
-import Category from "components/category"
-import Tool from "components/tool"
 
 ## Introduction
 
@@ -23,5 +21,12 @@ This Awesome Stack contains the tools and resources that can be used together to
 This Awesome Stack is the “Algolia way to do it” so Algolia will be where we store the data and perform queries against it. Algolia stores objects in JSON format, which makes it easy for most applications to model and upload their data.
 
 <Category>
-  <Tool key="algolia/algolia" name="Algolia" {...props}></Tool>
+  <Tool name="algolia/awesome-algolia" {...props}></Tool>
+  <Tool name="algolia/instantsearch.js" {...props}></Tool>
 </Category>
+
+## Crawling
+
+There are two ways to get your data into Algolia so that it can be searched - crawl your site or write a script to upload records from your database. Crawling is generally easier to set up while uploading gives you more exact control over what gets indexed.
+
+There’s no one single way to crawl a website and upload it to Algolia, but here are a few options, ranging from full-server to frameworks to do it yourself. Generally, you will hook these steps into your serverless CI/CD/deployment pipeline and run them for each new site deploy.

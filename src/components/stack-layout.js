@@ -1,8 +1,12 @@
 import React from "react";
+import { MDXTag } from '@mdx-js/tag';
 import Layout from "./layout";
 import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
+
+import Category from "./category"
+import Tool from "./tool"
 
 function StackLayout({ data }) {
   const mdx = data.mdx;
@@ -32,7 +36,7 @@ function StackLayout({ data }) {
           <div className="columns is-centered">
             <div className="column is-10">
               <div className="content">
-                <MDXRenderer data={data}>{mdx.code.body}</MDXRenderer>
+                <MDXRenderer scope={{ React, MDXTag, Category, Tool }} data={data}>{mdx.code.body}</MDXRenderer>
               </div>
             </div>
           </div>
@@ -43,7 +47,29 @@ function StackLayout({ data }) {
 }
 // this will query our new node type which contains all the GitHub and StackShare references
 export const pageQuery = graphql`
-  query StackQuery($id: String) {
+  query StackQuery($id: String, $query: String!) {
+    github {
+      search(query: $query, type: REPOSITORY, first: 10) {
+        repositoryCount
+        edges {
+          node {
+            ... on GitHub_Repository {
+              name
+              nameWithOwner
+              description
+              descriptionHTML
+              stargazers {
+                totalCount
+              }
+              forks {
+                totalCount
+              }
+              updatedAt
+            }
+          }
+        }
+      }
+    }
     mdx(id: { eq: $id }) {
       id
       frontmatter {

@@ -1,5 +1,4 @@
 const path = require("path");
-const crypto = require("crypto");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 // to support relative paths in sass files
@@ -11,72 +10,59 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
+exports.onCreateNode = ({ node,
+    actions,
+    getNode,
+    loadNodeContent,
+    createNodeId,
+    createContentDigest }) => {
 
-  if (node.internal.type === `Mdx`) {
-    const parent = getNode(node.parent);
-
-    if (parent.internal.type === "File") {
-      createNodeField({
-        name: `sourceName`,
-        node,
-        value: parent.sourceInstanceName
-      });
+  function transformObject(obj, id, type) {
+    const toolNode = {
+      ...obj,
+      id,
+      children: [],
+      parent: node.id,
+      internal: {
+        contentDigest: createContentDigest(obj),
+        type,
+      },
     }
+    createNode(toolNode)
+    createParentChildLink({ parent: node, child: toolNode })
+  }
 
-    // set the slug b/c outside /src/pages
-    // https://gatsby-mdx.netlify.com/guides/programmatically-creating-pages
-    const slugValue = createFilePath({ node, getNode });
+  const { createNode, createNodeField, createParentChildLink } = actions
+
+  if (node.internal.type !== `Mdx`) {
+    return
+  }
+
+  // create a queryable sourceName field
+  const parent = getNode(node.parent);
+  if (parent.internal.type === "File") {
     createNodeField({
-      name: "slug",
+      name: `sourceName`,
       node,
-      value: `${slugValue}`
+      value: parent.sourceInstanceName
     });
   }
+
+  // set the slug b/c outside /src/pages
+  // https://gatsby-mdx.netlify.com/guides/programmatically-creating-pages
+  const slugValue = createFilePath({ node, getNode });
+  createNodeField({
+    name: "slug",
+    node,
+    value: `${slugValue}`
+  });
+
+  // const tools = node.frontmatter.tools;
+  // return Promise.all(tools.map((tool) => {
+  //   const [orgName, repoName] = tool.split('/');
+
+  // }));
 };
-
-// pick back up here
-// exports.sourceNodes = ({ graphql, actions }) => {
-//   const { createNode } = actions;
-//   return new Promise((resolve, reject) => {
-//     resolve(
-//       graphql(
-//         `
-//           {
-//             allMdx(filter: { fields: { sourceName: { eq: "stacks" } } }) {
-//               edges {
-//                 node {
-//                   id
-//                   fields {
-//                     tools
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         `
-//       ).then(result => {
-//         if (result.errors) {
-//           console.error(result.errors);
-//           reject(result.errors);
-//         }
-
-//         return Promise.all(result.data.allMdx.edges.map(({ node: { tools } }) => {
-//           const repoNode = {
-//             tools
-//           };
-//           const contentDigest = crypto
-//             .createHash(`md5`)
-//             .update(JSON.stringify(repoNode))
-//             .digest(`hex`);
-//           repoNode.internal.contentDigest = contentDigest;
-//           createNode(repoNode);
-//         }));
-
-//       }));
-//   });
-// };
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -92,6 +78,9 @@ exports.createPages = ({ graphql, actions }) => {
                   fields {
                     slug
                   }
+                  frontmatter {
+                    tools
+                  }
                 }
               }
             }
@@ -103,10 +92,11 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
         result.data.allMdx.edges.forEach(({ node }) => {
+          const query = node.frontmatter.tools.map((tool) => (`repo:${tool}`)).join(' ');
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/components/stack-layout.js`),
-            context: { id: node.id }
+            context: { id: node.id, query }
           });
         });
       })
