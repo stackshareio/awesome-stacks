@@ -22,22 +22,20 @@ If you're cost-sensitive, these problems can really add up. But don't worry, thi
 
 Even though your front-end might be static, your application will usually still need to run some dynamic code, like for user authentication or running background tasks. Rather than provisioning servers that cost money every hour, every day, you can pay for only the actual execution of code that you run. This pattern is known as "function-as-a-service" and their are are quite a few platforms for it now. Here are a few of the least expensive tools, which still offer a lot of power and flexibility.
 
-<Category name="Function-as-a-Service" />
+<Tools>
+  <Tool name="serverless/serverless" {...props} />
+</Tools>
 
 ## Processing forms
 
 Rather than use a custom FaaS for catching form submissions, you can use a service that already exists and will save you the headache of manually storing the data. Here are a few tools that can be used for free and have a developer-friendly API.
 
-<Category name="Processing forms" />
 
 ## Sending email
 
 Sending email has traditionally been a back-end task, but can easily be done by combining a serverless function with an email-sending service. The services below have been selected because they have a generous free tier for developers.
 
-<Category name="Sending email" />
 
 ## Utilities
 
 These tools and packages will help you keep an eye on your serverless spending. Cost calculators can be configured to stop your processing if costs exceed a preset threshold. This can save you lots of money if your project ends up on the front page of Hacker News.
-
-<Category name="Utilities" />

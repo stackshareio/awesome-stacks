@@ -61,7 +61,10 @@ exports.onCreateNode = async ({ node,
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
   const tools = (nodeContent.match(/<Tool [^>]+>/g) || []).map((toolTag) => {
-    return (new JSDOM(toolTag)).window.document.querySelector("Tool").attributes['name'].value;
+    const name = (new JSDOM(toolTag)).window.document.querySelector("Tool").attributes['name'].value;
+    const [orgName, repoName] = name.split('/');
+    const url = `https://github.com/${name}`;
+    return { name, orgName, repoName, url };
   });
   createNodeField({
     name: "tools",
@@ -84,7 +87,9 @@ exports.createPages = ({ graphql, actions }) => {
                   id
                   fields {
                     slug
-                    tools
+                    tools {
+                      name
+                    }
                   }
                 }
               }
@@ -97,7 +102,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
         result.data.allMdx.edges.forEach(({ node }) => {
-          const query = node.fields.tools.map((tool) => (`repo:${tool}`)).join(' ');
+          const query = node.fields.tools.map((tool) => (`repo:${tool.name}`)).join(' ');
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/components/stack-layout.js`),

@@ -77,7 +77,11 @@ export const mdxQuery = graphql`
       }
     }
     fields {
-      tools
+      tools {
+        name
+        repoName
+        url
+      }
     }
     frontmatter {
       title
