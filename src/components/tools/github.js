@@ -2,7 +2,7 @@ import _ from "lodash"
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function getRepo(name, data) {
+function getNode(name, data) {
   const edges = data.github.search.edges;
   const edge = _.find(edges, (edge) => {
     return edge.node.nameWithOwner === name;
@@ -11,8 +11,8 @@ function getRepo(name, data) {
 }
 
 function GitHub({ name, data, children }) {
-  const githubRepo = getRepo(name, data);
-  if (!githubRepo) {
+  const github = getNode(name, data);
+  if (!github) {
     return (
       <div className="card is-tool-card">
         <div className="card-content has-text-centered has-text-danger">
@@ -24,28 +24,28 @@ function GitHub({ name, data, children }) {
     <>
       <div className="card is-tool-card">
         <div className="card-content has-text-centered">
-          <a href={githubRepo.url}>
+          <a href={github.url}>
             <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#7a7a7a" />
           </a>
           <div className="is-size-5 has-margin-top-5">
-            <a href={githubRepo.url}>
-              {githubRepo.name}
+            <a href={github.url}>
+              {github.name}
             </a>
           </div>
           <div className="level is-mobile has-margin-top-10 has-margin-bottom-20">
             <div className="level-item">
-              <a href={`${githubRepo.url}/stargazers`}>
-                <FontAwesomeIcon icon="star" fixedWidth /> <span>{githubRepo.stargazers.totalCount}</span>
+              <a href={`${github.url}/stargazers`}>
+                <FontAwesomeIcon icon="star" fixedWidth /> <span>{github.stargazers.totalCount}</span>
               </a>
             </div>
             <div className="level-item">
-              <a href={`${githubRepo.url}/network/members`}>
-                <FontAwesomeIcon icon="code-branch" fixedWidth /> <span>{githubRepo.forks.totalCount}</span>
+              <a href={`${github.url}/network/members`}>
+                <FontAwesomeIcon icon="code-branch" fixedWidth /> <span>{github.forks.totalCount}</span>
               </a>
             </div>
           </div>
           <div className="tags justify-center">
-            {githubRepo.repositoryTopics.edges.map((edge) =>
+            {github.repositoryTopics.edges.map((edge) =>
               <a className="tag" key={edge.node.topic.name} href="{edge.node.url}">{edge.node.topic.name}</a>
             )}
           </div>

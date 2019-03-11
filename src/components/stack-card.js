@@ -17,7 +17,7 @@ const StackCard = ({ node }) => (
       </p>
       <div className="tags justify-center has-margin-top-20">
         {(node.fields.tools || []).slice(0, 3).map((tool) =>
-          <a className="tag" key={tool.name} href={tool.url}>{tool.name}</a>
+          <a className={`tag ${tool.source === `StackShare` ? `is-link` : ``}`} key={tool.name} href={tool.url}>{tool.name}</a>
         )}
       </div>
     </div>

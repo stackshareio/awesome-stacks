@@ -80,6 +80,7 @@ export const mdxQuery = graphql`
       tools {
         name
         repoName
+        source
         url
       }
     }

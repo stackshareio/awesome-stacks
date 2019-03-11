@@ -60,16 +60,21 @@ exports.onCreateNode = async ({ node,
 
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
-  const tools = (nodeContent.match(/<GitHub [^>]+>/g) || []).map((toolTag) => {
+  const githubs = (nodeContent.match(/<GitHub [^>]+>/g) || []).map((toolTag) => {
     const name = (new JSDOM(toolTag)).window.document.querySelector("GitHub").attributes['name'].value;
     const [orgName, repoName] = name.split('/');
     const url = `https://github.com/${name}`;
-    return { name, orgName, repoName, url };
+    return { name, orgName, repoName, url, source: 'GitHub' };
+  });
+  const stackshares = (nodeContent.match(/<StackShare [^>]+>/g) || []).map((toolTag) => {
+    const name = (new JSDOM(toolTag)).window.document.querySelector("StackShare").attributes['name'].value;
+    const url = `https://stackshare.io/${name}`;
+    return { name, url, source: 'StackShare' };
   });
   createNodeField({
     name: "tools",
     node,
-    value: tools
+    value: [].concat(stackshares).concat(githubs)
   });
 
 };
