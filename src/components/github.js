@@ -10,7 +10,7 @@ function getRepo(name, data) {
   return edge ? edge.node : undefined;
 }
 
-function Tool({ name, data, children }) {
+function GitHub({ name, data, children }) {
   const githubRepo = getRepo(name, data);
   if (!githubRepo) {
     return (
@@ -60,4 +60,4 @@ function Tool({ name, data, children }) {
   );
 }
 
-export default Tool
+export default GitHub

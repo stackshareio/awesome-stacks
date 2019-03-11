@@ -60,8 +60,8 @@ exports.onCreateNode = async ({ node,
 
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
-  const tools = (nodeContent.match(/<Tool [^>]+>/g) || []).map((toolTag) => {
-    const name = (new JSDOM(toolTag)).window.document.querySelector("Tool").attributes['name'].value;
+  const tools = (nodeContent.match(/<GitHub [^>]+>/g) || []).map((toolTag) => {
+    const name = (new JSDOM(toolTag)).window.document.querySelector("GitHub").attributes['name'].value;
     const [orgName, repoName] = name.split('/');
     const url = `https://github.com/${name}`;
     return { name, orgName, repoName, url };

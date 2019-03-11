@@ -18,9 +18,9 @@ This Awesome Stack contains the tools and resources that can be used together to
 This Awesome Stack is the “Algolia way to do it” so Algolia will be where we store the data and perform queries against it. Algolia stores objects in JSON format, which makes it easy for most applications to model and upload their data.
 
 <Tools>
-  <Tool name="algolia/awesome-algolia" {...props}>
+  <GitHub name="algolia/awesome-algolia" {...props}>
     A fully hosted service to index and query data, with a lot of official and community clients, integrations and UI-building tools
-  </Tool>
+  </GitHub>
 </Tools>
 
 ### Resources
@@ -36,15 +36,15 @@ There are two ways to get your data into Algolia so that it can be searched - cr
 There’s no one single way to crawl a website and upload it to Algolia, but here are a few options, ranging from full-server to frameworks to do it yourself. Generally, you will hook these steps into your serverless CI/CD/deployment pipeline and run them for each new site deploy.
 
 <Tools>
-  <Tool name="DeuxHuitHuit/algolia-webcrawler" {...props}>
+  <GitHub name="DeuxHuitHuit/algolia-webcrawler" {...props}>
     Handles both the crawler and the formatting and uploading of records.
-  </Tool>
-  <Tool name="algolia/docsearch" {...props}>
+  </GitHub>
+  <GitHub name="algolia/docsearch" {...props}>
     Handles everything but not as much control over the data model, still can work great for 80% of use cases. Algolia will set it up free and run it on their own infrastructure for open source docs.
-  </Tool>
-  <Tool name="scrapy/scrapy" {...props}>
+  </GitHub>
+  <GitHub name="scrapy/scrapy" {...props}>
     The de facto scraper for Python, easy to use with a lot of features.
-  </Tool>
+  </GitHub>
 </Tools>
 
 ### Resources
@@ -57,12 +57,12 @@ There’s no one single way to crawl a website and upload it to Algolia, but her
 If your site is backed by a database, you can also convert your records to JSON directly and upload them to Algolia. This gives you more full customization but will require you to a write a script to do this. The Algolia API clients make this pretty easy.
 
 <Tools>
-  <Tool name="algolia/algoliasearch-client-javascript" {...props}>
+  <GitHub name="algolia/algoliasearch-client-javascript" {...props}>
     Algolia Search API Client for JavaScript platforms
-  </Tool>
-  <Tool name="algolia/algoliasearch-client-python" {...props}>
+  </GitHub>
+  <GitHub name="algolia/algoliasearch-client-python" {...props}>
     Algolia Search API Client for Python
-  </Tool>
+  </GitHub>
 </Tools>
 
 ### Resources
@@ -77,15 +77,15 @@ If your site is backed by a database, you can also convert your records to JSON 
 If you’re using one of the more popular static site generators, there’s a good chance Algolia or the community has created an integration you can use, instead of having to do the work yourself.
 
 <Tools>
-  <Tool name="algolia/jekyll-algolia" {...props}>
+  <GitHub name="algolia/jekyll-algolia" {...props}>
     An official Algolia-supported way to create a search for websites based on jekyll.
-  </Tool>
-  <Tool name="algolia/gatsby-plugin-algolia" {...props}>
+  </GitHub>
+  <GitHub name="algolia/gatsby-plugin-algolia" {...props}>
     Specify a list of queries to run and how to transform them into an array of objects to index. When you run gatsby build, it will publish those to Algolia.
-  </Tool>
-  <Tool name="10Dimensional/hugo-algolia" {...props}>
+  </GitHub>
+  <GitHub name="10Dimensional/hugo-algolia" {...props}>
     An alternative to the Docsearch plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matter.
-  </Tool>
+  </GitHub>
 </Tools>
 
 ### Resources
@@ -100,15 +100,15 @@ If you’re using one of the more popular static site generators, there’s a go
 Algolia has tools to build both an autocomplete-style search for site headers and a full-page search with their “instantsearch” suite of tools.
 
 <Tools>
-  <Tool name="algolia/instantsearch.js" {...props}>
+  <GitHub name="algolia/instantsearch.js" {...props}>
     Use to build a search page that can have facets, filters and other widgets
-  </Tool>
-  <Tool name="algolia/autocomplete.js" {...props}>
+  </GitHub>
+  <GitHub name="algolia/autocomplete.js" {...props}>
     Use for a standard drop-down interface, good if you’re putting a search bar in the site header
-  </Tool>
-  <Tool name="algolia/react-instantsearch" {...props}>
+  </GitHub>
+  <GitHub name="algolia/react-instantsearch" {...props}>
     The React version of instantsearch, goes great with React-based site frameworks like Gatsby.
-  </Tool>
+  </GitHub>
 </Tools>
 
 ### Resources
@@ -123,10 +123,10 @@ Algolia has tools to build both an autocomplete-style search for site headers an
 Here are a few other tools that might come in handy for building a site search.
 
 <Tools>
-  <Tool name="stedolan/jq" {...props}>
+  <GitHub name="stedolan/jq" {...props}>
     The ultimate swiss army knife for manipulating JSON on the command line. Very useful to get records looking the way you want before you upload to Algolia.
-  </Tool>
-  <Tool name="Shipow/searchbox" {...props}>
+  </GitHub>
+  <GitHub name="Shipow/searchbox" {...props}>
     Generate the code for a search box that matches your site’s design and colors.
-  </Tool>
+  </GitHub>
 </Tools>

@@ -5,7 +5,7 @@ import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
-import Tool from "./tool"
+import GitHub from "./github"
 import Tools from "./tools"
 
 function StackLayout({ data }) {
@@ -36,7 +36,7 @@ function StackLayout({ data }) {
           <div className="columns is-centered">
             <div className="column is-10">
               <div className="content">
-                <MDXRenderer scope={{ React, MDXTag, Tool, Tools }} data={data}>{mdx.code.body}</MDXRenderer>
+                <MDXRenderer scope={{ React, MDXTag, GitHub, Tools }} data={data}>{mdx.code.body}</MDXRenderer>
               </div>
             </div>
           </div>
