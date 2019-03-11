@@ -94,6 +94,7 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                     tools {
                       name
+                      source
                     }
                   }
                 }
@@ -107,7 +108,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
         result.data.allMdx.edges.forEach(({ node }) => {
-          const query = node.fields.tools.map((tool) => (`repo:${tool.name}`)).join(' ');
+          const query = node.fields.tools.map((tool) => (tool.source === `GitHub` ? `repo:${tool.name}` : ``)).join(' ');
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/components/stack-layout.js`),

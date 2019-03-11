@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function getNode(name, data) {
   const edges = data.github.search.edges;
   const edge = _.find(edges, (edge) => {
-    return edge.node.nameWithOwner === name;
+    return edge.node.name === name;
   });
   return edge ? edge.node : undefined;
 }
