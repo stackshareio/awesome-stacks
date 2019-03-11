@@ -39,15 +39,17 @@ function Tool({ name, data, children }) {
               </a>
             </div>
           </div>
-          {/* <div className="tags justify-center">
-            <a className="tag" href="">foo</a>
-          </div> */}
+          <div className="tags justify-center">
+            {githubRepo.repositoryTopics.edges.map((edge) =>
+              <a className="tag" key={edge.node.topic.name} href="{edge.node.url}">{edge.node.topic.name}</a>
+            )}
+          </div>
         </div>
       </div>
-      {children ? 
+      {children ?
         <div className="margin-top-5 has-padding-5 user-description">
           <FontAwesomeIcon icon="comment-alt" color="#ccc" fixedWidth flip="horizontal" /> <i>{children}</i>
-        </div> : <div/>
+        </div> : <div />
       }
     </>
   );

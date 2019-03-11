@@ -45,16 +45,7 @@ function StackLayout({ data }) {
     </Layout>
   );
 }
-// repositoryTopics {
-//   totalCount
-//   edges {
-//     node {
-//       topic {
-//         name
-//       }
-//     }
-//   }
-// }
+
 // this will query our new node type which contains all the GitHub and StackShare references
 export const pageQuery = graphql`
   query StackQuery($id: String, $query: String!) {
@@ -70,6 +61,15 @@ export const pageQuery = graphql`
               descriptionHTML
               stargazers {
                 totalCount
+              }
+              repositoryTopics(first: 3) {
+                edges {
+                  node {
+                    topic {
+                      name
+                    }
+                  }
+                }
               }
               forks {
                 totalCount
