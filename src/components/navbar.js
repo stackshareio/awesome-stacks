@@ -5,7 +5,8 @@ import Img from "gatsby-image"
 function Navbar() {
   const data = useStaticQuery(navbarQuery);
   const Tags = data.allMdx.edges.map(edge => <a className="tag is-medium" key={edge.node.id} href={`/${edge.node.parent.name}`}>{edge.node.frontmatter.title}</a>);
-  const [dropdown, setDropdown] = useState(0);
+  const [dropdown, setDropdown] = useState('');
+  const [burger, setBurger] = useState('');
   return (
     <div className="nav navbar is-fixed-top has-shadow has-background-white">
       <div className="container">
@@ -16,13 +17,13 @@ function Navbar() {
               {data.site.siteMetadata.title}
             </div>
           </Link>
-          <div className="span navbar-burger burger" data-target="navbarMenuHeroA">
+          <div className={`span navbar-burger burger ${burger}`} data-target="navbarMenuHeroA" onClick={() => setBurger(burger === 'is-active' ? '' : 'is-active')}>
             <span />
             <span />
             <span />
           </div>
         </div>
-        <div className="navbar-menu" id="#navbarMenuHeroA">
+        <div className={`navbar-menu ${burger}`} id="#navbarMenuHeroA">
           <div className="navbar-end">
             <div className={`navbar-item has-dropdown ${dropdown}`}
               onClick={() => setDropdown(dropdown === 'is-active' ? '' : 'is-active')}>

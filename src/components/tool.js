@@ -13,7 +13,12 @@ function getRepo(name, data) {
 function Tool({ name, data, children }) {
   const githubRepo = getRepo(name, data);
   if (!githubRepo) {
-    return <div className="card is-tool-card">{name} not found</div>
+    return (
+      <div className="card is-tool-card">
+        <div className="card-content has-text-centered has-text-danger">
+          {name} not found
+        </div>
+      </div>);
   }
   return (
     <>
