@@ -1,6 +1,6 @@
 import React from "react"
 
-class Category extends React.Component {
+class Tools extends React.Component {
   componentDidMount() {
   }
 
@@ -13,4 +13,4 @@ class Category extends React.Component {
   }
 }
 
-export default Category
+export default Tools

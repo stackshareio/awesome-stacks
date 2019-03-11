@@ -60,7 +60,7 @@ exports.onCreateNode = async ({ node,
 
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
-  const tools = (nodeContent.match(/<Tool[^>]+>/g) || []).map((toolTag) => {
+  const tools = (nodeContent.match(/<Tool [^>]+>/g) || []).map((toolTag) => {
     return (new JSDOM(toolTag)).window.document.querySelector("Tool").attributes['name'].value;
   });
   createNodeField({
