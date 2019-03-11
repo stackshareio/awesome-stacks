@@ -25,6 +25,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-source-graphql": "^2.0.13",
     "gatsby-transformer-sharp": "^2.1.15",
+    "jsdom": "^14.0.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",

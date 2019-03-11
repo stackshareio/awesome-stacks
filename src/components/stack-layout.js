@@ -50,7 +50,7 @@ function StackLayout({ data }) {
 export const pageQuery = graphql`
   query StackQuery($id: String, $query: String!) {
     github {
-      search(query: $query, type: REPOSITORY, first: 10) {
+      search(query: $query, type: REPOSITORY, first: 100) {
         repositoryCount
         edges {
           node {

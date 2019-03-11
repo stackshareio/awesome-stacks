@@ -1,4 +1,5 @@
 const path = require("path");
+const { JSDOM } = require("jsdom");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 // to support relative paths in sass files
@@ -10,12 +11,12 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-exports.onCreateNode = ({ node,
-    actions,
-    getNode,
-    loadNodeContent,
-    createNodeId,
-    createContentDigest }) => {
+exports.onCreateNode = async ({ node,
+  actions,
+  getNode,
+  loadNodeContent,
+  createNodeId,
+  createContentDigest }) => {
 
   function transformObject(obj, id, type) {
     const toolNode = {
@@ -54,14 +55,20 @@ exports.onCreateNode = ({ node,
   createNodeField({
     name: "slug",
     node,
-    value: `${slugValue}`
+    value: slugValue
   });
 
-  // const tools = node.frontmatter.tools;
-  // return Promise.all(tools.map((tool) => {
-  //   const [orgName, repoName] = tool.split('/');
+  // add a field for the list of tools used in the mdx
+  const nodeContent = await loadNodeContent(node);
+  const tools = (nodeContent.match(/<Tool[^>]+>/g) || []).map((toolTag) => {
+    return (new JSDOM(toolTag)).window.document.querySelector("Tool").attributes['name'].value;
+  });
+  createNodeField({
+    name: "tools",
+    node,
+    value: tools
+  });
 
-  // }));
 };
 
 exports.createPages = ({ graphql, actions }) => {
@@ -77,8 +84,6 @@ exports.createPages = ({ graphql, actions }) => {
                   id
                   fields {
                     slug
-                  }
-                  frontmatter {
                     tools
                   }
                 }
@@ -92,7 +97,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
         result.data.allMdx.edges.forEach(({ node }) => {
-          const query = node.frontmatter.tools.map((tool) => (`repo:${tool}`)).join(' ');
+          const query = node.fields.tools.map((tool) => (`repo:${tool}`)).join(' ');
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/components/stack-layout.js`),
