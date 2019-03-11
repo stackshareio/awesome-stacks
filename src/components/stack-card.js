@@ -15,6 +15,11 @@ const StackCard = ({ node }) => (
         <span>by</span>
         {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>&nbsp; @{contributor.name}</a>)}
       </p>
+      <div className="tags justify-center has-margin-top-20">
+        {(node.fields.tools || []).slice(0, 3).map((tool) =>
+          <a className="tag" key={tool} href="{tool}">{tool}</a>
+        )}
+      </div>
     </div>
   </div>
 );

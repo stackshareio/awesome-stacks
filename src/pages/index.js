@@ -76,6 +76,9 @@ export const mdxQuery = graphql`
         name
       }
     }
+    fields {
+      tools
+    }
     frontmatter {
       title
       description
