@@ -18,7 +18,7 @@ var x = Xray({
       return typeof value === 'string' ? value.replace(/[a-zA-Z]+/, '') : value
     }
   }
-}).concurrency(2);
+}).concurrency(1);
 
 // to support relative paths in sass files
 exports.onCreateWebpackConfig = ({ actions }) => {
