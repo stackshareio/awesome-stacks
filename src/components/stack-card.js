@@ -17,7 +17,7 @@ const StackCard = ({ node }) => (
       </p>
       <div className="tags is-centered has-margin-top-20">
         {node.fields.stackShareTools.slice(0, 3).map((tool) =>
-          <a className="tag is-link" key={tool.fullName} href={tool.url}>{tool.name}</a>
+          <a className="tag is-link" key={tool.fullName} href={tool.website}>{tool.name}</a>
         )}
         {node.fields.gitHubTools.slice(0, 3).map((tool) =>
           <a className="tag" key={tool.name} href={tool.url}>{tool.name}</a>
