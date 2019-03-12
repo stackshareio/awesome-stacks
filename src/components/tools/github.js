@@ -32,7 +32,7 @@ function GitHub({ name, data, children }) {
               {github.name}
             </a>
           </div>
-          <div className="level is-mobile has-margin-top-10 has-margin-bottom-20">
+          <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
             <div className="level-item">
               <a href={`${github.url}/stargazers`}>
                 <FontAwesomeIcon icon="star" fixedWidth /> <span>{github.stargazers.totalCount}</span>

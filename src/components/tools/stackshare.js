@@ -47,10 +47,10 @@ function StackShare({ name, data, children }) {
           </a>
           <div className="is-size-5 has-margin-top-5">
             <a href={stackshare.website}>
-              {stackshare.name}
+              {stackshare.fullName}
             </a>
           </div>
-          <div className="level is-mobile has-margin-top-10 has-margin-bottom-20">
+          <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
             {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/`, stacksMetric.value) : ``}
             {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubURL}/stargazers`, starsMetric.value) : ``}
             {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}

@@ -31,6 +31,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 function getStackShareTool({ name, url, source }) {
   return x(url, 'body', {
+    fullName: 'a[itemprop="name"]',
     layer: {
       name: 'li:nth-child(2)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] span',
       url: 'li:nth-child(2)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] @href',

@@ -88,6 +88,7 @@ export const pageQuery = graphql`
       fields {
         stackShareTools {
           name
+          fullName
           logo
           website
           category {
