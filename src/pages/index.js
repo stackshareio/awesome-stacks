@@ -5,9 +5,26 @@ import SEO from "../components/seo"
 import StackCard from "../components/stack-card"
 import About from "../snippets/about"
 
+const AboutMessage = ({ title }) => {
+  return (
+    <div className="columns is-centered">
+      <div className="column is-10">
+        <div className="message">
+          <div className="message-body">
+            <h1 className="is-size-3 has-margin-bottom-10">About {title}</h1>
+            <div className="content">
+              <About />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const IndexPage = ({
   data: {
-    site: { siteMetadata: { title } },
+    site: { siteMetadata: { title, description } },
     allMdx: { edges },
   },
 }) => {
@@ -19,26 +36,25 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Home" keywords={[`awesome`, `techstack`, `stackshare`]} />
+      <div className="hero is-medium is-bold has-background-danger has-text-centered">
+        <div className="hero-body">
+          <div className="columns is-centered is-multiline">
+            <div class="column is-12">
+              <h1 className="is-size-1 has-text-white">Stacks on Stacks</h1>
+            </div>
+            <div className="column is-4">
+              <h4 className="is-size-4 has-text-white">{description}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+        <div className="has-text-centered">
+          <h3 className="is-size-3 has-text-white">——— Featured Stacks ———</h3>
+        </div>
+      </div>
       <div className="section">
         <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-10">
-              <div className="message">
-                <div className="message-body">
-                  <h1 className="is-size-3 has-margin-bottom-10">About {title}</h1>
-                  <div className="content">
-                    <About />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="has-margin-top-40"></div>
-          <div className="columns is-centered">
-            <div className="column has-text-centered">
-              <h1 className="is-size-3">Stacks</h1>
-            </div>
-          </div>
           <div className="columns is-multiline is-centered">
             {StackCards}
           </div>
@@ -53,6 +69,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMdx(

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Navbar() {
   const data = useStaticQuery(navbarQuery);
@@ -25,7 +26,7 @@ function Navbar() {
         </div>
         <div className={`navbar-menu ${burger}`} id="#navbarMenuHeroA">
           <div className="navbar-end">
-            <div className={`navbar-item has-dropdown ${dropdown}`}
+            {/* <div className={`navbar-item has-dropdown ${dropdown}`}
               onClick={() => setDropdown(dropdown === 'is-active' ? '' : 'is-active')}>
               <div className="navbar-link"><span role="img" aria-label="fire">🔥</span> &nbsp; Stacks</div>
               <div className="navbar-dropdown" style={{ width: "300px" }}>
@@ -35,10 +36,13 @@ function Navbar() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="navbar-item">
-              <a className="button is-rounded is-danger" href="/contributing">Contribute</a>
-            </div>
+            </div> */}
+            <a className="navbar-item" href="/about">About</a>
+            <a className="navbar-item" href="/docs">Docs</a>
+            <a className="navbar-item" href={data.site.siteMetadata.repository}>
+              <FontAwesomeIcon icon={["fab", "github"]} />
+              <span>&nbsp;&nbsp;GitHub</span>
+            </a>
           </div>
         </div>
       </div>
@@ -58,6 +62,7 @@ query {
   site {
     siteMetadata {
       title
+      repository
     }
   }
   allMdx(

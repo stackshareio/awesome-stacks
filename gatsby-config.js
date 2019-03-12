@@ -3,8 +3,9 @@ require('dotenv').config({ path: '.env.development' });
 module.exports = {
   siteMetadata: {
     title: `Awesome Stacks`,
-    description: `Community-curated stacks for solving common problems`,
+    description: `Discover working tech stacks for all kinds of applications.`,
     author: `@dzello`,
+    repository: `https://github.com/dzello/awesome-stacks`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,8 +39,8 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/components/no-layout.js"),
-          pages: require.resolve("./src/components/layout.js"),
+          default: require.resolve(`./src/components/no-layout.js`),
+          pages: require.resolve(`./src/components/layout.js`),
         },
       },
     },
@@ -54,17 +55,18 @@ module.exports = {
       options: {
         fonts: [
           `Lato:400,400i,700`,
-          `Merriweather:300,700` // you can also specify font weights and styles
+          `Merriweather:300,700`,
+          `Roboto+Condensed:700`
         ]
       }
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: `gatsby-source-graphql`,
       options: {
-        typeName: "GitHub",
-        fieldName: "github",
+        typeName: `GitHub`,
+        fieldName: `github`,
         // Url to query from
-        url: "https://api.github.com/graphql",
+        url: `https://api.github.com/graphql`,
         // HTTP headers
         headers: {
           // Learn about environment variables: https://gatsby.dev/env-vars
