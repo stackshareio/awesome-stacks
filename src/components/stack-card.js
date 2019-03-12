@@ -16,7 +16,7 @@ const StackCard = ({ node }) => (
         {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>&nbsp; @{contributor.name}</a>)}
       </p>
       <div className="tags justify-center has-margin-top-20">
-        {(node.fields.tools || []).slice(0, 3).map((tool) =>
+        {(node.fields.gitHubTools || []).slice(0, 3).map((tool) =>
           <a className={`tag ${tool.source === `StackShare` ? `is-link` : ``}`} key={tool.name} href={tool.url}>{tool.name}</a>
         )}
       </div>

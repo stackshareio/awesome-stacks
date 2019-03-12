@@ -85,6 +85,22 @@ export const pageQuery = graphql`
     }
     mdx(id: { eq: $id }) {
       id
+      fields {
+        stackShareTools {
+          name
+          logo
+          website
+          stackShareStats {
+            name
+            value
+          }
+          gitHubStats {
+            name
+            value
+            dateValue
+          }
+        }
+      }
       frontmatter {
         title
         contributors {

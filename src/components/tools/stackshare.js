@@ -2,12 +2,27 @@ import _ from "lodash"
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function getNode(name, data) {
-  const edges = data.github.search.edges;
-  const edge = _.find(edges, (edge) => {
-    return edge.node.name === name;
+function getMetric(name, metrics) {
+  return _.find(metrics, (metric) => {
+    return metric.name === name;
   });
-  return edge ? edge.node : undefined;
+}
+
+function getNode(name, data) {
+  const tools = data.mdx.fields.stackShareTools;
+  return _.find(tools, (tool) => {
+    return tool.name === name;
+  });
+}
+
+function metricsLevelItem(icon, url, value) {
+  return (
+    <div className="level-item">
+      <a href={url}>
+        <FontAwesomeIcon icon={icon} fixedWidth /> <span>{value}</span>
+      </a>
+    </div>
+  );
 }
 
 function StackShare({ name, data, children }) {
@@ -20,29 +35,25 @@ function StackShare({ name, data, children }) {
         </div>
       </div>);
   }
+  const stacksMetric = getMetric(`Stacks`, stackshare.stackShareStats);
+  const starsMetric = getMetric(`GitHubStars`, stackshare.gitHubStats);
+  const forksMetric = getMetric(`GitHubForks`, stackshare.gitHubStats);
   return (
     <>
       <div className="card is-tool-card">
         <div className="card-content has-text-centered">
-          <a href={stackshare.url}>
-            <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#7a7a7a" />
+          <a href={stackshare.website}>
+            <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
           </a>
           <div className="is-size-5 has-margin-top-5">
-            <a href={stackshare.url}>
+            <a href={stackshare.website}>
               {stackshare.name}
             </a>
           </div>
           <div className="level is-mobile has-margin-top-10 has-margin-bottom-20">
-            {/* <div className="level-item">
-              <a href={`${stackshare.url}/stargazers`}>
-                <FontAwesomeIcon icon="star" fixedWidth /> <span>{github.stargazers.totalCount}</span>
-              </a>
-            </div>
-            <div className="level-item">
-              <a href={`${stackshare.url}/network/members`}>
-                <FontAwesomeIcon icon="code-branch" fixedWidth /> <span>{github.forks.totalCount}</span>
-              </a>
-            </div> */}
+            {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/`, stacksMetric.value) : ``}
+            {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubURL}/stargazers`, starsMetric.value) : ``}
+            {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}
           </div>
         </div>
       </div>

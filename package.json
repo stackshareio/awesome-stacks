@@ -32,7 +32,8 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "sharp": "^0.21.3"
+    "sharp": "^0.21.3",
+    "x-ray": "^2.3.3"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

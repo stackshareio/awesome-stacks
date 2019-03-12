@@ -77,7 +77,10 @@ export const mdxQuery = graphql`
       }
     }
     fields {
-      tools {
+      stackShareTools {
+        name
+      }
+      gitHubTools {
         name
         repoName
         source
