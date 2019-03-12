@@ -55,6 +55,10 @@ function StackShare({ name, data, children }) {
             {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubURL}/stargazers`, starsMetric.value) : ``}
             {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}
           </div>
+          <div className="tags is-centered">
+            <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
+            <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+          </div>
         </div>
       </div>
       {children ?

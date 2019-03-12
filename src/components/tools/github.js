@@ -44,7 +44,7 @@ function GitHub({ name, data, children }) {
               </a>
             </div>
           </div>
-          <div className="tags justify-center">
+          <div className="tags is-centered">
             {github.repositoryTopics.edges.map((edge) =>
               <a className="tag" key={edge.node.topic.name} href="{edge.node.url}">{edge.node.topic.name}</a>
             )}

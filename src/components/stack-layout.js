@@ -90,6 +90,14 @@ export const pageQuery = graphql`
           name
           logo
           website
+          category {
+            name
+            url
+          }
+          group {
+            name
+            url
+          }
           stackShareStats {
             name
             value
