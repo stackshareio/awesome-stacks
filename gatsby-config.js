@@ -50,11 +50,12 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ['Lato:400,400i,700', 'Merriweather:300,700']
-        }
+        fonts: [
+          `Lato:400,400i,700`,
+          `Merriweather:300,700` // you can also specify font weights and styles
+        ]
       }
     },
     {
