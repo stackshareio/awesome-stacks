@@ -11,7 +11,7 @@
 
 - [Algolia](https://stackshare.io/algolia)
 
-## Serverless stream processing
+## Serverless stream processor
 
 - [Serverless](https://stackshare.io/serverless)
 - [Spark](https://stackshare.io/spark)
