@@ -17,7 +17,7 @@ function getNode(name, data) {
 
 function metricsLevelItem(icon, url, value) {
   return (
-    <div className="level-item">
+    <div>
       <a className="has-text-grey" href={url}>
         <FontAwesomeIcon icon={icon} fixedWidth /> <span>{value}</span>
       </a>
