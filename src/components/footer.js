@@ -6,15 +6,15 @@ const Footer = () => (
   <StaticQuery
     render={data => {
       return (
-        <footer className="hero is-light">
+        <footer className="hero has-background-grey has-text-white">
           <div className="hero-body">
             <div className="container">
               <div className="columns is-centered">
                 <div className="column is-half has-text-centered">
-                  <div className="has-margin-bottom-20">
-                    Made with <span role="img" aria-label="blue-heart">💙</span> by
-                  </div>
-                  <div>
+                  <div className="has-margin-bottom-20 is-uppercase is-size-7">
+                    <div className="has-margin-bottom-10">
+                      Made with ♥ by
+                    </div>
                     <a href="https://stackshare.io/">
                       <Img fixed={data.footerImage.childImageSharp.fixed} />
                     </a>
@@ -29,9 +29,9 @@ const Footer = () => (
     }
     query={graphql`
       query {
-        footerImage: file(relativePath: { eq: "stackshare-logo.png" }) {
+        footerImage: file(relativePath: { eq: "stackshare-logo-white.png" }) {
           childImageSharp {
-            fixed(height: 32) {
+            fixed(height: 24) {
               ...GatsbyImageSharpFixed
             }
           }

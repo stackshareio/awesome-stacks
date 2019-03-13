@@ -29,8 +29,9 @@ const IndexPage = ({
   },
 }) => {
   const StackCards = edges.map(edge =>
-    <div key={edge.node.id} className="column is-4 is-3-widescreen">
+    <div key={edge.node.id} className="container">
       <StackCard node={edge.node} />
+      <div className="has-margin-bottom-40"></div>
     </div>
   );
   return (
@@ -43,7 +44,7 @@ const IndexPage = ({
               <h1 className="is-size-1 has-text-white">Stacks on Stacks</h1>
             </div>
             <div className="column is-4">
-              <h4 className="is-size-4 has-text-white">{description}</h4>
+              <h4 className="is-size-5 has-text-white">{description}</h4>
             </div>
           </div>
         </div>
@@ -54,11 +55,7 @@ const IndexPage = ({
         </div>
       </div>
       <div className="section">
-        <div className="container">
-          <div className="columns is-multiline is-centered">
-            {StackCards}
-          </div>
-        </div>
+        {StackCards}
         <div className="has-margin-top-40"></div>
       </div>
     </Layout>);
