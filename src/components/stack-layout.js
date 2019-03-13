@@ -28,7 +28,7 @@ function StackLayout({ data }) {
                 <h1 className="is-size-2">{mdx.frontmatter.title}</h1>
                 <p className="is-size-5">{mdx.frontmatter.description}</p>
               </div>
-              <div className="column is-4 has-text-right">
+              <div className="column is-3 is-offset-1 has-text-right">
                 <p>Maintained by
                   {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">&nbsp; @{contributor.name}</a>)}
                   <br></br>
