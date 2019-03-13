@@ -25,7 +25,7 @@ function StackLayout({ data }) {
           <div className="container">
             <div className="columns">
               <div className="column is-8">
-                <h1 className="is-size-2">{mdx.frontmatter.title}</h1>
+                <h1 className="is-size-3">{mdx.frontmatter.title}</h1>
                 <p className="is-size-5">{mdx.frontmatter.description}</p>
               </div>
               <div className="column is-3 is-offset-1 has-text-right">
