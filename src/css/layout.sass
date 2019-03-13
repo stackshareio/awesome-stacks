@@ -4,14 +4,20 @@
 // @import "lib/algolia/theme"
 // @import "site/main"
 
-h1, h2, h3, h4, .content h1, .content h2, .content h3, .content h4
-  text-transform: uppercase !important
+.is-size-hero-title
+  font-size: 4.5rem
+
+.is-size-larger
+  font-size: 1.5rem
+
+.navbar-brand
+  div.is-size-5
+    font-size: 1.4rem !important
+
+.is-uppercase
+  text-transform: uppercase
   font-family: 'Roboto Condensed', 'Merriweather' !important
   font-weight: 700
-  color: $red
-
-a
-  color: $red !important
 
 .stack-hero
   a, h1, h2, h3, h4, h5, h6
@@ -20,21 +26,8 @@ a
 .card .level
   align-items: flex-start
 
-html body .tag
-  background: $grey !important
-  color: $white !important
-  font-weight: bold
-  height: 1.5em
-  padding-left: 0.5em
-  padding-right: 0.5em
-
 .is-strong
   font-weight: bold
-
-.is-uppercase
-  text-transform: uppercase
-  font-family: 'Roboto Condensed', 'Merriweather' !important
-  font-weight: 700
 
 .content hr
   margin: 3rem 0
@@ -49,17 +42,6 @@ body hr, .has-dotted-line
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
-
-.navbar-brand
-  a
-    color: $grey !important
-  div.is-size-5
-    font-size: 1.4rem !important
-
-.navbar-item, .navbar-item a
-  text-transform: uppercase
-  font-weight: bold
-  color: $grey !important
 
 .is-logo
   width: 75px

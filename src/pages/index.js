@@ -42,14 +42,14 @@ const IndexPage = ({
         <div className="hero-body">
           <div className="columns is-centered is-multiline">
             <div className="column is-12">
-              <h1 className="is-size-1 has-text-white">
+              <h1 className="is-size-hero-title has-text-white">
                 🕶️
                 <br></br>
                 Stacks on Stacks
               </h1>
             </div>
             <div className="column is-4">
-              <h4 className="is-size-5 has-text-white">{description}</h4>
+              <p className="is-size-larger has-text-white">{description}</p>
             </div>
           </div>
         </div>
