@@ -48,7 +48,7 @@ const IndexPage = ({
                 Stacks on Stacks
               </h1>
             </div>
-            <div className="column is-3">
+            <div className="column is-4">
               <h4 className="is-size-5 has-text-white">{description}</h4>
             </div>
           </div>

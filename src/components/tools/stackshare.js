@@ -63,7 +63,7 @@ function StackShare({ name, data, children }) {
       </div>
       {children ?
         <div className="margin-top-5 has-padding-5 user-description">
-          <FontAwesomeIcon icon="comment-alt" color="#ccc" fixedWidth flip="horizontal" /> <i>{children}</i>
+          <FontAwesomeIcon icon="comment-alt" color="#8E9FA9" fixedWidth flip="horizontal" /> <i>{children}</i>
         </div> : <div />
       }
     </>

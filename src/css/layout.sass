@@ -4,16 +4,22 @@
 // @import "lib/algolia/theme"
 // @import "site/main"
 
-.is-size-1, .is-size-2, .is-size-3, .is-size-4, .navbar-brand
+h1, h2, h3, h4, .content h1, .content h2, .content h3, .content h4
   text-transform: uppercase !important
   font-family: 'Roboto Condensed', 'Merriweather' !important
   font-weight: 700
+  color: $red
 
 a
   color: $red !important
 
-.content h2
-  color: $red
+.stack-hero
+  a, h1, h2, h3, h4, h5, h6
+    color: white !important
+
+.tag
+  background: $grey !important
+  color: $white !important
 
 .is-strong
   font-weight: bold
@@ -24,7 +30,6 @@ a
   font-weight: 700
 
 .has-dotted-line
-  // border-bottom: 1px dotted $grey
   height: 5px
   background-image: linear-gradient(to right, $grey 10%, rgba(255, 255, 255, 0) 0%);
   background-position: top;
@@ -41,11 +46,6 @@ a
   text-transform: uppercase
   font-weight: bold
   color: $grey !important
-
-.is-size-1, .is-size-2, .is-size-3, .is-size-4
-  color: $red
-  a
-    color: $red
 
 .is-logo
   width: 75px

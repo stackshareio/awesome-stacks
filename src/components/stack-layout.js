@@ -14,28 +14,29 @@ function StackLayout({ data }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <div className="section">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-8 is-offset-1">
-              <h1 className="is-size-2">{mdx.frontmatter.title}</h1>
-              <p className="is-size-5">{mdx.frontmatter.description}</p>
-            </div>
-            <div className="column is-2 has-text-right">
-              <p><span className="is-strong">Maintained by</span></p>
-              <ul className="has-margin-bottom-15">
-                {mdx.frontmatter.contributors.map(contributor => <li key={contributor.name}><a href={contributor.url}>&nbsp; @{contributor.name}</a></li>)}
-              </ul>
-              <p className="has-margin-bottom-5"><span className="is-strong">Last updated</span></p>
-              <p className="has-margin-bottom-15">{mdx.frontmatter.date}</p>
+      <div className="hero has-background-grey has-text-white stack-hero">
+        <div className="hero-body">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-8">
+                <h1 className="is-size-2">{mdx.frontmatter.title}</h1>
+                <p className="is-size-5">{mdx.frontmatter.description}</p>
+              </div>
+              <div className="column is-4 has-text-right">
+                <p>Maintained by
+                  {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">&nbsp; @{contributor.name}</a>)}
+                  <br></br>
+                  Last updated: {mdx.frontmatter.date}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="section has-padding-top-5">
+      <div className="section">
         <div className="container">
           <div className="columns is-centered">
-            <div className="column is-10">
+            <div className="column">
               <div className="content">
                 <MDXRenderer scope={{ React, MDXTag, Tools, GitHub, StackShare }} data={data}>{mdx.code.body}</MDXRenderer>
               </div>
@@ -43,6 +44,7 @@ function StackLayout({ data }) {
           </div>
         </div>
       </div>
+      <div className="has-margin-bottom-60"></div>
     </Layout>
   );
 }
