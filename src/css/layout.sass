@@ -23,6 +23,14 @@ a
   font-family: 'Roboto Condensed', 'Merriweather' !important
   font-weight: 700
 
+.has-dotted-line
+  // border-bottom: 1px dotted $grey
+  height: 5px
+  background-image: linear-gradient(to right, $grey 10%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+
 .navbar-brand
   a
     color: $grey !important
@@ -39,10 +47,11 @@ a
   a
     color: $red
 
+.is-logo
+  width: 75px
+  height: 75px
+  border-radius: 3px
+
 .is-tool-card
-  .is-logo
-    width: 75px
-    height: 75px
-    border-radius: 3px
   .level-item a
     color: $grey !important

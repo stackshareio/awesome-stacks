@@ -1,89 +1,55 @@
-# Contribution Guide
+# Documentation
 
-The mission of Awesome Stacks is to create a collection of stacks that are useful at solving a variety of problems and use cases. The collection of stacks comes 100% from developers in the community sharing their knowledge and experience. The process is managed openly on GitHub using issues and pull requests. The GitHub repo lives [here].
+Awesome Stacks is a list of tech stacks that are known to work great for building a certain thing. Each stack is created and maintained by developers in the community. This site lives on GitHub and managed via issues and pull requests.
 
-## Philosophy
+This documentation will show you how to contribute your own awesome stack or add something to others.
 
-**What should I contribute?**
+## The Awesome Stacks tech stack
 
-The goal of this project isn't to capture all the possible stacks or just your personal or company stacks - [that's what StackShare is for](https://stackshare.io/)! Rather, you could think of Awesome Stacks as a collection of community-built and maintained set up "reference stacks" for common developer and devops use cases like processing images, orchestrating microservices, or building a cross-platform e-commerce mobile app.
+Before we dive in, here's what Awesome Stacks is built with. Full familiarity with these tools isn't required to make a contribution, but you may learn something about them in the process. 
 
-Each stack should strive to be descriptive and fair in its choices, with the goal of helping developers understand how the pieces fit together. Where multiple solutions (vendors or open source) could be used in the same place in the stack, each should be included to give the developer options and avoid favoritism. Of course, sometimes a stack is based around a specific project or vendor and it doesn't make sense to include alternatives. That is ok - just make sure to call that out in the name or introduction of the stack: e.g. "this is the React Native way to do it".
+- Gatsby
+- MDX
+- Netlify
+- StackShare API
+- GitHub API
+- Bulma
 
-There is never just one right way to do something, so we will accept more than one stack per use case and way to solve it. However, the stack should be suitably different in the way that it works and tools that it uses.
+## Setup locally
 
-## Setup
+Coming soon!
 
-[This section would have information about cloning the repo and running it locally.]
+## Create an Awesome Stack
 
-## Creating a new awesome stack
-
-To create a new awesome stack, create a new markdown file in the `content` directory of the repository, with a URL-friendly version of the stack's name. In that file, you will add fields to the front matter in YAML in order to add tools and descriptions to the stack you're creating.
-
-Here's the YAML used to build the [Budget Serverless](/stacks/budget-serverless) stack:
-
-```yaml
----
-title: Budget Serverless
-description: The cheapest stack for building serverless applications, great for side projects and anyone on a tight budget.
-introduction: |+
-  Serverless promises on-demand, optimal performance for a fixed cost. Yet, we see that the current serverless platforms do not always hold up this promise in practice; serverless applications can suffer from cold starts, platform overhead, and unreliable performance.
-updated: Feb 20, 2018 2:45pm
-contributors:
-  - name: dzello
-    url: 'https://github.com/dzello'
-  - name: patrickjwoods
-    url: 'https://github.com/patrickjwoods'
-_categories:
-  - name: Function-as-a-Service tools
-    description: >-
-      Even though your front-end might be static, your application will usually still need to run some dynamic code, like for user authentication or running background tasks. Rather than provisioning servers that cost money every hour, every day, you can pay for only the actual execution of code that you run. This pattern is known as "function-as-a-service" and their are are quite a few platforms for it now. Here are a few of the least expensive tools, which still offer a lot of power and flexibility.
-    tools:
-      - name: Webtask
-        stackshare_id: Slash-Webtasks
-        description: Completely free, lightweight and live-reloading of local code.
-      - name: AWS Lambda
-        stackshare_id: AWS-Lambda
-        description: Not free but cheap, and ideal if you're already part of the AWS ecosystem.
----
-```
-
-Once you save the file in `content`, you can see it live in your local environment:
-
-<figure style="width: 75%; margin: 50px auto; border: 1px solid #eeeeee">
-<img src="/images/budget-serverless.png" />
-</figure>
-
-This is all you need to create a new awesome stack - no other coding is required.
+Coming soon!
 
 ## Reference
 
 #### Stack fields
 
-Here is a list of fields you can use in the YAML to create your stack.
+Here is a list of fields to populate in the front matter of your stack.
 
-- `name`
+- `title`
 - `description`
-- `introduction`
-- `categories`
+- `collaborators`
+- `date`
 
-Note: You can include up to 10 categories of tools in your stack.
+#### StackShare component
 
-#### Categories
+This MDX component adds a tile for a StackShare tool.
 
-Here are the fields you can provide in each category:
+```jsx
+ <StackShare name="algolia" {...props}>
+  A fully hosted service to index and query data, with a lot of official and community clients, integrations and UI-building tools
+</StackShare>
+```
 
-- `name`
-- `description`
-- `tools`
+#### GitHub component
 
-#### Tools
+This MDX component adds a tile for a GitHub repository.
 
-Here are the fields you can provide for each tool:
-
-- `name`
-- `description`
-- `stackshare_url` - If the tool exists on StackShare, set this field to its StackShare URL and a tile will automatically be created for it containing data from StackShare
-- `github_url` - If the tools exists on GitHub, set this field to its GitHub URL and a tile will automatically be created for it containing data from GitHub
-
-Note: You may provide both the `stackshare_url` and the `github_url`, although this is not necessarily if the StackShare page for the tool already is linked to its GitHub repository.
+```jsx
+  <GitHub name="scrapy/scrapy" {...props}>
+    The de facto scraper for Python, easy to use with a lot of features.
+  </GitHub>
+```

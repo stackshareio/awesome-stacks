@@ -32,6 +32,7 @@ const IndexPage = ({
     <div key={edge.node.id} className="container">
       <StackCard node={edge.node} />
       <div className="has-margin-bottom-40"></div>
+      <div className="has-margin-bottom-40 has-dotted-line"></div>
     </div>
   );
   return (
@@ -40,10 +41,14 @@ const IndexPage = ({
       <div className="hero is-medium is-bold has-background-danger has-text-centered">
         <div className="hero-body">
           <div className="columns is-centered is-multiline">
-            <div class="column is-12">
-              <h1 className="is-size-1 has-text-white">Stacks on Stacks</h1>
+            <div className="column is-12">
+              <h1 className="is-size-1 has-text-white">
+                🕶️
+                <br></br>
+                Stacks on Stacks
+              </h1>
             </div>
-            <div className="column is-4">
+            <div className="column is-3">
               <h4 className="is-size-5 has-text-white">{description}</h4>
             </div>
           </div>
@@ -94,6 +99,7 @@ export const mdxQuery = graphql`
       stackShareTools {
         name
         website
+        logo
       }
       gitHubTools {
         name

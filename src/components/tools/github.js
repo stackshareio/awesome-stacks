@@ -25,7 +25,7 @@ function GitHub({ name, data, children }) {
       <div className="card is-tool-card">
         <div className="card-content has-text-centered">
           <a href={github.url}>
-            <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#7a7a7a" />
+            <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#8E9FA9" />
           </a>
           <div className="is-size-5 has-margin-top-5">
             <a href={github.url}>
