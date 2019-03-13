@@ -28,12 +28,15 @@ function StackLayout({ data }) {
                 <h1 className="is-size-3">{mdx.frontmatter.title}</h1>
                 <p className="is-size-5">{mdx.frontmatter.description}</p>
               </div>
-              <div className="column is-3 is-offset-1 has-text-right">
-                <p>Maintained by
-                  {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">&nbsp; @{contributor.name}</a>)}
-                  <br></br>
-                  Last updated: {mdx.frontmatter.date}
-                </p>
+              <div className="column is-4 has-text-right" style={{marginTop: `auto`}}>
+                <ul>
+                  <li>
+                    Maintained by {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">&nbsp; @{contributor.name}</a>)}
+                  </li>
+                  <li>
+                    Last updated: {mdx.frontmatter.date}
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
