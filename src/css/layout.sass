@@ -36,8 +36,15 @@ html body .tag
   font-family: 'Roboto Condensed', 'Merriweather' !important
   font-weight: 700
 
-.has-dotted-line
+.content hr
+  margin: 3rem 0
+
+.content > div > hr:first-child
+  display: none
+
+body hr, .has-dotted-line
   height: 5px
+  background-color: inherit
   background-image: linear-gradient(to right, $grey 10%, rgba(255, 255, 255, 0) 0%);
   background-position: top;
   background-size: 10px 1px;

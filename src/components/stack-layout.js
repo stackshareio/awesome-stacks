@@ -4,10 +4,16 @@ import Layout from "./layout";
 import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
+import { MDXProvider } from '@mdx-js/tag';
 
 import Tools from "./tools"
 import GitHub from "./tools/github"
 import StackShare from "./tools/stackshare"
+
+const MyH1 = props => <><hr /><h1 className="" {...props} /></>
+const components = {
+  h1: MyH1
+}
 
 function StackLayout({ data }) {
   const mdx = data.mdx;
@@ -38,7 +44,11 @@ function StackLayout({ data }) {
           <div className="columns is-centered">
             <div className="column">
               <div className="content">
-                <MDXRenderer scope={{ React, MDXTag, Tools, GitHub, StackShare }} data={data}>{mdx.code.body}</MDXRenderer>
+                <MDXProvider components={components}>
+                  <MDXRenderer scope={{ React, MDXTag, Tools, GitHub, StackShare }} data={data}>
+                    {mdx.code.body}
+                  </MDXRenderer>
+                </MDXProvider>
               </div>
             </div>
           </div>
