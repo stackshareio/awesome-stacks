@@ -18,7 +18,7 @@ function getNode(name, data) {
 function metricsLevelItem(icon, url, value) {
   return (
     <div className="level-item">
-      <a href={url}>
+      <a className="has-text-grey" href={url}>
         <FontAwesomeIcon icon={icon} fixedWidth /> <span>{value}</span>
       </a>
     </div>
@@ -51,13 +51,23 @@ function StackShare({ name, data, children }) {
             </a>
           </div>
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
-            {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/`, stacksMetric.value) : ``}
-            {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubURL}/stargazers`, starsMetric.value) : ``}
-            {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}
-          </div>
-          <div className="tags is-centered">
-            <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
-            <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+            <div className="level-item has-text-left">
+              <div>
+                {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/`, stacksMetric.value) : ``}
+                {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubURL}/stargazers`, starsMetric.value) : ``}
+                {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}
+              </div>
+            </div>
+            <div className="level-item has-text-right">
+              <div>
+                <div>
+                  <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
+                </div>
+                <div>
+                  <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

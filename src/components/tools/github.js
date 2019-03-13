@@ -33,21 +33,24 @@ function GitHub({ name, data, children }) {
             </a>
           </div>
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
-            <div className="level-item">
-              <a href={`${github.url}/stargazers`}>
-                <FontAwesomeIcon icon="star" fixedWidth /> <span>{github.stargazers.totalCount}</span>
-              </a>
+            <div className="level-item has-text-left">
+              <div>
+                <a className="has-text-grey" href={`${github.url}/stargazers`}>
+                  <FontAwesomeIcon icon="star" fixedWidth /> <span>{github.stargazers.totalCount}</span>
+                </a>
+                <div></div>
+                <a className="has-text-grey" href={`${github.url}/network/members`}>
+                  <FontAwesomeIcon icon="code-branch" fixedWidth /> <span>{github.forks.totalCount}</span>
+                </a>
+              </div>
             </div>
-            <div className="level-item">
-              <a href={`${github.url}/network/members`}>
-                <FontAwesomeIcon icon="code-branch" fixedWidth /> <span>{github.forks.totalCount}</span>
-              </a>
+            <div className="level-item has-text-right">
+              <div>
+                {github.repositoryTopics.edges.map((edge) =>
+                  <div key={edge.node.topic.name}><a className="tag" href={edge.node.url}>{edge.node.topic.name}</a></div>
+                )}
+              </div>
             </div>
-          </div>
-          <div className="tags is-centered">
-            {github.repositoryTopics.edges.map((edge) =>
-              <a className="tag" key={edge.node.topic.name} href="{edge.node.url}">{edge.node.topic.name}</a>
-            )}
           </div>
         </div>
       </div>
