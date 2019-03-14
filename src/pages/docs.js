@@ -23,8 +23,8 @@ const ContributingPage = () => (
             </div>
           </div>
           <div className="column is-3">
-            <div className="box grey-box is-fixed has-width-200">
-              <h3 className="is-size-5 is-uppercase">Contents</h3>
+            <div className="box grey-box is-fixed">
+              <a className="is-size-5 is-uppercase" href="#">Contents</a>
               <ul>
                 <li><a href="#overview">&rsaquo; Overview</a></li>
                 <li><a href="#setup">&rsaquo; Setup</a></li>
