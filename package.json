@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "awesome-stacks",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Discover working tech stacks for all kinds of applications.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Josh Dzielakj<josh@developermode.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
@@ -27,7 +27,6 @@
     "gatsby-source-graphql": "^2.0.13",
     "gatsby-transformer-sharp": "^2.1.15",
     "jsdom": "^14.0.0",
-    "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
@@ -53,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/stackshareio/awesome-stacks"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/stackshareio/awesome-stacks/issues"
   }
 }

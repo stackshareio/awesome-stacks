@@ -1,10 +1,9 @@
-import _ from "lodash"
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function getNode(name, data) {
   const edges = data.github.search.edges;
-  const edge = _.find(edges, (edge) => {
+  const edge = edges.find((edge) => {
     return edge.node.nameWithOwner === name;
   });
   return edge ? edge.node : undefined;

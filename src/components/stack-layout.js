@@ -31,7 +31,7 @@ function StackLayout({ data }) {
               <div className="column is-4 has-text-right" style={{marginTop: `auto`}}>
                 <ul>
                   <li>
-                    Maintained by {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">&nbsp; @{contributor.name}</a>)}
+                    Maintained by {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item ])}
                   </li>
                   <li>
                     Last updated: {mdx.frontmatter.date}

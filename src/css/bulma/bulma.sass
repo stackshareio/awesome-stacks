@@ -1,14 +1,17 @@
 @import "_variables"
 @import "../../../node_modules/bulma/bulma"
 
-h1, h2, h3, h4
+h1, h2, h3, h4, .navbar-brand
   text-transform: uppercase !important
-  font-family: 'Roboto Condensed', 'Merriweather' !important
+  font-family: 'Roboto Condensed'
   font-weight: 700
+
+h1, h2, h3, h4
   color: $red
 
-.content h1, .content h2, .content h3, .content h4
-  color: $red
+.content
+  h1, h2, h3, h4
+    color: $red
 
 .navbar-item, .navbar-item a
   text-transform: uppercase

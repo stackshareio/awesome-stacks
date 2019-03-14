@@ -1,16 +1,15 @@
-import _ from "lodash"
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function getMetric(name, metrics) {
-  return _.find(metrics, (metric) => {
+  return metrics.find((metric) => {
     return metric.name === name;
   });
 }
 
 function getNode(name, data) {
   const tools = data.mdx.fields.stackShareTools;
-  return _.find(tools, (tool) => {
+  return tools.find((tool) => {
     return tool.name === name;
   });
 }
