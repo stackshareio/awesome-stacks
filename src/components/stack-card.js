@@ -15,8 +15,7 @@ const StackCard = ({ node }) => (
           {node.frontmatter.description}
         </p>
         <p className="has-margin-top-10">
-          <span>by</span>
-          {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>&nbsp; @{contributor.name}</a>)}
+          by {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item ])}
         </p>
       </div>
       <div className="column is-6">
@@ -24,16 +23,12 @@ const StackCard = ({ node }) => (
           {node.fields.stackShareTools.slice(0, 3).map((tool) =>
             <div className="level-item has-text-centered" key={tool.name}>
               <img alt={tool.name} src={tool.logo} className="is-logo"></img>
-              {/* <div className="has-margin-top-10"></div> */}
-              {/* {tool.fullName} */}
             </div>
           )}
           {node.fields.gitHubTools.slice(0, 3).map((tool) =>
             <div className="level-item has-text-centered" key={tool.name}>
               <div>
                 <FontAwesomeIcon icon={["fab", "github"]} size="4x" color="#8E9FA9" />
-                {/* <div className="has-margin-top-10"></div> */}
-                {/* {tool.repoName} */}
               </div>
             </div>
           )}

@@ -9,7 +9,7 @@ const AboutPage = () => (
     <div className="section">
       <div className="container">
         <div className="columns">
-          <div className="column is-12">
+          <div className="column is-10">
             <div className="content">
               <About />
             </div>
