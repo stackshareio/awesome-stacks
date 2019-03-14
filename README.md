@@ -1,18 +1,8 @@
 # Awesome Stacks [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> Stacks for solving common problems, inspired by [awesome.re](http://awesome.re).
+> Working tech stacks for all kinds of applications, inspired by [awesome.re](http://awesome.re).
 
-## Contents
+## Stacks
 
-- [Site search with Algolia](#site-search-with-algolia)
-- [Serverless stream processing](#serverless-stream-processing)
-
-## Site search with Algolia
-
-- [Algolia](https://stackshare.io/algolia)
-
-## Serverless stream processor
-
-- [Serverless](https://stackshare.io/serverless)
-- [Spark](https://stackshare.io/spark)
-- [Kafka](https://stackshare.io/kafka)
+- [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
+- [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
