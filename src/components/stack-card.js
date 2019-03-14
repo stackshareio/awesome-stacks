@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const StackCard = ({ node }) => (
@@ -6,9 +7,9 @@ const StackCard = ({ node }) => (
     <div className="columns">
       <div className="column is-6">
         <h3 className="is-size-4 has-color-danger has-margin-top-5">
-          <a href={`/${node.parent.name}`}>
+          <Link to={`/${node.parent.name}`}>
             {node.frontmatter.title}
-          </a>
+          </Link>
         </h3>
         <p className="is-size-5 has-margin-top-10">
           {node.frontmatter.description}

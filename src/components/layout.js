@@ -22,11 +22,11 @@ const Layout = ({ children }) => (
         }
       } `}
     render={data => (
-      <>
+      <div className="layout">
         <Navbar></Navbar>
         <main>{children}</main>
         <Footer></Footer>
-      </>
+      </div>
     )}
   />
 )

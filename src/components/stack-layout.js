@@ -1,10 +1,9 @@
 import React from "react";
-import { MDXTag } from '@mdx-js/tag';
+import { MDXTag, MDXProvider } from '@mdx-js/tag';
 import Layout from "./layout";
 import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
-import { MDXProvider } from '@mdx-js/tag';
 
 import Tools from "./tools"
 import GitHub from "./tools/github"

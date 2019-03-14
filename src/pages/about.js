@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Contributing from "../snippets/contributing"
+import About from "../snippets/about"
 
-const ContributingPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="Documentation" />
+    <SEO title="About" />
     <div className="section">
       <div className="container">
         <div className="columns">
           <div className="column is-12">
             <div className="content">
-              <Contributing />
+              <About />
             </div>
           </div>
         </div>
@@ -20,4 +20,4 @@ const ContributingPage = () => (
   </Layout>
 )
 
-export default ContributingPage
+export default AboutPage

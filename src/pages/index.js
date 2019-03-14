@@ -3,28 +3,10 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StackCard from "../components/stack-card"
-import About from "../snippets/about"
-
-const AboutMessage = ({ title }) => {
-  return (
-    <div className="columns is-centered">
-      <div className="column is-10">
-        <div className="message">
-          <div className="message-body">
-            <h1 className="is-size-3 has-margin-bottom-10">About {title}</h1>
-            <div className="content">
-              <About />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 const IndexPage = ({
   data: {
-    site: { siteMetadata: { title, description } },
+    site: { siteMetadata: { description } },
     allMdx: { edges },
   },
 }) => {
@@ -43,8 +25,6 @@ const IndexPage = ({
           <div className="columns is-centered is-multiline">
             <div className="column is-12">
               <h1 className="is-size-hero-title has-text-white">
-                🕶️
-                <br></br>
                 Stacks on Stacks
               </h1>
             </div>
