@@ -52,9 +52,9 @@ function StackShare({ name, data, children }) {
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
             <div className="level-item has-text-left">
               <div>
-                {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/`, stacksMetric.value) : ``}
-                {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubURL}/stargazers`, starsMetric.value) : ``}
-                {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}
+                {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}`, stacksMetric.value) : ``}
+                {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
+                {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
               </div>
             </div>
             <div className="level-item has-text-right is-tag-catcher">
