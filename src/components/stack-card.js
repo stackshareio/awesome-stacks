@@ -37,7 +37,7 @@ const StackCard = ({ node }) => (
     </div>
     <div className="columns">
       <div className="column has-text-right">
-        <a className="button is-danger is-uppercase has-text-white" href={`/${node.parent.name}`}>> See this stack</a>
+        <Link className="button is-danger is-uppercase has-text-white" to={`/${node.parent.name}`}>> Read about this stack</Link>
       </div>
     </div>
   </>
