@@ -57,13 +57,13 @@ function StackShare({ name, data, children }) {
                 {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubURL}/network/members`, forksMetric.value) : ``}
               </div>
             </div>
-            <div className="level-item has-text-right">
+            <div className="level-item has-text-right is-tag-catcher">
               <div>
                 <div>
-                  <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
+                  <a className="tag" href={stackshare.group.url}>{stackshare.group.name.replace(/^(.{11}[^\s]*).*/, "$1")}</a>
                 </div>
                 <div>
-                  <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+                  <a className="tag" href={stackshare.category.url}>{stackshare.category.name.replace(/^(.{11}[^\s]*).*/, "$1")}</a>
                 </div>
               </div>
             </div>
