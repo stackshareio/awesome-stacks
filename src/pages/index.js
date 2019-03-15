@@ -73,26 +73,52 @@ export const mdxQuery = graphql`
     parent {
       ... on File {
         name
+        modifiedTime(formatString: "MMMM D, YYYY")
       }
+    }
+    frontmatter {
+      title
+      contributors {
+        name
+        url
+      }
+      description
+      date(formatString: "MMMM D, YYYY")
+    }
+    code {
+      body
     }
     fields {
       stackShareTools {
         name
-        website
+        fullName
+        tagline
         logo
+        website
+        url
+        gitHubURL
+        category {
+          name
+          url
+        }
+        group {
+          name
+          url
+        }
+        stackShareStats {
+          name
+          value
+        }
+        gitHubStats {
+          name
+          value
+          dateValue
+        }
       }
       gitHubTools {
         name
         repoName
         source
-        url
-      }
-    }
-    frontmatter {
-      title
-      description
-      contributors {
-        name
         url
       }
     }

@@ -27,13 +27,13 @@ function StackLayout({ data }) {
                 <h1 className="is-size-3">{mdx.frontmatter.title}</h1>
                 <p className="is-size-5">{mdx.frontmatter.description}</p>
               </div>
-              <div className="column is-4 has-text-right" style={{marginTop: `auto`}}>
+              <div className="column is-4 has-text-right" style={{ marginTop: `auto` }}>
                 <ul>
                   <li>
-                    Contributed by {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item ])}
+                    Contributed by {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item])}
                   </li>
                   <li>
-                    Last updated: {mdx.frontmatter.date}
+                    Last updated: {mdx.parent.modifiedTime}
                   </li>
                 </ul>
               </div>
@@ -105,46 +105,16 @@ export const pageQuery = graphql`
       }
     }
     mdx(id: { eq: $id }) {
-      id
-      fields {
-        stackShareTools {
-          name
-          fullName
-          tagline
-          logo
-          website
-          url
-          gitHubURL
-          category {
-            name
-            url
-          }
-          group {
-            name
-            url
-          }
-          stackShareStats {
-            name
-            value
-          }
-          gitHubStats {
-            name
-            value
-            dateValue
-          }
+      ...MdxFields
+    }
+    allMdx(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { fields: { sourceName: { eq: "stacks" } } }
+      ) {
+      edges {
+        node {
+          ...MdxFields
         }
-      }
-      frontmatter {
-        title
-        contributors {
-          name
-          url
-        }
-        description
-        date(formatString: "MMMM D, YYYY")
-      }
-      code {
-        body
       }
     }
   }
