@@ -12,34 +12,36 @@ function StackShare({ name, data, children }) {
   const forksMetric = getMetric(`GitHubForks`, stackshare.gitHubStats);
   return (
     <Card description={children}>
-      <a href={stackshare.url}>
-        <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
-      </a>
-      <div className="is-size-5 has-margin-top-5">
+      <div className="is-top">
         <a href={stackshare.url}>
-          {stackshare.fullName}
+          <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
         </a>
-      </div>
-      <div className="is-size-7 has-margin-top-5">
-        {stackshare.tagline}
-      </div>
-      <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
-        <div className="level-item has-text-left">
-          <div>
-            {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}/in-stacks`, stacksMetric.value) : ``}
-            {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
-            {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
-          </div>
+        <div className="is-size-5 has-margin-top-5">
+          <a href={stackshare.url}>
+            {stackshare.fullName}
+          </a>
         </div>
       </div>
-      <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
-        <div className="level-item has-text-centered">
-          <div>
+      <div className="is-size-7 has-margin-top-5 is-middle">
+        {stackshare.tagline}
+      </div>
+      <div className="is-bottom">
+        <div className="level is-mobile has-margin-bottom-20 has-overflow-hidden">
+          <div className="level-item has-text-left">
             <div>
-              <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
+              {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}/in-stacks`, stacksMetric.value) : ``}
+              {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
+              {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
             </div>
+          </div>
+          <div className="level-item has-text-right">
             <div>
-              <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+              <div>
+                <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
+              </div>
+              <div>
+                <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+              </div>
             </div>
           </div>
         </div>

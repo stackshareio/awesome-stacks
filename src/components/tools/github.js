@@ -9,14 +9,16 @@ function GitHub({ name, data, children }) {
   }
   return (
     <Card description={children}>
-      <a href={github.url}>
-        <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#8E9FA9" />
-      </a>
-      <div className="is-size-5 has-margin-top-10">
-        <a href={github.url}>{github.name}</a>
+      <div className="is-top">
+        <a href={github.url}>
+          <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#8E9FA9" />
+        </a>
+        <div className="is-size-5 has-margin-top-10">
+          <a href={github.url}>{github.name}</a>
+        </div>
       </div>
-      <div className="is-size-7 has-margin-top-5" dangerouslySetInnerHTML={{ __html: github.descriptionHTML }} />
-      <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
+      <div className="is-size-7 has-margin-top-5 is-middle" dangerouslySetInnerHTML={{ __html: github.descriptionHTML }} />
+      <div className="level is-mobile is-bottom has-overflow-hidden">
         <div className="level-item has-text-left">
           <div>
             <a className="has-text-grey" href={`${github.url}/stargazers`}>
@@ -31,12 +33,12 @@ function GitHub({ name, data, children }) {
           </div>
         </div>
         {github.repositoryTopics.edges.length > 0 ? (
-          <div className="level-item has-text-right is-tag-catcher">
+          <div className="level-item has-text-right">
             <div>
               {github.repositoryTopics.edges.map(edge => (
                 <div key={edge.node.topic.name}>
                   <a className="tag" href={edge.node.url}>
-                    {edge.node.topic.name}
+                    #{edge.node.topic.name}
                   </a>
                 </div>
               ))}
