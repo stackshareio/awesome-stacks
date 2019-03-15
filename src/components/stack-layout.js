@@ -113,6 +113,7 @@ export const pageQuery = graphql`
           tagline
           logo
           website
+          url
           gitHubURL
           category {
             name

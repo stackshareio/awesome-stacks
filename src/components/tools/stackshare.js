@@ -41,11 +41,11 @@ function StackShare({ name, data, children }) {
     <>
       <div className="card is-tool-card">
         <div className="card-content has-text-centered">
-          <a href={stackshare.website}>
+          <a href={stackshare.url}>
             <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
           </a>
           <div className="is-size-5 has-margin-top-5">
-            <a href={stackshare.website}>
+            <a href={stackshare.url}>
               {stackshare.fullName}
             </a>
           </div>
@@ -55,7 +55,7 @@ function StackShare({ name, data, children }) {
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
             <div className="level-item has-text-left">
               <div>
-                {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}`, stacksMetric.value) : ``}
+                {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}/in-stacks`, stacksMetric.value) : ``}
                 {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
                 {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
               </div>
