@@ -6,7 +6,7 @@ import StackCard from "../components/stack-card"
 
 const IndexPage = ({
   data: {
-    site: { siteMetadata: { description } },
+    site: { siteMetadata: { title, description } },
     allMdx: { edges },
   },
 }) => {
@@ -19,7 +19,7 @@ const IndexPage = ({
   );
   return (
     <Layout>
-      <SEO title="Home" keywords={[`awesome`, `techstack`, `stackshare`]} />
+      <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
       <div className="hero is-medium is-bold has-background-danger has-text-centered">
         <div className="hero-body">
           <div className="columns is-centered is-multiline">
