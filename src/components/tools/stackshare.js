@@ -49,6 +49,9 @@ function StackShare({ name, data, children }) {
               {stackshare.fullName}
             </a>
           </div>
+          <div className="is-size-7 has-margin-top-5">
+            {stackshare.tagline}
+          </div>
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
             <div className="level-item has-text-left">
               <div>

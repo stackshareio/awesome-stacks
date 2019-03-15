@@ -110,6 +110,7 @@ export const pageQuery = graphql`
         stackShareTools {
           name
           fullName
+          tagline
           logo
           website
           gitHubURL

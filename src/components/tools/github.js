@@ -34,6 +34,7 @@ function GitHub({ name, data, children }) {
           <div className="is-size-5 has-margin-top-10">
             <a href={github.url}>{github.name}</a>
           </div>
+          <div className="is-size-7 has-margin-top-5" dangerouslySetInnerHTML={{ __html: github.descriptionHTML }} />
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
             <div className="level-item has-text-left">
               <div>
