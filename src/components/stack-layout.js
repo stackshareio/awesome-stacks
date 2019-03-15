@@ -91,6 +91,14 @@ export const pageQuery = graphql`
               updatedAt
               url
               homepageUrl
+              languages(first: 1) {
+                edges {
+                  node {
+                    name
+                    color                    
+                  }
+                }
+              }
             }
           }
         }
