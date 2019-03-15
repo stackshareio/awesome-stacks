@@ -13,9 +13,11 @@ function StackShare({ name, data, children }) {
   return (
     <Card description={children}>
       <div className="is-top">
-        <a href={stackshare.url}>
-          <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
-        </a>
+        <div className="is-logo-link has-text-centered">
+          <a href={stackshare.url}>
+            <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
+          </a>
+        </div>
         <div className="is-size-5 has-margin-top-5">
           <a href={stackshare.url}>
             {stackshare.fullName}

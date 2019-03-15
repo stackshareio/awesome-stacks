@@ -10,9 +10,17 @@ function GitHub({ name, data, children }) {
   return (
     <Card description={children}>
       <div className="is-top">
-        <a href={github.url}>
-          <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#8E9FA9" />
-        </a>
+        <div className="is-logo-link has-text-centered is-relative">
+          <a href={github.url}>
+            <div style={{ zIndex: 2 }}>
+              <div className="has-padding-top-10">
+                <span className="is-size-2">{github.name.substring(0, 1).toUpperCase()}</span>
+                <span className="is-size-2">{github.name.substring(1, 2)}</span>
+              </div>
+              <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#8E9FA9" style={{ position: "absolute", top: 0, left: 0, right: 0, marginLeft: "auto", marginRight: "auto", zIndex: 1, opacity: 0.10 }} />
+            </div>
+          </a>
+        </div>
         <div className="is-size-5 has-margin-top-10">
           <a href={github.url}>{github.name}</a>
         </div>

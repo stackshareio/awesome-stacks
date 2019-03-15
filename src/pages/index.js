@@ -35,7 +35,7 @@ const IndexPage = ({
           </div>
         </div>
       </div>
-      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20 has-margin-bottom-20">
         <div className="has-text-centered">
           <h3 className="is-size-3 has-text-white">——— Featured Stacks ———</h3>
         </div>

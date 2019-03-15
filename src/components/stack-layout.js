@@ -66,9 +66,9 @@ function StackLayout({ data }) {
         </div>
       </div>
       <div className="has-margin-bottom-100"></div>
-      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+      <div className="has-background-grey has-padding-top-10 has-padding-bottom-10 has-margin-bottom-20">
         <div className="has-text-centered">
-          <h3 className="is-size-3 has-text-white">——— More Stacks ———</h3>
+          <h3 className="is-size-4 has-text-white">——— More Stacks ———</h3>
         </div>
       </div>
       <div className="section">
