@@ -5,12 +5,7 @@ import Card from "./card"
 function StackShare({ name, data, children }) {
   const stackshare = getNode(name, data);
   if (!stackshare) {
-    return (
-      <div className="card is-tool-card">
-        <div className="card-content has-text-centered has-text-danger">
-          {name} not found
-        </div>
-      </div>);
+    return <Card color="danger">{name} not found</Card>
   }
   const stacksMetric = getMetric(`Stacks`, stackshare.stackShareStats);
   const starsMetric = getMetric(`GitHubStars`, stackshare.gitHubStats);

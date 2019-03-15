@@ -138,9 +138,12 @@ exports.onCreateNode = async ({ node,
     const url = `https://stackshare.io/${name}`;
     return { name, url, source: 'StackShare' };
   });
+  // fetch the data from stackshare for each tool
+  // filter out any tools that aren't found
   const stacksharesLoaded = await Promise.all(stackshares.map((stackshare) => {
     return getStackShareTool(stackshare);
-  }));
+  })).filter((tool) => (tool.fullName))
+
   createNodeField({
     name: "stackShareTools",
     node,

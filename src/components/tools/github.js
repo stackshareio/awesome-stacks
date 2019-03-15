@@ -2,24 +2,10 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Card from "./card"
 
-function getNode(name, data) {
-  const edges = data.github.search.edges
-  const edge = edges.find(edge => {
-    return edge.node.nameWithOwner === name
-  })
-  return edge ? edge.node : undefined
-}
-
 function GitHub({ name, data, children }) {
   const github = getNode(name, data)
   if (!github) {
-    return (
-      <div className="card is-tool-card">
-        <div className="card-content has-text-centered has-text-danger">
-          {name} not found
-        </div>
-      </div>
-    )
+    return <Card color="danger">{name} not found</Card>
   }
   return (
     <Card description={children}>
@@ -60,6 +46,14 @@ function GitHub({ name, data, children }) {
       </div>
     </Card>
   )
+}
+
+function getNode(name, data) {
+  const edges = data.github.search.edges
+  const edge = edges.find(edge => {
+    return edge.node.nameWithOwner === name
+  })
+  return edge ? edge.node : undefined
 }
 
 export default GitHub

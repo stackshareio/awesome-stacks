@@ -1,11 +1,11 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Card({ description, children }) {
+function Card({ description, color, children }) {
   return (
     <>
       <div className="card is-tool-card">
-        <div className="card-content has-text-centered">
+        <div className={`card-content has-text-centered ${color ? `has-text-${color}` : ``}`}>
           {children}
         </div>
       </div>
