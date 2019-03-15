@@ -31,7 +31,7 @@ function GitHub({ name, data, children }) {
               color="#8E9FA9"
             />
           </a>
-          <div className="is-size-5 has-margin-top-5">
+          <div className="is-size-5 has-margin-top-10">
             <a href={github.url}>{github.name}</a>
           </div>
           <div className="level is-mobile has-margin-top-20 has-margin-bottom-20">
