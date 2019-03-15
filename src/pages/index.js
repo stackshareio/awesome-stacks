@@ -6,6 +6,7 @@ import StackCard from "../components/stack-card"
 
 const IndexPage = ({
   data: {
+    id,
     site: { siteMetadata: { title, description } },
     allMdx: { edges },
   },

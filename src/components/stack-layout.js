@@ -8,6 +8,7 @@ import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import Tools from "./tools"
 import GitHub from "./tools/github"
 import StackShare from "./tools/stackshare"
+import StackCard from "../components/stack-card"
 
 const MyH1 = props => <><hr /><h1 className="" {...props} /></>
 const components = {
@@ -15,7 +16,15 @@ const components = {
 }
 
 function StackLayout({ data }) {
-  const mdx = data.mdx;
+  const { mdx } = data;
+  const { id } = mdx;
+  const StackCards = data.allMdx.edges.map(edge =>
+    id === edge.node.id ? `` : <div key={edge.node.id} className="container">
+      <StackCard node={edge.node} />
+      <div className="has-margin-bottom-40"></div>
+      <div className="has-margin-bottom-40 has-dotted-line"></div>
+    </div>
+  );
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
@@ -56,13 +65,23 @@ function StackLayout({ data }) {
           </div>
         </div>
       </div>
+      <div className="has-margin-bottom-100"></div>
+      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+        <div className="has-text-centered">
+          <h3 className="is-size-3 has-text-white">——— More Stacks ———</h3>
+        </div>
+      </div>
+      <div className="section">
+        {StackCards}
+        <div className="has-margin-top-40"></div>
+      </div>
     </Layout>
   );
 }
 
 // this will query our new node type which contains all the GitHub and StackShare references
 export const pageQuery = graphql`
-  query StackQuery($id: String, $query: String!) {
+  query($id: String, $query: String!) {
     github {
       search(query: $query, type: REPOSITORY, first: 100) {
         repositoryCount
@@ -95,7 +114,7 @@ export const pageQuery = graphql`
                 edges {
                   node {
                     name
-                    color                    
+                    color
                   }
                 }
               }

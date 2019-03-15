@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Docs from "../snippets/docs"
 import { MDXProvider } from '@mdx-js/tag';
 
-const header = props => <div className="anchor"><a name={`${props.children.replace(/[\ -]/g, ``).toLowerCase()}`}></a><h2 className="" {...props} /></div>
+const header = props => <div className="anchor"><a name={`${props.children.replace(/[ -]/g, ``).toLowerCase()}`}></a><h2>{props.children}</h2></div>
 const components = {
   h2: header
 }
@@ -18,7 +18,7 @@ const ContributingPage = () => (
           <div className="column is-9">
             <div className="content">
               <MDXProvider components={components}>
-              <Docs />
+                <Docs />
               </MDXProvider>
             </div>
           </div>
