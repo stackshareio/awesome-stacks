@@ -20,7 +20,7 @@ Note: if you're using a framework like Rails or CMS like WordPress, or just have
 Algolia is where the data is stored and queried. If you don't know Algolia, it's a hosted search API, and here it's actually fulfilling the role of many pieces we would need in our stack in just one tool. It is a database, query engine, HTTP API and security layer all wrapped up into one package.
 
 <Tools>
-  <StackShare name="algolia" {...props}>
+  <StackShare name="algolia">
     Algolia's Community plan is free up to 10,000 records with unlimited search queries.
   </StackShare>
 </Tools>
@@ -40,16 +40,16 @@ Crawling (or scraping) involves going from page to page on your site and extract
 In this stack, we're just going to look at the crawling approach. For that we'll need to choose a crawler. Here are some of the tools that work well from this, ranging from full-service solutions to simple frameworks that just give you building blocks.
 
 <Tools>
-  <GitHub name="DeuxHuitHuit/algolia-webcrawler" {...props}>
+  <GitHub name="DeuxHuitHuit/algolia-webcrawler">
     Crawls the sitemap and uses CSS selectors to extract elements from the page, then pushes the data to a configured Algolia index. Written in Node.js. 
   </GitHub>
-  <GitHub name="algolia/docsearch" {...props}>
+  <GitHub name="algolia/docsearch">
     An open source project from Algolia that crawls a website and uploads it to an index. Used mostly for documentation but can be adapted to general websites. Based on scrapy, the Python framework. Least work but data model is fixed.
   </GitHub>
-  <GitHub name="scrapy/scrapy" {...props}>
+  <GitHub name="scrapy/scrapy">
     A popular crawling and scraping tool for Python. This will help you get the data off your site, then you'll use an Algolia SDK to upload it. Most work but can do more custom things.
   </GitHub>
-  <GitHub name="matthewmueller/x-ray" {...props}>
+  <GitHub name="matthewmueller/x-ray">
     Like scrapy but for Node.js. Syntax is composable - takes a bit to get used to but if very powerful. Complicated scrapes can be done with very little code.
   </GitHub>
 </Tools>
@@ -66,13 +66,13 @@ In this stack, we're just going to look at the crawling approach. For that we'll
 If you're using a common static site generator to build your site, there’s a good chance Algolia or the community has created an integration you can use, instead of having to write your own script to crawl the site.
 
 <Tools>
-  <GitHub name="algolia/jekyll-algolia" {...props}>
+  <GitHub name="algolia/jekyll-algolia">
     An official Algolia-supported way to create a search for websites based on jekyll.
   </GitHub>
-  <GitHub name="algolia/gatsby-plugin-algolia" {...props}>
+  <GitHub name="algolia/gatsby-plugin-algolia">
     A Gatsby plugin that lets you query for GraphQL site content and convert it into Algolia records, which are uploaded when the site is built.
   </GitHub>
-  <GitHub name="10Dimensional/hugo-algolia" {...props}>
+  <GitHub name="10Dimensional/hugo-algolia">
     For the Hugo users, an alternative to the DocSearch plugin that allows more customization.
   </GitHub>
 </Tools>
@@ -93,19 +93,19 @@ Again, there are several options here. Algolia has tools to build either an auto
 Most likely, you'll want to reach for InstantSearch, either the vanilla JS version or versions custom built for frameworks like React, Vue.js or Angular. Even if you're building something that looks more like an autocomplete, you can still do it with InstantSearch, and then you'll have many more options at your disposal.
 
 <Tools>
-  <GitHub name="algolia/instantsearch.js" {...props}>
+  <GitHub name="algolia/instantsearch.js">
   This is the "vanilla JS" version of InstantSearch, meaning that it doesn't need any JavaScript framework to work.
   </GitHub>
-  <GitHub name="algolia/react-instantsearch" {...props}>
+  <GitHub name="algolia/react-instantsearch">
     The React version of InstantSearch. If you're already using React, maybe through Gatsby, this library will feel very comfortable.
   </GitHub>
-  <GitHub name="algolia/vue-instantsearch" {...props}>
+  <GitHub name="algolia/vue-instantsearch">
     The Vue.js version of InstantSearch.
   </GitHub>
-  <GitHub name="algolia/angular-instantsearch" {...props}>
+  <GitHub name="algolia/angular-instantsearch">
     The Angular version of InstantSearch, compatible with Angular 5 and above.
   </GitHub>
-  <GitHub name="algolia/autocomplete.js" {...props}>
+  <GitHub name="algolia/autocomplete.js">
     Use for a standard drop-down interface, good if you’re putting a search bar in the site header
   </GitHub>
 </Tools>
@@ -122,10 +122,10 @@ Most likely, you'll want to reach for InstantSearch, either the vanilla JS versi
 Here are a few other tools that might come in handy as you build a site search.
 
 <Tools>
-  <GitHub name="stedolan/jq" {...props}>
+  <GitHub name="stedolan/jq">
     A swiss army knife for manipulating JSON on the command line. Useful in scripts to transform records before uploading to Algolia.
   </GitHub>
-  <GitHub name="Shipow/searchbox" {...props}>
+  <GitHub name="Shipow/searchbox">
     Generate the code for a search box that matches your site’s design and colors.
   </GitHub>
 </Tools>

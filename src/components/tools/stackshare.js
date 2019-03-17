@@ -1,9 +1,11 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from "./card"
 import { truncate } from "../../utils"
 
-function StackShare({ name, data, children }) {
+function StackShare({ name, children }) {
+  const data = useStaticQuery(query);
   const stackshare = getNode(name, data);
   if (!stackshare) {
     return <Card color="danger">{name} not found</Card>
@@ -59,13 +61,6 @@ function getMetric(name, metrics) {
   });
 }
 
-function getNode(name, data) {
-  const tools = data.mdx.fields.stackShareTools;
-  return tools.find((tool) => {
-    return tool.name === name;
-  });
-}
-
 function metricsLevelItem(icon, url, value) {
   return (
     <div>
@@ -74,6 +69,32 @@ function metricsLevelItem(icon, url, value) {
       </a>
     </div>
   );
+}
+
+const query = graphql`
+query {
+  allMdx(
+    filter: { fields: { sourceName: { eq: "stacks" } } }
+    ) {
+    edges {
+      node {
+        ...MdxFields
+      }
+    }
+  }
+}
+`
+function getNode(name, data) {
+  var tool;
+  data.allMdx.edges.forEach((edge) => {
+    const tools = edge.node.fields.stackShareTools;
+    tools.forEach((_tool) => {
+      if (_tool.name === name) {
+        tool = _tool;
+      }
+    });
+  });
+  return tool;
 }
 
 export default StackShare

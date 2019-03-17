@@ -1,9 +1,11 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Card from "./card"
 import { truncate } from "../../utils"
 
-function GitHub({ name, data, children }) {
+function GitHub({ name, children }) {
+  const data = useStaticQuery(query);
   const github = getNode(name, data)
   if (!github) {
     return <Card color="danger">{name} not found</Card>
@@ -59,11 +61,31 @@ function GitHub({ name, data, children }) {
   )
 }
 
+const query = graphql`
+query {
+  allMdx(
+    filter: { fields: { sourceName: { eq: "stacks" } } }
+    ) {
+    edges {
+      node {
+        ...MdxFields
+      }
+    }
+  }
+}
+`
+
 function getNode(nameWithOwner, data) {
-  const tools = data.mdx.fields.gitHubTools;
-  return tools.find((tool) => {
-    return tool.nameWithOwner === nameWithOwner;
+  var tool;
+  data.allMdx.edges.forEach((edge) => {
+    const tools = edge.node.fields.gitHubTools;
+    tools.forEach((_tool) => {
+      if (_tool.nameWithOwner === nameWithOwner) {
+        tool = _tool;
+      }
+    });
   });
+  return tool;
 }
 
 export default GitHub
