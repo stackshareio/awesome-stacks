@@ -15,23 +15,23 @@ const StackCard = ({ node }) => (
           {node.frontmatter.description}
         </p>
         <p className="has-margin-top-10">
-          by {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item ])}
+          by {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item])}
         </p>
       </div>
-      <div className="column is-6">
+      <div className="column is-5 is-offset-1">
         <div className="level is-mobile has-margin-top-20">
           {node.fields.stackShareTools.slice(0, 3).map((tool) =>
-            <div className="level-item has-text-centered" key={tool.name}>
+            <div className="level-item has-text-centered justify-left" key={tool.name}>
               <img alt={tool.name} src={tool.logo} className="is-logo"></img>
             </div>
           )}
-          {node.fields.gitHubTools.slice(0, 3).map((tool) =>
-            <div className="level-item has-text-centered" key={tool.name}>
+          {/* {node.fields.gitHubTools.slice(0, 3).map((tool) =>
+            <div className="level-item has-text-centered justify-left" key={tool.name}>
               <div>
                 <FontAwesomeIcon icon={["fab", "github"]} size="4x" color="#8E9FA9" />
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
