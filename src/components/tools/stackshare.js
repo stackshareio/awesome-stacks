@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from "./card"
+import { truncate } from "../../utils"
 
 function StackShare({ name, data, children }) {
   const stackshare = getNode(name, data);
@@ -39,10 +40,10 @@ function StackShare({ name, data, children }) {
           <div className="level-item has-text-right">
             <div>
               <div>
-                <a className="tag" href={stackshare.group.url}>{stackshare.group.name}</a>
+                <a className="tag is-grey" href={stackshare.group.url}>{truncate(stackshare.group.name)}</a>
               </div>
               <div>
-                <a className="tag" href={stackshare.category.url}>{stackshare.category.name}</a>
+                <a className="tag is-grey" href={stackshare.category.url}>{truncate(stackshare.category.name)}</a>
               </div>
             </div>
           </div>

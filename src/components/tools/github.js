@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Card from "./card"
+import { truncate } from "../../utils"
 
 function GitHub({ name, data, children }) {
   const github = getNode(name, data)
@@ -45,8 +46,8 @@ function GitHub({ name, data, children }) {
             <div>
               {github.repositoryTopics.edges.map(edge => (
                 <div key={edge.node.topic.name}>
-                  <a className="tag" href={edge.node.url}>
-                    #{edge.node.topic.name}
+                  <a className="tag is-grey" href={edge.node.url}>
+                    #{truncate(edge.node.topic.name)}
                   </a>
                 </div>
               ))}
