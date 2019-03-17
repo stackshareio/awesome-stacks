@@ -118,9 +118,35 @@ export const mdxQuery = graphql`
       }
       gitHubTools {
         name
-        repoName
-        source
+        nameWithOwner
+        description
+        descriptionHTML
+        stargazers {
+          totalCount
+        }
+        repositoryTopics {
+          edges {
+            node {
+              topic {
+                name
+              }
+            }
+          }
+        }
+        forks {
+          totalCount
+        }
+        updatedAt
         url
+        homepageUrl
+        languages {
+          edges {
+            node {
+              name
+              color
+            }
+          }
+        }
       }
     }
   }

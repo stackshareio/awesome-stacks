@@ -3,6 +3,12 @@ const { JSDOM } = require("jsdom");
 const { createFilePath } = require("gatsby-source-filesystem");
 const Xray = require('x-ray');
 
+const { ApolloClient } = require('apollo-boost');
+const { HttpLink } = require('apollo-link-http');
+const { InMemoryCache } = require('apollo-cache-inmemory');
+const fetch = require('node-fetch');
+const gql = require('graphql-tag');
+
 var x = Xray({
   filters: {
     trim: function (value) {
@@ -27,6 +33,60 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       modules: [path.resolve(__dirname, "src"), "node_modules"],
     },
   })
+}
+
+function getGitHubTool({ owner, name }) {
+  const client = new ApolloClient({
+    link: new HttpLink({
+      uri: 'https://api.github.com/graphql', fetch, headers: {
+        Authorization: `bearer ${process.env.GITHUB_ACCESS_TOKEN}`
+      }
+    }),
+    cache: new InMemoryCache()
+  });
+  return client.query({
+    variables: { owner, name },
+    query: gql`
+query($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    name
+    nameWithOwner
+    description
+    descriptionHTML
+    stargazers {
+      totalCount
+    }
+    repositoryTopics(first: 3) {
+      edges {
+        node {
+          topic {
+            name
+          }
+        }
+      }
+    }
+    forks {
+      totalCount
+    }
+    updatedAt
+    url
+    homepageUrl
+    languages(first: 1) {
+      edges {
+        node {
+          name
+          color
+        }
+      }
+    }
+  }
+}
+  `,
+  })
+    .then(({ data: { repository } }) => {
+      return repository;
+    })
+    .catch(error => console.error(error));
 }
 
 function getStackShareTool({ name, url, source }) {
@@ -122,21 +182,23 @@ exports.onCreateNode = async ({ node,
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
   const githubs = (nodeContent.match(/<GitHub [^>]+>/g) || []).map((toolTag) => {
-    const name = (new JSDOM(toolTag)).window.document.querySelector("GitHub").attributes['name'].value;
-    const [orgName, repoName] = name.split('/');
-    const url = `https://github.com/${name}`;
-    return { name, orgName, repoName, url, source: 'GitHub' };
+    const nameWithOwner = (new JSDOM(toolTag)).window.document.querySelector("GitHub").attributes['name'].value;
+    const [owner, name] = nameWithOwner.split('/');
+    return { owner, name };
   });
+  const githubsLoaded = await Promise.all(githubs.map((github) => {
+    return getGitHubTool(github);
+  })).filter((tool) => (tool));
   createNodeField({
     name: "gitHubTools",
     node,
-    value: githubs
+    value: githubsLoaded
   });
 
   const stackshares = (nodeContent.match(/<StackShare [^>]+>/g) || []).map((toolTag) => {
     const name = (new JSDOM(toolTag)).window.document.querySelector("StackShare").attributes['name'].value;
     const url = `https://stackshare.io/${name}`;
-    return { name, url, source: 'StackShare' };
+    return { name, url };
   });
   // fetch the data from stackshare for each tool
   // filter out any tools that aren't found
@@ -165,10 +227,6 @@ exports.createPages = ({ graphql, actions }) => {
                   id
                   fields {
                     slug
-                    gitHubTools {
-                      name
-                      source
-                    }
                   }
                 }
               }
@@ -181,11 +239,10 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
         result.data.allMdx.edges.forEach(({ node }) => {
-          const query = node.fields.gitHubTools.map((tool) => `repo:${tool.name}`).join(' ');
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/components/stack-layout.js`),
-            context: { id: node.id, query }
+            context: { id: node.id }
           });
         });
       })

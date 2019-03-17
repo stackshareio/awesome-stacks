@@ -81,48 +81,7 @@ function StackLayout({ data }) {
 
 // this will query our new node type which contains all the GitHub and StackShare references
 export const pageQuery = graphql`
-  query($id: String, $query: String!) {
-    github {
-      search(query: $query, type: REPOSITORY, first: 100) {
-        repositoryCount
-        edges {
-          node {
-            ... on GitHub_Repository {
-              name
-              nameWithOwner
-              description
-              descriptionHTML
-              stargazers {
-                totalCount
-              }
-              repositoryTopics(first: 3) {
-                edges {
-                  node {
-                    topic {
-                      name
-                    }
-                  }
-                }
-              }
-              forks {
-                totalCount
-              }
-              updatedAt
-              url
-              homepageUrl
-              languages(first: 1) {
-                edges {
-                  node {
-                    name
-                    color
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  query($id: String!) {
     mdx(id: { eq: $id }) {
       ...MdxFields
     }

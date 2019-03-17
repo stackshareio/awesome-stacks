@@ -59,12 +59,11 @@ function GitHub({ name, data, children }) {
   )
 }
 
-function getNode(name, data) {
-  const edges = data.github.search.edges
-  const edge = edges.find(edge => {
-    return edge.node.nameWithOwner === name
-  })
-  return edge ? edge.node : undefined
+function getNode(nameWithOwner, data) {
+  const tools = data.mdx.fields.gitHubTools;
+  return tools.find((tool) => {
+    return tool.nameWithOwner === nameWithOwner;
+  });
 }
 
 export default GitHub
