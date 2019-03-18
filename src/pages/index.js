@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StackCard from "../components/stack-card"
+import Contributors from "../components/contributors";
 
 const IndexPage = ({
   data: {
-    id,
     site: { siteMetadata: { title, description } },
     allMdx: { edges },
   },
@@ -18,6 +18,7 @@ const IndexPage = ({
       <div className="has-margin-bottom-40 has-dotted-line"></div>
     </div>
   );
+  const contributors = getContributors(edges);
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
@@ -35,14 +36,23 @@ const IndexPage = ({
           </div>
         </div>
       </div>
-      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20 has-margin-bottom-20">
+      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
         <div className="has-text-centered">
           <h3 className="is-size-3 has-text-white">——— Featured Stacks ———</h3>
         </div>
       </div>
       <div className="section">
         {StackCards}
-        <div className="has-margin-top-40"></div>
+        <div className="has-margin-bottom-20"></div>
+      </div>
+      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+        <div className="has-text-centered">
+          <h3 className="is-size-3 has-text-white">——— Contributors ———</h3>
+        </div>
+      </div>
+      <div className="has-margin-top-20">
+        <Contributors contributors={contributors} />
+        <div className="has-margin-bottom-40"></div>
       </div>
     </Layout>);
 }
@@ -79,10 +89,6 @@ export const mdxQuery = graphql`
     }
     frontmatter {
       title
-      contributors {
-        name
-        url
-      }
       description
       date(formatString: "MMMM D, YYYY")
     }
@@ -90,6 +96,12 @@ export const mdxQuery = graphql`
       body
     }
     fields {
+      contributors {
+        login
+        name
+        avatarUrl
+        url
+      }
       stackShareTools {
         name
         fullName
@@ -151,5 +163,19 @@ export const mdxQuery = graphql`
     }
   }
 `
+
+function getContributors(edges) {
+  var array = [];
+  edges.forEach((edge) => {
+    const contributors = edge.node.fields.contributors;
+    contributors.forEach((contributor) => {
+      array.push(contributor);
+    });
+  });
+  return Object.values(array.reduce((memo, contributor) => {
+    memo[contributor.login] = contributor;
+    return memo;
+  }, {}));
+}
 
 export default IndexPage

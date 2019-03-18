@@ -35,8 +35,8 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-function getGitHubTool({ owner, name }) {
-  const client = new ApolloClient({
+function getApolloClient() {
+  return new ApolloClient({
     link: new HttpLink({
       uri: 'https://api.github.com/graphql', fetch, headers: {
         Authorization: `bearer ${process.env.GITHUB_ACCESS_TOKEN}`
@@ -44,7 +44,10 @@ function getGitHubTool({ owner, name }) {
     }),
     cache: new InMemoryCache()
   });
-  return client.query({
+}
+
+function getGitHubTool({ owner, name }) {
+  return getApolloClient().query({
     variables: { owner, name },
     query: gql`
 query($owner: String!, $name: String!) {
@@ -85,8 +88,32 @@ query($owner: String!, $name: String!) {
   })
     .then(({ data: { repository } }) => {
       return repository;
-    })
-    .catch(error => console.error(error));
+    }).catch((err) => {
+      console.error(err);
+      return;
+    });;
+}
+
+function getGitHubUser(login) {
+  return getApolloClient().query({
+    variables: { login },
+    query: gql`
+query($login: String!) {
+  user(login: $login) {
+    login
+    name
+    avatarUrl
+    url
+  }
+}
+  `,
+  })
+    .then(({ data: { user } }) => {
+      return user;
+    }).catch((err) => {
+      console.error(err);
+      return;
+    });
 }
 
 function getStackShareTool({ name, url, source }) {
@@ -170,6 +197,11 @@ exports.onCreateNode = async ({ node,
     });
   }
 
+  // only process front matter for stacks
+  if (parent.sourceInstanceName !== `stacks`) {
+    return
+  }
+
   // set the slug b/c outside /src/pages
   // https://gatsby-mdx.netlify.com/guides/programmatically-creating-pages
   const slugValue = createFilePath({ node, getNode });
@@ -178,6 +210,16 @@ exports.onCreateNode = async ({ node,
     node,
     value: slugValue
   });
+
+  const contributors = node.frontmatter.contributors;
+  if (contributors) {
+    const contributorsLoaded = await Promise.all(contributors.map(getGitHubUser)).filter(user => user);
+    createNodeField({
+      name: "contributors",
+      node,
+      value: contributorsLoaded
+    });
+  }
 
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
@@ -188,7 +230,7 @@ exports.onCreateNode = async ({ node,
   });
   const githubsLoaded = await Promise.all(githubs.map((github) => {
     return getGitHubTool(github);
-  })).filter((tool) => (tool));
+  })).filter(tool => tool);
   createNodeField({
     name: "gitHubTools",
     node,
@@ -204,7 +246,7 @@ exports.onCreateNode = async ({ node,
   // filter out any tools that aren't found
   const stacksharesLoaded = await Promise.all(stackshares.map((stackshare) => {
     return getStackShareTool(stackshare);
-  })).filter((tool) => (tool.fullName))
+  })).filter(tool => tool.fullName)
 
   createNodeField({
     name: "stackShareTools",

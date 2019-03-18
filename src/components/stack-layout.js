@@ -39,7 +39,7 @@ function StackLayout({ data }) {
               <div className="column is-4 has-text-right" style={{ marginTop: `auto` }}>
                 <ul>
                   <li>
-                    Contributed by {mdx.frontmatter.contributors.map(contributor => <a key={contributor.name} href={contributor.url} className="is-strong">@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item])}
+                    Contributed by {mdx.fields.contributors.map(contributor => <a key={contributor.login} href={contributor.url} className="is-strong">@{contributor.login}</a>).map((item, index) => [index > 0 && ' ', item])}
                   </li>
                   <li>
                     Last updated: {mdx.parent.modifiedTime}

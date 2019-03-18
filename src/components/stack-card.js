@@ -15,7 +15,7 @@ const StackCard = ({ node }) => (
           {node.frontmatter.description}
         </p>
         <p className="has-margin-top-10">
-          by {node.frontmatter.contributors.map(contributor => <a href={contributor.url} key={contributor.name}>@{contributor.name}</a>).map((item, index) => [index > 0 && ' ', item])}
+          by {node.fields.contributors.map(contributor => <a href={contributor.url} key={contributor.login}>@{contributor.login}</a>).map((item, index) => [index > 0 && ' ', item])}
         </p>
       </div>
       <div className="column is-5 is-offset-1">
