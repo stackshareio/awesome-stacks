@@ -35,6 +35,7 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
+    "react-tweet-embed": "^1.1.1",
     "sharp": "^0.21.3",
     "x-ray": "^2.3.3"
   },

@@ -29,7 +29,7 @@ const Footer = () => (
     }
     query={graphql`
       query {
-        footerImage: file(relativePath: { eq: "stackshare-logo-white.png" }) {
+        footerImage: file(relativePath: { eq: "stackshare-logo-black.png" }) {
           childImageSharp {
             fixed(height: 24) {
               ...GatsbyImageSharpFixed
