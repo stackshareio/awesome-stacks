@@ -42,6 +42,7 @@ query {
   site {
     siteMetadata {
       repository
+      techStack
     }
   }
   stackShareLogo: file(relativePath: { eq: "stackshare-logo.png" }) {

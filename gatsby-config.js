@@ -5,7 +5,8 @@ module.exports = {
     title: `Awesome Stacks`,
     description: `Discover working tech stacks for all kinds of applications.`,
     author: `@dzello`,
-    repository: `https://github.com/stackshareio/awesome-stacks`
+    repository: `https://github.com/stackshareio/awesome-stacks`,
+    techStack: `https://stackshare.io/dzello/awesome-stacks`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

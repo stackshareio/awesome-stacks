@@ -10,7 +10,7 @@ import StackCard from "./stack-card"
 import GitHub from "./stacks/github"
 import StackShare from "./stacks/stackshare"
 
-const MyH1 = props => <><hr /><h1 className="" {...props} /></>
+const MyH1 = props => <><hr /><h1>{props.children}</h1></>
 const components = {
   h1: MyH1
 }
@@ -40,7 +40,7 @@ function StackLayout({ data }) {
                 <div style={{ alignSelf: "flex-start" }}>
                   {mdx.fields.contributors.slice(0, 4).map((contributor) => (
                     <a key={contributor.login} href={contributor.url} style={{ display: "inline-block", margin: "2px" }}>
-                      <img style={{ width: "36px", height: "36px", borderRadius: "10px" }} src={contributor.avatarUrl} />
+                      <img alt={`${contributor.login}`} style={{ width: "36px", height: "36px", borderRadius: "10px" }} src={contributor.avatarUrl} />
                     </a>
                   ))}
                 </div>
