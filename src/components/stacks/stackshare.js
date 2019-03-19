@@ -31,7 +31,7 @@ function StackShare({ name, children }) {
         {stackshare.tagline}
       </div>
       <div className="is-bottom">
-        <div className="level is-mobile has-margin-bottom-20 has-overflow-hidden">
+        <div className="level is-mobile has-overflow-hidden">
           <div className="level-item has-text-left">
             <div>
               {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}/in-stacks`, stacksMetric.value) : ``}
