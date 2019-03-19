@@ -1,61 +1,217 @@
-# Contribution Guide
+# Docs & contributing
 
-Awesome Stacks is a list of tech stacks that are known to work great for building a certain thing. Each stack is created and maintained by developers in the community. This site lives on GitHub and managed via issues and pull requests.
+Welcome! Maybe you've got a stack you can't wait to tell the world about, or maybe you just spotted a typo. Either way, you're in the right place. This guide will give you an overview of how to contribute to Awesome Stacks in a few different ways, while also providing an overview of how the project is built and how to run it locally.
 
-There are two main forms of contribution:
+The project and the guide aim to be beginner-friendly. Together, our goal is to have Awesome Stacks for many different types of applications, that help explain how they’re built and make them more approachable.
 
-- Submit a new stack
-- Improve an existing stack
+# Ways to contribute
+Depending on your time and motivation, there are a few ways to get involved.
 
-This documentation will show you how to do both.
+#### Create a stack
 
-## Overview
+The big contribution we’re looking for right now is new stacks. To help you do that, we’ve created a [step-by-step guide](#guide) that you can follow below.
 
-Awesome Stacks is built with:
+Stacks should describe the overall feature or application that can be built, along with a list of relevant tools and descriptions about the role that each one plays. We recommend that each stack at least have an introduction, 3 or more categories of tools, and several “further reading” resources for each category. Stacks should not be too generic like “A web application” nor too specific like “An embeddable map of Ocean Beach”. Improved titles would be “A blog in Rust” or “An embeddable neighborhood map.”
 
-- Gatsby
-- MDX (Markdown + JSX)
-- StackShare API
-- GitHub API
+#### Improve a stack
 
-See all the tools in this stack [on StackShare](https://stackshare.io/).
+The best way to build certain features and applications regularly changes. Each awesome stack is an evolving document that should be kept up to date by adding new tools, categories and resources where it makes sense.
 
-## Setup
+#### Bugs and enhancements
 
-Coming soon!
+Spotted a bug? Something broken in IE? Please open a GitHub issue. Please also do this if you want to discuss content on an awesome stack that you feel could be improved (a PR is recommended in that case as well).
+
+# Tech stack
+
+Awesome Stacks is built with the static site generator [Gatsby](https://stackshare.io/gatsby), and uses [React](https://stackshare.io/react) and [GraphQL](https://stackshare.io/GraphQL) under the hood. The UI framework [Bulma](https://stackshare.io/bulma) and [Sass](https://stackshare.io/Sass) are used for styling. Each stack is written up in Markdown and new technology [MDX](https://mdxjs.com/), which allows the Markdown to also contain React components written in JSX.
+
+Here’s what a snippet of an awesome stack looks like. You’ll see that it’s just markdown with some JSX to provide some extra powers:
+
+```markdown
+---
+description: Build a search for general website content using Algolia and a crawler
+title: Site search with Algolia
+contributors:
+  - dzello
+---
+
+# Search Engine
+
+Algolia is where the data is stored and queried. If you don't know Algolia, it's a hosted search API, and here it's actually fulfilling the role of many pieces we would need in our stack in just one tool. It’s a database, query engine, HTTP API and security layer all wrapped up into one package.
+
+<Tools>
+  <StackShare name="Algolia">
+    Algolia's Community plan is free up to 10,000 records with unlimited search queries.
+  </StackShare>
+</Tools>
+```
+
+You may have noticed the rectangular tool cards that appear throughout the awesome stacks. These automatically pull in data from GitHub and StackShare. With MDX, adding these to your awesome stack is as simple as writing JSX tags like you see above:
+
+```jsx
+<StackShare name=”Algolia” />
+<GitHub name=”algolia/instantsearch.js” />
+```
+
+## Project structure
+
+Within the [Awesome Stacks GitHub repository](https://github.com/stackshareio/awesome-stacks), you’ll find a typical directory structure for a Gatsby site. See [Gatsby project structure](https://www.gatsbyjs.org/docs/gatsby-project-structure/) to learn more about Gatsby files in general.
+
+For this project, MDX files for stacks live in `src/stacks` - one per stack.
+The code that fetches data from GitHub and StackShare lives in `gatsby-node.js`
+React components that can be added to stacks (e.g. `GitHub`, `StackShare`) live in `components/stacks`.
+
+# Guides
 
 ## Create a stack
 
-Here is a list of fields to populate in the front matter of your stack.
+This guide will walk you through the process of creating and submitting a new awesome stack, starting with how to get your environment up and running.
 
-- `title`
-- `description`
-- `collaborators`
-- `date`
+As an added bonus, you’ll learn how to run and make changes to a Gatsby site and see how to use the GitHub GraphQL API from within Gatsby.
+
+#### Setup local environment
+
+First, make sure you have the following prerequisites installed:
+
+- GitHub account
+- Command line with git
+- Node.js and NPM
+
+Next, head to GitHub and fork the [Awesome Stacks repository](https://github.com/stackshareio/awesome-stacks).
+
+TODO: IMAGE
+
+Next, clone your fork. Substitute `{username}` for your GitHub username in the command below:
+
+```shell
+git clone git@github.com:{username}/awesome-stacks.git
+```
+
+Now, change into the awesome-stacks directory and install dependencies with NPM:
+
+```shell
+cd awesome-stacks
+npm install
+```
+
+#### Generate GitHub personal access token
+
+Before you can build the site, you’ll need to provision a GitHub access token and set it as an environment variable. There’s a [guide here](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) that’ll take you through it. The short version is:
+
+- Go to the GitHub [personal access tokens settings page](https://github.com/settings/tokens)
+- Click the `Generate new token` button
+
+On the next screen, give the token a name like `awesome-stacks`:
+
+TODO: IMAGE
+
+Then scroll down and click Submit. You don’t need to check any of the checkboxes. On the next page you’ll see your shiny new token. Copy it to your clipboard.
+
+Back in your awesome-stacks project directory, create a file called `.env.development` in the project root. Paste the following in that file, substituting for the access token you just copied:
+
+```shell
+GITHUB_ACCESS_TOKEN=<YOUR_NEW_TOKEN>
+```
+
+#### Run Gatsby
+
+Now you’re ready to run the site. Type:
+
+```shell
+npm start
+```
+
+Under the hood, this will run `gatsby develop`. Wait a few seconds for the initialization to finish. Once it’s complete, you can visit [localhost:8000](http://localhost:8000) and see the same site as you see here on awesomestacks.dev.
+
+#### Create an MDX file
+
+On the command line or in your favorite code editor, create a file called `my-awesome-stack.mdx` in the `src/stacks` directory. If you were creating a real stack the file name would be different, but let’s go with this for now.
+
+Open `my-awesome-stack.mdx` in your editor and give it some YAML frontmatter:
+
+```yaml
+---
+title: My Awesome Stack
+description: A set of tools for building this awesome new thing
+contributors: 
+dzello
+---
+```
+
+The fields `title`, `description` and `contributors` are required and used to build the page. Replace `dzello` with your own GitHub username in the `contributors` array.
+
+Save the file and point your browser to [http://localhost:8000/my-awesome-stack](http://localhost:8000/my-awesome-stack). You should see 
+
+TODO: IMAGE
+
+Now, add some markdown to the page:
+
+```markdown
+# Introduction
+
+This awesome stack shows you all the tools and libraries you’ll need to build a personal portfolio site with Gatsby.
+
+```
+
+Each time you save the markdown file, you should see changes appear in the browser instantly.
+
+#### Adding tool cards with JSX
+
+Awesome Stacks can automatically include links and metadata for tools in the stack in the form of rectangular tool cards. This saves authors precious time copying and pasting and gives readers a good jumping off point to learn more.
+
+All this is done with React components specified in JSX syntax inside of the markdown. Let’s see this in action. To your `my-awesome-stacks.mdx` file, add the following after the introduction:
+
+```markdown
+
+# Frameworks
+
+Here are a few of the frameworks you’ll need to get to know to build this stack.
+
+<Tools>
+  <StackShare name=”Gatsby”>Builds web pages that are fast by default from static and dynamic content.</StackShare>
+  <StackShare name=”React”>With Gatsby, you write your components in React and have access to everything the React world has to offer.</StackShare>
+  <GitHub name=”mdx-js/mdx”>MDX lets you put React components inside of your markdown, adding way more possibilities for your blog.</GitHub>
+</Tools>
+
+```
+
+The `<Tools>` components wraps the lists of tool in a responsive container, so they can be displayed properly at a variety of screen sizes. You should always surround your tools with this tag so they display properly.
+
+#### Adding GitHub tools
+
+Use the `<GitHub>` component, setting the `name` attribute to the `{owner}/{name}` pair that uniquely represents a repository on GitHub.
+
+```jsx
+<GitHub name=”lovell/sharp”>A library for processing images that integrates perfectly into Gatsby, helps keep your images lean and your site fast.</GitHub>
+```
+
+Use the [GitHub search](https://github.com/search) to help you find GitHub tools to add to your awesome stack.
+
+#### Adding StackShare tools
+
+Use the `<StackShare>` component, setting the `name` attribute to the path to it’s StackShare page, e.g. `https://stackshare.io/{name}`.
+
+```jsx
+ <StackShare name=”Gatsby”>Builds web pages that are fast by default from static and dynamic content.</StackShare>
+```
+
+Use the [StackShare search](https://stackshare.io/search) to help you find StackShare tools to add to your awesome stack.
+
+#### Adding Resources
+
+Within each category of the awesome stack, we recommend adding a bulleted list of resources that the reader can use to get more information. Creating this list is done just with normal markdown and a consistent “Resources” H2 header:
+
+```markdown
+## Resources
+
+- [The Gatsby Starter Blog](https://gatsby-starter-blog-demo.netlify.com/)
+- [Image Processing with gatsby-transformer-sharp](https://image-processing.gatsbyjs.org/)
+```
+
+#### Commit changes
 
 Coming soon!
 
-## Add tools
-
-### StackShare
-
-This MDX component adds a tile for a StackShare tool.
-
-```jsx
-<StackShare name="algolia" {...props}>
-  A fully hosted service to index and query data, with a lot of official and community clients, integrations and UI-building tools
-</StackShare>
-```
-
-### GitHub
-```jsx
-<GitHub name="scrapy/scrapy" {...props}>
-  The de facto scraper for Python, easy to use with a lot of features.
-</GitHub>
-```
-
-Coming soon!
-
-## Review
+#### Open a pull request
 
 Coming soon!

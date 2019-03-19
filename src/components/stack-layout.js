@@ -6,9 +6,9 @@ import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
 import Tools from "./tools"
-import GitHub from "./tools/github"
-import StackShare from "./tools/stackshare"
-import StackCard from "../components/stack-card"
+import StackCard from "./stack-card"
+import GitHub from "./stacks/github"
+import StackShare from "./stacks/stackshare"
 
 const MyH1 = props => <><hr /><h1 className="" {...props} /></>
 const components = {
