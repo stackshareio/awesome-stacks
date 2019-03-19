@@ -6,7 +6,13 @@
 
 > Working tech stacks for all kinds of applications, inspired by [awesome.re](http://awesome.re).
 
-## Stacks
+Awesome Stacks is a community-curated list of tech stacks that are known to work well for building different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/). We made it to make working with new stacks less scary.
+
+## Contents
 
 - [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
 - [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) as well as the the [on-site documentation](https://awesomestacks.dev/docs) for philosophy, step-by-step guides and more information.
