@@ -5,7 +5,7 @@ function Card({ description, color, children }) {
   return (
     <>
       <div className="card is-tool-card">
-        <div className={`card-content has-text-centered ${color ? `has-text-${color}` : ``}`}>
+        <div className={`card-content ${color ? `has-text-${color}` : ``}`}>
           {children}
         </div>
       </div>

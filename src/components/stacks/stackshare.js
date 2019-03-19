@@ -21,13 +21,13 @@ function StackShare({ name, children }) {
             <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
           </a>
         </div>
-        <div className="is-size-5 has-margin-top-5">
+        <div className="is-size-5 has-margin-top-5 has-text-centered">
           <a href={stackshare.url}>
             {stackshare.fullName}
           </a>
         </div>
       </div>
-      <div className="is-size-7 has-margin-top-5 is-middle">
+      <div className="is-size-7 has-margin-top-5 is-middle has-text-centered">
         {stackshare.tagline}
       </div>
       <div className="is-bottom">
