@@ -15,7 +15,7 @@ const AboutPage = () => {
           <div className="columns">
             <div className="column is-10">
               <div className="content">
-                <About />
+                <About data={data} />
               </div>
               <div className="level has-margin-top-40">
                 <div className="level-item">
@@ -39,6 +39,11 @@ const AboutPage = () => {
 
 const query = graphql`
 query {
+  site {
+    siteMetadata {
+      repository
+    }
+  }
   stackShareLogo: file(relativePath: { eq: "stackshare-logo.png" }) {
     childImageSharp {
       fixed(height: 28) {
