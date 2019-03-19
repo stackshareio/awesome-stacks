@@ -1,22 +1,17 @@
 ---
-description: Build a search for general website content using Algolia and a crawler
+description: Build a search for general website content using Algolia and a crawler.
 title: Site search with Algolia
-date: 2019-03-09
+createdAt: 2019-03-09
+updatedAt: 2019-03-18
 contributors:
   - dzello
 ---
 
 # Introduction
 
-Need a site search? If you have content that you want users to find, the answer is yes! Thankfully it's not hard to add a basic site search using Algolia, even if your content doesn't live in a well-organized CMS or database.
-
-This awesome stack is a collection of all of the various tools you'll need to crawl and scrape your site's content, upload it to Algolia, then add a search box to your UI.
-
-Note: if you're using a framework like Rails or CMS like WordPress, or just have your content neatly organized in a database, there's likely a better way to get your data into Algolia than crawling your site. See the [Algolia sending data docs](https://www.algolia.com/doc/guides/sending-and-managing-data/send-and-update-your-data/) for more information.
+Need a site search? If you have content that you want users to find, the answer is yes! Thankfully it's not hard to add a basic site search using Algolia, even if your content doesn't live in a well-organized CMS or database. This awesome stack is a collection of all of the various tools you'll need to crawl and scrape your site's content, upload it to Algolia, then add a search box to your UI.
 
 # Search Engine
-
-Algolia is where the data is stored and queried. If you don't know Algolia, it's a hosted search API, and here it's actually fulfilling the role of many pieces we would need in our stack in just one tool. It is a database, query engine, HTTP API and security layer all wrapped up into one package.
 
 <Tools>
   <StackShare name="Algolia">
@@ -28,28 +23,21 @@ Algolia is where the data is stored and queried. If you don't know Algolia, it's
 
 - [Algolia Docs - How Algolia Works](https://www.algolia.com/doc/guides/getting-started/how-algolia-works/)
 - [Algolia Docs - Prepare Your Data - Format and Structure](https://www.algolia.com/doc/guides/sending-and-managing-data/prepare-your-data/)
-- [Algolia Docs - Send and Update Your Data](https://www.algolia.com/doc/guides/sending-and-managing-data/send-and-update-your-data/)
 
 # Crawling
-
-Even though Algolia API fulfills many roles, there are still many other parts of a site search implementation. A major one is how data gets into the search engine. There are two different approaches to doing this—crawling and uploading.
-
-Crawling (or scraping) involves going from page to page on your site and extracting the text. Uploading involves reading records and fields directly out of the database and converting them into a structured format like JSON. For simple sites or text-heavy sites like blog, crawling might work just fine. For a record-heavy site like a music catalog or e-commerce shop, uploading is likely to result in a better search experience.
-
-In this stack, we're just going to look at the crawling approach. For that we'll need to choose a crawler. Here are some of the tools that work well from this, ranging from full-service solutions to simple frameworks that just give you building blocks.
 
 <Tools>
   <GitHub name="DeuxHuitHuit/algolia-webcrawler">
     Crawls the sitemap and uses CSS selectors to extract elements from the page, then pushes the data to a configured Algolia index. Written in Node.js. 
   </GitHub>
   <GitHub name="algolia/docsearch">
-    An open source project from Algolia that crawls a website and uploads it to an index. Used mostly for documentation but can be adapted to general websites. Based on scrapy, the Python framework. Least work but data model is fixed.
+    An open source project from Algolia that crawls a website and uploads it to an index. Used mostly for documentation but can be adapted to general websites.
   </GitHub>
   <GitHub name="scrapy/scrapy">
-    A popular crawling and scraping tool for Python. This will help you get the data off your site, then you'll use an Algolia SDK to upload it. Most work but can do more custom things.
+    A popular crawling and scraping tool for Python. This will help you get the data off your site, then you'll use an Algolia SDK to upload it.
   </GitHub>
   <GitHub name="matthewmueller/x-ray">
-    Like scrapy but for Node.js. Syntax is composable - takes a bit to get used to but if very powerful. Complicated scrapes can be done with very little code.
+    Like scrapy but for Node.js. Syntax is composable - takes a bit to get used to but if very powerful.
   </GitHub>
 </Tools>
 
@@ -62,14 +50,14 @@ In this stack, we're just going to look at the crawling approach. For that we'll
 
 # Static site integrations
 
-If you're using a common static site generator to build your site, there’s a good chance Algolia or the community has created an integration you can use, instead of having to write your own script to crawl the site.
+If you're using a common static site generator to build your site, there’s a good chance Algolia or the community has created a pre-built integration you can use.
 
 <Tools>
   <GitHub name="algolia/jekyll-algolia">
     An official Algolia-supported way to create a search for websites based on jekyll.
   </GitHub>
   <GitHub name="algolia/gatsby-plugin-algolia">
-    A Gatsby plugin that lets you query for GraphQL site content and convert it into Algolia records, which are uploaded when the site is built.
+    A Gatsby plugin that lets you query for GraphQL site content and convert it into Algolia records.
   </GitHub>
   <GitHub name="10Dimensional/hugo-algolia">
     For the Hugo users, an alternative to the DocSearch plugin that allows more customization.
@@ -85,18 +73,12 @@ If you're using a common static site generator to build your site, there’s a g
 
 # User interface
 
-Everything up until now has been focused on how the site content gets to Algolia. Now, let's talk about how the search box and other search UI features get added.
-
-Again, there are several options here. Algolia has tools to build either an autocomplete-style search that works well in a nav bar, or a full-page search with their InstantSearch library.
-
-Most likely, you'll want to reach for InstantSearch, either the vanilla JS version or versions custom built for frameworks like React, Vue.js or Angular. Even if you're building something that looks more like an autocomplete, you can still do it with InstantSearch, and then you'll have many more options at your disposal.
-
 <Tools>
   <GitHub name="algolia/instantsearch.js">
   This is the "vanilla JS" version of InstantSearch, meaning that it doesn't need any JavaScript framework to work.
   </GitHub>
   <GitHub name="algolia/react-instantsearch">
-    The React version of InstantSearch. If you're already using React, maybe through Gatsby, this library will feel very comfortable.
+    If you're already using React, maybe through Gatsby, this library will feel very comfortable.
   </GitHub>
   <GitHub name="algolia/vue-instantsearch">
     The Vue.js version of InstantSearch.
@@ -113,16 +95,13 @@ Most likely, you'll want to reach for InstantSearch, either the vanilla JS versi
 
 - [Algolia Docs - What is InstantSearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/)
 - [Video - Build an instant search result page](https://www.youtube.com/watch?v=lN0-mnwyfrE)
-- [InstantSearch for different frameworks](https://community.algolia.com/#instantsearch)
 - [Search interface - 20 things to consider](https://uxplanet.org/search-interface-20-things-to-consider-4b1466e98881)
 
 # Utilities
 
-Here are a few other tools that might come in handy as you build a site search.
-
 <Tools>
   <GitHub name="stedolan/jq">
-    A swiss army knife for manipulating JSON on the command line. Useful in scripts to transform records before uploading to Algolia.
+    A swiss army knife for manipulating JSON on the command line. Useful to transform records before uploading to Algolia.
   </GitHub>
   <GitHub name="Shipow/searchbox">
     Generate the code for a search box that matches your site’s design and colors.
