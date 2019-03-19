@@ -42,7 +42,7 @@ function StackLayout({ data }) {
                     Contributed by {mdx.fields.contributors.map(contributor => <a key={contributor.login} href={contributor.url} className="is-strong">@{contributor.login}</a>).map((item, index) => [index > 0 && ' ', item])}
                   </li>
                   <li>
-                    Last updated: {mdx.parent.modifiedTime}
+                    Last updated: {mdx.frontmatter.updatedAt}
                   </li>
                 </ul>
               </div>
@@ -86,7 +86,7 @@ export const pageQuery = graphql`
       ...MdxFields
     }
     allMdx(
-      sort: { order: DESC, fields: [frontmatter___date] },
+      sort: { order: DESC, fields: [frontmatter___createdAt] },
       filter: { fields: { sourceName: { eq: "stacks" } } }
       ) {
       edges {

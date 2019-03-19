@@ -66,7 +66,7 @@ export const pageQuery = graphql`
       }
     }
     allMdx(
-      sort: { order: DESC, fields: [frontmatter___date] },
+      sort: { order: DESC, fields: [frontmatter___createdAt] },
       filter: { fields: { sourceName: { eq: "stacks" } } }
       ) {
       edges {
@@ -84,13 +84,13 @@ export const mdxQuery = graphql`
     parent {
       ... on File {
         name
-        modifiedTime(formatString: "MMMM D, YYYY")
       }
     }
     frontmatter {
       title
       description
-      date(formatString: "MMMM D, YYYY")
+      createdAt(formatString: "MMMM D, YYYY")
+      updatedAt(formatString: "MMMM D, YYYY")
     }
     code {
       body
