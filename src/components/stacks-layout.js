@@ -78,7 +78,7 @@ function StackLayout({ data }) {
             <div className="column">
               <div className="content">
                 <MDXProvider components={components}>
-                  <MDXRenderer scope={{ React, MDXTag, Tools, GitHub, StackShare }} data={data}>
+                  <MDXRenderer scope={{ React, MDXTag, Tools, GitHub, StackShare }}>
                     {mdx.code.body}
                   </MDXRenderer>
                 </MDXProvider>

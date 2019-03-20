@@ -162,26 +162,9 @@ function getStackShareTool({ name, url, source }) {
 exports.onCreateNode = async ({ node,
   actions,
   getNode,
-  loadNodeContent,
-  createNodeId,
-  createContentDigest }) => {
+  loadNodeContent }) => {
 
-  function transformObject(obj, id, type) {
-    const toolNode = {
-      ...obj,
-      id,
-      children: [],
-      parent: node.id,
-      internal: {
-        contentDigest: createContentDigest(obj),
-        type,
-      },
-    }
-    createNode(toolNode)
-    createParentChildLink({ parent: node, child: toolNode })
-  }
-
-  const { createNode, createNodeField, createParentChildLink } = actions
+  const { createNodeField } = actions
 
   if (node.internal.type !== `Mdx`) {
     return
@@ -197,10 +180,7 @@ exports.onCreateNode = async ({ node,
     });
   }
 
-  // only process front matter for stacks
-  if (parent.sourceInstanceName !== `stacks`) {
-    return
-  }
+  const sourceInstanceName = parent.sourceInstanceName === `stacks` ? `` : parent.sourceInstanceName;
 
   // set the slug b/c outside /src/pages
   // https://gatsby-mdx.netlify.com/guides/programmatically-creating-pages
@@ -208,8 +188,13 @@ exports.onCreateNode = async ({ node,
   createNodeField({
     name: "slug",
     node,
-    value: slugValue
+    value: `${sourceInstanceName}${slugValue}`
   });
+
+  // only process front matter for stacks
+  if (parent.sourceInstanceName !== `stacks`) {
+    return
+  }
 
   const contributors = node.frontmatter.contributors;
   if (contributors) {
@@ -263,12 +248,13 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx(filter: { fields: { sourceName: { eq: "stacks" } } }) {
+            allMdx(filter: { fields: { sourceName: { in: ["stacks", "docs"] } } }) {
               edges {
                 node {
                   id
                   fields {
                     slug
+                    sourceName
                   }
                 }
               }
@@ -283,7 +269,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/components/stack-layout.js`),
+            component: path.resolve(`./src/components/${node.fields.sourceName}-layout.js`),
             context: { id: node.id }
           });
         });

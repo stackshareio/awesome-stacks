@@ -27,6 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `docs`,
+        path: `${__dirname}/src/docs`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `snippets`,
         path: `${__dirname}/src/snippets`,
       },
@@ -37,13 +44,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve(`./src/components/no-layout.js`),
-          pages: require.resolve(`./src/components/layout.js`),
-        },
-      },
+      resolve: `gatsby-mdx`
     },
     {
       resolve: 'gatsby-plugin-html-attributes',
