@@ -1,21 +1,20 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import About from "../snippets/about"
+import { graphql } from "gatsby"
+import Layout from "../layout"
+import SEO from "../seo"
 import Img from "gatsby-image"
+import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
-const AboutPage = () => {
-  const data = useStaticQuery(query);
+function PagesLayout({ data }) {
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title={data.mdx.frontmatter.title} />
       <div className="section">
         <div className="container">
           <div className="columns">
             <div className="column is-10">
               <div className="content">
-                <About data={data} />
+                <MDXRenderer data={data}>{data.mdx.code.body}</MDXRenderer>
               </div>
               <div className="level has-margin-top-40">
                 <div className="level-item">
@@ -37,8 +36,16 @@ const AboutPage = () => {
   )
 }
 
-const query = graphql`
-query {
+export const pageQuery = graphql`
+query($id: String!) {
+  mdx(id: { eq: $id }) {
+    frontmatter {
+      title
+    }
+    code {
+      body
+    }
+  }
   site {
     siteMetadata {
       repository
@@ -61,4 +68,4 @@ query {
   }
 }`;
 
-export default AboutPage
+export default PagesLayout

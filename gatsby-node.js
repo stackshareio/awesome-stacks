@@ -180,15 +180,13 @@ exports.onCreateNode = async ({ node,
     });
   }
 
-  const sourceInstanceName = parent.sourceInstanceName === `stacks` ? `` : parent.sourceInstanceName;
-
   // set the slug b/c outside /src/pages
   // https://gatsby-mdx.netlify.com/guides/programmatically-creating-pages
   const slugValue = createFilePath({ node, getNode });
   createNodeField({
     name: "slug",
     node,
-    value: `${sourceInstanceName}${slugValue}`
+    value: `${parent.sourceInstanceName === `docs` ? `/docs` : ``}${slugValue}`
   });
 
   // only process front matter for stacks
@@ -248,7 +246,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx(filter: { fields: { sourceName: { in: ["stacks", "docs"] } } }) {
+            allMdx(filter: { fields: { sourceName: { in: ["stacks", "docs", "pages"] } } }) {
               edges {
                 node {
                   id
@@ -269,7 +267,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/components/${node.fields.sourceName}-layout.js`),
+            component: path.resolve(`./src/components/layouts/${node.fields.sourceName}-layout.js`),
             context: { id: node.id }
           });
         });

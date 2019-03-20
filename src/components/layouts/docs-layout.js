@@ -1,22 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby";
-import Layout from "./layout"
-import SEO from "./seo"
+import Layout from "../layout"
+import SEO from "../seo"
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
 function DocsLayout({ data }) { 
-  const { mdx } = data;
   return (
     <Layout>
-      <SEO title={mdx.frontmatter.title} />
+      <SEO title={data.mdx.frontmatter.title} />
       <div className="section">
         <div className="container">
           <div className="columns">
             <div className="column is-9">
               <div className="content">
-                <MDXRenderer>
-                  {mdx.code.body}
-                </MDXRenderer>
+                <MDXRenderer>{data.mdx.code.body}</MDXRenderer>
               </div>
             </div>
             <div className="column is-3">
@@ -40,17 +37,8 @@ function DocsLayout({ data }) {
 export const pageQuery = graphql`
   query($id: String!) {
     mdx(id: { eq: $id }) {
-      id
-      parent {
-        ... on File {
-          name
-        }
-      }
       frontmatter {
         title
-        description
-        createdAt(formatString: "MMMM D, YYYY")
-        updatedAt(formatString: "MMMM D, YYYY")
       }
       code {
         body

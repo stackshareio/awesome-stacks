@@ -1,15 +1,15 @@
 import React from "react";
 import { MDXTag, MDXProvider } from '@mdx-js/tag';
-import Layout from "./layout";
-import SEO from "./seo";
+import Layout from "../layout";
+import SEO from "../seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Tools from "./tools"
-import StackCard from "./stack-card"
-import GitHub from "./stacks/github"
-import StackShare from "./stacks/stackshare"
+import Tools from "../tools"
+import StackCard from "../stack-card"
+import GitHub from "../stacks/github"
+import StackShare from "../stacks/stackshare"
 
 const MyH1 = props => <><hr /><h1>{props.children}</h1></>
 const components = {

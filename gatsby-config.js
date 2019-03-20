@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env.development' });
 module.exports = {
   siteMetadata: {
     title: `Awesome Stacks`,
-    description: `Discover working tech stacks for all kinds of applications.`,
+    description: `Discover awesome tech stacks for all kinds of applications.`,
     author: `@dzello`,
     repository: `https://github.com/stackshareio/awesome-stacks`,
     techStack: `https://stackshare.io/dzello/awesome-stacks`
@@ -20,13 +20,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `stacks`,
-        path: `${__dirname}/content/stacks`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `docs`,
         path: `${__dirname}/content/docs`,
       },
@@ -34,13 +27,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `snippets`,
-        path: `${__dirname}/src/snippets`,
+        name: `stacks`,
+        path: `${__dirname}/content/stacks`,
       },
     },
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/content`,
+      },
     },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-mdx`,
