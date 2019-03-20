@@ -21,14 +21,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `stacks`,
-        path: `${__dirname}/src/stacks`,
+        path: `${__dirname}/content/stacks`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `docs`,
-        path: `${__dirname}/src/docs`,
+        path: `${__dirname}/content/docs`,
       },
     },
     {
@@ -43,9 +43,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-mdx`
-    },
+    `gatsby-mdx`,
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
