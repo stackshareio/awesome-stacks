@@ -4,6 +4,7 @@ import Layout from "./layout";
 import SEO from "./seo";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Tools from "./tools"
 import StackCard from "./stack-card"
@@ -57,6 +58,20 @@ function StackLayout({ data }) {
           </div>
         </div>
       </div>
+      <div className="section has-padding-top-20" style={{ position: "absolute", left: 0, right: 0, paddingBottom: 0 }}>
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              <div className="has-text-right">
+                <a className="button is-small is-rounded is-grey" href={`${data.site.siteMetadata.repository}/blob/master/src/stacks/${mdx.parent.name}.mdx`}>
+                  <FontAwesomeIcon icon={["fab", "github"]} />
+                  <span>&nbsp;&nbsp;Edit this page</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="section">
         <div className="container">
           <div className="columns is-centered">
@@ -89,6 +104,11 @@ function StackLayout({ data }) {
 // this will query our new node type which contains all the GitHub and StackShare references
 export const pageQuery = graphql`
   query($id: String!) {
+    site {
+      siteMetadata {
+        repository
+      }
+    }
     mdx(id: { eq: $id }) {
       ...MdxFields
     }
