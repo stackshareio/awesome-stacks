@@ -13,19 +13,25 @@ function GitHub({ name, children }) {
   const languageEdge = github.languages.edges[0];
   const languageColor = languageEdge ? languageEdge.node.color : "#CC427F";
   const languageName = languageEdge ? languageEdge.node.name : '';
+  const url = github.homepageUrl || github.url;
   return (
     <Card description={children}>
-      <div className="is-top has-text-centered">
-        <a href={github.url} title={`Language: ${languageName}`} className="has-text-white" style={{ display: "inline-flex", justifyContent: "center", backgroundColor: languageColor, width: "75px", padding: "10px 0", borderRadius: "15px" }}>
+      <div className="is-top has-padding-top-5 has-text-centered">
+        <a href={url} title={`Language: ${languageName}`} className="has-text-white" style={{ display: "inline-flex", justifyContent: "center", backgroundColor: languageColor, width: "75px", padding: "10px 0", borderRadius: "15px" }}>
           <span className="is-size-3 is-strong">{github.name.substring(0, 1).toUpperCase()}</span>
           <span className="is-size-3 is-strong">{github.name.substring(1, 2)}</span>
         </a>
         <div className="is-size-5 has-margin-top-10">
-          <a href={github.url}>{github.name}</a>
+          <a href={url}>{github.name}</a>
         </div>
       </div>
-      <div className="is-size-7 has-margin-top-5 is-middle has-text-centered" dangerouslySetInnerHTML={{ __html: github.descriptionHTML }} />
-      <div className="level is-mobile is-bottom has-overflow-hidden">
+      <div className="is-size-7 has-text-centered has-margin-bottom-10">
+        <a className="has-text-grey" href={github.url}>
+          <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
+        </a>
+      </div>
+      <div className="is-size-7 is-description has-text-centered" dangerouslySetInnerHTML={{ __html: github.descriptionHTML }} />
+      <div className="level is-mobile is-bottom has-overflow-hidden has-margin-top-20">
         <div className="level-item has-text-left">
           <div>
             <a className="has-text-grey" href={`${github.url}/stargazers`}>

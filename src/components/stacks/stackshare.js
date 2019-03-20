@@ -17,24 +17,36 @@ function StackShare({ name, children }) {
     <Card description={children}>
       <div className="is-top">
         <div className="is-logo-link has-text-centered">
-          <a href={stackshare.url}>
+          <a href={stackshare.website}>
             <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
           </a>
         </div>
         <div className="is-size-5 has-margin-top-5 has-text-centered">
-          <a href={stackshare.url}>
+          <a href={stackshare.website}>
             {stackshare.fullName}
           </a>
         </div>
       </div>
-      <div className="is-size-7 has-margin-top-5 is-middle has-text-centered">
-        {stackshare.tagline}
+      <div className="is-size-7 has-text-centered has-margin-bottom-10">
+        <a className="has-text-grey" href={stackshare.url}>
+          <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>StackShare</span>
+        </a>
+        {stackshare.gitHubURL ? 
+          <span className="has-text-grey">&nbsp;&middot;&nbsp;
+            <a className="has-text-grey" href={stackshare.gitHubURL}>
+              <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
+            </a>
+          </span>
+        : ``}
       </div>
-      <div className="is-bottom">
+      <div className="is-size-7 is-description has-text-centered">
+        {truncate(stackshare.tagline, 70)}
+      </div>
+      <div className="is-bottom has-margin-top-20">
         <div className="level is-mobile has-overflow-hidden">
           <div className="level-item has-text-left">
             <div>
-              {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}/in-stacks`, stacksMetric.value) : ``}
+              {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}`, stacksMetric.value) : ``}
               {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
               {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
             </div>
