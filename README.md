@@ -10,8 +10,29 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ## Contents
 
-- [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
-- [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
+- [Exception Monitoring Stack](#exception-monitoring-stack)
+- [JAMStack](#jamstack)
+- [LAMP](#lamp)
+- [React Stack](#react-stack)
+
+## Exception Monitoring Stack 
+- [Sentry](https://sentry.io) + [GitHub](https://sentry.io/integrations/github/) + [PagerDuty](https://sentry.io/integrations/pagerduty/)
+  - Research the stack: [Sentry](https://stackshare.io/sentry), [GitHub](https://stackshare.io/github), [PagerDuty](https://stackshare.io/pagerduty)
+
+## JAMStack
+- [Netlify](https://www.netlify.com) + [Gatsby](https://www.gatsbyjs.org) + [Bulma](https://bulma.io/) + [SaSS](https://sass-lang.com/)
+   - Research the stack: [Netflify](https://stackshare.io/gatsbyjs), [Gatsby](https://stackshare.io/gatsbyjs), [Bulma](https://stackshare.io/bulma), [SaSS](https://stackshare.io/sass)
+   - Grab the stack: [gatsby-starter-business](https://github.com/v4iv/gatsby-starter-business)
+
+## LAMP
+- [Linux](https://www.kernel.org) + [Apache HTTP Server](https://httpd.apache.org/) + [MySQL](https://www.mysql.com/) + [PHP](http://php.net/)
+  - Research the stack: [Linux](https://stackshare.io/linux), [Apache HTTP Server](https://stackshare.io/apache-httpd), [MySQL](https://stackshare.io/mysql), [PHP](https://stackshare.io/php)
+  - Grab the stack: [AWS](https://aws.amazon.com/marketplace/pp/B072JNJZ5C?qid=1553038047801&sr=0-1&ref_=srh_res_product_title) | [GCP](https://console.cloud.google.com/marketplace/details/click-to-deploy-images/lamp?pli=1) | [Azure](https://azuremarketplace.microsoft.com/en/marketplace/apps/bitnami.lampstack?tab=Overview) | [DigitalOcean](https://marketplace.digitalocean.com/apps/lamp) | [Docker](https://hub.docker.com/r/mattrayner/lamp)
+
+## React Stack
+- [Node.js](https://nodejs.org/en/), [Express](http://expressjs.com), [GraphQL](https://graphql.org), [React.js](), [Babel](), [PostCSS](), [Webpack](), [Browsersync]()
+  - Research the stack: [Node.js](https://stackshare.io/nodejs), [Express](https://stackshare.io/express), [GraphQL](https://stackshare.io/graphql), [React.js](), [Babel](), [PostCSS](), [Webpack](), [Browsersync]()
+  - Grab the stack: [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
 
 ## Contributing
 
