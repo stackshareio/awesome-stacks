@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Card from "../card"
+import Card from "./card"
 import { truncate } from "../../utils"
 
 function StackShare({ name, children }) {

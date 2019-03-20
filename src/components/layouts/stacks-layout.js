@@ -6,10 +6,10 @@ import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Tools from "../tools"
+import Tools from "../mdx/tools"
 import StackCard from "../stack-card"
-import GitHub from "../stacks/github"
-import StackShare from "../stacks/stackshare"
+import GitHub from "../mdx/github"
+import StackShare from "../mdx/stackshare"
 
 const MyH1 = props => <><hr /><h1>{props.children}</h1></>
 const components = {
