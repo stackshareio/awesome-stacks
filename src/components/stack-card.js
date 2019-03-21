@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const StackCard = ({ node }) => (
   <>
     <div className="columns">
-      <div className="column is-6">
+      <div className="column is-7">
         <h3 className="is-size-4 has-color-danger has-margin-top-5">
           <Link to={`/${node.parent.name}`}>
             {node.frontmatter.title}
@@ -17,7 +17,7 @@ const StackCard = ({ node }) => (
           by {node.fields.contributors.map(contributor => <a href={contributor.url} key={contributor.login}>@{contributor.login}</a>).map((item, index) => [index > 0 && ' ', item])}
         </p>
       </div>
-      <div className="column is-5 is-offset-1">
+      <div className="column is-4 is-offset-1">
         <div className="level is-mobile has-margin-top-20">
           {node.fields.stackShareTools.slice(0, 3).map((tool) =>
             <div className="level-item has-text-centered justify-left" key={tool.name}>
