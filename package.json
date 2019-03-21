@@ -1,7 +1,7 @@
 {
   "name": "awesome-stacks",
   "private": true,
-  "description": "Discover working tech stacks for all kinds of applications.",
+  "description": "Discover awesome tech stacks for all kinds of applications.",
   "version": "0.1.0",
   "author": "Josh Dzielakj<josh@developermode.com>",
   "dependencies": {
