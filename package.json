@@ -3,7 +3,7 @@
   "private": true,
   "description": "Discover awesome tech stacks for all kinds of applications.",
   "version": "0.1.0",
-  "author": "Josh Dzielakj<josh@developermode.com>",
+  "author": "Josh Dzielak<josh@developermode.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
