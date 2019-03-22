@@ -10,6 +10,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 # Contents
 
+- [ASP.NET stacks](#aspnet-stacks)
 - [JAMStack stacks](#jamstack-stacks)
 - [LAMP stacks](#lamp-stacks)
 - [MongoDB stacks](#mongodb-stacks)
@@ -22,6 +23,18 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 🛠 - StackShare tool profile<br>
 🐙 - GitHub repo link
+
+## ASP.NET stacks
+
+### [ASP.NET starter kit](https://awesomestacks.dev/aspnet-starter-kit)
+
+- [C#]()
+- [F#]()
+- [JavaScript]()
+- [ASP.NET Core]()
+- [EF Core]()
+
+> Get the [ASP.NET Starter Kit](https://github.com/kriasoft/aspnet-starter-kit)
 
 ## JAMStack stacks
 
