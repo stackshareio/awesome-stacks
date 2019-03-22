@@ -20,11 +20,12 @@ function DocsLayout({ data }) {
               <div className="box grey-box is-fixed">
                 <div className="is-size-5 is-uppercase">Contents</div>
                 <ul>
-                  <li><a href="#overview">&rsaquo; Overview</a></li>
-                  <li><a href="#setup">&rsaquo; Setup</a></li>
-                  <li><a href="#createastack">&rsaquo; Create a stack</a></li>
-                  <li><a href="#addtools">&rsaquo; Add tools</a></li>
-                  <li><a href="#review">&rsaquo; Review</a></li>
+                  <li><a href="/docs">&rsaquo; Overview</a></li>
+                  <li><a href="/docs">&rsaquo; Create a stack</a></li>
+                  <li><a href="/docs">&rsaquo; Improve a stack</a></li>
+                  <li><a href="/docs">&rsaquo; Develop locally</a></li>
+                  <li><a href="/docs">&rsaquo; Guidelines</a></li>
+                  <li><a href="/docs">&rsaquo; Reference</a></li>
                 </ul>
               </div>
             </div>
