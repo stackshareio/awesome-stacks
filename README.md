@@ -11,8 +11,12 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 # Contents
 
 - [JAMStack stacks](#jamstack-stacks)
+- [LAMP stacks](#lamp-stacks)
+- [MongoDB stacks](#mongodb-stacks)
+- [Microservices stacks](#microservices-stacks)
+- [React stacks](#react-stacks)
 - [Search stacks](#search-stacks)
-- [Stream processing stacks](#stream-processing-stacks)
+- [Serverless stacks](#serverless-stacks)
 
 ### Legend
 
@@ -20,6 +24,12 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 🐙 - GitHub repo link
 
 ## JAMStack stacks
+
+### [The JAMStack](https://awesomestacks.dev/the-jamstack)
+
+- [JavaScript]()  - [🛠️]()
+- [APIs]()
+- [Markdown]() - [🛠️]()
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 
@@ -31,6 +41,37 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 - [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo)
 - [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) - [🛠️](https://github.com/budparr/gohugo-theme-ananke)
 
+## LAMP stacks
+
+### [The LAMP stack]()
+
+- [Linux]() - [🛠️]()
+- [Angular]() - [🛠️]()
+- [MySQL]() - [🛠️]()
+- [PHP]() - [🛠️]()
+
+## MongoDB stacks
+
+### [The MEAN Stack](awesomestacks.dev/the-mean-stack)
+
+- [MongoDB]()
+- [Express]()
+- [Angular]()
+- [Node.js]()
+
+## React stacks
+
+### [The MERN Stack](awesomestacks.dev/the-mern-stack)
+
+- [MongoDB]() - [🛠️]()
+- [Express]() - [🛠️]()
+- [React]() - [🛠️]()
+- [Node.js]() - [🛠️]()
+
+## Microservices stacks
+
+...
+
 ## Search stacks
 
 ### [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
@@ -41,15 +82,15 @@ The Algolia way to build a site search for any website using a crawler.
 - [DocSearch crawler](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-crawler) - Crawls a website and uploads it to an index.
 - [scrapy](https://scrapy.org) - [🐙](https://github.com/scrapy/scrapy) - Popular crawling and scraping tool written in Python.
 
-## Stream processing stacks
+## Serverless stacks
 
-### [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
+### [Function-as-a-Service on AWS](awesomestacks.dev/...)
 
-The Spark and Kafka way to ingest and transform large streams of data.
-
-- [Kafka](https://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - A distributed streaming platform.
-- [Spark](https://spark.apache.org/) - [🛠](https://stackshare.io/spark)
-- [Serverless](https://serverless.com/) - [🛠](https://stackshare.io/serverless)
+- [AWS Lambda]()
+- [AWS S3]()
+- [Amazon API Gateway]()
+- [Amazon SNS]()
+- [AWS CloudFormation]()
 
 ## Contributing
 
