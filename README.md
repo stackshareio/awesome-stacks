@@ -26,6 +26,11 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 - [Gatsby](https://gatsbyjs.org/) [🛠](https://stackshare.io/gatsby)
 - [Contentful](https://contentful.com/) [🛠](https://stackshare.io/contentful)
 
+### [Hugo for blogging](https://awesomestacks.dev/hugo-for-blogging)
+
+- [Hugo](https://gohugo.io/) [🛠](https://stackshare.io/hugo)
+- [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) [🛠️](https://github.com/budparr/gohugo-theme-ananke)
+
 ## Search stacks
 
 ### [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
