@@ -74,7 +74,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ## React stacks
 
-### [React starter kit](awesomestacks.dev/react-starter-stack)
+### [React starter kit](awesomestacks.dev/react-starter-kit)
 
 - [Node.js]()
 - [Express]()
@@ -83,6 +83,16 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 - [Webpack]()
 
 > Get the [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
+
+### [React Firebase starter](awesomestacks.dev/react-firebase-starter)
+
+- [Firebase]()
+- [React]()
+- [GraphQL]()
+- [Relay]()
+- [Material UI]()
+
+> Get the [React Firebase starter](https://github.com/kriasoft/react-firebase-starter)
 
 ### [The MERN Stack](awesomestacks.dev/the-mern-stack)
 
