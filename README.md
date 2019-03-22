@@ -61,6 +61,16 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ## React stacks
 
+### [React starter kit](awesomestacks.dev/react-starter-stack)
+
+- [Node.js]()
+- [Express]()
+- [React]()
+- [Babel]()
+- [Webpack]()
+
+> Get the [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
+
 ### [The MERN Stack](awesomestacks.dev/the-mern-stack)
 
 - [MongoDB]() - [🛠️]()
