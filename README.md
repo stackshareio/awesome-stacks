@@ -59,7 +59,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 ### [The LAMP stack]()
 
 - [Linux]() - [🛠️]()
-- [Angular]() - [🛠️]()
+- [Apache]() - [🛠️]()
 - [MySQL]() - [🛠️]()
 - [PHP]() - [🛠️]()
 
