@@ -23,13 +23,13 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 
-- [Gatsby](https://gatsbyjs.org/) [🛠](https://stackshare.io/gatsby)
-- [Contentful](https://contentful.com/) [🛠](https://stackshare.io/contentful)
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsby)
+- [Contentful](https://contentful.com/) - [🛠](https://stackshare.io/contentful)
 
 ### [Hugo for blogging](https://awesomestacks.dev/hugo-for-blogging)
 
-- [Hugo](https://gohugo.io/) [🛠](https://stackshare.io/hugo)
-- [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) [🛠️](https://github.com/budparr/gohugo-theme-ananke)
+- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo)
+- [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) - [🛠️](https://github.com/budparr/gohugo-theme-ananke)
 
 ## Search stacks
 
@@ -37,8 +37,9 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 The Algolia way to build a site search for any website using a crawler.
 
-- [Algolia](https://algolia.com/) [🛠](https://stackshare.io/algolia)
-- [DocSearch crawler](https://community.algolia.com/docsearch) [🐙](https://github.com/algolia/docsearch-crawler)
+- [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
+- [DocSearch crawler](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-crawler) - Crawls a website and uploads it to an index.
+- [scrapy](https://scrapy.org] - [🐙](https://github.com/scrapy/scrapy) - Popular crawling and scraping tool written in Python.
 
 ## Stream processing stacks
 
@@ -46,9 +47,9 @@ The Algolia way to build a site search for any website using a crawler.
 
 The Spark and Kafka way to ingest and transform large streams of data.
 
-- [Kafka](https://kafka.apache.org/) [🛠](https://stackshare.io/kafka)
-- [Spark](https://spark.apache.org/) [🛠](https://stackshare.io/spark)
-- [Serverless](https://serverless.com/) [🛠](https://stackshare.io/serverless)
+- [Kafka](https://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - A distributed streaming platform.
+- [Spark](https://spark.apache.org/) - [🛠](https://stackshare.io/spark)
+- [Serverless](https://serverless.com/) - [🛠](https://stackshare.io/serverless)
 
 ## Contributing
 
