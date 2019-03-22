@@ -39,7 +39,7 @@ The Algolia way to build a site search for any website using a crawler.
 
 - [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
 - [DocSearch crawler](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-crawler) - Crawls a website and uploads it to an index.
-- [scrapy](https://scrapy.org] - [🐙](https://github.com/scrapy/scrapy) - Popular crawling and scraping tool written in Python.
+- [scrapy](https://scrapy.org) - [🐙](https://github.com/scrapy/scrapy) - Popular crawling and scraping tool written in Python.
 
 ## Stream processing stacks
 
