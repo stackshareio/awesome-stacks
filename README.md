@@ -10,7 +10,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 # Contents
 
-- [JAMStack stacks](#search-stacks)
+- [JAMStack stacks](#jamstack-stacks)
 - [Search stacks](#search-stacks)
 - [Stream processing stacks](#stream-processing-stacks)
 
@@ -37,9 +37,9 @@ The Algolia way to build a site search for any website using a crawler.
 
 # Stream processing stacks
 
-The Spark and Kafka way to ingest and transform large streams of data.
-
 ### [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
+
+The Spark and Kafka way to ingest and transform large streams of data.
 
 - [Kafka](https://kafka.apache.org/) [🛠](https://stackshare.io/kafka)
 - [Spark](https://spark.apache.org/) [🛠](https://stackshare.io/spark)
