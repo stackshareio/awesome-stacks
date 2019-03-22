@@ -10,16 +10,40 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 # Contents
 
+- [JAMStack stacks](#search-stacks)
 - [Search stacks](#search-stacks)
 - [Stream processing stacks](#stream-processing-stacks)
 
-## Search stacks
+### Legend
 
-- [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
+- 🛠 - StackShare tool profile
+- 🐙 - GitHub repo link
 
-## Stream processing stacks
+# JAMStack stacks
 
-- [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
+### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
+
+- [Gatsby](https://gatsbyjs.org/) [🛠](https://stackshare.io/gatsby)
+- [Contentful](https://contentful.com/) [🛠](https://stackshare.io/contentful)
+
+# Search stacks
+
+### [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
+
+The Algolia way to build a site search for any website using a crawler.
+
+- [Algolia](https://algolia.com/) [🛠](https://stackshare.io/algolia)
+- [DocSearch crawler](https://community.algolia.com/docsearch) [🐙](https://github.com/algolia/docsearch-crawler)
+
+# Stream processing stacks
+
+The Spark and Kafka way to ingest and transform large streams of data.
+
+### [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
+
+- [Kafka](https://kafka.apache.org/) [🛠](https://stackshare.io/kafka)
+- [Spark](https://spark.apache.org/) [🛠](https://stackshare.io/spark)
+- [Serverless](https://serverless.com/) [🛠](https://stackshare.io/serverless)
 
 ## Contributing
 
