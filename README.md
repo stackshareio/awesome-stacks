@@ -19,14 +19,14 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 - 🛠 - StackShare tool profile
 - 🐙 - GitHub repo link
 
-# JAMStack stacks
+## JAMStack stacks
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 
 - [Gatsby](https://gatsbyjs.org/) [🛠](https://stackshare.io/gatsby)
 - [Contentful](https://contentful.com/) [🛠](https://stackshare.io/contentful)
 
-# Search stacks
+## Search stacks
 
 ### [Site search with Algolia](https://awesomestacks.dev/site-search-algolia)
 
@@ -35,7 +35,7 @@ The Algolia way to build a site search for any website using a crawler.
 - [Algolia](https://algolia.com/) [🛠](https://stackshare.io/algolia)
 - [DocSearch crawler](https://community.algolia.com/docsearch) [🐙](https://github.com/algolia/docsearch-crawler)
 
-# Stream processing stacks
+## Stream processing stacks
 
 ### [Serverless stream processing](https://awesomestacks.dev/serverless-stream-processing)
 
