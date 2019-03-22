@@ -16,8 +16,8 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### Legend
 
-- 🛠 - StackShare tool profile
-- 🐙 - GitHub repo link
+🛠 - StackShare tool profile<br>
+🐙 - GitHub repo link
 
 ## JAMStack stacks
 
