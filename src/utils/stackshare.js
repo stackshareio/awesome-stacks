@@ -1,19 +1,19 @@
 const Xray = require("x-ray")
 
 module.exports = {
-  getStackShareTool: function({ name, url }) {
+  getStackShareTool: function ({ name, url }) {
     var x = Xray({
       filters: {
-        trim: function(value) {
+        trim: function (value) {
           return typeof value === "string" ? value.trim() : value
         },
-        clean: function(value) {
+        clean: function (value) {
           return typeof value === "string" ? value.replace(/\n/, " ") : value
         },
-        despace: function(value) {
+        despace: function (value) {
           return typeof value === "string" ? value.replace(/ /g, "") : value
         },
-        removeText: function(value) {
+        removeText: function (value) {
           return typeof value === "string"
             ? value.replace(/[a-zA-Z]+/, "")
             : value
@@ -67,6 +67,8 @@ module.exports = {
       ]),
     }).then(tool => {
       return {
+        name,
+        url,
         ...tool,
       }
     })

@@ -41,13 +41,19 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `root`,
-        path: `${__dirname}`
+        name: `readme`,
+        path: `${__dirname}/README.md`
       },
     },
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        filter: node => node.sourceInstanceName === `readme`
+      },
+    },
     `gatsby-mdx`,
     {
       resolve: 'gatsby-plugin-html-attributes',
