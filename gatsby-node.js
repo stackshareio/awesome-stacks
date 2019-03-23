@@ -1,30 +1,9 @@
 const path = require("path");
 const { JSDOM } = require("jsdom");
 const { createFilePath } = require("gatsby-source-filesystem");
-const Xray = require('x-ray');
 
-const { ApolloClient } = require('apollo-boost');
-const { HttpLink } = require('apollo-link-http');
-const { InMemoryCache } = require('apollo-cache-inmemory');
-const fetch = require('node-fetch');
-const gql = require('graphql-tag');
-
-var x = Xray({
-  filters: {
-    trim: function (value) {
-      return typeof value === 'string' ? value.trim() : value
-    },
-    clean: function (value) {
-      return typeof value === 'string' ? value.replace(/\n/, ' ') : value
-    },
-    despace: function (value) {
-      return typeof value === 'string' ? value.replace(/ /g, '') : value
-    },
-    removeText: function (value) {
-      return typeof value === 'string' ? value.replace(/[a-zA-Z]+/, '') : value
-    }
-  }
-}).concurrency(1);
+const stackshare = require("./src/utils/stackshare");
+const github = require("./src/utils/github");
 
 // to support relative paths in sass files
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -33,130 +12,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       modules: [path.resolve(__dirname, "src"), "node_modules"],
     },
   })
-}
-
-function getApolloClient() {
-  return new ApolloClient({
-    link: new HttpLink({
-      uri: 'https://api.github.com/graphql', fetch, headers: {
-        Authorization: `bearer ${process.env.GITHUB_ACCESS_TOKEN}`
-      }
-    }),
-    cache: new InMemoryCache()
-  });
-}
-
-function getGitHubTool({ owner, name }) {
-  return getApolloClient().query({
-    variables: { owner, name },
-    query: gql`
-query($owner: String!, $name: String!) {
-  repository(owner: $owner, name: $name) {
-    name
-    nameWithOwner
-    description
-    descriptionHTML
-    stargazers {
-      totalCount
-    }
-    repositoryTopics(first: 3) {
-      edges {
-        node {
-          topic {
-            name
-          }
-        }
-      }
-    }
-    forks {
-      totalCount
-    }
-    updatedAt
-    url
-    homepageUrl
-    languages(first: 1) {
-      edges {
-        node {
-          name
-          color
-        }
-      }
-    }
-  }
-}
-  `,
-  })
-    .then(({ data: { repository } }) => {
-      return repository;
-    }).catch((err) => {
-      console.error(err);
-      return;
-    });;
-}
-
-function getGitHubUser(login) {
-  return getApolloClient().query({
-    variables: { login },
-    query: gql`
-query($login: String!) {
-  user(login: $login) {
-    login
-    name
-    avatarUrl
-    url
-  }
-}
-  `,
-  })
-    .then(({ data: { user } }) => {
-      return user;
-    }).catch((err) => {
-      console.error(err);
-      return;
-    });
-}
-
-function getStackShareTool({ name, url, source }) {
-  return x(url, 'body', {
-    fullName: 'a[itemprop="name"]',
-    layer: {
-      name: 'li:nth-child(2)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] span',
-      url: 'li:nth-child(2)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] @href',
-    },
-    group: {
-      name: `a[itemprop="applicationSubCategory"]`,
-      url: `a[itemprop="applicationSubCategory"] @href`,
-    },
-    category: {
-      name: 'li:nth-child(3)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] span',
-      url: 'li:nth-child(3)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] @href',
-    },
-    website: '#visit-website@href',
-    tagline: "span[itemprop='alternativeHeadline']",
-    description: "#service-description span",
-    logo: "[itemprop='image']@src",
-    features: ["#service-features li"],
-    users: x("[data-track='tool_profile.clicked_companies_using_this']", [{
-      name: "img@alt",
-      url: "@href",
-      logo: "img@src"
-    }]),
-    stackShareStats: x("#service-pills-nav li", [{
-      name: "#tab-label | despace",
-      value: "#tab-link | removeText | trim"
-    }]),
-    gitHubURL: "a[data-track='service.details.github_stats.click'] @href",
-    gitHubStats: x("div.stackup-gh-count", [{
-      name: "@data-hint | despace",
-      value: ".gh-metric | trim",
-      dateValue: ".gh-date | trim | clean"
-    }])
-  }).then((tool) => {
-    return {
-      name, url, source,
-      ...tool
-    };
-  });
 }
 
 exports.onCreateNode = async ({ node,
@@ -196,7 +51,7 @@ exports.onCreateNode = async ({ node,
 
   const contributors = node.frontmatter.contributors;
   if (contributors) {
-    const contributorsLoaded = await Promise.all(contributors.map(getGitHubUser)).filter(user => user);
+    const contributorsLoaded = await Promise.all(contributors.map(github.getGitHubUser)).filter(user => user);
     createNodeField({
       name: "contributors",
       node,
@@ -211,9 +66,7 @@ exports.onCreateNode = async ({ node,
     const [owner, name] = nameWithOwner.split('/');
     return { owner, name };
   });
-  const githubsLoaded = await Promise.all(githubs.map((github) => {
-    return getGitHubTool(github);
-  })).filter(tool => tool);
+  const githubsLoaded = await Promise.all(githubs.map(github.getGitHubTool)).filter(tool => tool);
   createNodeField({
     name: "gitHubTools",
     node,
@@ -225,12 +78,10 @@ exports.onCreateNode = async ({ node,
     const url = `https://stackshare.io/${name}`;
     return { name, url };
   });
+
   // fetch the data from stackshare for each tool
   // filter out any tools that aren't found
-  const stacksharesLoaded = await Promise.all(stackshares.map((stackshare) => {
-    return getStackShareTool(stackshare);
-  })).filter(tool => tool.fullName)
-
+  const stacksharesLoaded = await Promise.all(stackshares.map(stackshare.getStackShareTool)).filter(tool => tool.fullName);
   createNodeField({
     name: "stackShareTools",
     node,
