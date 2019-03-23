@@ -3,12 +3,38 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import SEO from "../seo";
 
+import Tools from "../mdx/tools"
+import GitHub from "../mdx/github"
+import StackShare from "../mdx/stackshare"
+import StackHero from "../stacks/stack-hero"
+
 function MarkdownStacksPage({ data, pageContext: { stackName } }) {
   const stack = data.markdownRemark.fields.stacks.find(stack => stack.name === stackName)
+  const heroProps = {
+    title: stack.name,
+    description: stack.description
+  }
+  const tools = stack.tools.map(tool => {
+    if (tool.stackShareData) {
+    }
+    else if (tool.gitHubData) {
+    }
+  });
   return (
     <Layout>
       <SEO title={stack.name} />
-      <div>{stack.name}</div>
+      <StackHero {...heroProps} />
+      <div className="section">
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column">
+              <div className="content">
+                <Tools>{tools}</Tools>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
@@ -24,6 +50,7 @@ export const pageQuery = graphql`
       fields {
         stacks {
           name
+          description
           path
           tools {
             gitHubData {

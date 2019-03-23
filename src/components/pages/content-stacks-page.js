@@ -7,9 +7,10 @@ import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Tools from "../mdx/tools"
-import StackCard from "../stack-card"
+import StackCard from "../stacks/stack-card"
 import GitHub from "../mdx/github"
 import StackShare from "../mdx/stackshare"
+import StackHero from "../stacks/stack-hero"
 
 const MyH1 = props => <><hr /><h1>{props.children}</h1></>
 const components = {
@@ -29,35 +30,7 @@ function ContentStacksPage({ data }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <div className="hero has-background-grey has-text-white stack-hero">
-        <div className="hero-body">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-8">
-                <h1 className="is-size-3">{mdx.frontmatter.title}</h1>
-                <p className="is-size-5">{mdx.frontmatter.description}</p>
-              </div>
-              <div className="column is-4 has-text-right" style={{ marginTop: `auto` }}>
-                <div style={{ alignSelf: "flex-start" }}>
-                  {mdx.fields.contributors.slice(0, 4).map((contributor) => (
-                    <a key={contributor.login} href={contributor.url} style={{ display: "inline-block", margin: "2px" }}>
-                      <img alt={`${contributor.login}`} style={{ width: "36px", height: "36px", borderRadius: "10px" }} src={contributor.avatarUrl} />
-                    </a>
-                  ))}
-                </div>
-                <ul>
-                  <li>
-                    Contributed by {mdx.fields.contributors.map(contributor => <a key={contributor.login} href={contributor.url} className="is-strong">@{contributor.login}</a>).map((item, index) => [index > 0 && ' ', item])}
-                  </li>
-                  <li>
-                    Last updated: {mdx.frontmatter.updatedAt}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <StackHero {...mdx.frontmatter} />
       <div className="section has-padding-top-20" style={{ position: "absolute", left: 0, right: 0, paddingBottom: 0 }}>
         <div className="container">
           <div className="columns">
