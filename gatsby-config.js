@@ -20,28 +20,28 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `docs`,
+        name: `content-docs`,
         path: `${__dirname}/content/docs`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `stacks`,
+        name: `content-stacks`,
         path: `${__dirname}/content/stacks`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
+        name: `content`,
         path: `${__dirname}/content`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `readme`,
+        name: `readme-stacks`,
         path: `${__dirname}/README.md`
       },
     },
@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        filter: node => node.sourceInstanceName === `readme`
+        filter: node => node.sourceInstanceName === `readme-stacks`
       },
     },
     `gatsby-mdx`,

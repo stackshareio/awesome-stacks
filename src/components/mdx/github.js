@@ -66,7 +66,7 @@ function GitHub({ name, children }) {
 const query = graphql`
 query {
   allMdx(
-    filter: { fields: { sourceName: { eq: "stacks" } } }
+    filter: { fields: { sourceName: { eq: "content-stacks" } } }
     ) {
     edges {
       node {

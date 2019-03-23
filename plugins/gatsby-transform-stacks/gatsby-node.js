@@ -1,6 +1,6 @@
 const path = require("path");
 const stackshare = require("../../src/utils/stackshare");
-const github = require("../..//src/utils/github");
+const github = require("../../src/utils/github");
 
 exports.onCreateNode = async ({ node,
   actions,
@@ -22,7 +22,7 @@ exports.onCreateNode = async ({ node,
     });
   }
 
-  if (parent.sourceInstanceName !== `readme`) {
+  if (parent.sourceInstanceName !== `readme-stacks`) {
     return
   }
 
@@ -44,10 +44,10 @@ exports.onCreateNode = async ({ node,
       description: "Markdown",
       url: "https://daringfireball.net/projects/markdown/syntax",
       github: {
-        url: "https://github.com/adam-p/markdown-here"
+        url: "https://github.com/Python-Markdown/markdown"
       },
       stackshare: {
-        url: "https://stackshare.io/markdown"
+        url: "https://stackshare.io/serverless"
       }
     }]
   }]
@@ -92,7 +92,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(filter: { fields: { sourceName: { eq: "readme" } } }) {
+            allMarkdownRemark(filter: { fields: { sourceName: { eq: "readme-stacks" } } }) {
               edges {
                 node {
                   id
@@ -118,7 +118,7 @@ exports.createPages = ({ graphql, actions }) => {
           node.fields.stacks.forEach(stack => {
             createPage({
               path: stack.path,
-              component: path.resolve(`./src/components/pages/markdown-stack.js`),
+              component: path.resolve(`./src/components/pages/readme-stacks-page.js`),
               context: { id: node.id, stackName: stack.name }
             });
           });

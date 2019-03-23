@@ -67,7 +67,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       sort: { order: DESC, fields: [frontmatter___createdAt] },
-      filter: { fields: { sourceName: { eq: "stacks" } } }
+      filter: { fields: { sourceName: { eq: "content-stacks" } } }
       ) {
       edges {
         node {

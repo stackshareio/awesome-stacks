@@ -31,13 +31,13 @@ function StackShare({ name, children }) {
         <a className="has-text-grey" href={stackshare.url}>
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>StackShare</span>
         </a>
-        {stackshare.gitHubURL ? 
+        {stackshare.gitHubURL ?
           <span className="has-text-grey">&nbsp;&middot;&nbsp;
             <a className="has-text-grey" href={stackshare.gitHubURL}>
               <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
             </a>
           </span>
-        : ``}
+          : ``}
       </div>
       <div className="is-size-7 is-description has-text-centered">
         {truncate(stackshare.tagline, 70)}
@@ -86,7 +86,7 @@ function metricsLevelItem(icon, url, value) {
 const query = graphql`
 query {
   allMdx(
-    filter: { fields: { sourceName: { eq: "stacks" } } }
+    filter: { fields: { sourceName: { eq: "content-stacks" } } }
     ) {
     edges {
       node {

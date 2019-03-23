@@ -4,7 +4,7 @@ import Layout from "../layout"
 import SEO from "../seo"
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
-function DocsLayout({ data }) { 
+function ContentDocsPage({ data }) {
   return (
     <Layout>
       <SEO title={data.mdx.frontmatter.title} />
@@ -33,7 +33,8 @@ function DocsLayout({ data }) {
         </div>
       </div>
     </Layout>
-)}
+  )
+}
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -47,4 +48,4 @@ export const pageQuery = graphql`
     }
   }
 `
-export default DocsLayout
+export default ContentDocsPage

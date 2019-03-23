@@ -41,11 +41,11 @@ exports.onCreateNode = async ({ node,
   createNodeField({
     name: "slug",
     node,
-    value: `${parent.sourceInstanceName === `docs` ? `/docs` : ``}${slugValue}`
+    value: `${parent.sourceInstanceName === `content-docs` ? `/docs` : ``}${slugValue}`
   });
 
   // only process front matter for stacks
-  if (parent.sourceInstanceName !== `stacks`) {
+  if (parent.sourceInstanceName !== `content-stacks`) {
     return
   }
 
@@ -97,7 +97,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx(filter: { fields: { sourceName: { in: ["stacks", "docs", "pages"] } } }) {
+            allMdx(filter: { fields: { sourceName: { in: ["content", "content-docs", "content-stacks"] } } }) {
               edges {
                 node {
                   id
@@ -118,7 +118,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/components/layouts/${node.fields.sourceName}-layout.js`),
+            component: path.resolve(`./src/components/pages/${node.fields.sourceName}-page.js`),
             context: { id: node.id }
           });
         });

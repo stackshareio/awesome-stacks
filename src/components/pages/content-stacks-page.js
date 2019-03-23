@@ -16,7 +16,7 @@ const components = {
   h1: MyH1
 }
 
-function StackLayout({ data }) {
+function ContentStacksPage({ data }) {
   const { mdx } = data;
   const { id } = mdx;
   const StackCards = data.allMdx.edges.map(edge =>
@@ -114,7 +114,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       sort: { order: DESC, fields: [frontmatter___createdAt] },
-      filter: { fields: { sourceName: { eq: "stacks" } } }
+      filter: { fields: { sourceName: { eq: "content-stacks" } } }
       ) {
       edges {
         node {
@@ -124,4 +124,4 @@ export const pageQuery = graphql`
     }
   }
 `;
-export default StackLayout
+export default ContentStacksPage

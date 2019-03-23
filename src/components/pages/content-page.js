@@ -5,7 +5,7 @@ import SEO from "../seo"
 import Img from "gatsby-image"
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
-function PagesLayout({ data }) {
+function ContentPage({ data }) {
   return (
     <Layout>
       <SEO title={data.mdx.frontmatter.title} />
@@ -68,4 +68,4 @@ query($id: String!) {
   }
 }`;
 
-export default PagesLayout
+export default ContentPage
