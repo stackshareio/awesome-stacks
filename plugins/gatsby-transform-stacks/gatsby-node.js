@@ -26,10 +26,6 @@ exports.onCreateNode = async ({ node,
     return
   }
 
-  // if (!node.fileAbsolutePath.endsWith(`README.md`)) {
-  //   return
-  // }
-
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
 
@@ -43,10 +39,10 @@ exports.onCreateNode = async ({ node,
       name: "Markdown",
       description: "Markdown",
       url: "https://daringfireball.net/projects/markdown/syntax",
-      github: {
+      gitHub: {
         url: "https://github.com/Python-Markdown/markdown"
       },
-      stackshare: {
+      stackShare: {
         url: "https://stackshare.io/serverless"
       }
     }]
@@ -56,16 +52,16 @@ exports.onCreateNode = async ({ node,
   await Promise.all(stacks.map(stack => {
 
     return Promise.all(stack.tools.map(async tool => {
-      if (tool.github.url) {
-        const [owner, name] = tool.github.url.replace(/http[s]+:\/\/github\.com\//, '').split(`/`);
+      if (tool.gitHub.url) {
+        const [owner, name] = tool.gitHub.url.replace(/http[s]+:\/\/github\.com\//, '').split(`/`);
         try {
           tool.gitHubData = await github.getGitHubTool({ owner, name })
         } catch (e) {
           console.warn(e);
         }
       }
-      if (tool.stackshare.url) {
-        const url = tool.stackshare.url
+      if (tool.stackShare.url) {
+        const url = tool.stackShare.url
         const name = url.replace(/http[s]+:\/\/stackshare\.io\//, '')
         try {
           tool.stackShareData = await stackshare.getStackShareTool({ name, url });

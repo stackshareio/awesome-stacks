@@ -4,11 +4,11 @@ import Layout from "../layout";
 import SEO from "../seo";
 
 import Tools from "../mdx/tools"
-import GitHub from "../mdx/github"
-import StackShare from "../mdx/stackshare"
+import GitHubCard from "../stacks/github-card"
+import StackShareCard from "../stacks/stackshare-card"
 import StackHero from "../stacks/stack-hero"
 
-function MarkdownStacksPage({ data, pageContext: { stackName } }) {
+function ReadmeStacksPage({ data, pageContext: { stackName } }) {
   const stack = data.markdownRemark.fields.stacks.find(stack => stack.name === stackName)
   const heroProps = {
     title: stack.name,
@@ -16,8 +16,20 @@ function MarkdownStacksPage({ data, pageContext: { stackName } }) {
   }
   const tools = stack.tools.map(tool => {
     if (tool.stackShareData) {
+      return (
+        <StackShareCard name={tool.name} stackshare={tool.stackShareData}>
+          {tool.description}
+        </StackShareCard>
+      );
     }
     else if (tool.gitHubData) {
+      return (
+        <GitHubCard name={tool.name} github={tool.gitHubData}>
+          {tool.description}
+        </GitHubCard>
+      );
+    } else {
+      return
     }
   });
   return (
@@ -127,4 +139,4 @@ export const pageQuery = graphql`
     }
   }
 `;
-export default MarkdownStacksPage
+export default ReadmeStacksPage
