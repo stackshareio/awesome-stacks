@@ -1,4 +1,6 @@
 const path = require("path");
+const cheerio = require("cheerio");
+const slugify = require('@sindresorhus/slugify');
 const stackshare = require("../../src/utils/stackshare");
 const github = require("../../src/utils/github");
 
@@ -28,48 +30,66 @@ exports.onCreateNode = async ({ node,
 
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
+  const $ = cheerio.load(nodeContent);
 
-  // read out the stacks
-  const stacks = [{
-    name: "The JAMStack",
-    path: "the-jamstack",
-    category: "JAMStacks",
-    description: "JavaScript, APIs, markdown",
-    tools: [{
-      name: "Markdown",
-      description: "Markdown",
-      url: "https://daringfireball.net/projects/markdown/syntax",
-      gitHub: {
-        url: "https://github.com/Python-Markdown/markdown"
-      },
-      stackShare: {
-        url: "https://stackshare.io/serverless"
-      }
-    }]
-  }]
+  const categories = $(`h2`).map((_, category) => {
+    return {
+      name: $(category).text(),
+      path: slugify($(category).text()),
+      stacks: $(category).nextUntil(`h2`, `h3`).map((_, stack) => {
+        return {
+          name: $(stack).find("a").text(),
+          description: $(stack).find("p").text(),
+          path: slugify($(stack).find("a").text()),
+          url: $(stack).find("a").attr("href"),
+          tools: $(stack).next(`ul`).find(`li`).map((_, tool) => {
+            const toolObj = {};
+            var links = $(tool).find("a");
+            links.each((_, link) => {
+              if ($(link).text() === "🛠️") {
+                toolObj.stackShareUrl = $(link).attr("href");
+              } else if ($(link).text() === "🐙") {
+                toolObj.gitHubUrl = $(link).attr("href");
+              } else {
+                toolObj.name = $(link).text();
+                toolObj.url = $(link).attr("href");
+              }
+            });
+            return toolObj;
+          })
+        }
+      })
+    }
+  })
+
+  console.log(categories)
 
   // get the stacks then get the tools
-  await Promise.all(stacks.map(stack => {
+  await Promise.all(categories.map(category => {
 
-    return Promise.all(stack.tools.map(async tool => {
-      if (tool.gitHub.url) {
-        const [owner, name] = tool.gitHub.url.replace(/http[s]+:\/\/github\.com\//, '').split(`/`);
-        try {
-          tool.gitHubData = await github.getGitHubTool({ owner, name })
-        } catch (e) {
-          console.warn(e);
+    return category.stacks.map(stack => {
+
+      return Promise.all(stack.tools.map(async tool => {
+        if (tool.gitHubUrl) {
+          const [owner, name] = tool.gitHubUrl.replace(/http[s]+:\/\/github\.com\//, '').split(`/`);
+          try {
+            tool.gitHubData = await github.getGitHubTool({ owner, name })
+          } catch (e) {
+            console.warn(e);
+          }
         }
-      }
-      if (tool.stackShare.url) {
-        const url = tool.stackShare.url
-        const name = url.replace(/http[s]+:\/\/stackshare\.io\//, '')
-        try {
-          tool.stackShareData = await stackshare.getStackShareTool({ name, url });
-        } catch (e) {
-          console.warn(e);
+        if (tool.stackShareUrl) {
+          const url = tool.stackShareUrl
+          const name = url.replace(/http[s]+:\/\/stackshare\.io\//, '')
+          try {
+            tool.stackShareData = await stackshare.getStackShareTool({ name, url });
+          } catch (e) {
+            console.warn(e);
+          }
         }
-      }
-    }));
+      }));
+
+    });
 
   }));
 

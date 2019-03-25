@@ -1,5 +1,5 @@
 const path = require("path");
-const { JSDOM } = require("jsdom");
+const cheerio = require("cheerio");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 const stackshare = require("./src/utils/stackshare");
@@ -62,7 +62,7 @@ exports.onCreateNode = async ({ node,
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
   const githubs = (nodeContent.match(/<GitHub [^>]+>/g) || []).map((toolTag) => {
-    const nameWithOwner = (new JSDOM(toolTag)).window.document.querySelector("GitHub").attributes['name'].value;
+    const nameWithOwner = (cheerio.load(toolTag))("GitHub").attr('name');
     const [owner, name] = nameWithOwner.split('/');
     return { owner, name };
   });
@@ -74,7 +74,7 @@ exports.onCreateNode = async ({ node,
   });
 
   const stackshares = (nodeContent.match(/<StackShare [^>]+>/g) || []).map((toolTag) => {
-    const name = (new JSDOM(toolTag)).window.document.querySelector("StackShare").attributes['name'].value;
+    const name = (cheerio.load(toolTag))("StackShare").attr('name');
     const url = `https://stackshare.io/${name}`;
     return { name, url };
   });

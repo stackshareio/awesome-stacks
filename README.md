@@ -40,9 +40,9 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### [The JAMStack](https://awesomestacks.dev/the-jamstack)
 
-- [JavaScript]()  - [🛠️]()
-- [APIs]()
-- [Markdown]() - [🛠️]()
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [APIs](https://en.wikipedia.org/wiki/Application_programming_interface)
+- [Markdown](https://daringfireball.net/projects/markdown/syntax)
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 

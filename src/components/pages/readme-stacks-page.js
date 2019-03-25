@@ -29,7 +29,7 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
         </GitHubCard>
       );
     } else {
-      return
+      return null;
     }
   });
   return (
