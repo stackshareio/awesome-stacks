@@ -54,9 +54,9 @@ exports.onCreateNode = async ({ node,
           tools: $(stack).nextUntil(`h3`, `ul`).find(`li`).map((_, tool) => {
             const toolObj = {};
             $(tool).find("a").each((_, link) => {
-              if ($(link).attr("href").match(/stackshare.io\//)) {
+              if ($(link).attr("href").match(/https:\/\/stackshare.io\//)) {
                 toolObj.stackShareUrl = $(link).attr("href");
-              } else if ($(link).attr("href").match(/github.com\//)) {
+              } else if ($(link).attr("href").match(/https:\/\/github.com\//)) {
                 toolObj.gitHubUrl = $(link).attr("href");
               } else if ($(link).text().match(/[\w\d_ -]/)) {
                 toolObj.name = $(link).text();

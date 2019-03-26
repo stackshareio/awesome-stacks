@@ -4,12 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import StackCard from "../components/stacks/stack-card"
 import Category from "../components/stacks/category"
-import Contributors from "../components/contributors";
+// import Contributors from "../components/contributors";
 
 const IndexPage = ({
   data: {
     site: { siteMetadata: { title, description } },
-    allMdx,
+    // allMdx,
     allMarkdownRemark: { edges }
   },
 }) => {
@@ -213,18 +213,18 @@ export const mdxQuery = graphql`
   }
 `
 
-function getContributors(edges) {
-  var array = [];
-  edges.forEach((edge) => {
-    const contributors = edge.node.fields.contributors;
-    contributors.forEach((contributor) => {
-      array.push(contributor);
-    });
-  });
-  return Object.values(array.reduce((memo, contributor) => {
-    memo[contributor.login] = contributor;
-    return memo;
-  }, {}));
-}
+// function getContributors(edges) {
+//   var array = [];
+//   edges.forEach((edge) => {
+//     const contributors = edge.node.fields.contributors;
+//     contributors.forEach((contributor) => {
+//       array.push(contributor);
+//     });
+//   });
+//   return Object.values(array.reduce((memo, contributor) => {
+//     memo[contributor.login] = contributor;
+//     return memo;
+//   }, {}));
+// }
 
 export default IndexPage

@@ -7,7 +7,7 @@ const StackCard = ({ stack }) => (
     <div className="columns">
       <div className="column is-6">
         <div className="anchor">
-          <a id={stack.path}></a>
+          <div id={stack.path}></div>
         </div>
         <h3 className="is-size-4 has-color-danger has-margin-top-5">
           <Link to={`/${stack.path}`}>
@@ -21,7 +21,7 @@ const StackCard = ({ stack }) => (
       <div className="column is-offset-1 is-5">
         <div className="level is-mobile has-margin-top-20">
           {stack.tools.slice(0, 3).map((tool) =>
-            <div className="level-item justify-left" key={tool.name}>
+            <div className="level-item" key={tool.name}>
               {tool.stackShareData ?
                 <img alt={tool.stackShareData.name} src={tool.stackShareData.logo} className="is-logo"></img>
                 : tool.gitHubData ? <GitHubIcon github={tool.gitHubData} /> :

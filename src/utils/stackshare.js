@@ -2,6 +2,9 @@ const Xray = require("x-ray")
 
 module.exports = {
   getStackShareTool: function ({ name, url }) {
+    if (!name || !url) {
+      return
+    }
     var x = Xray({
       filters: {
         trim: function (value) {

@@ -19,6 +19,9 @@ function getApolloClient() {
 
 module.exports = {
   getGitHubTool: function({ owner, name }) {
+    if (!owner || !name) {
+      return
+    }
     return getApolloClient()
       .query({
         variables: { owner, name },

@@ -19,7 +19,6 @@ const components = {
 
 function ContentStacksPage({ data }) {
   const { mdx } = data;
-  const { id } = mdx;
   // const StackCards = data.allMdx.edges.map(edge =>
   //   id === edge.node.id ? `` : <div key={edge.node.id} className="container">
   //     <StackCard node={edge.node} />

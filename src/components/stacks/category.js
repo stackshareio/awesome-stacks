@@ -9,7 +9,7 @@ const Category = ({ category }) => {
   ))
   return (
     <>
-      <h1 className="is-size-3 has-text-grey has-text-centered">
+      <h1 className="is-size-2 has-text-grey has-text-centered">
         {category.name}
       </h1>
       {Stacks}
