@@ -128,7 +128,7 @@ A serverless project template based on Firebase and React; deploys easily to Goo
 
 Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. 
 
-- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue.js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
+- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
 - [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
 - [Vuex](https://veux.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
 - [Vue CLI](https://cli.vuejs.org/) - [🐙](https://github.com/vuejs/vue-cli) - Standard Tooling for Vue.js Development.
@@ -148,7 +148,7 @@ The Algolia way to build a site search for any website using a crawler.
 
 > Get [create-instantsearch-app](https://github.com/algolia/create-instantsearch-app)
 
-## [Elastic stack](https://awesomestacks.dev/elk-stack)
+### [Elastic stack](https://awesomestacks.dev/elk-stack)
 
 A complete end-to-end log analysis, search and data viz solution, formerly known as the ELK stack.
 
