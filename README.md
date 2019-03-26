@@ -1,6 +1,5 @@
 # Awesome Stacks
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![MIT License](https://img.shields.io/npm/l/express.svg)](https://github.com/stackshareio/awesome-stacks)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/dzello/awesome-stacks)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7fb9c28c-1e1e-41e0-a0c6-95a5770f4abf/deploy-status)](https://app.netlify.com/sites/awesomestacks/deploys)
 
@@ -8,7 +7,7 @@
 
 Awesome Stacks is a community-curated list of tech stacks that are known to work well for building different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
-Stacks are organizated into categories based on programming languages, frameworks or architectures. To contribute a stack, see the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
+Stacks are organizated into categories based on programming languages, frameworks, architectures or use cases. Each stack includes a list of the key tools in the stack. To contribute or improve a stack, see the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 See the [awesomestacks.dev](https://awesomestacks.dev/) website for a more browsable version of this page that also contains more information about the stacks.
 
@@ -25,11 +24,7 @@ See the [awesomestacks.dev](https://awesomestacks.dev/) website for a more brows
 ### Legend
 
 🛠 - StackShare tool profile<br>
-🐙 - GitHub repo link
-
-```
- - [🛠️]() - [🐙]()
- ```
+🐙 - GitHub repository
 
 ## ASP.NET stacks
 
@@ -37,23 +32,17 @@ See the [awesomestacks.dev](https://awesomestacks.dev/) website for a more brows
 
 Cross-platform web development stack and single application boilerplate from the aspnet-starter-kit project.
 
-- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - [🛠️](https://stackshare.io/asp-net) - [🐙](https://github.com/aspnet/AspNetCore)
-- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp) - [🐙](https://github.com/dotnet/csharplang)
-- [F#](https://fsharp.org/) - [🛠️](https://stackshare.io/f-sharp) - [🐙](https://github.com/fsharp/fsharp)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript)
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - [🐙](https://github.com/aspnet/EntityFrameworkCore)
+- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - [🛠️](https://stackshare.io/asp-net) - [🐙](https://github.com/aspnet/AspNetCore) - An open source web framework for building modern web apps and services with .NET.
+- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp) - [🐙](https://github.com/dotnet/csharplang) - C# is an elegant and type-safe object-oriented language.
+- [F#](https://fsharp.org/) - [🛠️](https://stackshare.io/f-sharp) - [🐙](https://github.com/fsharp/fsharp) - F# is a mature, open source, cross-platform, functional-first programming language.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript) - A lightweight interpreted or JIT-compiled programming language with first-class functions.
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - [🐙](https://github.com/aspnet/EntityFrameworkCore) - A cross-platform version of the popular Entity Framework data access technology.
 
 > Get the [ASP.NET Starter Kit](https://github.com/kriasoft/aspnet-starter-kit).
 
 ## JAMStack stacks
 
-### [The JAMStack](https://awesomestacks.dev/the-jamstack)
-
-The JAMStack is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
-
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript)
-- [APIs](https://en.wikipedia.org/wiki/Application_programming_interface)
-- [Markdown](https://daringfireball.net/projects/markdown/syntax) - [🛠️](https://stackshare.io/markdown)
+The [JAMStack](https://jamstack.org/) is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 
