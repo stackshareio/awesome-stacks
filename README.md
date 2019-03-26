@@ -52,7 +52,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 ### [Hugo for blogging](https://awesomestacks.dev/hugo-for-blogging)
 
 - [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo)
-- [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) - [🛠️](https://github.com/budparr/gohugo-theme-ananke)
+- [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) - [🐙](https://github.com/budparr/gohugo-theme-ananke)
 
 ## LAMP stacks
 
@@ -125,6 +125,6 @@ The Algolia way to build a site search for any website using a crawler.
 - [Amazon SNS]()
 - [AWS CloudFormation]()
 
-## Contributing
+# Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) as well as the the [on-site documentation](https://awesomestacks.dev/docs) for philosophy, step-by-step guides and more information.

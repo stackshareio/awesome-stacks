@@ -32,6 +32,8 @@ exports.onCreateNode = async ({ node,
   const nodeContent = await loadNodeContent(node);
   const $ = cheerio.load(nodeContent);
 
+  console.log(nodeContent)
+
   const categories = $(`h2`).map((_, category) => {
     return {
       name: $(category).text(),
@@ -44,24 +46,21 @@ exports.onCreateNode = async ({ node,
           url: $(stack).find("a").attr("href"),
           tools: $(stack).next(`ul`).find(`li`).map((_, tool) => {
             const toolObj = {};
-            var links = $(tool).find("a");
-            links.each((_, link) => {
+            $(tool).find("a").each((_, link) => {
               if ($(link).text() === "🛠️") {
                 toolObj.stackShareUrl = $(link).attr("href");
               } else if ($(link).text() === "🐙") {
                 toolObj.gitHubUrl = $(link).attr("href");
-              } else {
-                toolObj.name = $(link).text();
-                toolObj.url = $(link).attr("href");
               }
             });
             return toolObj;
-          })
+          }).get()
         }
-      })
+      }).get()
     }
-  })
+  }).get()
 
+  console.log("YP")
   console.log(categories)
 
   // get the stacks then get the tools
@@ -94,9 +93,9 @@ exports.onCreateNode = async ({ node,
   }));
 
   createNodeField({
-    name: "stacks",
+    name: "categories",
     node,
-    value: stacks
+    value: categories
   });
 
 };
@@ -113,9 +112,11 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   id
                   fields {
-                    stacks {
-                      name
-                      path
+                    categories {
+                      stacks {
+                        name
+                        path
+                      }
                     }
                   }
                 }
@@ -131,11 +132,13 @@ exports.createPages = ({ graphql, actions }) => {
         }
         // there will just be one edge for the readme
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          node.fields.stacks.forEach(stack => {
-            createPage({
-              path: stack.path,
-              component: path.resolve(`./src/components/pages/readme-stacks-page.js`),
-              context: { id: node.id, stackName: stack.name }
+          node.fields.categories.forEach(category => {
+            category.stacks.forEach(stack => {
+              createPage({
+                path: stack.path,
+                component: path.resolve(`./src/components/pages/readme-stacks-page.js`),
+                context: { id: node.id, stackName: stack.name }
+              });
             });
           });
         });

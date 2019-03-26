@@ -9,7 +9,9 @@ import StackShareCard from "../stacks/stackshare-card"
 import StackHero from "../stacks/stack-hero"
 
 function ReadmeStacksPage({ data, pageContext: { stackName } }) {
-  const stack = data.markdownRemark.fields.stacks.find(stack => stack.name === stackName)
+  const stack = data.markdownRemark.fields.categories.map(category => {
+    return category.stacks.find(stack => stack.name === stackName)
+  }).filter(stack => stack);
   const heroProps = {
     title: stack.name,
     description: stack.description
@@ -60,67 +62,69 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       fields {
-        stacks {
-          name
-          description
-          path
-          tools {
-            gitHubData {
-              name
-              nameWithOwner
-              description
-              descriptionHTML
-              stargazers {
-                totalCount
-              }
-              repositoryTopics {
-                edges {
-                  node {
-                    topic {
+        categories {
+          stacks {
+            name
+            description
+            path
+            tools {
+              gitHubData {
+                name
+                nameWithOwner
+                description
+                descriptionHTML
+                stargazers {
+                  totalCount
+                }
+                repositoryTopics {
+                  edges {
+                    node {
+                      topic {
+                        name
+                      }
+                    }
+                  }
+                }
+                forks {
+                  totalCount
+                }
+                updatedAt
+                url
+                homepageUrl
+                languages {
+                  edges {
+                    node {
                       name
+                      color
                     }
                   }
                 }
               }
-              forks {
-                totalCount
-              }
-              updatedAt
-              url
-              homepageUrl
-              languages {
-                edges {
-                  node {
-                    name
-                    color
-                  }
+              stackShareData {
+                name
+                fullName
+                tagline
+                logo
+                website
+                url
+                gitHubURL
+                category {
+                  name
+                  url
                 }
-              }
-            }
-            stackShareData {
-              name
-              fullName
-              tagline
-              logo
-              website
-              url
-              gitHubURL
-              category {
-                name
-                url
-              }
-              group {
-                name
-                url
-              }
-              stackShareStats {
-                name
-                value
-              }
-              gitHubStats {
-                name
-                value
-                dateValue
+                group {
+                  name
+                  url
+                }
+                stackShareStats {
+                  name
+                  value
+                }
+                gitHubStats {
+                  name
+                  value
+                  dateValue
+                }
               }
             }
           }
