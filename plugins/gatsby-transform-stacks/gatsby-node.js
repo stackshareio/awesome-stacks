@@ -1,6 +1,9 @@
 const path = require("path");
 const cheerio = require("cheerio");
 const slugify = require('@sindresorhus/slugify');
+const remark = require('remark');
+const html = require('remark-html');
+
 const stackshare = require("../../src/utils/stackshare");
 const github = require("../../src/utils/github");
 
@@ -30,9 +33,9 @@ exports.onCreateNode = async ({ node,
 
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
-  const $ = cheerio.load(nodeContent);
+  const nodeContentHtml = await remark().use(html).process(nodeContent);
 
-  console.log(nodeContent)
+  const $ = cheerio.load(nodeContentHtml.contents);
 
   const categories = $(`h2`).map((_, category) => {
     return {
@@ -41,27 +44,28 @@ exports.onCreateNode = async ({ node,
       stacks: $(category).nextUntil(`h2`, `h3`).map((_, stack) => {
         return {
           name: $(stack).find("a").text(),
-          description: $(stack).find("p").text(),
           path: slugify($(stack).find("a").text()),
           url: $(stack).find("a").attr("href"),
-          tools: $(stack).next(`ul`).find(`li`).map((_, tool) => {
+          description: $(stack).next("p").text(),
+          tools: $(stack).nextUntil(`h3`, `ul`).find(`li`).map((_, tool) => {
             const toolObj = {};
             $(tool).find("a").each((_, link) => {
-              if ($(link).text() === "🛠️") {
+              if ($(link).attr("href").match(/stackshare.io\//)) {
                 toolObj.stackShareUrl = $(link).attr("href");
-              } else if ($(link).text() === "🐙") {
+              } else if ($(link).attr("href").match(/github.com\//)) {
                 toolObj.gitHubUrl = $(link).attr("href");
+              } else if ($(link).text().match(/[\w\d_ -]/)) {
+                toolObj.name = $(link).text();
+                toolObj.url = $(link).attr("href");
               }
             });
+            toolObj.description = $(tool).clone().children().remove().end().contents().text().replace(/ - /g, "").trim();
             return toolObj;
           }).get()
         }
       }).get()
     }
   }).get()
-
-  console.log("YP")
-  console.log(categories)
 
   // get the stacks then get the tools
   await Promise.all(categories.map(category => {

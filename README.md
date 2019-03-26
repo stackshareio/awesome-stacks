@@ -28,7 +28,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### [ASP.NET starter kit](https://awesomestacks.dev/aspnet-starter-kit)
 
-- [C#]()
+- [C#]() - [🛠](https://stackshare.io/csharp
 - [F#]()
 - [JavaScript]()
 - [ASP.NET Core]()
@@ -112,10 +112,14 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 The Algolia way to build a site search for any website using a crawler.
 
 - [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
-- [DocSearch crawler](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-crawler) - Crawls a website and uploads it to an index.
+- [DocSearch scraper](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-scraper) - Crawls a website and uploads it to an index.
 - [scrapy](https://scrapy.org) - [🐙](https://github.com/scrapy/scrapy) - Popular crawling and scraping tool written in Python.
 
 ## Serverless stacks
+
+### [Serverless framework](awesomestacks.dev/...)
+
+- [Serverless](https://serverless.com/) - [🛠️](https://stackshare.io/serverless)
 
 ### [Function-as-a-Service on AWS](awesomestacks.dev/...)
 

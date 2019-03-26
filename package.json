@@ -38,6 +38,8 @@
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-tweet-embed": "^1.1.1",
+    "remark": "^10.0.1",
+    "remark-html": "^9.0.0",
     "sharp": "^0.21.3",
     "x-ray": "^2.3.3"
   },
