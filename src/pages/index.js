@@ -22,7 +22,7 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
-      <div className="hero is-medium is-bold has-background-danger has-text-centered">
+      <div className="hero is-medium has-background-danger has-text-centered">
         <div className="hero-body">
           <div className="columns is-centered is-multiline">
             <div className="column is-12">
@@ -36,14 +36,13 @@ const IndexPage = ({
           </div>
         </div>
       </div>
-      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+      {/* <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
         <div className="has-text-centered">
-          <h3 className="is-size-3 has-text-white">——— Featured Stacks ———</h3>
+          <h3 className="is-size-3 has-text-white">——— See The Stacks ———</h3>
         </div>
-      </div>
+      </div> */}
       <div className="section">
         {Categories}
-        <div className="has-margin-bottom-20"></div>
       </div>
       {/* <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
         <div className="has-text-centered">

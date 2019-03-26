@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import StackShareCard from "./stackshare"
+import StackShareCard from "../stacks/stackshare-card"
 
 function StackShare({ name, children }) {
   const data = useStaticQuery(query);

@@ -3,19 +3,17 @@ import StackCard from "./stack-card"
 
 const Category = ({ category }) => {
   const Stacks = category.stacks.map(stack => (
-    <>
-      <div className="has-margin-bottom-40" />
-      <StackCard key={stack.name} stack={stack} />
-      <div className="has-margin-bottom-40" />
-    </>
+    <div className="has-margin-top-50 has-margin-bottom-50" key={stack.name} >
+      <StackCard stack={stack} />
+    </div>
   ))
   return (
     <>
-      <h1 className="is-size-3 has-text-grey">
+      <h1 className="is-size-3 has-text-grey has-text-centered">
         {category.name}
       </h1>
       {Stacks}
-      <div className="has-margin-bottom-100 has-dotted-line" />
+      <div className="has-margin-top-50 has-margin-bottom-50 has-dotted-line" />
     </>
   )
 }

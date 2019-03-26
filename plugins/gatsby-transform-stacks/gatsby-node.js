@@ -7,6 +7,10 @@ const html = require('remark-html');
 const stackshare = require("../../src/utils/stackshare");
 const github = require("../../src/utils/github");
 
+const customReplacements = [
+  [".", ""]
+]
+
 exports.onCreateNode = async ({ node,
   actions,
   getNode,
@@ -31,6 +35,8 @@ exports.onCreateNode = async ({ node,
     return
   }
 
+  console.log("OnCreateNode - plugin - readme");
+
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
   const nodeContentHtml = await remark().use(html).process(nodeContent);
@@ -40,11 +46,11 @@ exports.onCreateNode = async ({ node,
   const categories = $(`h2`).map((_, category) => {
     return {
       name: $(category).text(),
-      path: slugify($(category).text()),
+      path: slugify($(category).text(), { customReplacements }),
       stacks: $(category).nextUntil(`h2`, `h3`).map((_, stack) => {
         return {
           name: $(stack).find("a").text(),
-          path: slugify($(stack).find("a").text()),
+          path: slugify($(stack).find("a").text(), { customReplacements }),
           url: $(stack).find("a").attr("href"),
           description: $(stack).next("p").text(),
           tools: $(stack).nextUntil(`h3`, `ul`).find(`li`).map((_, tool) => {

@@ -22,7 +22,9 @@ function GitHubCard({ name, github, children }) {
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
         </a>
       </div>
-      <div className="is-size-7 is-description has-text-centered" dangerouslySetInnerHTML={{ __html: github.descriptionHTML }} />
+      <div className="is-size-7 is-description has-text-centered">
+        {truncate(github.description, 70)}
+      </div>
       <div className="level is-mobile is-bottom has-overflow-hidden has-margin-top-20">
         <div className="level-item has-text-left">
           <div>

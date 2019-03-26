@@ -7,7 +7,7 @@ import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Tools from "../mdx/tools"
-import StackCard from "../stacks/stack-card"
+// import StackCard from "../stacks/stack-card"
 import GitHub from "../mdx/github"
 import StackShare from "../mdx/stackshare"
 import StackHero from "../stacks/stack-hero"
@@ -20,13 +20,13 @@ const components = {
 function ContentStacksPage({ data }) {
   const { mdx } = data;
   const { id } = mdx;
-  const StackCards = data.allMdx.edges.map(edge =>
-    id === edge.node.id ? `` : <div key={edge.node.id} className="container">
-      <StackCard node={edge.node} />
-      <div className="has-margin-bottom-40"></div>
-      <div className="has-margin-bottom-40 has-dotted-line"></div>
-    </div>
-  );
+  // const StackCards = data.allMdx.edges.map(edge =>
+  //   id === edge.node.id ? `` : <div key={edge.node.id} className="container">
+  //     <StackCard node={edge.node} />
+  //     <div className="has-margin-bottom-40"></div>
+  //     <div className="has-margin-bottom-40 has-dotted-line"></div>
+  //   </div>
+  // );
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
@@ -60,16 +60,16 @@ function ContentStacksPage({ data }) {
           </div>
         </div>
       </div>
-      <div className="has-margin-bottom-100"></div>
-      <div className="has-background-grey has-padding-top-10 has-padding-bottom-10 has-margin-bottom-20">
+      {/* <div className="has-margin-bottom-100"></div> */}
+      {/* <div className="has-background-grey has-padding-top-10 has-padding-bottom-10 has-margin-bottom-20">
         <div className="has-text-centered">
           <h3 className="is-size-4 has-text-white">——— More Stacks ———</h3>
         </div>
-      </div>
-      <div className="section">
+      </div> */}
+      {/* <div className="section">
         {StackCards}
         <div className="has-margin-top-40"></div>
-      </div>
+      </div> */}
     </Layout>
   );
 }

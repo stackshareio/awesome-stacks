@@ -8,13 +8,16 @@
 
 Awesome Stacks is a community-curated list of tech stacks that are known to work well for building different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
+Stacks are organizated into categories based on programming languages, frameworks or architectures. To contribute a stack, see the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+See the [awesomestacks.dev](https://awesomestacks.dev/) website for a more browsable version of this page that also contains more information about the stacks.
+
 # Contents
 
 - [ASP.NET stacks](#aspnet-stacks)
 - [JAMStack stacks](#jamstack-stacks)
 - [LAMP stacks](#lamp-stacks)
 - [MongoDB stacks](#mongodb-stacks)
-- [Microservices stacks](#microservices-stacks)
 - [React stacks](#react-stacks)
 - [Search stacks](#search-stacks)
 - [Serverless stacks](#serverless-stacks)
@@ -24,25 +27,33 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 🛠 - StackShare tool profile<br>
 🐙 - GitHub repo link
 
+```
+ - [🛠️]() - [🐙]()
+ ```
+
 ## ASP.NET stacks
 
 ### [ASP.NET starter kit](https://awesomestacks.dev/aspnet-starter-kit)
 
-- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp
-- [F#]()
-- [JavaScript]()
-- [ASP.NET Core]()
-- [EF Core]()
+Cross-platform web development stack and single application boilerplate from the aspnet-starter-kit project.
 
-> Get the [ASP.NET Starter Kit](https://github.com/kriasoft/aspnet-starter-kit)
+- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - [🛠️](https://stackshare.io/asp-net) - [🐙](https://github.com/aspnet/AspNetCore)
+- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp) - [🐙](https://github.com/dotnet/csharplang)
+- [F#](https://fsharp.org/) - [🛠️](https://stackshare.io/f-sharp) - [🐙](https://github.com/fsharp/fsharp)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript)
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - [🐙](https://github.com/aspnet/EntityFrameworkCore)
+
+> Get the [ASP.NET Starter Kit](https://github.com/kriasoft/aspnet-starter-kit).
 
 ## JAMStack stacks
 
 ### [The JAMStack](https://awesomestacks.dev/the-jamstack)
 
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+The JAMStack is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript)
 - [APIs](https://en.wikipedia.org/wiki/Application_programming_interface)
-- [Markdown](https://daringfireball.net/projects/markdown/syntax)
+- [Markdown](https://daringfireball.net/projects/markdown/syntax) - [🛠️](https://stackshare.io/markdown)
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 
@@ -51,7 +62,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### [Hugo for blogging](https://awesomestacks.dev/hugo-for-blogging)
 
-- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)
+- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo)
 - [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) - [🐙](https://github.com/budparr/gohugo-theme-ananke)
 
 ## LAMP stacks
@@ -100,10 +111,6 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 - [Express]() - [🛠️]()
 - [React]() - [🛠️]()
 - [Node.js]() - [🛠️]()
-
-## Microservices stacks
-
-...
 
 ## Search stacks
 

@@ -122,6 +122,9 @@ exports.createPages = ({ graphql, actions }) => {
             context: { id: node.id }
           });
         });
+      }).catch(err => {
+        console.error("Building pages failed");
+        console.error(err);
       })
     );
   });
