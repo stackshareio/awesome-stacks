@@ -14,9 +14,9 @@ Check out the [awesomestacks.dev](https://awesomestacks.dev/) website for an eas
 # Contents
 
 - [ASP.NET stacks](#aspnet-stacks)
+- [Front-end stacks](#front-end-stacks)
 - [JAMStack stacks](#jamstack-stacks)
 - [NoSQL stacks](#nosql-stacks)
-- [React stacks](#react-stacks)
 - [Search stacks](#search-stacks)
 - [Serverless stacks](#serverless-stacks)
 - [Web application stacks](#web-development-stacks)
@@ -98,7 +98,7 @@ The MEAN stack with React instead of Angular.
 
 > Learn to MERN at [mern.io](http://mern.io/)
 
-## React stacks
+## Front-end stacks
 
 ### [React starter kit](https://awesomestacks.dev/react-starter-kit)
 
@@ -123,6 +123,17 @@ A serverless project template based on Firebase and React; deploys easily to Goo
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js)
 
 > Get the [React Firebase starter](https://github.com/kriasoft/react-firebase-starter)
+
+### [Vue.js](https://awesomestacks.dev/vuejs)
+
+Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. 
+
+- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue.js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
+- [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
+- [Vuex](https://veux.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
+- [Vue CLI](https://cli.vuejs.org/) - [🐙](https://github.com/vuejs/vue-cli) - Standard Tooling for Vue.js Development.
+
+> Get [vue-starter](https://github.com/devCrossNet/vue-starter)
 
 ## Search stacks
 
