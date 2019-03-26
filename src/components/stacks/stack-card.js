@@ -19,12 +19,12 @@ const StackCard = ({ stack }) => (
         <div className="level is-mobile has-margin-top-20">
           {stack.tools.slice(0, 4).map((tool) =>
             <div className="level-item justify-left" key={tool.name}>
-              {tool.stackShareData ? 
-                 <img alt={tool.stackShareData.name} src={tool.stackShareData.logo} className="is-logo"></img>
-                   : tool.gitHubData ? <GitHubIcon github={tool.gitHubData} /> : 
-                   <div class="is-size-7 has-text-centered" style={{ border: "1px dotted #8E9FA9", width: "75px", height: "75px", padding: "2px" }}>
+              {tool.stackShareData ?
+                <img alt={tool.stackShareData.name} src={tool.stackShareData.logo} className="is-logo"></img>
+                : tool.gitHubData ? <GitHubIcon github={tool.gitHubData} /> :
+                  <div class="is-size-7" style={{ border: "1px dotted #8E9FA9", width: "75px", height: "75px", padding: "2px", display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
                     {tool.name}
-                   </div>
+                  </div>
               }
             </div>
           )}
