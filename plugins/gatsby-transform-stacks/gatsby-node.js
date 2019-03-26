@@ -35,8 +35,6 @@ exports.onCreateNode = async ({ node,
     return
   }
 
-  console.log("OnCreateNode - plugin - readme");
-
   // add a field for the list of tools used in the mdx
   const nodeContent = await loadNodeContent(node);
   const nodeContentHtml = await remark().use(html).process(nodeContent);
