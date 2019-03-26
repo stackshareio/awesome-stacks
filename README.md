@@ -19,7 +19,7 @@ Check out the [awesomestacks.dev](https://awesomestacks.dev/) website for an eas
 - [React stacks](#react-stacks)
 - [Search stacks](#search-stacks)
 - [Serverless stacks](#serverless-stacks)
-- [Web development stacks](#web-development-stacks)
+- [Web application stacks](#web-development-stacks)
 
 ### Legend
 
@@ -58,8 +58,9 @@ Gatsby is a framework for static and dynamic apps based on React and GraphQL.
 
 Hugo is a static site generator written in Go with a focus on speed and convention.
 
-- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo)
-- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) 
+- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
+- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) - An open source programming language that makes it easy to build simple, reliable, and efficient software.
+- [Blackfriday](https://github.com/russross/blackfriday) - [🐙](https://github.com/russross/blackfriday) - A markdown processor for Go.
 
 > Get a [Hugo starter kit](https://gohugo.io/tools/starter-kits/)
 
@@ -67,9 +68,9 @@ Hugo is a static site generator written in Go with a focus on speed and conventi
 
 Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. 
 
-- [Jekyll](https://jekyllrb.com/) - [🛠](https://stackshare.io/jekyll) - [🐙](https://github.com/jekyll/jekyll)
-- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) 
-- [Github Pages](https://pages.github.com/) - [⚒️](https://stackshare.io/github-pages)
+- [Jekyll](https://jekyllrb.com/) - [🛠](https://stackshare.io/jekyll) - [🐙](https://github.com/jekyll/jekyll) - Transform your plain text into static websites and blogs.
+- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
+- [Github Pages](https://pages.github.com/) - [⚒️](https://stackshare.io/github-pages) - Websites for you and your projects, hosted by GitHub.
 
 > Get [Jekyll themes](https://jekyllthemes.io/free)
 
@@ -136,6 +137,17 @@ The Algolia way to build a site search for any website using a crawler.
 
 > Get [create-instantsearch-app](https://github.com/algolia/create-instantsearch-app)
 
+## [Elastic stack](https://awesomestacks.dev/elk-stack)
+
+A complete end-to-end log analysis, search and data viz solution, formerly known as the ELK stack.
+
+- [Elasticsearch](https://www.elastic.co/products/elasticsearch) - [🛠️](https://stackshare.io/elasticsearch) - [🐙](https://github.com/elastic/elasticsearch)
+- [Logstash](https://www.elastic.co/products/logstash) - [🛠️](https://stackshare.io/logstash) - [🐙](https://github.com/elastic/logstash)
+- [Kibana](https://www.elastic.co/products/kibana) - [🛠️](https://stackshare.io/kibana) - [🐙](https://github.com/elastic/kibana)
+- [Beats](https://www.elastic.co/products/beats) - [🐙](https://github.com/elastic/beats)
+
+> Get an [ELK stack tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04)
+
 ## Serverless stacks
 
 ### [Serverless framework](https://awesomestacks.dev/serverless-framework)
@@ -148,7 +160,7 @@ The Algolia way to build a site search for any website using a crawler.
 
 > Get [serverless examples](https://serverless.com/examples/)
 
-## Web development stacks
+## Web application stacks
 
 ### [The LAMP stack](https://awesomestacks.dev/the-lamp-stack)
 
@@ -169,6 +181,15 @@ Web applications developed for LYME/LYCE may be run entirely in one Erlang virtu
 - [Yaws](http://yaws.hyber.org) - [🐙](https://github.com/klacke/yaws)
 - [Mnesia](http://erlang.org/doc/man/mnesia.html) - [🐙](https://github.com/erlang-labs/mnesia)
 - [Erlang](http://www.erlang.org) - [🛠️](https://stackshare.io/erlang) - [🐙](https://github.com/erlang/otp)
+
+### [Ruby on Rails](https://awesomestacks.dev/ruby-on-rails)
+
+Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.
+
+- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
+- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - Optimizing for programmer happiness with Convention over Configuration is how we roll.
+- [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic.
+- [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
 
 # Contributing
 
