@@ -1,25 +1,20 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Card from "./card"
+import GitHubIcon from "./github-icon";
 import { truncate } from "../../utils"
 
 function GitHubCard({ name, github, children }) {
   if (!github) {
     return <Card color="danger">{name} not found</Card>
   }
-  const languageEdge = github.languages.edges[0];
-  const languageColor = languageEdge ? languageEdge.node.color : "#CC427F";
-  const languageName = languageEdge ? languageEdge.node.name : '';
   const url = github.homepageUrl || github.url;
   return (
     <Card description={children}>
       <div className="is-top has-padding-top-5 has-text-centered">
-        <a href={url} title={`Language: ${languageName}`} className="has-text-white" style={{ display: "inline-flex", justifyContent: "center", backgroundColor: languageColor, width: "75px", padding: "10px 0", borderRadius: "15px" }}>
-          <span className="is-size-3 is-strong">{github.name.substring(0, 1).toUpperCase()}</span>
-          <span className="is-size-3 is-strong">{github.name.substring(1, 2)}</span>
-        </a>
+        <a href={url}><GitHubIcon github={github} /></a>
         <div className="is-size-5 has-margin-top-10">
-          <a href={url}>{github.name}</a>
+          <a href={url} style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>{github.name}</a>
         </div>
       </div>
       <div className="is-size-7 has-text-centered has-margin-bottom-10">

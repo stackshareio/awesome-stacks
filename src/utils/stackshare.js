@@ -66,11 +66,15 @@ module.exports = {
         },
       ]),
     }).then(tool => {
-      return {
-        name,
-        url,
-        ...tool,
+      if (tool.logo) {
+        return {
+          name,
+          url,
+          ...tool,
+        }
+      } else {
+        return null
       }
-    })
+   })
   },
 }

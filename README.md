@@ -28,7 +28,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### [ASP.NET starter kit](https://awesomestacks.dev/aspnet-starter-kit)
 
-- [C#]() - [🛠](https://stackshare.io/csharp
+- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp
 - [F#]()
 - [JavaScript]()
 - [ASP.NET Core]()
@@ -46,12 +46,12 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 ### [Gatsby with Contentful](https://awesomestacks.dev/gatsby-with-contentful)
 
-- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsby)
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs)
 - [Contentful](https://contentful.com/) - [🛠](https://stackshare.io/contentful)
 
 ### [Hugo for blogging](https://awesomestacks.dev/hugo-for-blogging)
 
-- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo)
+- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)
 - [Ananke Gohugo Theme](https://themes.gohugo.io/gohugo-theme-ananke/) - [🐙](https://github.com/budparr/gohugo-theme-ananke)
 
 ## LAMP stacks

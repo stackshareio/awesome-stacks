@@ -2,23 +2,23 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import StackCard from "../components/stacks/stack-card"
+// import StackCard from "../components/stacks/stack-card"
+import Category from "../components/stacks/category"
 import Contributors from "../components/contributors";
 
 const IndexPage = ({
   data: {
     site: { siteMetadata: { title, description } },
-    allMdx: { edges },
+    allMdx,
+    allMarkdownRemark: { edges }
   },
 }) => {
-  const StackCards = edges.map(edge =>
-    <div key={edge.node.id} className="container">
-      <StackCard node={edge.node} />
-      <div className="has-margin-bottom-40"></div>
-      <div className="has-margin-bottom-40 has-dotted-line"></div>
+  const Categories = edges[0].node.fields.categories.map(category =>
+    <div key={category.name} className="container">
+      <Category category={category} />
     </div>
   );
-  const contributors = getContributors(edges);
+  // const contributors = getContributors(allMdx.edges);
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
@@ -42,18 +42,18 @@ const IndexPage = ({
         </div>
       </div>
       <div className="section">
-        {StackCards}
+        {Categories}
         <div className="has-margin-bottom-20"></div>
       </div>
-      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+      {/* <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
         <div className="has-text-centered">
           <h3 className="is-size-3 has-text-white">——— Contributors ———</h3>
         </div>
-      </div>
-      <div className="has-margin-top-20">
+      </div> */}
+      {/* <div className="has-margin-top-20">
         <Contributors contributors={contributors} />
         <div className="has-margin-bottom-40"></div>
-      </div>
+      </div> */}
     </Layout>);
 }
 
@@ -75,8 +75,58 @@ export const pageQuery = graphql`
         }
       }
     }
+    allMarkdownRemark(
+      filter: { fields: { sourceName: { eq: "readme-stacks" } } }
+      ) {
+      edges {
+        node {
+          ...MarkdownRemarkFields
+        }
+      }
+    }
   }
 `
+
+export const MarkdownRemarkFields = graphql`
+  fragment MarkdownRemarkFields on MarkdownRemark {
+    fields {
+      categories {
+        name
+        path
+        stacks {
+          name
+          path
+          description
+          url
+          tools {
+            name
+            description
+            url
+            gitHubUrl 
+            stackShareUrl
+            stackShareData {
+              name
+              logo
+            }
+            gitHubData {
+              name
+              url
+              homepageUrl
+              languages {
+                edges {
+                  node {
+                    name
+                    color
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export const mdxQuery = graphql`
   fragment MdxFields on Mdx {

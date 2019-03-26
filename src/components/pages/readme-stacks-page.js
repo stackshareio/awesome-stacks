@@ -11,7 +11,7 @@ import StackHero from "../stacks/stack-hero"
 function ReadmeStacksPage({ data, pageContext: { stackName } }) {
   const stack = data.markdownRemark.fields.categories.map(category => {
     return category.stacks.find(stack => stack.name === stackName)
-  }).filter(stack => stack);
+  }).filter(stack => stack)[0];
   const heroProps = {
     title: stack.name,
     description: stack.description
