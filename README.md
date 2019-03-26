@@ -13,90 +13,16 @@ Check out the [awesomestacks.dev](https://awesomestacks.dev/) website for an eas
 
 # Contents
 
-- [ASP.NET stacks](#aspnet-stacks)
 - [Front-end stacks](#front-end-stacks)
+- [Full-stack stacks](#full-stack-stacks)
 - [JAMStack stacks](#jamstack-stacks)
-- [NoSQL stacks](#nosql-stacks)
 - [Search stacks](#search-stacks)
 - [Serverless stacks](#serverless-stacks)
-- [Web application stacks](#web-development-stacks)
 
 ### Legend
 
 🛠 - StackShare tool profile<br>
 🐙 - GitHub repository
-
-## ASP.NET stacks
-
-### [ASP.NET starter kit](https://awesomestacks.dev/aspnet-starter-kit)
-
-Cross-platform web development stack and single application boilerplate from the aspnet-starter-kit project.
-
-- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - [🛠️](https://stackshare.io/asp-net) - [🐙](https://github.com/aspnet/AspNetCore) - An open source web framework for building modern web apps and services with .NET.
-- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp) - [🐙](https://github.com/dotnet/csharplang) - C# is an elegant and type-safe object-oriented language.
-- [F#](https://fsharp.org/) - [🛠️](https://stackshare.io/f-sharp) - [🐙](https://github.com/fsharp/fsharp) - F# is a mature, open source, cross-platform, functional-first programming language.
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript) - A lightweight interpreted or JIT-compiled programming language with first-class functions.
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - [🐙](https://github.com/aspnet/EntityFrameworkCore) - A cross-platform version of the popular Entity Framework data access technology.
-
-> Get the [ASP.NET Starter Kit](https://github.com/kriasoft/aspnet-starter-kit).
-
-## JAMStack stacks
-
-The [JAMStack](https://jamstack.org/) is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
-
-### [GatsbyJS](https://awesomestacks.dev/gatsbyjs)
-
-Gatsby is a framework for static and dynamic apps based on React and GraphQL.
-
-- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby)
-- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react)
-- [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js)
-
-> Get a [Gatsby starter kit](https://www.gatsbyjs.org/starters/?v=2)
-
-### [Hugo](https://awesomestacks.dev/hugo)
-
-Hugo is a static site generator written in Go with a focus on speed and convention.
-
-- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
-- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) - An open source programming language that makes it easy to build simple, reliable, and efficient software.
-- [Blackfriday](https://github.com/russross/blackfriday) - [🐙](https://github.com/russross/blackfriday) - A markdown processor for Go.
-
-> Get a [Hugo starter kit](https://gohugo.io/tools/starter-kits/)
-
-### [Jekyll](https://awesomestacks.dev/jekyll)
-
-Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. 
-
-- [Jekyll](https://jekyllrb.com/) - [🛠](https://stackshare.io/jekyll) - [🐙](https://github.com/jekyll/jekyll) - Transform your plain text into static websites and blogs.
-- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
-- [Github Pages](https://pages.github.com/) - [⚒️](https://stackshare.io/github-pages) - Websites for you and your projects, hosted by GitHub.
-
-> Get [Jekyll themes](https://jekyllthemes.io/free)
-
-## NoSQL stacks
-
-### [The MEAN Stack](https://awesomestacks.dev/the-mean-stack)
-
-An all-JavaScript stack for front and back-end web application development with Angular.
-
-- [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo)
-- [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express)
-- [Angular](https://angular.io/) - [🛠️](https://stackshare.io/angularjs) - [🐙](https://github.com/angular/angular.js)
-- [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node)
-
-> Get [MEAN stack tutorials](https://www.digitalocean.com/community/tags/mean?type=tutorials)
-
-### [The MERN Stack](https://awesomestacks.dev/the-mern-stack)
-
-The MEAN stack with React instead of Angular.
-
-- [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo)
-- [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express)
-- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react)
-- [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node)
-
-> Learn to MERN at [mern.io](http://mern.io/)
 
 ## Front-end stacks
 
@@ -135,9 +61,108 @@ Vue is a progressive framework for building user interfaces. Unlike other monoli
 
 > Get [vue-starter](https://github.com/devCrossNet/vue-starter)
 
+## Full-stack stacks
+
+### [ASP.NET](https://awesomestacks.dev/aspnet)
+
+An open source web framework for building modern web apps and services with .NET.
+
+- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - [🛠️](https://stackshare.io/asp-net) - [🐙](https://github.com/aspnet/AspNetCore) - An open source web framework for building modern web apps and services with .NET.
+- [C#](http://csharp.net/) - [🛠](https://stackshare.io/c-sharp) - [🐙](https://github.com/dotnet/csharplang) - C# is an elegant and type-safe object-oriented language.
+- [F#](https://fsharp.org/) - [🛠️](https://stackshare.io/f-sharp) - [🐙](https://github.com/fsharp/fsharp) - F# is a mature, open source, cross-platform, functional-first programming language.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [🛠️](https://stackshare.io/javascript) - A lightweight interpreted or JIT-compiled programming language with first-class functions.
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - [🐙](https://github.com/aspnet/EntityFrameworkCore) - A cross-platform version of the popular Entity Framework data access technology.
+
+> Get the [ASP.NET Starter Kit](https://github.com/kriasoft/aspnet-starter-kit).
+
+### [LAMP stack](https://awesomestacks.dev/lamp-stack)
+
+An open source Web development platform that's been around since Web 1.0 and is still going strong.
+
+- [Linux](https://www.linux.org/) - [🛠️](https://stackshare.io/linux) - [🐙](https://github.com/torvalds/linux)
+- [Apache](https://httpd.apache.org/) - [🛠️](https://stackshare.io/apache-httpd) - [🐙](https://github.com/apache/httpd)
+- [MySQL](https://www.mysql.com/) - [🛠️](https://stackshare.io/mysql) - [🐙](https://github.com/mysql/mysql-server)
+- [PHP](https://www.php.net/) - [🛠️](https://stackshare.io/php) - [🐙](https://github.com/php/php-src)
+
+> Get [LAMP stack tutorials](https://www.digitalocean.com/community/tags/lamp-stack?type=tutorials)
+
+### [LYME stack](https://awesomestacks.dev/lyme-stack)
+
+Web applications developed for LYME/LYCE may be run entirely in one Erlang virtual machine.
+
+- [Linux](https://www.linux.org/) - [🛠️](https://stackshare.io/linux) - [🐙](https://github.com/torvalds/linux)
+- [Yaws](http://yaws.hyber.org) - [🐙](https://github.com/klacke/yaws)
+- [Mnesia](http://erlang.org/doc/man/mnesia.html) - [🐙](https://github.com/erlang-labs/mnesia)
+- [Erlang](http://www.erlang.org) - [🛠️](https://stackshare.io/erlang) - [🐙](https://github.com/erlang/otp)
+
+### [MEAN Stack](https://awesomestacks.dev/mean-stack)
+
+An all-JavaScript stack for front and back-end web application development with Angular.
+
+- [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo)
+- [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express)
+- [Angular](https://angular.io/) - [🛠️](https://stackshare.io/angularjs) - [🐙](https://github.com/angular/angular.js)
+- [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node)
+
+> Get [MEAN stack tutorials](https://www.digitalocean.com/community/tags/mean?type=tutorials)
+
+### [MERN Stack](https://awesomestacks.dev/mern-stack)
+
+The MEAN stack with React instead of Angular.
+
+- [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo)
+- [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express)
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react)
+- [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node)
+
+> Learn to MERN at [mern.io](http://mern.io/)
+
+### [Ruby on Rails](https://awesomestacks.dev/ruby-on-rails)
+
+Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.
+
+- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
+- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - Optimizing for programmer happiness with Convention over Configuration is how we roll.
+- [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic.
+- [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
+
+## JAMStack stacks
+
+The [JAMStack](https://jamstack.org/) is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
+
+### [GatsbyJS](https://awesomestacks.dev/gatsbyjs)
+
+Gatsby is a framework for static and dynamic apps based on React and GraphQL.
+
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby)
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react)
+- [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js)
+
+> Get a [Gatsby starter kit](https://www.gatsbyjs.org/starters/?v=2)
+
+### [Hugo](https://awesomestacks.dev/hugo)
+
+Hugo is a static site generator written in Go with a focus on speed and convention.
+
+- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
+- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) - An open source programming language that makes it easy to build simple, reliable, and efficient software.
+- [Blackfriday](https://github.com/russross/blackfriday) - [🐙](https://github.com/russross/blackfriday) - A markdown processor for Go.
+
+> Get a [Hugo starter kit](https://gohugo.io/tools/starter-kits/)
+
+### [Jekyll](https://awesomestacks.dev/jekyll)
+
+Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. 
+
+- [Jekyll](https://jekyllrb.com/) - [🛠](https://stackshare.io/jekyll) - [🐙](https://github.com/jekyll/jekyll) - Transform your plain text into static websites and blogs.
+- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
+- [Github Pages](https://pages.github.com/) - [⚒️](https://stackshare.io/github-pages) - Websites for you and your projects, hosted by GitHub.
+
+> Get [Jekyll themes](https://jekyllthemes.io/free)
+
 ## Search stacks
 
-### [Algolia site search](https://awesomestacks.dev/algolia-site-search)
+### [Algolia](https://awesomestacks.dev/algolia)
 
 The Algolia way to build a site search for any website using a crawler.
 
@@ -170,37 +195,6 @@ A complete end-to-end log analysis, search and data viz solution, formerly known
 - [OpenWhisk](https://openwhisk.apache.org/) - [🛠️](https://stackshare.io/apache-openwhisk) - [🐙](https://github.com/apache/incubator-openwhisk)
 
 > Get [serverless examples](https://serverless.com/examples/)
-
-## Web application stacks
-
-### [The LAMP stack](https://awesomestacks.dev/the-lamp-stack)
-
-An open source Web development platform that's been around since Web 1.0 and is still going strong.
-
-- [Linux](https://www.linux.org/) - [🛠️](https://stackshare.io/linux) - [🐙](https://github.com/torvalds/linux)
-- [Apache](https://httpd.apache.org/) - [🛠️](https://stackshare.io/apache-httpd) - [🐙](https://github.com/apache/httpd)
-- [MySQL](https://www.mysql.com/) - [🛠️](https://stackshare.io/mysql) - [🐙](https://github.com/mysql/mysql-server)
-- [PHP](https://www.php.net/) - [🛠️](https://stackshare.io/php) - [🐙](https://github.com/php/php-src)
-
-> Get [LAMP stack tutorials](https://www.digitalocean.com/community/tags/lamp-stack?type=tutorials)
-
-### [The LYME stack](https://awesomestacks.dev/the-lyme-stack)
-
-Web applications developed for LYME/LYCE may be run entirely in one Erlang virtual machine.
-
-- [Linux](https://www.linux.org/) - [🛠️](https://stackshare.io/linux) - [🐙](https://github.com/torvalds/linux)
-- [Yaws](http://yaws.hyber.org) - [🐙](https://github.com/klacke/yaws)
-- [Mnesia](http://erlang.org/doc/man/mnesia.html) - [🐙](https://github.com/erlang-labs/mnesia)
-- [Erlang](http://www.erlang.org) - [🛠️](https://stackshare.io/erlang) - [🐙](https://github.com/erlang/otp)
-
-### [Ruby on Rails](https://awesomestacks.dev/ruby-on-rails)
-
-Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.
-
-- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
-- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - Optimizing for programmer happiness with Convention over Configuration is how we roll.
-- [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic.
-- [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
 
 # Contributing
 
