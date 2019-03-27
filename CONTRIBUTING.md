@@ -46,6 +46,12 @@ For each tool, there are 4 types of information you are asked to provide:
 
 The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and fixed.
 
+## Improving an awesome stack
+
+The process is the same as creating the stack, you are probably just having to edit less markdown :) Welcome contributions including adding additional tools and improving the descriptions of stacks and tools.
+
+> If you aren't yet ready to add an entire stack, this is a great way to make a first contribution!
+
 ## Finding tool pages
 
 To quickly locate the right pages for the tools you're adding, here are two handy links:
