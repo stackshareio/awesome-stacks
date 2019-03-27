@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## Adding an awesome stack
 
@@ -28,7 +28,7 @@ The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-i
 
 ### Stack description
 
-In a paragraph under the description, please describe what the stack is in a few sentences.
+In a paragraph under the description, please describe what the stack is used for, what makes it different than other stacks, and anything else useful to mention.
 
 ### Tools
 
@@ -36,19 +36,19 @@ Next, specify the key tools in the stack in an unordered list. 5 tools is the re
 
 For each tool, there are 4 types of information you are asked to provide:
 
-**Tool name and homepage**: The first link must be the name of the tool and a link to its homepage. If it doesn't have a homepage, you can point the link to its GitHub or StackShare page.
+**Tool name and homepage** (required): The first link must be the name of the tool and a link to its homepage. If it doesn't have a homepage, you can point the link to its GitHub or StackShare page.
 
-**StackShare profile link**: If the tool has a StackShare page, link to it next. Use the 🛠️ (`:hammer_and_wrench`) emoji as the link contents and the StackShare page (`https://stackshare.io/{tool}`) as the URL.
+**StackShare profile link** (optional): If the tool has a StackShare page, link to it next. Use the 🛠️ (`:hammer_and_wrench`) emoji as the link contents and the StackShare page (`https://stackshare.io/{tool}`) as the URL.
 
-**GitHub repository link**: If the tool has a GitHub repository, link to it next using the 🐙 (`:octopus`) emoji as the link content. The link URL should be to the repository (`https://github.com/{owner}/{name}`).
+**GitHub repository link** (optional): If the tool has a GitHub repository, link to it next using the 🐙 (`:octopus`) emoji as the link content. The link URL should be to the repository (`https://github.com/{owner}/{name}`).
 
-**Description** - After all of the links, you can provide a short description of the tool. Try to make it short enough so that it doesn't cause a link break on the README's GitHub.com view. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
+**Description** (optional): After all of the links, you can provide a short description of the tool. Try to make it short enough so that it doesn't cause a link break on the README's GitHub.com view. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
 
 The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and fixed.
 
 ## Improving an awesome stack
 
-The process is the same as creating the stack, you are probably just having to edit less markdown :) Welcome contributions including adding additional tools and improving the descriptions of stacks and tools.
+The process is roughly the same as creating the stack, but instead of creating a whole markdown block you will just add to or change one that already exists. We welcome contributions for adding additional tools or improving the descriptions of both stacks and tools.
 
 > If you aren't yet ready to add an entire stack, this is a great way to make a first contribution!
 
