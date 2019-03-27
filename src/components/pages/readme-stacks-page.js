@@ -20,14 +20,14 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
   const tools = stack.tools.map(tool => {
     if (tool.stackShareData) {
       return (
-        <StackShareCard key={tool.name} name={tool.name} stackshare={tool.stackShareData}>
+        <StackShareCard key={tool.name} name={tool.name} description={tool.description} stackshare={tool.stackShareData}>
           {tool.description}
         </StackShareCard>
       );
     }
     else if (tool.gitHubData) {
       return (
-        <GitHubCard key={tool.name} name={tool.name} github={tool.gitHubData}>
+        <GitHubCard key={tool.name} name={tool.name} description={tool.description} github={tool.gitHubData}>
           {tool.description}
         </GitHubCard>
       );
@@ -81,6 +81,7 @@ export const pageQuery = graphql`
             path
             tools {
               name
+              description
               gitHubData {
                 name
                 nameWithOwner

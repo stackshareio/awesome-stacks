@@ -9,7 +9,7 @@ Awesome Stacks is a community-curated list of tech stacks that are known to work
 
 Stacks are organized into categories based on languages, frameworks, architectures or use cases. Each stack includes a handful of key tools as well as a description. Tools may have descriptions too.
 
-Notice a missing stack? Or tools? Check out [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to add and improve stacks.
+Notice a missing stack? Or tools? Check out [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to add or improve data on this list.
 
 > Check out **[awesomestacks.dev](https://awesomestacks.dev/)** to see more data about these stacks from the GitHub and StackShare APIs.
 
@@ -205,10 +205,10 @@ Rails is a model–view–controller framework, providing default structures for
 
 - [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
 - [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - Optimizing for programmer happiness with Convention over Configuration is how we roll.
-- [Passenger](https://www.phusionpassenger.com) - [🛠️](https://stackshare.io/passenger) - [🐙](https://github.com/phusion/passenger)
+- [Passenger](https://www.phusionpassenger.com) - [🛠️](https://stackshare.io/passenger) - [🐙](https://github.com/phusion/passenger) - An app server that runs and automanages your web apps with ease.
 - [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic.
 - [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
 
 # Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) as well as the the [on-site documentation](https://awesomestacks.dev/docs) for philosophy, step-by-step guides and more information.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.

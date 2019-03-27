@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from "./card"
 import { truncate } from "../../utils"
 
-function StackShare({ name, stackshare, children }) {
+function StackShare({ name, description, stackshare }) {
   if (!stackshare) {
     return <Card color="danger">{name} not found</Card>
   }
@@ -11,7 +11,7 @@ function StackShare({ name, stackshare, children }) {
   const starsMetric = getMetric(`GitHubStars`, stackshare.gitHubStats);
   const forksMetric = getMetric(`GitHubForks`, stackshare.gitHubStats);
   return (
-    <Card description={children}>
+    <Card description={description}>
       <div className="is-top">
         <div className="is-logo-link has-text-centered">
           <a href={stackshare.website}>

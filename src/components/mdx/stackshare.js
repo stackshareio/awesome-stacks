@@ -6,8 +6,7 @@ function StackShare({ name, children }) {
   const data = useStaticQuery(query);
   const stackshare = getNode(name, data);
   return (
-    <StackShareCard name={name} stackshare={stackshare}>
-      {children}
+    <StackShareCard name={name} description={children} stackshare={stackshare}>
     </StackShareCard>
   )
 }

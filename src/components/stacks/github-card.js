@@ -4,13 +4,13 @@ import Card from "./card"
 import GitHubIcon from "./github-icon";
 import { truncate } from "../../utils"
 
-function GitHubCard({ name, github, children }) {
+function GitHubCard({ name, description, github }) {
   if (!github) {
     return <Card color="danger">{name} not found</Card>
   }
   const url = github.homepageUrl || github.url;
   return (
-    <Card description={children}>
+    <Card description={description}>
       <div className="is-top has-padding-top-5 has-text-centered">
         <a href={url}><GitHubIcon github={github} /></a>
         <div className="is-size-5 has-margin-top-10">

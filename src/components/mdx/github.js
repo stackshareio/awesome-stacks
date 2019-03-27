@@ -6,8 +6,7 @@ function GitHub({ name, children }) {
   const data = useStaticQuery(query);
   const github = getNode(name, data)
   return (
-    <GitHubCard name={name} github={github}>
-      {children}
+    <GitHubCard name={name} description={children} github={github}>
     </GitHubCard>
   )
 }
