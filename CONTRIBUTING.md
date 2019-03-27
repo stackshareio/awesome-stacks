@@ -18,28 +18,31 @@ A popular JavaScript library for building user interfaces comprised of interacti
 - [React Storybook](https://storybook.js.org) - [🛠️](https://stackshare.io/react-storybook) - [🐙](https://github.com/storybooks/storybook) - An open source tool for developing UI components in isolation.
 ```
 
-Here is each part:
+Here is a breakdown of each part of the markdown.
 
-#### Stack name
+### Stack name
 
 Must be an H3 that contains a link. The link text is the name of the stack. This should be a few words maximum and can simply be the name of the primary tool, use case or architecture the stack is based on.
 
 The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site.
 
-#### Stack description
+### Stack description
 
 In a paragraph under the description, please describe what the stack is in a few sentences.
 
-#### Tools
+### Tools
 
 Next, specify the key tools in the stack in an unordered list. 5 tools is the recommended maximum. Choose tools that complement each other and form the basis of the stack.
 
-For each tool, there are 4 types of information you can provide:
+For each tool, there are 4 types of information you are asked to provide:
 
-- Tool name and link: The first link must be the name of the tool and a link to its homepage. If it doesn't have a homepage, you can point the link to its GitHub or StackShare page.
-- StackShare profile link: If the tool has a StackShare page, link to it next. Use the 🛠️ (`:hammer_and_wrench`) emoji as the link contents and the StackShare page (`https://stackshare.io/{tool}`) as the URL.
-- GitHub repository link: If the tool has a GitHub repository, link to it next using the 🐙 (`:octopus`) emoji as the link content. The link URL should be to the repository (`https://github.com/{owner}/{name}`).
-- Description - After all of the links, you can provide a short description of the tool. Try to make it short enough so that it doesn't cause a link break on the README's GitHub.com view. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
+**Tool name and homepage**: The first link must be the name of the tool and a link to its homepage. If it doesn't have a homepage, you can point the link to its GitHub or StackShare page.
+
+**StackShare profile link**: If the tool has a StackShare page, link to it next. Use the 🛠️ (`:hammer_and_wrench`) emoji as the link contents and the StackShare page (`https://stackshare.io/{tool}`) as the URL.
+
+**GitHub repository link**: If the tool has a GitHub repository, link to it next using the 🐙 (`:octopus`) emoji as the link content. The link URL should be to the repository (`https://github.com/{owner}/{name}`).
+
+**Description** - After all of the links, you can provide a short description of the tool. Try to make it short enough so that it doesn't cause a link break on the README's GitHub.com view. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
 
 The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and fixed.
 
