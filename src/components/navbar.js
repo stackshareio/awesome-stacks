@@ -25,7 +25,8 @@ function Navbar() {
         <div className={`navbar-menu ${burger}`} id="#navbarMenuHeroA">
           <div className="navbar-end">
             <Link className="navbar-item" activeClassName="is-active" to="/about/">About</Link>
-            <Link className="navbar-item" activeClassName="is-active" to="/docs/">Contribute</Link>
+            {/* <Link className="navbar-item" activeClassName="is-active" to="/docs/">Contribute</Link> */}
+            <a className="navbar-item" href={`${data.site.siteMetadata.repository}/blob/master/CONTRIBUTING.md`}>Contribute</a>
             <a className="navbar-item" href={data.site.siteMetadata.repository}>
               <FontAwesomeIcon icon={["fab", "github"]} />
               <span>&nbsp;&nbsp;GitHub</span>
