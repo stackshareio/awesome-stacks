@@ -11,8 +11,8 @@ function ContentPage({ data }) {
       <SEO title={data.mdx.frontmatter.title} />
       <div className="section">
         <div className="container">
-          <div className="columns">
-            <div className="column is-10">
+          <div className="columns is-centered">
+            <div className="column is-9">
               <div className="content">
                 <MDXRenderer data={data}>{data.mdx.code.body}</MDXRenderer>
               </div>

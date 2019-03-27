@@ -10,25 +10,17 @@ import TweetEmbed from "react-tweet-embed"
 <a title="StackShare" href={props.data.site.siteMetadata.techStack}><img src="https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" /></a>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7fb9c28c-1e1e-41e0-a0c6-95a5770f4abf/deploy-status)](https://app.netlify.com/sites/awesomestacks/deploys)
 
-Awesome Stacks is a community-curated list of proven tech stacks for building different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/). See the <a href={props.data.site.siteMetadata.repository}>README</a> to view the stacks in traditional awesome list format.
+Awesome Stacks is a community-curated list of tech stacks for different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/). See the <a href={props.data.site.siteMetadata.repository}>README</a> to view the stacks in traditional awesome list format.
 
-### How does it work?
+Each item in the list is a stack with a name, description, and a handful of key tools. Stacks are grouped into categories based on their architecture, the problem they solve, or the core languages and frameworks involved, like *LAMP* or *JAMStack* or *Serverless*.
 
-Each item in the list is a stack with a name, description, and list of tools in that stack. Stacks are grouped into categories based on their architecture, the problem they solve, or the core languages and frameworks involved. See the [guidelines](/docs/guidelines) for more information.
+### What is awesomestacks.dev?
 
-The stack data lives on the README and on awesomestacks.dev. The site gives contributors more room to go deeper about their stacks and a page to share.
+This site, built with Gatsby and React, reads the stacks and tools from the README and turns it into a more browseable format that includes data from the GitHub and StackShare APIs. That way we can show things like the number of StackShare stacks and GitHub stars, which changes frequently and wouldn't be ideal to have on the README itself. The site is built automatically with every push to the GitHub repository.
 
 ### Who writes the awesome stacks?
 
-You do! Just like awesome lists, anyone is welcome and encouraged to contribute their knowledge on GitHub. This can be done by adding new stacks or improving existing ones. See the [Contribution Guide](/docs) and the [Code of Conduct](https://github.com/stackshareio/awesome-stacks/blog/master/CODE_OF_CONDUCT.md) to get started.
-
-### Why stacks?
-
-<div className="has-margin-top-20 has-margin-bottom-20 is-flex justify-center">
-<TweetEmbed id='1105127213819555841' />
-</div>
-
-It helps to know what complementary projects developers are using as you make the plunge into new projects and unfamiliar territory.
+You do! Just like awesome lists, anyone is welcome and encouraged to contribute their knowledge. See the [Contribution Guide](/docs) for how to get started.
 
 ### Who’s behind all this?
 

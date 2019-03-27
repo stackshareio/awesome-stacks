@@ -10,13 +10,13 @@ function ContentDocsPage({ data }) {
       <SEO title={data.mdx.frontmatter.title} />
       <div className="section">
         <div className="container">
-          <div className="columns">
+          <div className="columns is-centered">
             <div className="column is-9">
               <div className="content">
                 <MDXRenderer>{data.mdx.code.body}</MDXRenderer>
               </div>
             </div>
-            <div className="column is-3">
+            {/* <div className="column is-3">
               <div className="box grey-box is-fixed">
                 <div className="is-size-5 is-uppercase">Contents</div>
                 <ul>
@@ -28,7 +28,7 @@ function ContentDocsPage({ data }) {
                   <li><a href="/docs">&rsaquo; Reference</a></li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
