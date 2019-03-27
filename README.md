@@ -92,7 +92,7 @@ Gatsby is a framework for static and dynamic apps based on React and GraphQL, wi
 Hugo is a static site generator written in Go with a focus on speed and convention.
 
 - [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
-- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) - An open source programming language that makes it easy to build simple, reliable, and efficient software.
+- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) - An open source programming language that makes it easy to build efficient, reliable software.
 - [Blackfriday](https://github.com/russross/blackfriday) - [🐙](https://github.com/russross/blackfriday) - A markdown processor for Go.
 
 > Get a [Hugo starter kit](https://gohugo.io/tools/starter-kits/)
@@ -102,7 +102,7 @@ Hugo is a static site generator written in Go with a focus on speed and conventi
 Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. 
 
 - [Jekyll](https://jekyllrb.com/) - [🛠](https://stackshare.io/jekyll) - [🐙](https://github.com/jekyll/jekyll) - Transform your plain text into static websites and blogs.
-- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
+- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted programming language with a focus on simplicity and productivity.
 - [Github Pages](https://pages.github.com/) - [⚒️](https://stackshare.io/github-pages) - Websites for you and your projects, hosted by GitHub.
 
 > Get [Jekyll themes](https://jekyllthemes.io/free)
@@ -203,10 +203,10 @@ The MEAN stack with React instead of Angular.
 
 Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.
 
-- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity.
-- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - Optimizing for programmer happiness with Convention over Configuration is how we roll.
+- [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, programming language with a focus on simplicity and productivity.
+- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - A web application development framework written in Ruby.
 - [Passenger](https://www.phusionpassenger.com) - [🛠️](https://stackshare.io/passenger) - [🐙](https://github.com/phusion/passenger) - An app server that runs and automanages your web apps with ease.
-- [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic.
+- [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model.
 - [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
 
 # Contributing
