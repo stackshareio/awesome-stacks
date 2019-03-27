@@ -7,9 +7,11 @@
 
 Awesome Stacks is a community-curated list of tech stacks that are known to work well for building different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
-Stacks are organized into categories based on programming languages, frameworks, architectures or use cases. Each stack includes a list of the key tools in the stack, with an optional description of the stack and the tools. To add or improve a stack, see the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
+Stacks are organized into categories based on languages, frameworks, architectures or use cases. Each stack includes a handful of key tools as well as a description. Tools may have descriptions too.
 
-> Check out **[awesomestacks.dev](https://awesomestacks.dev/)** to see more data about these stacks using the GitHub and StackShare APIs.
+Notice a missing stack? Or tools? Check out [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to add and improve stacks.
+
+> Check out **[awesomestacks.dev](https://awesomestacks.dev/)** to see more data about these stacks from the GitHub and StackShare APIs.
 
 # Contents
 
