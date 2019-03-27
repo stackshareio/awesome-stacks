@@ -55,14 +55,14 @@ query($id: String!) {
   stackShareLogo: file(relativePath: { eq: "stackshare-logo.png" }) {
     childImageSharp {
       fixed(height: 28) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_noBase64
       }
     }
   }
   developerModeLogo: file(relativePath: { eq: "developermode-logo.png" }) {
     childImageSharp {
       fixed(height: 28) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_noBase64
       }
     }
   }

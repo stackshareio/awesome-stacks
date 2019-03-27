@@ -42,7 +42,7 @@ query {
   brandImage: file(relativePath: { eq: "awesome-logo.png" }) {
     childImageSharp {
       fixed(height: 32) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_noBase64
       }
     }
   }
