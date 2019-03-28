@@ -4,9 +4,11 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Adding an awesome stack
 
-To add an awesome stack to both the README and the companion website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes.
+To add an awesome stack to both the README and the companion website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely on GitHub.com (see below) or clone the repository and edit locally.
 
-Here are the different parts of an awesome stack described in markdown, using React as an example:
+The first thing to think about is what category to put the stack under. If you don't see anything existing that fits, you can create a new category. Use an H2 tag to do so. Aim for something multiple stacks could fit under. If you're not sure where to put a stack, just make your best guess and we'll review it in the PR.
+
+Once you have the category in mind, it's time to write the markdown. Using React as an example, here's what that markdown looks like:
 
 ```markdown
 ### [React](https://awesomestacks.dev/react)
