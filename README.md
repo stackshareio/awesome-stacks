@@ -37,6 +37,7 @@ A popular JavaScript library for building user interfaces comprised of interacti
 - [React Storybook](https://storybook.js.org) - [🛠️](https://stackshare.io/react-storybook) - [🐙](https://github.com/storybooks/storybook) - An open source tool for developing UI components in isolation.
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) - [🐙](https://github.com/facebook/jsx) - A syntax extension to JavaScript that produces produces React elements.
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - [🐙](https://github.com/facebook/react-devtools)
+- [React Router](https://reacttraining.com/react-router/) - [🛠️](https://stackshare.io/react-router) - [🐙](https://github.com/ReactTraining/react-router) - Declarative routing for React.
 
 ### [React isomorphic](https://awesomestacks.dev/react-isomorphic)
 
