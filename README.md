@@ -33,7 +33,6 @@ Notice a missing stack? Or tools? Check out [CONTRIBUTING.md](CONTRIBUTING.md) f
 A popular JavaScript library for building user interfaces comprised of interactive components.
 
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
-- [React Native](https://facebook.github.io/react-native/) - [🛠️](https://stackshare.io/react-native) - [🐙](https://github.com/facebook/react-native) - A framework for building native apps with React.
 - [React Storybook](https://storybook.js.org) - [🛠️](https://stackshare.io/react-storybook) - [🐙](https://github.com/storybooks/storybook) - An open source tool for developing UI components in isolation.
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) - [🐙](https://github.com/facebook/jsx) - A syntax extension to JavaScript that produces produces React elements.
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - [🐙](https://github.com/facebook/react-devtools)
