@@ -47,6 +47,7 @@ An opinionated boilerplate for web development of isomorphic apps.
 - [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
 - [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
 - [Node.js](https://nodejs.org/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [React Router](https://reacttraining.com/react-router/) - [🛠️](https://stackshare.io/react-router) - [🐙](https://github.com/ReactTraining/react-router) - Declarative routing for React.
 
 > Get the [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
 
