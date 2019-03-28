@@ -37,7 +37,6 @@ A popular JavaScript library for building user interfaces comprised of interacti
 - [React Storybook](https://storybook.js.org) - [🛠️](https://stackshare.io/react-storybook) - [🐙](https://github.com/storybooks/storybook) - An open source tool for developing UI components in isolation.
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) - [🐙](https://github.com/facebook/jsx) - A syntax extension to JavaScript that produces produces React elements.
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - [🐙](https://github.com/facebook/react-devtools)
-- [React Router](https://reacttraining.com/react-router/) - [🛠️](https://stackshare.io/react-router) - [🐙](https://github.com/ReactTraining/react-router) - Declarative routing for React.
 
 ### [React isomorphic](https://awesomestacks.dev/react-isomorphic)
 
@@ -48,6 +47,7 @@ An opinionated boilerplate for web development of isomorphic apps.
 - [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
 - [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
 - [Node.js](https://nodejs.org/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [React Router](https://reacttraining.com/react-router/) - [🛠️](https://stackshare.io/react-router) - [🐙](https://github.com/ReactTraining/react-router) - Declarative routing for React.
 
 > Get the [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
 
