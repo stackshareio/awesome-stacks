@@ -12,7 +12,7 @@ In general, if you have a stack that you think works great for solving a particu
 
 To add an awesome stack to both the README and the companion website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely on GitHub.com (see below) or clone the repository and edit locally.
 
-The first thing to think about is what category to put the stack under. If you don't see anything existing that fits, you can create a new category. Use an H2 tag to do so. Aim for something multiple stacks could fit under. If you're not sure where to put a stack, just make your best guess and we'll review it in the PR.
+The first thing to think about is what category to put the stack under. If you don't see anything existing that fits, you can create a new category. Use an `H2` tag to do so. Aim for something multiple stacks could fit under. If you're not sure where to put a stack, just make your best guess and we'll review it in the PR.
 
 Once you have the category in mind, it's time to write the markdown. Using React as an example, here's what that markdown looks like:
 
@@ -31,7 +31,7 @@ Here is a breakdown of each part of the markdown.
 
 ### Stack name
 
-Must be an H3 that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
+Must be an `H3` that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
 
 The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site.
 
