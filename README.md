@@ -205,7 +205,7 @@ Rails is a model–view–controller framework, providing default structures for
 
 - [Ruby](https://rubylang.org/) - [🛠](https://stackshare.io/ruby) - [🐙](https://github.com/ruby/ruby) - A dynamic, interpreted, programming language with a focus on simplicity and productivity.
 - [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - A web application development framework written in Ruby.
-- [Passenger](https://www.phusionpassenger.com) - [🛠️](https://stackshare.io/passenger) - [🐙](https://github.com/phusion/passenger) - An app server that runs and automanages your web apps with ease.
+- [Puma](https://puma.io) - [🛠️](https://stackshare.io/puma) - [🐙](https://github.com/puma/puma) A modern, concurrent web server for Ruby.
 - [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model.
 - [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
 
