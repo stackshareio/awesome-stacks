@@ -210,7 +210,7 @@ Rails is a model–view–controller framework, providing default structures for
 - [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model.
 - [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
 
-### Blockchain stacks
+## Blockchain stacks
 
 ### [Ethereum DApp stack](https://awesomestacks.dev/ethereum-dapp-stack)
 
