@@ -81,15 +81,14 @@ Vue is a progressive framework for building user interfaces. Unlike other monoli
 
 The [JAMStack](https://jamstack.org/) is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
 
-### [GatsbyJS](https://awesomestacks.dev/gatsbyjs)
+### [PWA with Gatsby](https://awesomestacks.dev/pwa-with-gatsby)
 
-Gatsby is a framework for static and dynamic apps based on React and GraphQL, with a rich plugin ecosystem.
+Use Gatsby and React to build an installable progressive web app (PWA) that saves state and works offline.
 
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
-- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - Gatsby has you organize code into React components.
-- [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - Gatsby uses GraphQL as a way for components to get the data they need.
-
-> Get a [Gatsby starter kit](https://www.gatsbyjs.org/starters/?v=2)
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
+- [PouchDB](https://pouchdb.com/) - [🛠️](https://stackshare.io/pouchdb) - [🐙](https://github.com/pouchdb/pouchdb) - Open-source database that runs within the browser.
+- [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) -  Creates a service worker for the site and loads the service worker into the client.
 
 ### [Hugo](https://awesomestacks.dev/hugo)
 
