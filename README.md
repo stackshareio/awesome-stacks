@@ -20,6 +20,7 @@ Notice a missing stack? Or tools? Check out [CONTRIBUTING.md](CONTRIBUTING.md) f
 - [Search stacks](#search-stacks)
 - [Serverless stacks](#serverless-stacks)
 - [Web application stacks](#web-application-stacks)
+- [Blockchain stacks](#blockchain-stacks)
 
 ### Legend
 
@@ -208,6 +209,18 @@ Rails is a model–view–controller framework, providing default structures for
 - [Puma](https://puma.io) - [🛠️](https://stackshare.io/puma) - [🐙](https://github.com/puma/puma) A modern, concurrent web server for Ruby.
 - [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model.
 - [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
+
+### Blockchain stacks
+
+### [Ethereum DApp stack](https://awesomestacks.dev/ethereum-dapp-stack)
+
+A collection of tools for building decentralized applications on the Ethereum blockchain.
+
+- [Solidity](https://solidity.readthedocs.io) - [🐙](https://github.com/ethereum/solidity) - Solidity is an object-oriented, high-level language for implementing smart contracts.
+- [web3.js](https://web3js.readthedocs.io) - [🐙](https://github.com/ethereum/web3.js) - Ethereum JavaScript API.
+- [Truffle](https://truffleframework.com/truffle) - [🐙](https://github.com/trufflesuite/truffle) - A world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
+- [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
+- [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
 # Contributing
 
