@@ -1,3 +1,7 @@
+<div align="center">
+<img alt="Pink sunglasses with text Awesome Stacks" width="500px" src="src/images/awesome-stacks-stacked-logo.png">
+</div>
+
 # Awesome Stacks
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/dzello/awesome-stacks)
