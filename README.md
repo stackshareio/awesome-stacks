@@ -5,13 +5,17 @@
 
 > Awesome tech stacks for all kinds of applications, inspired by [awesome.re](http://awesome.re).
 
-Awesome Stacks is a community-curated list of tech stacks that are known to work well for building different types of applications. It is open source and inspired by the original [awesome list](http://awesome.re/).
+Awesome Stacks is a community-curated list of tech stacks for building different applications and features. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
-Stacks are organized into categories based on languages, frameworks, architectures or use cases. Each stack includes a handful of key tools as well as a description. Tools may have descriptions too.
+If you want to see tried-and-trusted ways that other developers are building features like user authentication or file uploads or even their entire applications, you should be able to find that here.
 
-Notice a missing stack? Or tools? Check out [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to add or improve data on this list.
+Each stack in the list has a name, description, and list of key tools and technologies. The list doesn't have to be exhaustive, but should paint a good picture of what's involved.
 
-> Check out **[awesomestacks.dev](https://awesomestacks.dev/)** to see more data about these stacks from the GitHub and StackShare APIs.
+Got a stack you think is the best way to do something? Please edit this file and add it! Check out [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+
+### Browsing the stacks
+
+Stacks can be browsed in two places—on the README and on [awesomestacks.dev](https://awesomestacks.dev/). Built with Gatsby and React, the site displays logos and metrics about each tool listed in the README using data from the GitHub and StackShare APIs, so you can see all that information in one place.
 
 # Contents
 
