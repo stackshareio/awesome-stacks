@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env.development' });
 module.exports = {
   siteMetadata: {
     title: `Awesome Stacks`,
-    description: `Discover awesome tech stacks for building different applications and features`,
+    description: `Discover awesome tech stacks for building different applications and features.`,
     author: `@dzello`,
     repository: `https://github.com/stackshareio/awesome-stacks`,
     techStack: `https://stackshare.io/dzello/awesome-stacks`

@@ -2,9 +2,8 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import StackCard from "../components/stacks/stack-card"
 import Category from "../components/stacks/category"
-// import Contributors from "../components/contributors";
+import logomarkImage from "../images/awesome-stacks-logo-sunglasses.svg"
 
 const IndexPage = ({
   data: {
@@ -22,15 +21,16 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
-      <div className="hero is-medium has-background-danger has-text-centered">
+      <div className="hero is-info has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "2.2rem" }}>
         <div className="hero-body">
           <div className="columns is-centered is-multiline">
             <div className="column is-12">
-              <h1 className="is-size-hero-title has-text-white">
+              <img src={logomarkImage} alt="Pink slotted sunglasses" style={{ height: "105px" }}></img>
+              <h1 className="is-size-hero-title has-text-white has-margin-top-5">
                 Stacks on Stacks
               </h1>
             </div>
-            <div className="column is-5">
+            <div className="column is-5 is-paddingless">
               <p className="is-size-larger has-text-white">{description}</p>
             </div>
           </div>

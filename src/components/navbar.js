@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoImage from "../images/awesome-stacks-logo.svg"
 
 function Navbar() {
   const data = useStaticQuery(navbarQuery);
@@ -11,10 +11,7 @@ function Navbar() {
       <div className="container">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <Img fixed={data.brandImage.childImageSharp.fixed} />
-            <div className="is-size-5 has-margin-left-10">
-              {data.site.siteMetadata.title}
-            </div>
+            <img alt={data.site.siteMetadata.title} src={logoImage} style={{ height: "32px" }}></img>
           </Link>
           <div className={`span navbar-burger burger ${burger}`} data-target="navbarMenuHeroA" onClick={() => setBurger(burger === 'is-active' ? '' : 'is-active')}>
             <span />
@@ -24,9 +21,9 @@ function Navbar() {
         </div>
         <div className={`navbar-menu ${burger}`} id="#navbarMenuHeroA">
           <div className="navbar-end">
-            <Link className="navbar-item" activeClassName="is-active" to="/about/">About</Link>
-            <Link className="navbar-item" activeClassName="is-active" to="/docs/">Contribute</Link>
-            <a className="navbar-item" href={data.site.siteMetadata.repository}>
+            <Link className="navbar-item is-size-5" activeClassName="is-active" to="/about/">About</Link>
+            <Link className="navbar-item is-size-5" activeClassName="is-active" to="/docs/">Contribute</Link>
+            <a className="navbar-item is-size-5" href={data.site.siteMetadata.repository}>
               <FontAwesomeIcon icon={["fab", "github"]} />
               <span>&nbsp;&nbsp;GitHub</span>
             </a>
@@ -39,7 +36,7 @@ function Navbar() {
 
 const navbarQuery = graphql`
 query {
-  brandImage: file(relativePath: { eq: "awesome-logo.png" }) {
+  brandImage: file(relativePath: { eq: "awesome-stacks-logo.svg" }) {
     childImageSharp {
       fixed(height: 32) {
         ...GatsbyImageSharpFixed_noBase64

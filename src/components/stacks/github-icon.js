@@ -14,7 +14,7 @@ function GitHubIcon({ github }) {
         backgroundColor: languageColor,
         width: "75px",
         padding: "10px 0",
-        borderRadius: "15px",
+        borderRadius: "15px"
       }}
     >
       <span className="is-size-3 is-strong">

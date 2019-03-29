@@ -10,11 +10,9 @@ const Footer = () => (
           <div className="hero-body">
             <div className="container">
               <div className="columns is-centered">
-                <div className="column is-half has-text-centered">
-                  <div className="has-margin-bottom-20 is-uppercase is-size-7">
-                    <div className="has-margin-bottom-10">
-                      Made with ♥ by
-                    </div>
+                <div className="column has-text-centered">
+                  <div className="is-uppercase is-size-7" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <span style={{ display: "inline-block", paddingRight: "10px" }}>Made with ♥ by </span>
                     <a href="https://stackshare.io/">
                       <Img fixed={data.footerImage.childImageSharp.fixed} />
                     </a>

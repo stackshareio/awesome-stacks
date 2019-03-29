@@ -19,7 +19,7 @@ function StackShare({ name, description, stackshare }) {
           </a>
         </div>
         <div className="is-size-5 has-margin-top-5 has-text-centered">
-          <a href={stackshare.website}>
+          <a className="has-text-info" href={stackshare.website}>
             {stackshare.fullName}
           </a>
         </div>

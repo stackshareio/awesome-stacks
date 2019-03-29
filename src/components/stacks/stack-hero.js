@@ -2,7 +2,7 @@ import React from "react";
 
 function StackHero({ title, description, contributors, updatedAt }) {
   return (
-    <div className="hero has-background-grey has-text-white stack-hero">
+    <div className="hero has-background-info has-text-white stack-hero">
       <div className="hero-body">
         <div className="container">
           <div className="columns">
