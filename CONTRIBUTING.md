@@ -23,7 +23,7 @@ Use Gatsby and React to build an installable progressive web app (PWA) that save
 
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
-- [PouchDB](https://pouchdb.com/) - [🛠️](https://stackshare.io/pouchdb) - [🐙](https://github.com/pouchdb/pouchdb) - Open-source database that runs within the browser
+- [PouchDB](https://pouchdb.com/) - [🛠️](https://stackshare.io/pouchdb) - [🐙](https://github.com/pouchdb/pouchdb) - Open-source database that runs within the browser.
 - [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) -  Creates a service worker for the site and loads the service worker into the client.
 ```
 
