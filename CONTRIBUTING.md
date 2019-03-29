@@ -3,7 +3,8 @@
 Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## What should I contribute?
-The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search". Because there is usually more than one way to build a feature, there may be multiple awesome stacks, with each stack having a different approach and tools.
+
+The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or even "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
 
 In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it 🤘
 
@@ -16,20 +17,21 @@ The first thing to think about is what category to put the stack under. If you d
 Once you have the category in mind, it's time to write the markdown. Using React as an example, here's what that markdown looks like:
 
 ```markdown
-### [React](https://awesomestacks.dev/react)
+### [PWA with Gatsby](https://awesomestacks.dev/pwa-with-gatsby)
 
-A popular JavaScript library for building user interfaces comprised of interactive components.
+Use Gatsby and React to build an installable progressive web app (PWA) that saves state and works offline.
 
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
-- [React Native](https://facebook.github.io/react-native/) - [🛠️](https://stackshare.io/react-native) - [🐙](https://github.com/facebook/react-native) - A framework for building native apps with React.
-- [React Storybook](https://storybook.js.org) - [🛠️](https://stackshare.io/react-storybook) - [🐙](https://github.com/storybooks/storybook) - An open source tool for developing UI components in isolation.
+- [PouchDB](https://pouchdb.com/) - [🛠️](https://stackshare.io/pouchdb) - [🐙](https://github.com/pouchdb/pouchdb) - Open-source database that runs within the browser
+- [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) -  Creates a service worker for the site and loads the service worker into the client.
 ```
 
 Here is a breakdown of each part of the markdown.
 
 ### Stack name
 
-Must be an H3 that contains a link. The link text is the name of the stack. This should be a few words maximum and can simply be the name of the primary tool, use case or architecture the stack is based on.
+Must be an H3 that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
 
 The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site.
 
@@ -49,9 +51,9 @@ For each tool, there are 4 types of information you are asked to provide:
 
 **GitHub repository link** (optional): If the tool has a GitHub repository, link to it next using the 🐙 (`:octopus`) emoji as the link content. The link URL should be to the repository (`https://github.com/{owner}/{name}`).
 
-**Description** (optional): After all of the links, you can provide a short description of the tool. Try to make it short enough so that it doesn't cause a link break on the README's GitHub.com view. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
+**Description** (optional): After all of the links, you can provide a short description of the tool. Try to stick to 20 words or less. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
 
-The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and fixed.
+The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and can be addressed there.
 
 ## Improving an awesome stack
 
