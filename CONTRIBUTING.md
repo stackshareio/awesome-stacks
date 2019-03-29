@@ -2,6 +2,11 @@
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
+## What should I contribute?
+The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search". Because there is usually more than one way to build a feature, there may be multiple awesome stacks, with each stack having a different approach and tools.
+
+In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it 🤘
+
 ## Adding an awesome stack
 
 To add an awesome stack to both the README and the companion website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely on GitHub.com (see below) or clone the repository and edit locally.
