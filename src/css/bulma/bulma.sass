@@ -3,8 +3,7 @@
 
 h1, h2, h3, h4, .navbar-brand
   text-transform: uppercase !important
-  font-family: 'Roboto Condensed'
-  font-weight: 700
+  font-family: 'BebasNeue'
 
 h1, h2, h3, h4
   color: $red
@@ -12,6 +11,8 @@ h1, h2, h3, h4
 .content
   h1, h2, h3, h4
     color: $red
+  h1, h2, h3, h4, h5, h6
+    font-weight: inherit !important
 
 .navbar-item, .navbar-item a
   text-transform: uppercase
@@ -19,7 +20,7 @@ h1, h2, h3, h4
   color: $grey !important
 
 .navbar-item.is-active
-  color: $grey-darker !important
+  color: $blue !important
 
 .navbar-brand
   a
@@ -37,28 +38,28 @@ html body .tag
 // bulma content header size and spacing
 // no sass variable so have to override here
 // these are the defaults
-// .content
-//   h1
-//     font-size: 2em
-//     margin-bottom: 0.5em
-//     &:not(:first-child)
-//       margin-top: 1em
-//   h2
-//     font-size: 1.75em
-//     margin-bottom: 0.5714em
-//     &:not(:first-child)
-//       margin-top: 1.1428em
-//   h3
-//     font-size: 1.5em
-//     margin-bottom: 0.6666em
-//     &:not(:first-child)
-//       margin-top: 1.3333em
-//   h4
-//     font-size: 1.25em
-//     margin-bottom: 0.8em
-//   h5
-//     font-size: 1.125em
-//     margin-bottom: 0.8888em
-//   h6
-//     font-size: 1em
-//     margin-bottom: 1em
+.content
+  h1
+    font-size: $size-1
+    margin-bottom: 0.5em
+    &:not(:first-child)
+      margin-top: 1em
+  h2
+    font-size: $size-2
+    margin-bottom: 0.5714em
+    &:not(:first-child)
+      margin-top: 1.1428em
+  h3
+    font-size: $size-3
+    margin-bottom: 0.6666em
+    &:not(:first-child)
+      margin-top: 1.3333em
+  h4
+    font-size: $size-4
+    margin-bottom: 0.8em
+  h5
+    font-size: $size-5
+    margin-bottom: 0.8888em
+  h6
+    font-size: $size-6
+    margin-bottom: 1em

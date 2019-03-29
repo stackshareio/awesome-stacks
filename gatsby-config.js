@@ -61,18 +61,7 @@ module.exports = {
         class: 'has-navbar-fixed-top'
       }
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Roboto+Condensed:700`
-        ]
-      }
-    },
     `gatsby-plugin-favicon`,
-    `gatsby-transform-stacks`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
-  ],
+    `gatsby-transform-stacks`
+  ]
 }

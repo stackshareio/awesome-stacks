@@ -9,7 +9,7 @@ const StackCard = ({ stack }) => (
         <div className="anchor">
           <div id={stack.path}></div>
         </div>
-        <h3 className="is-size-4 has-color-danger has-margin-top-5">
+        <h3 className="is-size-3 has-color-danger has-margin-top-5">
           <Link to={`/${stack.path}`}>
             {stack.name}
           </Link>

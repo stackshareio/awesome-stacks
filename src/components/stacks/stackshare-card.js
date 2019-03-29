@@ -18,7 +18,7 @@ function StackShare({ name, description, stackshare }) {
             <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
           </a>
         </div>
-        <div className="is-size-5 has-margin-top-5 has-text-centered">
+        <div className="has-margin-top-5 has-text-centered">
           <a className="has-text-info" href={stackshare.website}>
             {stackshare.fullName}
           </a>
