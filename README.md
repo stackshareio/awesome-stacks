@@ -3,7 +3,7 @@
 </div>
 
 # Awesome Stacks
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/dzello/awesome-stacks)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7fb9c28c-1e1e-41e0-a0c6-95a5770f4abf/deploy-status)](https://app.netlify.com/sites/awesomestacks/deploys)
 
