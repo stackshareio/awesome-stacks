@@ -111,12 +111,12 @@ Jekyll is a simple, blog-aware, static site generator for personal, project, or 
 
 ### [Algolia](https://awesomestacks.dev/algolia)
 
-Build search experiences on web and mobile quickly with the help of a full-service API.
+Algolia gives development teams the building blocks to create a fast, relevant search experience.
 
 - [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
-- [DocSearch scraper](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-scraper) - Crawls a website and uploads it to an index.
-- [scrapy](https://scrapy.org) - [🐙](https://github.com/scrapy/scrapy) - Popular crawling and scraping tool written in Python.
 - [instantsearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/) - [🐙](https://github.com/algolia/instantsearch.js) - JavaScript library for building performant and instant search experiences.
+- [React InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/) - [🐙](https://github.com/algolia/react-instantsearch) - Lightning-fast search for React and React Native applications.
+- [instantsearch-ios](https://community.algolia.com/instantsearch-ios/) - [🐙](https://github.com/algolia/instantsearch-ios) - A library of widgets and helpers to build instant-search applications on iOS.
 
 > Get [create-instantsearch-app](https://github.com/algolia/create-instantsearch-app)
 
