@@ -55,6 +55,14 @@ For each tool, there are 4 types of information you are asked to provide:
 
 The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and can be addressed there.
 
+### Resources
+
+If there is a starter kit of blog post that would help someone get started with this stack, link to it after the tools in a blockquote element, just like this:
+
+```markdown
+> Get [vue-starter](https://github.com/devCrossNet/vue-starter)
+```
+
 ## Improving an awesome stack
 
 The process is roughly the same as creating the stack, but instead of creating a whole markdown block you will just add to or change one that already exists. We welcome contributions for adding additional tools or improving the descriptions of both stacks and tools.
