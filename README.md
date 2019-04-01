@@ -28,6 +28,7 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 - [Search stacks](#search-stacks)
 - [Serverless stacks](#serverless-stacks)
 - [Web application stacks](#web-application-stacks)
+- [Mobile application stacks](#mobile-application-stacks)
 - [Blockchain stacks](#blockchain-stacks)
 
 ### Legend
@@ -216,6 +217,22 @@ Rails is a model–view–controller framework, providing default structures for
 - [Puma](https://puma.io) - [🛠️](https://stackshare.io/puma) - [🐙](https://github.com/puma/puma) A modern, concurrent web server for Ruby.
 - [Active Record](https://guides.rubyonrails.org/active_record_basics.html) - Active Record is the M in MVC - the model.
 - [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) - Active Storage facilitates uploading files to a cloud storage service.
+
+## Mobile application stacks
+
+### [React Native with Expo and Hasura](https://awesomestacks.dev/react-native-with-expo-and-hasura)
+
+Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL APIs on any Postgres database. This React Native stack uses Hasura droplets hosted on Digital Ocean.
+
+- [Hasura](https://hasura.io/) - [🛠️](https://stackshare.io/hasura) - [🐙](https://github.com/hasura/graphql-engine)
+- [React Native](https://facebook.github.io/react-native/) - [🛠️](https://stackshare.io/react-native) - [🐙](https://github.com/facebook/react-native)
+- [Expo](https://expo.io/) - [🛠️](https://stackshare.io/expo) - [🐙](https://github.com/expo/expo)
+- [Digital Ocean](https://www.digitalocean.com/) - [🛠️](https://stackshare.io/digitalocean) - [🐙](https://github.com/digitalocean/)
+- [Auth0](https://auth0.com/) - [🛠️](https://stackshare.io/auth0) - [🐙](https://github.com/auth0)
+
+> [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
+
+> [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 
 ## Blockchain stacks
 
