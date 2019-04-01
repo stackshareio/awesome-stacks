@@ -200,6 +200,16 @@ This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB
 
 > Get the [code](http://vemapp.moleculer.services/)
 
+### [Rock Solid Modern Rails](https://awesomestacks.dev/rock-solid-modern-rails)
+
+A Rails/JavaScript-based stack with modern/developer friendly technologies
+
+- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - An established webapp framework with a focus on simplicity and productivity.
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
+- [GraphQL Ruby](https://graphql-ruby.org/) - [🛠](https://stackshare.io/graphql-ruby) - [🐙](https://github.com/rmosolgo/graphql-ruby) - Ruby server implementation of the GraphQL specification
+- [Apollo Client](https://dev.apollodata.com/) - [🛠](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - A powerfully extensible GraphQL JavaScript client
+- [Heroku](https://heroku.com) - [🛠️](https://stackshare.io/heroku) Developer friendly web app infrastructure provider with seamless Ruby/Rails support
+
 # Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
