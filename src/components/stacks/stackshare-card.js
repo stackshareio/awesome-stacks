@@ -14,23 +14,23 @@ function StackShare({ name, description, stackshare }) {
     <Card description={description}>
       <div className="is-top">
         <div className="is-logo-link has-text-centered">
-          <a href={stackshare.website}>
+          <a href={stackshare.websiteUrl}>
             <img alt="Tool logo" className="is-logo" src={stackshare.imageUrl}></img>
           </a>
         </div>
         <div className="has-margin-top-5 has-text-centered">
-          <a className="has-text-info" href={stackshare.website}>
+          <a className="has-text-info" href={stackshare.websiteUrl}>
             {stackshare.name}
           </a>
         </div>
       </div>
       <div className="is-size-7 has-text-centered has-margin-bottom-10">
-        <a className="has-text-grey" href={stackshare.url}>
+        <a className="has-text-grey" href={stackshare.profileUrl}>
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>StackShare</span>
         </a>
-        {stackshare.gitHubURL ?
+        {stackshare.githubUrl ?
           <span className="has-text-grey">&nbsp;&middot;&nbsp;
-            <a className="has-text-grey" href={stackshare.gitHubURL}>
+            <a className="has-text-grey" href={stackshare.githubUrl}>
               <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
             </a>
           </span>
