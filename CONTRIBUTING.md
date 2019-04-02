@@ -4,7 +4,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## What should I contribute?
 
-The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or even "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
+The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
 
 In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it 🤘
 
@@ -12,28 +12,36 @@ In general, if you have a stack that you think works great for solving a particu
 
 To add an awesome stack to both the README and the companion website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely on GitHub.com (see below) or clone the repository and edit locally.
 
-The first thing to think about is what category to put the stack under. If you don't see anything existing that fits, you can create a new category. Use an `H2` tag to do so. Aim for something multiple stacks could fit under. If you're not sure where to put a stack, just make your best guess and we'll review it in the PR.
+one thought near the top of the guide: after "You can do this entirely on GitHub.com (see below) or clone the repository and edit locally." you might consider the following edits:
 
-Once you have the category in mind, it's time to write the markdown. Using React as an example, here's what that markdown looks like:
+### Category
+
+To get started, review the categories of stacks in the README, and determine where your stack fits. If you're not sure where to put a stack, just make your best guess and we'll review it in the PR.
+
+If you don't see a category that makes sense for your stack, you can create a new one. Aim for a category broad enough to contain multiple stacks, and use an H2 for the category name. Categories are sorted alphabetically.
+
+Once you have the category in mind, it's time to create the stack with some markdown. Here's an example:
 
 ```markdown
 ### [PWA with Gatsby](https://awesomestacks.dev/pwa-with-gatsby)
 
-Use Gatsby and React to build an installable progressive web app (PWA) that saves state and works offline.
+Build a simple polling progressive web application with some great modern tech.
 
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
-- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
-- [PouchDB](https://pouchdb.com/) - [🛠️](https://stackshare.io/pouchdb) - [🐙](https://github.com/pouchdb/pouchdb) - Open-source database that runs within the browser.
-- [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) -  Creates a service worker for the site and loads the service worker into the client.
+- [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
+- [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
+- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components) - A react-specific css-in-js solution.
+
+> Get the [code](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 ```
 
-Here is a breakdown of each part of the markdown.
+Here's a breakdown of all of the different elements in the markdown.
 
 ### Stack name
 
-Must be an `H3` that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
+This goes first. It must be an `H3` that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
 
-The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site.
+The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site, which will be built automatically from the markdown you're creating!
 
 ### Stack description
 
