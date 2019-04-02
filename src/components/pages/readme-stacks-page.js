@@ -48,7 +48,7 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
           </div>
           <div className="columns">
             <div className="column is-6">
-              <Link className="button is-danger is-uppercase has-text-white" to={`/#${stack.path}`}>&lt; Back to stacks</Link>
+              <Link className="button is-medium is-danger is-uppercase has-text-white" to={`/#${stack.path}`}>&lt; Back to stacks</Link>
             </div>
             <div className="column is-6">
               <div className="has-text-right">
