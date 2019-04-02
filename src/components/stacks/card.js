@@ -17,7 +17,7 @@ function Card({ description, color, children }) {
             fixedWidth
             flip="horizontal"
           />{" "}
-          <i>{description}</i>
+          <span className="is-italic">{description}</span>
         </div>
       ) : (
           <div />

@@ -7,7 +7,7 @@ function StackHero({ title, description, contributors, updatedAt }) {
         <div className="container">
           <div className="columns">
             <div className="column is-8">
-              <h1 className="is-size-3">{title}</h1>
+              <h1 className="is-size-2 has-margin-bottom-20">{title}</h1>
               <p className="is-size-5">{description}</p>
             </div>
             {contributors ?

@@ -26,12 +26,12 @@ const IndexPage = ({
           <div className="columns is-centered is-multiline">
             <div className="column is-12">
               <img src={logomarkImage} alt="Pink slotted sunglasses" style={{ height: "105px" }}></img>
-              <h1 className="is-size-hero-title has-text-white has-margin-top-5">
+              <h1 className="is-size-hero-title has-text-white has-margin-top-5 has-margin-bottom-20">
                 Stacks on Stacks
               </h1>
             </div>
-            <div className="column is-5 is-paddingless">
-              <p className="is-size-larger has-text-white">{description}</p>
+            <div className="column is-6 is-paddingless">
+              <p className="is-size-4 has-text-white">{description}</p>
             </div>
           </div>
         </div>
