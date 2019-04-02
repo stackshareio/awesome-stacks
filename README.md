@@ -11,11 +11,11 @@
 
 Awesome Stacks is a community-curated list of tech stacks for building different applications and features. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
-If you want to see tried-and-trusted ways that other developers are building features like user authentication or file uploads or even their entire applications, you should be able to find that here.
+If you want to see tried-and-true ways that other developers are building features like user authentication or file uploads or even their entire applications, you should be able to find that here.
 
 Each stack in the list has a name, description, and list of key tools and technologies. The list doesn't have to be exhaustive, but should paint a good picture of what's involved.
 
-Got a stack you think is the best way to do something? Please edit this file and add it! Check out [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+Got a stack you think is a great way to build something? Please edit this file and add it! Check out [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ### Browsing the stacks
 
@@ -38,29 +38,20 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 
 ## Front-end stacks
 
-### [React](https://awesomestacks.dev/react)
+### [React starter kit](https://awesomestacks.dev/react-starter-kit)
 
-A popular JavaScript library for building user interfaces comprised of interactive components.
-
-- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
-- [React Storybook](https://storybook.js.org) - [🛠️](https://stackshare.io/react-storybook) - [🐙](https://github.com/storybooks/storybook) - An open source tool for developing UI components in isolation.
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) - [🐙](https://github.com/facebook/jsx) - A syntax extension to JavaScript that produces produces React elements.
-- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - [🐙](https://github.com/facebook/react-devtools)
-
-### [React isomorphic](https://awesomestacks.dev/react-isomorphic)
-
-An opinionated boilerplate for web development of isomorphic apps.
+A set of tools that work well for building isomorphic web apps with GraphQL support.
 
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
 - [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
 - [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
 - [Node.js](https://nodejs.org/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [React Router](https://reacttraining.com/react-router/) - [🛠️](https://stackshare.io/react-router) - [🐙](https://github.com/ReactTraining/react-router) - Declarative routing for React.
+- [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
 
-> Get the [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
+> Get the [code](https://github.com/kriasoft/react-starter-kit)
 
-### [React and Firebase](https://awesomestacks.dev/react-and-firebase)
+### [React Firebase starter](https://awesomestacks.dev/react-firebase-starter)
 
 A serverless project template based on Firebase and React; deploys easily to Google Cloud.
 
@@ -70,18 +61,31 @@ A serverless project template based on Firebase and React; deploys easily to Goo
 - [Relay](https://facebook.github.io/relay/) - [🛠️](https://stackshare.io/relay) - [🐙](https://github.com/facebook/relay) - A JavaScript framework for building data-driven React applications.
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
 
-> Get the [React Firebase Starter](https://github.com/kriasoft/react-firebase-starter)
+> Get the [code](https://github.com/kriasoft/react-firebase-starter)
 
-### [Vue.js](https://awesomestacks.dev/vuejs)
+### [vue-starter](https://awesomestacks.dev/vue-starter)
 
-Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. 
+The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices.
 
 - [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
-- [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
+- [TypeScript](https://www.typescriptlang.org/) - [🛠️](https://stackshare.io/typescript) - [🐙](https://github.com/Microsoft/TypeScript)
+- [Jest](https://jestjs.io/) - [🛠️](https://stackshare.io/jest) - [🐙](https://github.com/facebook/jest)
+- [Prettier](https://prettier.io/) - [🛠️](https://stackshare.io/prettier) - [🐙](https://github.com/prettier/prettier)
 - [Vuex](https://veux.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
-- [Vue CLI](https://cli.vuejs.org/) - [🐙](https://github.com/vuejs/vue-cli) - Standard Tooling for Vue.js Development.
+- [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
 
-> Get [vue-starter](https://github.com/devCrossNet/vue-starter)
+> Get the [code](https://vue-starter.herokuapp.com/docs/)
+
+### [MEVN: Mongo Express Vue Node](https://awesomestacks.dev/mevn-mongo-express-vue-node)
+
+This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB.
+
+- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
+- [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo) - A document and JSON-oriented database
+- [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
+- [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node)
+
+> Get the [code](http://vemapp.moleculer.services/)
 
 ## JAMStack stacks
 
@@ -89,22 +93,25 @@ The [JAMStack](https://jamstack.org/) is a new way of building websites and apps
 
 ### [PWA with Gatsby](https://awesomestacks.dev/pwa-with-gatsby)
 
-Use Gatsby and React to build an installable progressive web app (PWA) that saves state and works offline.
+Build a simple polling progressive web application with some great modern tech.
 
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
-- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React makes it painless to create interactive UIs.
-- [PouchDB](https://pouchdb.com/) - [🛠️](https://stackshare.io/pouchdb) - [🐙](https://github.com/pouchdb/pouchdb) - Open-source database that runs within the browser.
-- [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) -  Creates a service worker for the site and loads the service worker into the client.
+- [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
+- [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
+- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components) - A react-specific css-in-js solution.
 
-### [Hugo](https://awesomestacks.dev/hugo)
+> Get the [code](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 
-Hugo is a static site generator written in Go with a focus on speed and convention.
+### [Victor Hugo](https://awesomestacks.dev/victor-hugo)
+
+Hugo is a static site generator written in Go with a focus on speed and convention. Victor Hugo adds a full asset pipeline.
 
 - [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
-- [Go](https://golang.org/) - [🛠](https://stackshare.io/go) - [🐙](https://github.com/golang/go) - An open source programming language that makes it easy to build efficient, reliable software.
-- [Blackfriday](https://github.com/russross/blackfriday) - [🐙](https://github.com/russross/blackfriday) - A markdown processor for Go.
+- [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
+- [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
+- [PostCSS](https://postcss.org/) - [🛠](https://stackshare.io/postcss) - [🐙](https://github.com/postcss/postcss) - A tool for transforming CSS with JavaScript.
 
-> Get a [Hugo starter kit](https://gohugo.io/tools/starter-kits/)
+> Get the [code](https://github.com/netlify-templates/victor-hugo)
 
 ### [Jekyll](https://awesomestacks.dev/jekyll)
 
