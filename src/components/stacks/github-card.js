@@ -14,7 +14,7 @@ function GitHubCard({ name, description, github }) {
       <div className="is-top has-padding-top-5 has-text-centered">
         <a href={url}><GitHubIcon github={github} /></a>
         <div className="has-margin-top-10">
-          <a href={url} className="has-text-info" style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>{github.name}</a>
+          <a href={url} className="has-text-info is-size-5" style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>{github.name}</a>
         </div>
       </div>
       <div className="is-size-7 has-text-centered has-margin-bottom-10">
