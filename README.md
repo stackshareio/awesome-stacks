@@ -123,6 +123,18 @@ The most complete boilerplate for production-ready PWAs. With focus on performan
 
 > Get the [code](https://vue-starter.herokuapp.com/docs/)
 
+### [Vue Enterprise Boilerplate](https://awesomestacks.dev/vue-enterprise-boilerplate)
+
+An ever-evolving and opinionated architecture and dev environment for new Vue SPA projects using Vue CLI 3. Well-documented an maintained by [Chris Fritz](https://github.com/chrisvfritz/vue-enterprise-boilerplate). 
+
+- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
+- [Vuex](https://veux.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
+- [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
+- [Vue CLI](https://cli.vuejs.org/) - [🐙](https://github.com/vuejs/vue-cli) - An approachable core library that focuses on the view layer only.
+- [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - compiler for writing next generation JavaScript; Babel will turn your ES6+ code into ES5 friendly code, so you can start using it right now without waiting for browser support.
+- [Sass](https://sass-lang.com) - [🛠️](https://stackshare.io/sass) - [🐙](https://github.com/sass/sass) - Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
+
+
 ## Mobile application stacks
 
 ### [React Native with Expo and Hasura](https://awesomestacks.dev/react-native-with-expo-and-hasura)
