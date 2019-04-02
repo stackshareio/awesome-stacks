@@ -7,20 +7,20 @@ function StackShare({ name, description, stackshare }) {
   if (!stackshare) {
     return <Card color="danger">{name} not found</Card>
   }
-  const stacksMetric = getMetric(`Stacks`, stackshare.stackShareStats);
-  const starsMetric = getMetric(`GitHubStars`, stackshare.gitHubStats);
-  const forksMetric = getMetric(`GitHubForks`, stackshare.gitHubStats);
+  const stacksMetric = getMetric(`stacks`, stackshare.stackshareStats);
+  const starsMetric = getMetric(`stars`, stackshare.githubStats || []);
+  const forksMetric = getMetric(`forks`, stackshare.githubStats || []);
   return (
     <Card description={description}>
       <div className="is-top">
         <div className="is-logo-link has-text-centered">
           <a href={stackshare.website}>
-            <img alt="Tool logo" className="is-logo" src={stackshare.logo}></img>
+            <img alt="Tool logo" className="is-logo" src={stackshare.imageUrl}></img>
           </a>
         </div>
         <div className="has-margin-top-5 has-text-centered">
           <a className="has-text-info" href={stackshare.website}>
-            {stackshare.fullName}
+            {stackshare.name}
           </a>
         </div>
       </div>
@@ -37,7 +37,7 @@ function StackShare({ name, description, stackshare }) {
           : ``}
       </div>
       <div className="is-size-7 is-description has-text-centered">
-        {truncate(stackshare.tagline, 70)}
+        {truncate(stackshare.description, 70)}
       </div>
       <div className="is-bottom has-margin-top-20">
         <div className="level is-mobile has-overflow-hidden">

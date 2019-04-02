@@ -23,7 +23,7 @@ const StackCard = ({ stack }) => (
           {stack.tools.slice(0, 3).map((tool) =>
             <div className="level-item" key={tool.name}>
               {tool.stackShareData ?
-                <img alt={tool.stackShareData.name} src={tool.stackShareData.logo} style={{ width: "75px", borderRadius: "3px" }}></img>
+                <img alt={tool.stackShareData.name} src={tool.stackShareData.imageUrl} style={{ width: "75px", borderRadius: "3px" }}></img>
                 : tool.gitHubData ? <GitHubIcon github={tool.gitHubData} /> :
                   <div className="is-size-7" style={{ border: "1px dotted #8E9FA9", width: "60px", height: "60px", padding: "2px", display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
                     {tool.name}

@@ -105,7 +105,7 @@ export const MarkdownRemarkFields = graphql`
             stackShareUrl
             stackShareData {
               name
-              logo
+              imageUrl
             }
             gitHubData {
               name
@@ -153,28 +153,26 @@ export const mdxQuery = graphql`
       }
       stackShareTools {
         name
-        fullName
-        tagline
-        logo
-        website
-        url
-        gitHubURL
-        category {
-          name
-          url
-        }
+        description
+        imageUrl
+        websiteUrl
+        profileUrl
+        githubUrl
         group {
           name
           url
         }
-        stackShareStats {
+        category {
+          name
+          url
+        }
+        stackshareStats {
           name
           value
         }
-        gitHubStats {
+        githubStats {
           name
           value
-          dateValue
         }
       }
       gitHubTools {

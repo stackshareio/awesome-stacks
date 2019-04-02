@@ -116,28 +116,26 @@ export const pageQuery = graphql`
               }
               stackShareData {
                 name
-                fullName
-                tagline
-                logo
-                website
-                url
-                gitHubURL
-                category {
-                  name
-                  url
-                }
+                description
+                imageUrl
+                websiteUrl
+                profileUrl
+                githubUrl
                 group {
                   name
                   url
                 }
-                stackShareStats {
+                category {
+                  name
+                  url
+                }
+                stackshareStats {
                   name
                   value
                 }
-                gitHubStats {
+                githubStats {
                   name
                   value
-                  dateValue
                 }
               }
             }

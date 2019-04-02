@@ -1,83 +1,65 @@
-const Xray = require("x-ray")
+const { ApolloClient } = require("apollo-boost")
+const { HttpLink } = require("apollo-link-http")
+const { InMemoryCache } = require("apollo-cache-inmemory")
+const fetch = require("node-fetch")
+const gql = require("graphql-tag")
+
+function getApolloClient() {
+  return new ApolloClient({
+    link: new HttpLink({
+      uri: "https://graphql.stackshare.io/",
+      fetch,
+      headers: {
+        Authorization: `Bearer ${process.env.STACKSHARE_ACCESS_TOKEN}`,
+      },
+    }),
+    cache: new InMemoryCache(),
+  })
+}
 
 module.exports = {
-  getStackShareTool: function ({ name, url }) {
-    if (!name || !url) {
+  getStackShareTool: function ({ name }) {
+    if (!name) {
       return
     }
-    var x = Xray({
-      filters: {
-        trim: function (value) {
-          return typeof value === "string" ? value.trim() : value
-        },
-        clean: function (value) {
-          return typeof value === "string" ? value.replace(/\n/, " ") : value
-        },
-        despace: function (value) {
-          return typeof value === "string" ? value.replace(/ /g, "") : value
-        },
-        removeText: function (value) {
-          return typeof value === "string"
-            ? value.replace(/[a-zA-Z]+/, "")
-            : value
-        },
-      },
-    }).concurrency(1)
-
-    return x(url, "body", {
-      fullName: 'a[itemprop="name"]',
-      layer: {
-        name:
-          'li:nth-child(2)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] span',
-        url:
-          'li:nth-child(2)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] @href',
-      },
-      group: {
-        name: `a[itemprop="applicationSubCategory"]`,
-        url: `a[itemprop="applicationSubCategory"] @href`,
-      },
-      category: {
-        name:
-          'li:nth-child(3)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] span',
-        url:
-          'li:nth-child(3)[itemprop="itemListElement"] a[data-track="service.breadcrumb_click"] @href',
-      },
-      website: "#visit-website@href",
-      tagline: "span[itemprop='alternativeHeadline']",
-      description: "#service-description span",
-      logo: "[itemprop='image']@src",
-      features: ["#service-features li"],
-      users: x("[data-track='tool_profile.clicked_companies_using_this']", [
-        {
-          name: "img@alt",
-          url: "@href",
-          logo: "img@src",
-        },
-      ]),
-      stackShareStats: x("#service-pills-nav li", [
-        {
-          name: "#tab-label | despace",
-          value: "#tab-link | removeText | trim",
-        },
-      ]),
-      gitHubURL: "a[data-track='service.details.github_stats.click'] @href",
-      gitHubStats: x("div.stackup-gh-count", [
-        {
-          name: "@data-hint | despace",
-          value: ".gh-metric | trim",
-          dateValue: ".gh-date | trim | clean",
-        },
-      ]),
-    }).then(tool => {
-      if (tool.logo) {
-        return {
-          name,
-          url,
-          ...tool,
-        }
-      } else {
-        return null
-      }
-   })
+    return getApolloClient()
+      .query({
+        variables: { slug: name },
+        query: gql`
+          query($slug: String!) {
+            tool(slug: $slug) {
+              name
+              description
+              imageUrl
+              websiteUrl
+              profileUrl
+              githubUrl
+              group {
+                name
+                url
+              }
+              category {
+                name
+                url
+              }
+              stackshareStats {
+                name
+                value
+              }
+              githubStats {
+                name
+                value
+              }
+            }
+          }
+        `,
+      })
+      .then(({ data: { tool } }) => {
+        return tool
+      })
+      .catch(err => {
+        console.error(err)
+        return
+      })
   },
 }

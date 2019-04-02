@@ -81,7 +81,7 @@ exports.onCreateNode = async ({ node,
 
   // fetch the data from stackshare for each tool
   // filter out any tools that aren't found
-  const stacksharesLoaded = await Promise.all(stackshares.map(stackshare.getStackShareTool)).filter(tool => tool.fullName);
+  const stacksharesLoaded = await Promise.all(stackshares.map(stackshare.getStackShareTool)).filter(tool => tool && tool.name);
   createNodeField({
     name: "stackShareTools",
     node,

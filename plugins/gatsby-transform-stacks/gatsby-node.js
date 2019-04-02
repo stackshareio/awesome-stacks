@@ -103,7 +103,7 @@ exports.onCreateNode = async ({ node,
           const name = url.replace(/http[s]+:\/\/stackshare\.io\//, '')
           try {
             console.log(`Fetching StackShare: ${tool.stackShareUrl}`);
-            tool.stackShareData = await stackshare.getStackShareTool({ name, url });
+            tool.stackShareData = await stackshare.getStackShareTool({ name });
           } catch (e) {
             console.warn(e);
           }

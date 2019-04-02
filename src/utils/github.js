@@ -18,7 +18,7 @@ function getApolloClient() {
 }
 
 module.exports = {
-  getGitHubTool: function({ owner, name }) {
+  getGitHubTool: function ({ owner, name }) {
     if (!owner || !name) {
       return
     }
@@ -71,7 +71,7 @@ module.exports = {
       })
   },
 
-  getGitHubUser: function(login) {
+  getGitHubUser: function (login) {
     return getApolloClient()
       .query({
         variables: { login },

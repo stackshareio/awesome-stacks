@@ -1,9 +1,8 @@
 {
   "name": "awesome-stacks",
-  "private": true,
   "description": "Discover awesome tech stacks for all kinds of applications.",
   "version": "0.1.0",
-  "author": "Josh Dzielak<josh@developermode.com>",
+  "author": "Josh Dzielak <josh@developermode.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
@@ -36,11 +35,9 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "react-tweet-embed": "^1.1.1",
     "remark": "^10.0.1",
     "remark-html": "^9.0.0",
-    "sharp": "^0.21.3",
-    "x-ray": "^2.3.3"
+    "sharp": "^0.21.3"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
