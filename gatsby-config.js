@@ -11,7 +11,7 @@ module.exports = {
     author: `@dzello`,
     repository: `https://github.com/stackshareio/awesome-stacks`,
     contributing: `https://github.com/stackshareio/awesome-stacks/blob/master/CONTRIBUTING.md`,
-    techStack: `https://stackshare.io/dzello/awesome-stacks`
+    techStack: `https://stackshare.io/stackshare/awesome-stacks`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
