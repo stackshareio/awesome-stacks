@@ -22,6 +22,7 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 # Contents
 
 - [Blockchain stacks](#blockchain-stacks)
+- [Headless CMS] (#headless-cms-stacks)
 - [JAMStack stacks](#jamstack-stacks)
 - [JavaScript stacks](#javascript-stacks)
 - [Mobile application stacks](#mobile-application-stacks)
@@ -44,6 +45,18 @@ A collection of tools for building decentralized applications on the Ethereum bl
 - [Truffle](https://truffleframework.com/truffle) - [🐙](https://github.com/trufflesuite/truffle) - A world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
 - [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
 - [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
+
+## Headless CMS stacks
+
+### [GraphCMS React + Apollo](https://awesomestacks.dev/graphcms-starter)
+
+Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
+
+- [GraphCMS] (https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - [🐙](https://github.com/GraphCMS) - GraphCMS providing a backend to your app, giving you the tools to manage content.
+- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](facebook/create-react-app) - Set up a modern web app by running one command.
+- [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql) - Apollo Client is the best way to use GraphQL to build client applications.
+
+> Get the [code](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
 
 ## JAMStack stacks
 
