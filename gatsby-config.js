@@ -5,7 +5,7 @@ module.exports = {
     title: `Awesome Stacks`,
     url: `https://awesomestacks.dev`,
     description: `Discover awesome tech stacks for building different applications and features.`,
-    image: `/images/awesome-stacks-logo-vertical-blue.png`,
+    image: `/images/awesome-stacks-vertical-blue-logo.png`,
     imageWidth: 1200,
     imageHeight: 630,
     author: `@dzello`,
