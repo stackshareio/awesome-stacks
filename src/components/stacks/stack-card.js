@@ -34,12 +34,6 @@ const StackCard = ({ stack }) => (
         </div>
       </div>
     </div>
-    {/* <div className="has-margin-bottom-20"></div>
-    <div className="columns">
-      <div className="column is-6 is-offset-6">
-        <Link className="button is-danger is-uppercase has-text-white" to={`/${stack.path}`}>> Read about this stack</Link>
-      </div>
-    </div> */}
   </>
 );
 

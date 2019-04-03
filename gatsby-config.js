@@ -6,6 +6,7 @@ module.exports = {
     description: `Discover awesome tech stacks for building different applications and features.`,
     author: `@dzello`,
     repository: `https://github.com/stackshareio/awesome-stacks`,
+    contributing: `https://github.com/stackshareio/awesome-stacks/blob/master/CONTRIBUTING.md`,
     techStack: `https://stackshare.io/dzello/awesome-stacks`
   },
   plugins: [
@@ -62,6 +63,13 @@ module.exports = {
       }
     },
     `gatsby-plugin-favicon`,
-    `gatsby-transform-stacks`
+    `gatsby-transform-stacks`,
+    {
+      resolve: 'gatsby-source-apiserver',
+      options: {
+        url: `https://api.github.com/repos/stackshareio/awesome-stacks/contributors`,
+        name: "githubContributors"
+      }
+    }
   ]
 }

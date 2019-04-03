@@ -16,19 +16,6 @@ function ContentDocsPage({ data }) {
                 <MDXRenderer>{data.mdx.code.body}</MDXRenderer>
               </div>
             </div>
-            {/* <div className="column is-3">
-              <div className="box grey-box is-fixed">
-                <div className="is-size-5 is-uppercase">Contents</div>
-                <ul>
-                  <li><a href="/docs">&rsaquo; Overview</a></li>
-                  <li><a href="/docs">&rsaquo; Create a stack</a></li>
-                  <li><a href="/docs">&rsaquo; Improve a stack</a></li>
-                  <li><a href="/docs">&rsaquo; Develop locally</a></li>
-                  <li><a href="/docs">&rsaquo; Guidelines</a></li>
-                  <li><a href="/docs">&rsaquo; Reference</a></li>
-                </ul>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

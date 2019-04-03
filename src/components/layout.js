@@ -25,7 +25,6 @@ const Layout = ({ children }) => (
       <div className="layout">
         <Navbar></Navbar>
         <main>{children}</main>
-        <div className="has-margin-bottom-60"></div>
         <Footer></Footer>
       </div>
     )}

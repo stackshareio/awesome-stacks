@@ -7,17 +7,26 @@ import logomarkImage from "../images/awesome-stacks-logo-sunglasses.svg"
 
 const IndexPage = ({
   data: {
-    site: { siteMetadata: { title, description } },
+    site: { siteMetadata: { title, description, contributing } },
     // allMdx,
-    allMarkdownRemark: { edges }
+    allGithubContributors,
+    allMarkdownRemark
   },
 }) => {
-  const Categories = edges[0].node.fields.categories.map(category =>
+  const Categories = allMarkdownRemark.edges[0].node.fields.categories.map(category =>
     <div key={category.name} className="container">
       <Category category={category} />
     </div>
   );
-  // const contributors = getContributors(allMdx.edges);
+  const Contributors = allGithubContributors.edges
+    .filter(edge => edge.node.login)
+    .map(({ node: { login, avatar_url, html_url } }) => (
+      <div key={login} className="column is-4-mobile is-2-tablet has-text-centered has-overflow-hidden" >
+        <a href={html_url}>
+          <img alt={login} className="is-avatar-image" src={avatar_url} />
+          <div className="is-size-7">@{login}</div>
+        </a>
+      </div>))
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
@@ -36,23 +45,27 @@ const IndexPage = ({
           </div>
         </div>
       </div>
-      {/* <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
-        <div className="has-text-centered">
-          <h3 className="is-size-3 has-text-white">——— See The Stacks ———</h3>
-        </div>
-      </div> */}
       <div className="section">
         {Categories}
       </div>
-      {/* <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
+      <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
         <div className="has-text-centered">
           <h3 className="is-size-3 has-text-white">——— Contributors ———</h3>
         </div>
-      </div> */}
-      {/* <div className="has-margin-top-20">
-        <Contributors contributors={contributors} />
-        <div className="has-margin-bottom-40"></div>
-      </div> */}
+      </div>
+      <div className="section">
+        <div className="container">
+          <div className="columns is-mobile is-multiline">
+            {Contributors}
+          </div>
+          <div className="columns is-centered">
+            <div className="column is-narrow has-text-centered">
+              <a className="button is-danger is-uppercase" href={contributing}>Become a contributor!</a>
+            </div>
+          </div>
+          <div className="has-margin-top-20"></div>
+        </div>
+      </div>
     </Layout>);
 }
 
@@ -62,6 +75,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+        contributing
       }
     }
     allMdx(
@@ -80,6 +94,15 @@ export const pageQuery = graphql`
       edges {
         node {
           ...MarkdownRemarkFields
+        }
+      }
+    }
+    allGithubContributors {
+      edges {
+        node {
+          login
+          html_url
+          avatar_url
         }
       }
     }
@@ -210,19 +233,5 @@ export const mdxQuery = graphql`
     }
   }
 `
-
-// function getContributors(edges) {
-//   var array = [];
-//   edges.forEach((edge) => {
-//     const contributors = edge.node.fields.contributors;
-//     contributors.forEach((contributor) => {
-//       array.push(contributor);
-//     });
-//   });
-//   return Object.values(array.reduce((memo, contributor) => {
-//     memo[contributor.login] = contributor;
-//     return memo;
-//   }, {}));
-// }
 
 export default IndexPage
