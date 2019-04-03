@@ -8,7 +8,6 @@ import logomarkImage from "../images/awesome-stacks-logo-sunglasses.svg"
 const IndexPage = ({
   data: {
     site: { siteMetadata: { title, description, contributing } },
-    // allMdx,
     allGithubContributors,
     allMarkdownRemark
   },
@@ -32,15 +31,17 @@ const IndexPage = ({
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
       <div className="hero is-info has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "2.2rem" }}>
         <div className="hero-body">
-          <div className="columns is-centered is-multiline">
-            <div className="column is-12">
-              <img src={logomarkImage} alt="Pink slotted sunglasses" style={{ height: "105px" }}></img>
-              <h1 className="is-size-hero-title has-text-white has-margin-top-5 has-margin-bottom-20">
-                Stacks on Stacks
-              </h1>
-            </div>
-            <div className="column is-6 is-paddingless">
-              <p className="is-size-4 has-text-white">{description}</p>
+          <div className="container">
+            <div className="columns is-centered is-multiline">
+              <div className="column is-12">
+                <img src={logomarkImage} alt="Pink slotted sunglasses" style={{ height: "105px" }}></img>
+                <h1 className="is-size-hero-title has-text-white has-margin-top-5 has-margin-bottom-20">
+                  Stacks on Stacks
+                </h1>
+              </div>
+              <div className="column is-8 is-paddingless">
+                <p className="is-size-4 has-text-white">{description}</p>
+              </div>
             </div>
           </div>
         </div>
