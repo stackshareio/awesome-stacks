@@ -32,6 +32,13 @@ const StackCard = ({ stack }) => (
             </div>
           )}
         </div>
+        { stack.tools.length > 3 ?
+          <div className="has-text-centered">
+            <Link to={`/${stack.path}`} className="is-size-7">
+              and {stack.tools.length - 3} more...
+            </Link>
+          </div>
+        : "" }
       </div>
     </div>
   </>
