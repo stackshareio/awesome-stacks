@@ -48,7 +48,7 @@ A collection of tools for building decentralized applications on the Ethereum bl
 
 ## Headless CMS stacks
 
-### [GraphCMS React + Apollo](https://awesomestacks.dev/graph-cms-react-apollo)
+### [GraphCMS React + Apollo](https://awesomestacks.dev/graphcms-react-apollo)
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
 
@@ -56,7 +56,9 @@ Lightning fast starter for bloggers, content creators, and really anyone who wan
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](facebook/create-react-app) - Set up a modern web app by running one command.
 - [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql) - Apollo Client is the best way to use GraphQL to build client applications.
 
-> Get the [code](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
+#### Resources
+
+- [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
 
 ## JAMStack stacks
 
@@ -71,18 +73,22 @@ Build a simple polling progressive web application with some great modern tech.
 - [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
 - [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components) - A react-specific css-in-js solution.
 
-> Get the [code](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
+#### Resources
 
-### [Victor Hugo](https://awesomestacks.dev/victor-hugo)
+- [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 
-Hugo is a static site generator written in Go with a focus on speed and convention. Victor Hugo adds a full asset pipeline.
+### [Victor Hugo boilerplate](https://awesomestacks.dev/victor-hugo)
+
+A Hugo boilerplate for creating truly epic websites. This is a boilerplate for using Hugo as a static site generator and Webpack as your asset pipeline.
 
 - [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
 - [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
 - [PostCSS](https://postcss.org/) - [🛠](https://stackshare.io/postcss) - [🐙](https://github.com/postcss/postcss) - A tool for transforming CSS with JavaScript.
 
-> Get the [code](https://github.com/netlify-templates/victor-hugo)
+#### Resources
+
+- [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
 
 ### [Algolia site search](https://awesomestacks.dev/algolia-site-search)
 
@@ -94,13 +100,15 @@ Add search to your JAMStack website, through a static site integration or by cra
 - [hugo-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/replicatedhq/hugo-algolia) - Generate and send indices from Hugo static sites for use with Algolia.
 - [instantsearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/) - [🐙](https://github.com/algolia/instantsearch.js) - JavaScript library for building performant and instant search experiences.
 
-> See a [tutorial](https://forestry.io/blog/search-with-algolia-in-hugo/)
+#### Resources
+
+- [Static site search with Hugo + Algolia](https://forestry.io/blog/search-with-algolia-in-hugo/)
 
 ## JavaScript stacks
 
 ### [React starter kit](https://awesomestacks.dev/react-starter-kit)
 
-A set of tools that work well for building isomorphic web apps with GraphQL support.
+React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync. 
 
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
@@ -109,11 +117,13 @@ A set of tools that work well for building isomorphic web apps with GraphQL supp
 - [Node.js](https://nodejs.org/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
 
-> Get the [code](https://github.com/kriasoft/react-starter-kit)
+#### Resources
+
+- [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 
 ### [React Firebase starter](https://awesomestacks.dev/react-firebase-starter)
 
-A serverless project template based on Firebase and React; deploys easily to Google Cloud.
+React Starter Kit for Firebase is a popular project template (aka, boilerplate) for building modern, scalable web applications with React, Relay, and GraphQL using serverless infrastructure provided by Google Cloud (Cloud SQL, Cloud Functions, CDN hosting, and file storage).
 
 - [Firebase](https://firebase.google.com/) - [🛠️](https://stackshare.io/firebase) - A cloud-hosted NoSQL database that lets you store and sync data between your users in realtime.
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](facebook/create-react-app) - Set up a modern web app by running one command.
@@ -121,7 +131,9 @@ A serverless project template based on Firebase and React; deploys easily to Goo
 - [Relay](https://facebook.github.io/relay/) - [🛠️](https://stackshare.io/relay) - [🐙](https://github.com/facebook/relay) - A JavaScript framework for building data-driven React applications.
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
 
-> Get the [code](https://github.com/kriasoft/react-firebase-starter)
+#### Resources
+
+- [react-firebase-starter](https://github.com/kriasoft/react-firebase-starter)
 
 ### [vue-starter](https://awesomestacks.dev/vue-starter)
 
@@ -134,11 +146,13 @@ The most complete boilerplate for production-ready PWAs. With focus on performan
 - [Vuex](https://veux.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
 - [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
 
-> Get the [code](https://vue-starter.herokuapp.com/docs/)
+#### Resources
+
+- [vue-starter](https://vue-starter.herokuapp.com/docs/)
 
 ### [Vue Enterprise Boilerplate](https://awesomestacks.dev/vue-enterprise-boilerplate)
 
-An ever-evolving and opinionated architecture and dev environment for new Vue SPA projects using Vue CLI 3. Well-documented an maintained by [Chris Fritz](https://github.com/chrisvfritz/vue-enterprise-boilerplate). 
+An ever-evolving and opinionated architecture and dev environment for new Vue SPA projects using Vue CLI 3.
 
 - [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
 - [Vuex](https://veux.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
@@ -147,6 +161,9 @@ An ever-evolving and opinionated architecture and dev environment for new Vue SP
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - compiler for writing next generation JavaScript; Babel will turn your ES6+ code into ES5 friendly code, so you can start using it right now without waiting for browser support.
 - [Sass](https://sass-lang.com) - [🛠️](https://stackshare.io/sass) - [🐙](https://github.com/sass/sass) - Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
 
+#### Resources
+
+- [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
 
 ## Mobile application stacks
 
@@ -160,9 +177,10 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 - [Digital Ocean](https://www.digitalocean.com/) - [🛠️](https://stackshare.io/digitalocean) - [🐙](https://github.com/digitalocean/) - Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.
 - [Auth0](https://auth0.com/) - [🛠️](https://stackshare.io/auth0) - A universal authentication & authorization platform for web, mobile and legacy applications.
 
-> [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
+#### Resources
 
-> [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
+- [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
+- [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 
 ### [React Native for the F8 App](https://awesomestacks.dev/react-native-for-the-f8-app)
 
@@ -172,20 +190,24 @@ Every year, as part of the F8 conference, Facebook builds iOS and Android apps t
 - [Parse Server](http://parseplatform.org/) - [🛠️](https://stackshare.io/parse-server) - [🐙](https://github.com/parse-community/parse-server) - Parse-compatible API server module for Node/Express.
 - [Yarn](https://yarnpkg.org) - [🛠️](https://stackshare.io/yarn) - [🐙](https://github.com/yarnpkg/yarn) - Fast, reliable, and secure dependency management. 
 
-> Get the [code](https://makeitopen.com/)
+#### Resources
+
+- [Building the F8 App - makeitopen.com](https://makeitopen.com/)
 
 ## Serverless stacks
 
-### [Serverless Stack](https://awesomestacks.dev/serverless-stack)
+### [serverless-stack.com](https://awesomestacks.dev/serverless-stack)
 
-Learn to Build Full-Stack Apps with Serverless and React on AWS.
+Build a full-stack production ready note taking app using Serverless and React on AWS. 
 
 - [Serverless Framework](https://serverless.com/) - [🛠️](https://stackshare.io/serverless) - [🐙](https://github.com/serverless/serverless) - A toolkit for building serverless applications.
 - [AWS Lambda](https://aws.amazon.com/lambda) - [🛠️](https://stackshare.io/aws-lambda) - A compute service that runs your code in response to events.
 - [DynamoDB](http://aws.amazon.com/dynamodb/) - [🛠️](https://stackshare.io/amazon-dynamodb) - Fully managed NoSQL database service.
 - [Amazon Cognito](https://aws.amazon.com/cognito/) - [🛠️](https://stackshare.io/amazon-cognito) - Securely manage and synchronize app data for your users across their mobile devices.
 
-> Get the [code](https://serverless-stack.com/)
+#### Resources
+
+- [serverless-stack.com](https://serverless-stack.com/)
 
 ## Web application stacks
 
@@ -198,7 +220,9 @@ This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB
 - [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
 - [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-> Get the [code](http://vemapp.moleculer.services/)
+#### Resources
+
+- [Welcome to Vue-Express-Mongo BoilerPlate](http://vemapp.moleculer.services/)
 
 ### [Rock Solid Modern Rails](https://awesomestacks.dev/rock-solid-modern-rails)
 
@@ -210,7 +234,9 @@ A Rails/JavaScript-based stack with modern/developer friendly technologies
 - [Apollo Client](https://dev.apollodata.com/) - [🛠](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - A powerfully extensible GraphQL JavaScript client
 - [Heroku](https://heroku.com) - [🛠️](https://stackshare.io/heroku) Developer friendly web app infrastructure provider with seamless Ruby/Rails support
 
-> Get the [code](https://blog.heroku.com/a-rock-solid-modern-web-stack)
+#### Resources
+
+- [A Rock Solid, Modern Web Stack—Rails 5 API + ActiveAdmin + Create React App on Heroku](https://blog.heroku.com/a-rock-solid-modern-web-stack)
 
 # Contributing
 
