@@ -22,7 +22,7 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 # Contents
 
 - [Blockchain stacks](#blockchain-stacks)
-- [Headless CMS] (#headless-cms-stacks)
+- [Headless CMS](#headless-cms-stacks)
 - [JAMStack stacks](#jamstack-stacks)
 - [JavaScript stacks](#javascript-stacks)
 - [Mobile application stacks](#mobile-application-stacks)
@@ -48,11 +48,11 @@ A collection of tools for building decentralized applications on the Ethereum bl
 
 ## Headless CMS stacks
 
-### [GraphCMS React + Apollo](https://awesomestacks.dev/graphcms-starter)
+### [GraphCMS React + Apollo](https://awesomestacks.dev/graph-cms-react-apollo)
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
 
-- [GraphCMS] (https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - [🐙](https://github.com/GraphCMS) - GraphCMS providing a backend to your app, giving you the tools to manage content.
+- [GraphCMS](https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - [🐙](https://github.com/GraphCMS) - GraphCMS providing a backend to your app, giving you the tools to manage content.
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](facebook/create-react-app) - Set up a modern web app by running one command.
 - [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql) - Apollo Client is the best way to use GraphQL to build client applications.
 
