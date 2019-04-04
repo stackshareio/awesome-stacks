@@ -12,7 +12,7 @@ import GitHub from "../mdx/github"
 import StackShare from "../mdx/stackshare"
 import StackHero from "../stacks/stack-hero"
 
-const MyH1 = props => <><hr /><h1>{props.children}</h1></>
+const MyH1 = props => <h1>{props.children}</h1>
 const components = {
   h1: MyH1
 }
