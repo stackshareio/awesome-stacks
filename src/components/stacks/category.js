@@ -10,7 +10,7 @@ const Category = ({ category }) => {
   return (
     <>
       <div className="has-text-centered">
-        <div className="has-text-white has-background-info is-uppercase" style={{ padding: "3px 8px", display: "inline-block", lineHeight: "25px" }}>
+        <div className="has-text-white has-background-info" style={{ padding: "4px 10px", display: "inline-block", lineHeight: "25px", textTransform: "uppercase", fontWeight: "bold" }}>
           {category.name}
         </div>
       </div>

@@ -29,7 +29,7 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
-      <div className="hero is-info has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "2.2rem" }}>
+      <div className="hero is-info has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "2.2rem", background: "linear-gradient(90deg, rgba(8,31,50,1) 0%, rgba(19,58,89,1) 50%, rgba(24,84,130,1) 100%)" }}>
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered is-multiline">
