@@ -49,18 +49,19 @@ exports.onCreateNode = async ({ node,
 
   console.log(`Processing ${categoryCount} categories in the README`)
 
-  const categories = h2s.map((_, category) => {
+  const categories = h2s.map((_, h2) => {
     return {
-      name: $(category).text(),
-      path: slugify($(category).text(), { customReplacements }),
-      stacks: $(category).nextUntil(`h2`, `h3`).map((_, stack) => {
+      name: $(h2).text(),
+      path: slugify($(h2).text(), { customReplacements }),
+      stacks: $(h2).nextUntil(`h2`, `h3`).map((_, h3) => {
         stackCount++;
+        const name = $(h3).text().replace(/↗/, '').trim();
+        const path = slugify(name, { customReplacements });
         return {
-          name: $(stack).find("a").text(),
-          path: slugify($(stack).find("a").text(), { customReplacements }),
-          url: $(stack).find("a").attr("href"),
-          description: $(stack).next("p").text(),
-          tools: $(stack).nextUntil(`h3`, `ul`).find(`li`).map((_, tool) => {
+          name, path,
+          url: $(h3).find("a").attr("href"),
+          description: $(h3).next("p").text(),
+          tools: $(h3).nextUntil(`h3`, `ul`).find(`li`).map((_, tool) => {
             toolCount++;
             const toolObj = {};
             $(tool).find("a").each((_, link) => {
