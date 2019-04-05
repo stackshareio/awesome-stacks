@@ -23,7 +23,7 @@ const StackCard = ({ stack }) => (
         <div className="level is-mobile has-margin-top-20">
           {stack.tools.slice(0, 3).map((tool) =>
             <div className="level-item" key={tool.name}>
-              <Link to={`${stack.path}`}>
+              <Link to={`/${stack.path}`}>
                 {tool.stackShareData ?
                   <img alt={tool.stackShareData.name} src={tool.stackShareData.imageUrl} style={{ width: "75px", borderRadius: "3px" }}></img>
                   : tool.gitHubData ? <GitHubIcon github={tool.gitHubData} /> :

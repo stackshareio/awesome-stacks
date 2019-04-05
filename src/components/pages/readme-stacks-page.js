@@ -51,7 +51,7 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
               <div className="content">
                 <ul className="has-margin-top-30 has-margin-bottom-30">
                   {stack.resources.length > 0 ? stack.resources.map(({ text, href }) => 
-                    <li className=""><div className="is-size-5"><a href={href}>{text}</a></div></li>
+                    <li key={text}><div className="is-size-5"><a href={href}>{text}</a></div></li>
                   ) : <div>No guides or tutorials listed. <a href={data.site.siteMetadata.repository}>Edit this stack</a> to add some.</div>}
                 </ul>
               </div>
