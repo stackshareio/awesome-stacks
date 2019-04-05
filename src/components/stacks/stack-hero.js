@@ -7,8 +7,8 @@ function StackHero({ title, description, contributors, updatedAt }) {
         <div className="container">
           <div className="columns">
             <div className="column is-10">
-              <h1 className="is-size-2 has-margin-bottom-20">{title}</h1>
-              <p className="is-size-5">{description}</p>
+              <h1 className="is-size-1 has-margin-bottom-20">{title}</h1>
+              <p className="is-size-4">{description}</p>
             </div>
             {contributors ?
               <div className="column is-2 has-text-right" style={{ marginTop: `auto` }}>

@@ -56,10 +56,10 @@ exports.onCreateNode = async ({ node,
       name, path,
       url: $(h2).find("a").attr("href"),
       description: $(h2).next("p").text(),
-      tools: $(h2).nextUntil(`h2`, `ul`).find(`li`).map((_, tool) => {
+      tools: $(h2).nextUntil(`h2`, `ul`).find(`li`).map((_, li) => {
         toolCount++;
         const toolObj = {};
-        $(tool).find("a").each((_, link) => {
+        $(li).find("a").each((_, link) => {
           if ($(link).attr("href").match(/https:\/\/stackshare.io\//)) {
             toolObj.stackShareUrl = $(link).attr("href");
           } else if ($(link).attr("href").match(/https:\/\/github.com\//)) {
@@ -69,8 +69,14 @@ exports.onCreateNode = async ({ node,
             toolObj.url = $(link).attr("href");
           }
         });
-        toolObj.description = $(tool).clone().children().remove().end().contents().text().replace(/ - /g, "").trim();
+        toolObj.description = $(li).clone().children().remove().end().contents().text().replace(/ - /g, "").trim();
         return toolObj;
+      }).get(),
+      resources: $(h2).nextUntil(`h2`, `h4`).nextUntil(`h2`, `ul`).find(`li > a`).map((_, a) => {
+        return {
+          text: $(a).text(),
+          href: $(a).attr(`href`)
+        }
       }).get()
     }
   }).get()

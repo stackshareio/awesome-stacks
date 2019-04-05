@@ -59,12 +59,11 @@ const IndexPage = ({
           <div className="columns is-mobile is-multiline">
             {Contributors}
           </div>
-          <div className="columns is-centered">
+          <div className="columns is-centered has-margin-top-60">
             <div className="column is-narrow has-text-centered">
               <a className="button is-danger is-uppercase" href={contributing}>Become a contributor!</a>
             </div>
           </div>
-          <div className="has-margin-top-20"></div>
         </div>
       </div>
     </Layout>);

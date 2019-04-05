@@ -37,16 +37,29 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
     <Layout>
       <SEO title={stack.name} />
       <StackHero {...heroProps} />
-      <div className="section has-padding-top-10">
+      <div className="section has-margin-bottom-60">
         <div className="container">
           <div className="columns is-centered">
             <div className="column">
+              <h2 className="is-size-2">Tools</h2>
               <Tools>{tools}</Tools>
+            </div>
+          </div>
+          <div className="columns is-centered has-margin-bottom-60">
+            <div className="column">
+              <h2 className="is-size-2">Resources</h2>
+              <div className="content">
+                <ul className="has-margin-top-30 has-margin-bottom-30">
+                  {stack.resources.length > 0 ? stack.resources.map(({ text, href }) => 
+                    <li className=""><div className="is-size-5"><a href={href}>{text}</a></div></li>
+                  ) : <div>No guides or tutorials listed. <a href={data.site.siteMetadata.repository}>Edit this stack</a> to add some.</div>}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="columns">
             <div className="column is-6">
-              <Link className="button is-medium is-danger is-uppercase has-text-white" to={`/#${stack.path}`}>&lt; Back to stacks</Link>
+              <Link className="button is-medium is-danger has-text-white" to={`/#${stack.path}`}>&lt; Back to stacks</Link>
             </div>
             <div className="column is-6">
               <div className="has-text-right">
@@ -76,6 +89,10 @@ export const pageQuery = graphql`
           name
           description
           path
+          resources {
+            text
+            href
+          }
           tools {
             name
             description
