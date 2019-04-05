@@ -19,24 +19,14 @@ Got a stack you think is a great way to build something? Please edit this file a
 
 Stacks can be browsed in two places—on the README and on [awesomestacks.dev](https://awesomestacks.dev/). The site, built with Gatsby and React, displays logos and metrics about each tool listed in the README by pulling data from the GitHub and StackShare APIs.
 
-# Contents
-
-- [Blockchain stacks](#blockchain-stacks)
-- [Headless CMS](#headless-cms-stacks)
-- [JAMStack stacks](#jamstack-stacks)
-- [JavaScript stacks](#javascript-stacks)
-- [Mobile application stacks](#mobile-application-stacks)
-- [Serverless stacks](#serverless-stacks)
-- [Web application stacks](#web-application-stacks)
-
 ### Legend
 
 🛠 - StackShare tool profile<br>
 🐙 - GitHub repository
 
-## Blockchain stacks
+# Contents
 
-### Ethereum DApp stack [↗](https://awesomestacks.dev/ethereum-d-app-stack)
+## Ethereum DApp stack [↗](https://awesomestacks.dev/ethereum-d-app-stack)
 
 A collection of tools for building decentralized applications on the Ethereum blockchain.
 
@@ -46,9 +36,7 @@ A collection of tools for building decentralized applications on the Ethereum bl
 - [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
 - [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
-## Headless CMS stacks
-
-### GraphCMS React + Apollo [↗](https://awesomestacks.dev/graphcms-react-apollo)
+## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graphcms-react-apollo)
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
 
@@ -60,11 +48,7 @@ Lightning fast starter for bloggers, content creators, and really anyone who wan
 
 - [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
 
-## JAMStack stacks
-
-The [JAMStack](https://jamstack.org/) is a new way of building websites and apps that delivers better performance, higher security and a better developer experience.
-
-### PWA with Gatsby [↗](https://awesomestacks.dev/pwa-with-gatsby)
+## PWA with Gatsby [↗](https://awesomestacks.dev/pwa-with-gatsby)
 
 Build a simple polling progressive web application with some great modern tech.
 
@@ -77,7 +61,7 @@ Build a simple polling progressive web application with some great modern tech.
 
 - [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 
-### Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo)
+## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo)
 
 A Hugo boilerplate for creating truly epic websites. This is a boilerplate for using Hugo as a static site generator and Webpack as your asset pipeline.
 
@@ -90,7 +74,7 @@ A Hugo boilerplate for creating truly epic websites. This is a boilerplate for u
 
 - [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
 
-### Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
+## Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
 
 Add search to your JAMStack website, through a static site integration or by crawling the content.
 
@@ -104,9 +88,7 @@ Add search to your JAMStack website, through a static site integration or by cra
 
 - [Static site search with Hugo + Algolia](https://forestry.io/blog/search-with-algolia-in-hugo/)
 
-## JavaScript stacks
-
-### React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
+## React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
 
 React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync. 
 
@@ -121,7 +103,7 @@ React Starter Kit is an opinionated boilerplate for web development built on top
 
 - [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 
-### React Firebase starter [↗](https://awesomestacks.dev/react-firebase-starter)
+## React Firebase starter [↗](https://awesomestacks.dev/react-firebase-starter)
 
 React Starter Kit for Firebase is a popular project template (aka, boilerplate) for building modern, scalable web applications with React, Relay, and GraphQL using serverless infrastructure provided by Google Cloud (Cloud SQL, Cloud Functions, CDN hosting, and file storage).
 
@@ -135,7 +117,7 @@ React Starter Kit for Firebase is a popular project template (aka, boilerplate) 
 
 - [react-firebase-starter](https://github.com/kriasoft/react-firebase-starter)
 
-### vue-starter [↗](https://awesomestacks.dev/vue-starter)
+## vue-starter [↗](https://awesomestacks.dev/vue-starter)
 
 The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices.
 
@@ -150,7 +132,7 @@ The most complete boilerplate for production-ready PWAs. With focus on performan
 
 - [vue-starter](https://vue-starter.herokuapp.com/docs/)
 
-### Vue Enterprise Boilerplate [↗](https://awesomestacks.dev/vue-enterprise-boilerplate)
+## Vue Enterprise Boilerplate [↗](https://awesomestacks.dev/vue-enterprise-boilerplate)
 
 An ever-evolving and opinionated architecture and dev environment for new Vue SPA projects using Vue CLI 3.
 
@@ -165,9 +147,7 @@ An ever-evolving and opinionated architecture and dev environment for new Vue SP
 
 - [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
 
-## Mobile application stacks
-
-### React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
+## React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
 
 Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL APIs on any Postgres database. This React Native stack uses Hasura droplets hosted on Digital Ocean.
 
@@ -182,7 +162,7 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 
-### React Native for the F8 App [↗](https://awesomestacks.dev/react-native-for-the-f8-app)
+## React Native for the F8 App [↗](https://awesomestacks.dev/react-native-for-the-f8-app)
 
 Every year, as part of the F8 conference, Facebook builds iOS and Android apps that give attendees a schedule for the conference.
 
@@ -194,9 +174,7 @@ Every year, as part of the F8 conference, Facebook builds iOS and Android apps t
 
 - [Building the F8 App - makeitopen.com](https://makeitopen.com/)
 
-## Serverless stacks
-
-### serverless-stack.com [↗](https://awesomestacks.dev/serverless-stack)
+## serverless-stack.com [↗](https://awesomestacks.dev/serverless-stack)
 
 Build a full-stack production ready note taking app using Serverless and React on AWS. 
 
@@ -209,9 +187,7 @@ Build a full-stack production ready note taking app using Serverless and React o
 
 - [serverless-stack.com](https://serverless-stack.com/)
 
-## Web application stacks
-
-### MEVN: Mongo Express Vue Node [↗](https://awesomestacks.dev/mevn-mongo-express-vue-node)
+## MEVN: Mongo Express Vue Node [↗](https://awesomestacks.dev/mevn-mongo-express-vue-node)
 
 This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB.
 
@@ -224,7 +200,7 @@ This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB
 
 - [Welcome to Vue-Express-Mongo BoilerPlate](http://vemapp.moleculer.services/)
 
-### Rock Solid Modern Rails [↗](https://awesomestacks.dev/rock-solid-modern-rails)
+## Rock Solid Modern Rails [↗](https://awesomestacks.dev/rock-solid-modern-rails)
 
 A Rails/JavaScript-based stack with modern/developer friendly technologies
 

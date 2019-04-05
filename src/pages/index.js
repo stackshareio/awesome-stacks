@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Category from "../components/stacks/category"
+import StackCard from "../components/stacks/stack-card"
 import logomarkImage from "../images/awesome-stacks-logo-sunglasses.svg"
 
 const IndexPage = ({
@@ -12,9 +12,9 @@ const IndexPage = ({
     allMarkdownRemark
   },
 }) => {
-  const Categories = allMarkdownRemark.edges[0].node.fields.categories.map(category =>
-    <div key={category.name} className="container">
-      <Category category={category} />
+  const Stacks = allMarkdownRemark.edges[0].node.fields.stacks.map(stack =>
+    <div key={stack.name} className="container has-margin-top-50 has-margin-bottom-50">
+      <StackCard stack={stack} />
     </div>
   );
   const Contributors = allGithubContributors.edges
@@ -31,7 +31,7 @@ const IndexPage = ({
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
       <div className="hero is-info has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "2.2rem", background: "linear-gradient(90deg, rgba(8,31,50,1) 0%, rgba(19,58,89,1) 50%, rgba(24,84,130,1) 100%)" }}>
         <div className="hero-body">
-          <div className="container">
+        <div className="container">
             <div className="columns is-centered is-multiline">
               <div className="column is-12">
                 <img src={logomarkImage} alt="Pink slotted sunglasses" style={{ height: "105px" }}></img>
@@ -47,7 +47,7 @@ const IndexPage = ({
         </div>
       </div>
       <div className="section">
-        {Categories}
+        {Stacks}
       </div>
       <div className="has-background-grey has-padding-top-20 has-padding-bottom-20">
         <div className="has-text-centered">
@@ -113,34 +113,30 @@ export const pageQuery = graphql`
 export const MarkdownRemarkFields = graphql`
   fragment MarkdownRemarkFields on MarkdownRemark {
     fields {
-      categories {
+      stacks {
         name
         path
-        stacks {
+        description
+        url
+        tools {
           name
-          path
           description
           url
-          tools {
+          gitHubUrl 
+          stackShareUrl
+          stackShareData {
             name
-            description
+            imageUrl
+          }
+          gitHubData {
+            name
             url
-            gitHubUrl 
-            stackShareUrl
-            stackShareData {
-              name
-              imageUrl
-            }
-            gitHubData {
-              name
-              url
-              homepageUrl
-              languages {
-                edges {
-                  node {
-                    name
-                    color
-                  }
+            homepageUrl
+            languages {
+              edges {
+                node {
+                  name
+                  color
                 }
               }
             }

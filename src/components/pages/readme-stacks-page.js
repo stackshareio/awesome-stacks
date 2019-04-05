@@ -10,9 +10,7 @@ import StackHero from "../stacks/stack-hero"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function ReadmeStacksPage({ data, pageContext: { stackName } }) {
-  const stack = data.markdownRemark.fields.categories.map(category => {
-    return category.stacks.find(stack => stack.name === stackName)
-  }).filter(stack => stack)[0];
+  const stack = data.markdownRemark.fields.stacks.find(stack => stack.name === stackName);
   const heroProps = {
     title: stack.name,
     description: stack.description
@@ -74,69 +72,67 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       fields {
-        categories {
-          stacks {
+        stacks {
+          name
+          description
+          path
+          tools {
             name
             description
-            path
-            tools {
+            gitHubData {
               name
+              nameWithOwner
               description
-              gitHubData {
-                name
-                nameWithOwner
-                description
-                descriptionHTML
-                stargazers {
-                  totalCount
-                }
-                repositoryTopics {
-                  edges {
-                    node {
-                      topic {
-                        name
-                      }
-                    }
-                  }
-                }
-                forks {
-                  totalCount
-                }
-                updatedAt
-                url
-                homepageUrl
-                languages {
-                  edges {
-                    node {
+              descriptionHTML
+              stargazers {
+                totalCount
+              }
+              repositoryTopics {
+                edges {
+                  node {
+                    topic {
                       name
-                      color
                     }
                   }
                 }
               }
-              stackShareData {
+              forks {
+                totalCount
+              }
+              updatedAt
+              url
+              homepageUrl
+              languages {
+                edges {
+                  node {
+                    name
+                    color
+                  }
+                }
+              }
+            }
+            stackShareData {
+              name
+              description
+              imageUrl
+              websiteUrl
+              profileUrl
+              githubUrl
+              group {
                 name
-                description
-                imageUrl
-                websiteUrl
-                profileUrl
-                githubUrl
-                group {
-                  name
-                  url
-                }
-                category {
-                  name
-                  url
-                }
-                stackshareStats {
-                  name
-                  value
-                }
-                githubStats {
-                  name
-                  value
-                }
+                url
+              }
+              category {
+                name
+                url
+              }
+              stackshareStats {
+                name
+                value
+              }
+              githubStats {
+                name
+                value
               }
             }
           }

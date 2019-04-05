@@ -43,41 +43,34 @@ exports.onCreateNode = async ({ node,
 
   const h2s = $(`h2`);
 
-  var categoryCount = h2s.get().length;
   var toolCount = 0;
-  var stackCount = 0;
+  var stackCount = $(`h2`.length);
 
-  console.log(`Processing ${categoryCount} categories in the README`)
+  console.log(`Processing ${stackCount} stacks in the README`)
 
-  const categories = h2s.map((_, h2) => {
+  const stacks = h2s.map((_, h2) => {
+    stackCount++;
+    const name = $(h2).text().replace(/↗/, '').trim();
+    const path = slugify(name, { customReplacements });
     return {
-      name: $(h2).text(),
-      path: slugify($(h2).text(), { customReplacements }),
-      stacks: $(h2).nextUntil(`h2`, `h3`).map((_, h3) => {
-        stackCount++;
-        const name = $(h3).text().replace(/↗/, '').trim();
-        const path = slugify(name, { customReplacements });
-        return {
-          name, path,
-          url: $(h3).find("a").attr("href"),
-          description: $(h3).next("p").text(),
-          tools: $(h3).nextUntil(`h3`, `ul`).find(`li`).map((_, tool) => {
-            toolCount++;
-            const toolObj = {};
-            $(tool).find("a").each((_, link) => {
-              if ($(link).attr("href").match(/https:\/\/stackshare.io\//)) {
-                toolObj.stackShareUrl = $(link).attr("href");
-              } else if ($(link).attr("href").match(/https:\/\/github.com\//)) {
-                toolObj.gitHubUrl = $(link).attr("href");
-              } else if ($(link).text().match(/[\w\d_ -]/)) {
-                toolObj.name = $(link).text();
-                toolObj.url = $(link).attr("href");
-              }
-            });
-            toolObj.description = $(tool).clone().children().remove().end().contents().text().replace(/ - /g, "").trim();
-            return toolObj;
-          }).get()
-        }
+      name, path,
+      url: $(h2).find("a").attr("href"),
+      description: $(h2).next("p").text(),
+      tools: $(h2).nextUntil(`h2`, `ul`).find(`li`).map((_, tool) => {
+        toolCount++;
+        const toolObj = {};
+        $(tool).find("a").each((_, link) => {
+          if ($(link).attr("href").match(/https:\/\/stackshare.io\//)) {
+            toolObj.stackShareUrl = $(link).attr("href");
+          } else if ($(link).attr("href").match(/https:\/\/github.com\//)) {
+            toolObj.gitHubUrl = $(link).attr("href");
+          } else if ($(link).text().match(/[\w\d_ -]/)) {
+            toolObj.name = $(link).text();
+            toolObj.url = $(link).attr("href");
+          }
+        });
+        toolObj.description = $(tool).clone().children().remove().end().contents().text().replace(/ - /g, "").trim();
+        return toolObj;
       }).get()
     }
   }).get()
@@ -85,32 +78,29 @@ exports.onCreateNode = async ({ node,
   console.log(`Fetching data for ${toolCount} tools in ${stackCount} stacks`);
 
   // get the stacks then get the tools
-  await Promise.all(categories.map(category => {
 
-    return Promise.all(category.stacks.map(stack => {
+  await Promise.all(stacks.map(stack => {
 
-      return Promise.all(stack.tools.map(async tool => {
-        if (tool.gitHubUrl) {
-          const [owner, name] = tool.gitHubUrl.replace(/http[s]+:\/\/github\.com\//, '').split(`/`);
-          try {
-            console.log(`Fetching GitHub: ${tool.gitHubUrl}`)
-            tool.gitHubData = await github.getGitHubTool({ owner, name })
-          } catch (e) {
-            console.warn(e);
-          }
+    return Promise.all(stack.tools.map(async tool => {
+      if (tool.gitHubUrl) {
+        const [owner, name] = tool.gitHubUrl.replace(/http[s]+:\/\/github\.com\//, '').split(`/`);
+        try {
+          console.log(`Fetching GitHub: ${tool.gitHubUrl}`)
+          tool.gitHubData = await github.getGitHubTool({ owner, name })
+        } catch (e) {
+          console.warn(e);
         }
-        if (tool.stackShareUrl) {
-          const url = tool.stackShareUrl
-          const name = url.replace(/http[s]+:\/\/stackshare\.io\//, '')
-          try {
-            console.log(`Fetching StackShare: ${tool.stackShareUrl}`);
-            tool.stackShareData = await stackshare.getStackShareTool({ name });
-          } catch (e) {
-            console.warn(e);
-          }
+      }
+      if (tool.stackShareUrl) {
+        const url = tool.stackShareUrl
+        const name = url.replace(/http[s]+:\/\/stackshare\.io\//, '')
+        try {
+          console.log(`Fetching StackShare: ${tool.stackShareUrl}`);
+          tool.stackShareData = await stackshare.getStackShareTool({ name });
+        } catch (e) {
+          console.warn(e);
         }
-      }));
-
+      }
     }));
 
   }));
@@ -118,9 +108,9 @@ exports.onCreateNode = async ({ node,
   console.log(`\n*** Fetching complete — updating node fields ***\n`);
 
   createNodeField({
-    name: "categories",
+    name: "stacks",
     node,
-    value: categories
+    value: stacks
   });
 
 };
@@ -137,11 +127,9 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   id
                   fields {
-                    categories {
-                      stacks {
-                        name
-                        path
-                      }
+                    stacks {
+                      name
+                      path
                     }
                   }
                 }
@@ -158,15 +146,13 @@ exports.createPages = ({ graphql, actions }) => {
         // there will just be one edge for the readme
         var pageCount = 0;
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          node.fields.categories.forEach(category => {
-            category.stacks.forEach(stack => {
-              createPage({
-                path: stack.path,
-                component: path.resolve(`./src/components/pages/readme-stacks-page.js`),
-                context: { id: node.id, stackName: stack.name }
-              });
-              pageCount++;
+          node.fields.stacks.forEach(stack => {
+            createPage({
+              path: stack.path,
+              component: path.resolve(`./src/components/pages/readme-stacks-page.js`),
+              context: { id: node.id, stackName: stack.name }
             });
+            pageCount++;
           });
         });
         console.log(`Built ${pageCount} pages from the gatsby-transform-stacks plugin`);
