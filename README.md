@@ -214,6 +214,14 @@ A Rails/JavaScript-based stack with modern/developer friendly technologies
 
 - [A Rock Solid, Modern Web Stack—Rails 5 API + ActiveAdmin + Create React App on Heroku](https://blog.heroku.com/a-rock-solid-modern-web-stack)
 
+### GCP Kubernetes [↗](https://awesomestacks.dev/gcp-kubernetes)
+
+Stack used to deploy and manage a cluster of Docker containerized applications using Google Cloud services.
+
+- [GCP](https://cloud.google.com/) - [🛠]() – A set of solutions and products to manage applications in the Cloud.
+- [GKE](https://cloud.google.com/kubernetes-engine/) - [🛠]() – Kubernetes cluster managed by Google.
+- [Docker](https://www.docker.com/) – [🛠]() – [🐙](https://github.com/docker) – A tool to create, deploy and run applications inside containers. 
+
 # Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
