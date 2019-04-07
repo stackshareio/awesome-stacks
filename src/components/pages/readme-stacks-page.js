@@ -49,11 +49,15 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
             <div className="column">
               <h2 className="is-size-2">Resources</h2>
               <div className="content">
-                <ul className="has-margin-top-30 has-margin-bottom-30">
-                  {stack.resources.length > 0 ? stack.resources.map(({ text, href }) => 
-                    <li key={text}><div className="is-size-5"><a href={href}>{text}</a></div></li>
-                  ) : <div>No guides or tutorials listed. <a href={data.site.siteMetadata.repository}>Edit this stack</a> to add some.</div>}
-                </ul>
+                {stack.resources.length > 0 ?
+                  <ul className="has-margin-top-30 has-margin-bottom-30">
+                    {stack.resources.map(({ text, href }) =>
+                      <li key={text}><div className="is-size-5"><a href={href}>{text}</a></div></li>
+                    )}
+                  </ul> :
+                  <div className="has-margin-top-30 has-margin-bottom-30">
+                    No guides or tutorials listed. <a href={data.site.siteMetadata.repository}>Edit this stack</a> to add some.</div>
+                }
               </div>
             </div>
           </div>
