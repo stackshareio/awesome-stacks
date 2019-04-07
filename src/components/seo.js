@@ -52,17 +52,17 @@ function SEO({ description, lang, meta, keywords, title, titleTemplate, image })
           property: `og:image`,
           content: `${site.siteMetadata.url}${image || site.siteMetadata.image}`,
         },
-        { 
+        {
           property: `og:image:width`,
           content: site.siteMetadata.imageWidth
         },
-        { 
+        {
           property: `og:image:height`,
           content: site.siteMetadata.imageHeight
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -80,9 +80,9 @@ function SEO({ description, lang, meta, keywords, title, titleTemplate, image })
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
             : []
         )
         .concat(meta)}
