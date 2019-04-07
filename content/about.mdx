@@ -5,7 +5,7 @@ title: About
 # Awesome Stacks
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-<a title="StackShare" href={props.data.site.siteMetadata.techStack}><img src="https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" /></a>
+<a title="StackShare" href={data.site.siteMetadata.techStack}><img src="https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" /></a>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7fb9c28c-1e1e-41e0-a0c6-95a5770f4abf/deploy-status)](https://app.netlify.com/sites/awesomestacks/deploys)
 
 Awesome Stacks is a community-curated list of tech stacks for building different applications and features. It is open source and inspired by the original [awesome list](http://awesome.re/).
@@ -14,14 +14,27 @@ Each stack in the list has a name, description, and list of a few of the key too
 
 Got a stack you think is the best way to do something? Please edit this file and add it! Check out <a href="https://github.com/stackshareio/awesome-stacks/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> for more information.
 
-### Where can I see the stacks?
+## Where can I see the stacks?
 
 Stacks can be browsed in two places—on the README and on [awesomestacks.dev](https://awesomestacks.dev/). The site, built with Gatsby and React, displays logos and metrics about each tool listed in the README by pulling data from the GitHub and StackShare APIs.
 
-### Who writes the awesome stacks?
+## Who writes the stacks?
 
 You do! Just like awesome lists, anyone is welcome and encouraged to contribute their knowledge. See the [Contribution Guide](/docs) for how to get started.
 
-### Who’s behind all this?
+## Who’s behind all this?
 
 Awesome Stacks is built and maintained by [StackShare](https://https://stackshare.io/) with the help of [DeveloperMode](https://developermode.com/). StackShare’s mission is to help developers discover new tools and make better technology decisions, and generally to make building software more awesome ✌️
+
+<div className="level has-margin-top-40">
+  <div className="level-item">
+    <a href="https://stackshare.io/">
+      <Img fixed={data.stackShareLogo.childImageSharp.fixed} />
+    </a>
+  </div>
+  <div className="level-item">
+    <a href="https://developermode.com/">
+      <Img fixed={data.developerModeLogo.childImageSharp.fixed} />
+    </a>
+  </div>
+</div>
