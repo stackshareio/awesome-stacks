@@ -52,11 +52,10 @@ Lightning fast starter for bloggers, content creators, and really anyone who wan
 
 Build a simple polling progressive web application with some great modern tech.
 
-- [🐙](https://github.com/gatsbyjs/gatsby) - [🛠](https://stackshare.io/gatsbyjs) - [Gatsby](https://gatsbyjs.org/) - Gatsby is a blazing fast modern site generator for React.
-- [🛠️](https://stackshare.io/cloud-firestore) - [Cloud Firestore](https://firebase.google.com/docs/firestore/) - A noSQL cloud database that exposes event listeners for real-time updates.
-- [🛠️](https://stackshare.io/netlify) - [Netlify](https://netlify.com/) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
-- [🐙](https://github.com/styled-components/styled-components) - [🛠](https://stackshare.io/styled-components) - [styled components](https://www.styled-components.com/) - A react-specific css-in-js solution.
-
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
+- [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
+- [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
+- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components/styled-components) - A react-specific css-in-js solution.
 #### Resources
 
 - [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
