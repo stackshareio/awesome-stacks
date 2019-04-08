@@ -208,6 +208,7 @@ export const mdxQuery = graphql`
               topic {
                 name
               }
+              url
             }
           }
         }

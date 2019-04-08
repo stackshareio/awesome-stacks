@@ -41,6 +41,7 @@ module.exports = {
                     topic {
                       name
                     }
+                    url
                   }
                 }
               }

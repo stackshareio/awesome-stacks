@@ -43,8 +43,8 @@ function StackShare({ name, description, stackshare }) {
         <div className="level is-mobile has-overflow-hidden">
           <div className="level-item has-text-left">
             <div>
-              {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
-              {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
+              {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubUrl}/stargazers`, starsMetric.value) : ``}
+              {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubUrl}/network/members`, forksMetric.value) : ``}
               {stacksMetric ? metricsLevelItem(`layer-group`, `${stackshare.profileUrl}/in-stacks`, stacksMetric.value) : ``}
             </div>
           </div>

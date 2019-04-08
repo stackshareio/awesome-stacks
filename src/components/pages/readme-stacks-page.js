@@ -112,6 +112,7 @@ export const pageQuery = graphql`
                     topic {
                       name
                     }
+                    url
                   }
                 }
               }
