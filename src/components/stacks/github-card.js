@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Card from "./card"
 import GitHubIcon from "./github-icon";
-import { truncate } from "../../utils"
+import { truncate, shortenLargeNumber } from "../../utils"
 
 function GitHubCard({ name, description, github }) {
   if (!github) {
@@ -30,12 +30,12 @@ function GitHubCard({ name, description, github }) {
           <div>
             <a className="has-text-grey" href={`${github.url}/stargazers`}>
               <FontAwesomeIcon icon="star" fixedWidth />{" "}
-              <span>{github.stargazers.totalCount}</span>
+              <span>{shortenLargeNumber(github.stargazers.totalCount, 1)}</span>
             </a>
             <div />
             <a className="has-text-grey" href={`${github.url}/network/members`}>
               <FontAwesomeIcon icon="code-branch" fixedWidth />{" "}
-              <span>{github.forks.totalCount}</span>
+              <span>{shortenLargeNumber(github.forks.totalCount, 1)}</span>
             </a>
           </div>
         </div>

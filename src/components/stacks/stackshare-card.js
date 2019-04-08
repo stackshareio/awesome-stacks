@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from "./card"
-import { truncate } from "../../utils"
+import { truncate, shortenLargeNumber } from "../../utils"
 
 function StackShare({ name, description, stackshare }) {
   if (!stackshare) {
@@ -74,7 +74,7 @@ function metricsLevelItem(icon, url, value) {
   return (
     <div>
       <a className="has-text-grey" href={url}>
-        <FontAwesomeIcon icon={icon} fixedWidth /> <span>{value}</span>
+        <FontAwesomeIcon icon={icon} fixedWidth /> <span>{shortenLargeNumber(value, 1)}</span>
       </a>
     </div>
   );
