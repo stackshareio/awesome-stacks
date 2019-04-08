@@ -40,9 +40,9 @@ A collection of tools for building decentralized applications on the Ethereum bl
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
 
-- [🐙](https://github.com/GraphCMS) - [🛠️](https://stackshare.io/graphcms) - [GraphCMS](https://graphcms.com/) - GraphCMS providing a backend to your app, giving you the tools to manage content.
-- [🐙](facebook/create-react-app) - [🛠](https://stackshare.io/create-react-app) - [Create React App](https://facebook.github.io/create-react-app/) - Set up a modern web app by running one command.
-- [🐙](https://github.com/apollographql) - [🛠️](https://stackshare.io/apollo) - [Apollo](https://www.apollographql.com/) - Apollo Client is the best way to use GraphQL to build client applications.
+- [🛠️](https://stackshare.io/graphcms) - [GraphCMS](https://graphcms.com/) - GraphCMS providing a backend to your app, giving you the tools to manage content.
+- [🐙](https://github.com/facebook/create-react-app) - [🛠](https://stackshare.io/create-react-app) - [Create React App](https://facebook.github.io/create-react-app/) - Set up a modern web app by running one command.
+- [🐙](https://github.com/apollographql/apollo-client) - [🛠️](https://stackshare.io/apollo) - [Apollo](https://www.apollographql.com/) - Apollo Client is the best way to use GraphQL to build client applications.
 
 #### Resources
 
@@ -55,7 +55,7 @@ Build a simple polling progressive web application with some great modern tech.
 - [🐙](https://github.com/gatsbyjs/gatsby) - [🛠](https://stackshare.io/gatsbyjs) - [Gatsby](https://gatsbyjs.org/) - Gatsby is a blazing fast modern site generator for React.
 - [🛠️](https://stackshare.io/cloud-firestore) - [Cloud Firestore](https://firebase.google.com/docs/firestore/) - A noSQL cloud database that exposes event listeners for real-time updates.
 - [🛠️](https://stackshare.io/netlify) - [Netlify](https://netlify.com/) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
-- [🐙](https://github.com/styled-components) - [🛠](https://stackshare.io/styled-components) - [styled components](https://www.styled-components.com/) - A react-specific css-in-js solution.
+- [🐙](https://github.com/styled-components/styled-components) - [🛠](https://stackshare.io/styled-components) - [styled components](https://www.styled-components.com/) - A react-specific css-in-js solution.
 
 #### Resources
 
