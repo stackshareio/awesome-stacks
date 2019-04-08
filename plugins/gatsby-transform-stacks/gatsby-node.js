@@ -48,12 +48,12 @@ exports.onCreateNode = async ({ node,
 
   console.log(`Processing ${stackCount} stacks in the README`)
 
-  const stacks = h2s.map((_, h2) => {
+  const stacks = h2s.map((index, h2) => {
     stackCount++;
     const name = $(h2).text().replace(/↗/, '').trim();
     const path = slugify(name, { customReplacements });
     return {
-      name, path,
+      name, path, index,
       url: $(h2).find("a").attr("href"),
       description: $(h2).next("p").text(),
       tools: $(h2).nextUntil(`h2`, `ul`).find(`li`).map((_, li) => {
@@ -152,7 +152,7 @@ exports.createPages = ({ graphql, actions }) => {
         // there will just be one edge for the readme
         var pageCount = 0;
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          node.fields.stacks.forEach(stack => {
+          node.fields.stacks.forEach((stack, index) => {
             createPage({
               path: stack.path,
               component: path.resolve(`./src/components/pages/readme-stacks-page.js`),

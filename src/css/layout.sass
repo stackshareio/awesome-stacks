@@ -98,3 +98,14 @@ body hr, .has-dotted-line
 .is-avatar-image
   max-width: 75px
   border-radius: 3px
+
+.arrow
+  display: none
+  @media(min-width: 960px)
+    display: block
+  position: absolute
+  top: 40%
+  &.prev-arrow
+    left: -10%
+  &.next-arrow
+    right: -10%

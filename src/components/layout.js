@@ -1,15 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCommentAlt, faStar, faCodeBranch, faBars, faExternalLinkAlt, faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import Navbar from "./navbar"
 import Footer from "./footer"
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCommentAlt, faStar, faCodeBranch, faBars, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
-
-library.add(fab, faCommentAlt, faStar, faCodeBranch, faBars, faExternalLinkAlt)
+library.add(fab, faCommentAlt, faStar, faCodeBranch, faBars, faExternalLinkAlt, faArrowCircleRight, faArrowCircleLeft)
 
 const Layout = ({ children }) => (
   <StaticQuery

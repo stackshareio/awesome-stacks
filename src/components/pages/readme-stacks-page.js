@@ -6,15 +6,12 @@ import SEO from "../seo";
 import Tools from "../mdx/tools"
 import GitHubCard from "../stacks/github-card"
 import StackShareCard from "../stacks/stackshare-card"
-import StackHero from "../stacks/stack-hero"
+import ReadmeStackHero from "../stacks/readme-stack-hero"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function ReadmeStacksPage({ data, pageContext: { stackName } }) {
-  const stack = data.markdownRemark.fields.stacks.find(stack => stack.name === stackName);
-  const heroProps = {
-    title: stack.name,
-    description: stack.description
-  }
+  const stacks = data.markdownRemark.fields.stacks;
+  const stack = stacks.find(stack => stack.name === stackName);
   const tools = stack.tools.map(tool => {
     if (tool.stackShareData) {
       return (
@@ -36,7 +33,7 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
   return (
     <Layout>
       <SEO title={stack.name} />
-      <StackHero {...heroProps} />
+      <ReadmeStackHero {...{ stack, stacks }} />
       <div className="section has-margin-bottom-60">
         <div className="container">
           <div className="columns is-centered">
@@ -93,6 +90,7 @@ export const pageQuery = graphql`
           name
           description
           path
+          index
           resources {
             text
             href
@@ -157,16 +155,6 @@ export const pageQuery = graphql`
               }
             }
           }
-        }
-      }
-    }
-    allMdx(
-      sort: { order: DESC, fields: [frontmatter___createdAt] },
-      filter: { fields: { sourceName: { eq: "content-stacks" } } }
-      ) {
-      edges {
-        node {
-          ...MdxFields
         }
       }
     }
