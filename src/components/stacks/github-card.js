@@ -14,18 +14,18 @@ function GitHubCard({ name, description, github }) {
       <div className="is-top has-padding-top-5 has-text-centered">
         <a href={url}><GitHubIcon github={github} /></a>
         <div className="has-margin-top-10">
-          <a href={url} className="has-text-info is-size-5" style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>{github.name}</a>
+          <a href={url} className="has-text-info is-size-4 is-strong" style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>{github.name}</a>
         </div>
       </div>
-      <div className="is-size-7 has-text-centered has-margin-bottom-10">
+      <div className="is-size-7 has-text-centered has-margin-top-10 has-margin-bottom-10">
         <a className="has-text-grey" href={github.url}>
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
         </a>
       </div>
-      <div className="is-size-7 is-description has-text-centered">
+      <div className="is-description has-text-centered">
         {truncate(github.description, 70)}
       </div>
-      <div className="level is-mobile is-bottom has-overflow-hidden has-margin-top-20">
+      <div className="level is-mobile is-bottom has-overflow-hidden has-margin-top-10">
         <div className="level-item has-text-left">
           <div>
             <a className="has-text-grey" href={`${github.url}/stargazers`}>

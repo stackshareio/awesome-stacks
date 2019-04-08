@@ -18,13 +18,13 @@ function StackShare({ name, description, stackshare }) {
             <img alt="Tool logo" className="is-logo" src={stackshare.imageUrl}></img>
           </a>
         </div>
-        <div className="has-margin-top-5 has-text-centered">
-          <a className="has-text-info is-size-5" href={stackshare.websiteUrl}>
+        <div className="has-margin-top-10 has-text-centered">
+          <a className="has-text-info is-size-4 is-strong" href={stackshare.websiteUrl}>
             {stackshare.name}
           </a>
         </div>
       </div>
-      <div className="is-size-7 has-text-centered has-margin-bottom-10">
+      <div className="is-size-7 has-text-centered has-margin-top-10 has-margin-bottom-10">
         <a className="has-text-grey" href={stackshare.profileUrl}>
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>StackShare</span>
         </a>
@@ -36,10 +36,10 @@ function StackShare({ name, description, stackshare }) {
           </span>
           : ``}
       </div>
-      <div className="is-size-7 is-description has-text-centered">
+      <div className="is-description has-text-centered">
         {truncate(stackshare.description, 70)}
       </div>
-      <div className="is-bottom has-margin-top-20">
+      <div className="is-bottom has-margin-top-10">
         <div className="level is-mobile has-overflow-hidden">
           <div className="level-item has-text-left">
             <div>
