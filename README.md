@@ -30,19 +30,19 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 
 A collection of tools for building decentralized applications on the Ethereum blockchain.
 
-- [🐙](https://github.com/ethereum/solidity) - [Solidity](https://solidity.readthedocs.io) - Solidity is an object-oriented, high-level language for implementing smart contracts.
-- [🐙](https://github.com/ethereum/web3.js) - [web3.js](https://web3js.readthedocs.io) - Ethereum JavaScript API.
-- [🐙](https://github.com/trufflesuite/truffle) - [Truffle](https://truffleframework.com/truffle) - A world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
-- [🐙](https://github.com/trufflesuite/ganache) - [Ganache](https://truffleframework.com/ganache) - Personal blockchain for Ethereum development.
-- [🐙](https://github.com/trufflesuite/drizzle) - [drizzle](https://truffleframework.com/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
+- [Solidity](https://solidity.readthedocs.io) - [🐙](https://github.com/ethereum/solidity) - Solidity is an object-oriented, high-level language for implementing smart contracts.
+- [web3.js](https://web3js.readthedocs.io) - [🐙](https://github.com/ethereum/web3.js) - Ethereum JavaScript API.
+- [Truffle](https://truffleframework.com/truffle) - [🐙](https://github.com/trufflesuite/truffle) - A world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
+- [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
+- [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
 ## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graphcms-react-apollo)
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
 
-- [🛠️](https://stackshare.io/graphcms) - [GraphCMS](https://graphcms.com/) - GraphCMS providing a backend to your app, giving you the tools to manage content.
-- [🐙](https://github.com/facebook/create-react-app) - [🛠](https://stackshare.io/create-react-app) - [Create React App](https://facebook.github.io/create-react-app/) - Set up a modern web app by running one command.
-- [🐙](https://github.com/apollographql/apollo-client) - [🛠️](https://stackshare.io/apollo) - [Apollo](https://www.apollographql.com/) - Apollo Client is the best way to use GraphQL to build client applications.
+- [GraphCMS](https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - GraphCMS providing a backend to your app, giving you the tools to manage content.
+- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
+- [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - Apollo Client is the best way to use GraphQL to build client applications.
 
 #### Resources
 
