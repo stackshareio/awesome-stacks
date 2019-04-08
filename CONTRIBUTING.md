@@ -2,6 +2,14 @@
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
+## tl:dr;
+
+- Edit the README file
+- Add a new stack using markdown
+- Open a pull request
+- StackShare team approves or gives feedback on the PR
+- When merged, your stack will appear in the README and on [awesomestacks.dev](https://awesomestacks.dev/)
+
 ## What should I contribute?
 
 The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
