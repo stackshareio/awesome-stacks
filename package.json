@@ -18,6 +18,7 @@
     "gatsby-image": "^2.0.30",
     "gatsby-mdx": "^0.4.2",
     "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.0.20",
     "gatsby-plugin-offline": "^2.0.24",

@@ -74,6 +74,13 @@ module.exports = {
         url: `https://api.github.com/repos/stackshareio/awesome-stacks/contributors`,
         name: "githubContributors"
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-41067622-2`,
+        respectDNT: true
+      }
     }
   ]
 }
