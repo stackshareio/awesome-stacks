@@ -51,10 +51,10 @@ function StackShare({ name, description, stackshare }) {
           <div className="level-item has-text-right">
             <div>
               <div>
-                <a className="tag is-grey" href={stackshare.group.url}>{truncate(stackshare.group.name)}</a>
+                <a className="tag" href={stackshare.group.url}>{truncate(stackshare.group.name)}</a>
               </div>
               <div>
-                <a className="tag is-grey" href={stackshare.category.url}>{truncate(stackshare.category.name)}</a>
+                <a className="tag" href={stackshare.category.url}>{truncate(stackshare.category.name)}</a>
               </div>
             </div>
           </div>

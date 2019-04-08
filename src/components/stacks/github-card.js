@@ -44,7 +44,7 @@ function GitHubCard({ name, description, github }) {
             <div>
               {github.repositoryTopics.edges.map(edge => (
                 <div key={edge.node.topic.name}>
-                  <a className="tag is-grey" href={edge.node.url}>
+                  <a className="tag" href={edge.node.url}>
                     #{truncate(edge.node.topic.name)}
                   </a>
                 </div>
