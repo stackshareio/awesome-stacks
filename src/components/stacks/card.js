@@ -18,7 +18,7 @@ function Card({ description, color, children }) {
             flip="horizontal"
             style={{ marginLeft: "-20px" }}
           />{" "}
-          <span className="is-italic">{description}</span>
+          <span className="is-italic">{description.replace(/ - /g, "")}</span>
         </div>
       ) : (
           <div />

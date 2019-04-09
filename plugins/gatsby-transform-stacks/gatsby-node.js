@@ -69,7 +69,7 @@ exports.onCreateNode = async ({ node,
             toolObj.url = $(link).attr("href");
           }
         });
-        toolObj.description = $(li).clone().children().remove().end().contents().text().replace(/ - /g, "").trim();
+        toolObj.description = $(li).clone().children().remove().end().contents().text();
         return toolObj;
       }).get(),
       resources: $(h2).nextUntil(`h2`, `h4`).nextUntil(`h2`, `ul`).find(`li > a`).map((_, a) => {
