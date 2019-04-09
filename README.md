@@ -26,7 +26,7 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 
 # Contents
 
-## Ethereum DApp stack [↗](https://awesomestacks.dev/ethereum-d-app-stack)
+## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
 
 A collection of tools for building decentralized applications on the Ethereum blockchain.
 
