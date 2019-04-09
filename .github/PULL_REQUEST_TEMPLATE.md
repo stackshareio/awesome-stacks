@@ -1,10 +1,8 @@
-### Is this a new stack or update to an existing one?
+### For all PRs
 
-[] - New
-[] - Existing
+[ ] I read the [Contribution Guide](CONTRIBUTING.md)
 
-### If it's a new stack...
+### For new stacks
 
-[] I read the [Contribution Guide](CONTRIBUTING.md)
-[] I followed the [do's and don'ts](CONTRIBUTING.md#contributing-dos-and-donts)
-[] This stack does not already exist
+[ ] I followed the [do's and don'ts](CONTRIBUTING.md#contributing-dos-and-donts)
+[ ] This stack does not already exist
