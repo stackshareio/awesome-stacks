@@ -28,6 +28,17 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 * [Ethereum DApp stack](#ethereum-dapp-stack-)
 * [GraphCMS React + Apollo](#graphcms-react--apollo-)
 * [PWA with Gatsby](#pwa-with-gatsby-)
+* [Victor Hugo boilerplate](#victor-hugo-boilerplate-)
+* [Algolia site search](#algolia-site-search-)
+* [React starter kit](#react-starter-kit-)
+* [React Firebase starter](#react-firebase-starter-)
+* [vue-starter](#vue-starter-)
+* [Vue Enterprise Boilerplate](#vue-enterprise-boilerplate-)
+* [React Native with Expo and Hasura](#react-native-with-expo-and-hasura-)
+* [React Native for the F8 App](#react-native-for-the-f8-app-)
+* [serverless-stack.com](#serverless-stackcom-)
+* [MEVN: Mongo Express Vue Node](#mevn-mongo-express-vue-node-)
+* [Rock Solid Modern Rails](#rock-solid-modern-rails-)
 
 
 ## Ethereum DApp stack [↗](https://awesomestacks.dev/ethereum-d-app-stack)
