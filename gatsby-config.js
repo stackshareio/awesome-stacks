@@ -5,9 +5,9 @@ module.exports = {
     title: `Awesome Stacks`,
     url: `https://awesomestacks.dev`,
     description: `Discover awesome tech stacks for building different applications and features.`,
-    image: `/images/awesome-stacks-vertical-blue-logo.png`,
-    imageWidth: 1200,
-    imageHeight: 630,
+    image: `/images/awesome-stacks-twitter-card-large.png`,
+    imageWidth: 1688,
+    imageHeight: 883,
     author: `@dzello`,
     repository: `https://github.com/stackshareio/awesome-stacks`,
     contributing: `https://github.com/stackshareio/awesome-stacks/blob/master/CONTRIBUTING.md`,
@@ -22,13 +22,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content-docs`,
-        path: `${__dirname}/content/docs`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `content-docs`,
+    //     path: `${__dirname}/content/docs`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,6 +73,13 @@ module.exports = {
       options: {
         url: `https://api.github.com/repos/stackshareio/awesome-stacks/contributors`,
         name: "githubContributors"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-41067622-2`,
+        respectDNT: true
       }
     }
   ]

@@ -2,7 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../layout"
 import SEO from "../seo"
-import Img from "gatsby-image"
+import { MDXTag } from '@mdx-js/tag';
+import Img from "gatsby-image";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 
 function ContentPage({ data }) {
@@ -14,22 +15,13 @@ function ContentPage({ data }) {
           <div className="columns is-centered">
             <div className="column is-9">
               <div className="content">
-                <MDXRenderer data={data}>{data.mdx.code.body}</MDXRenderer>
-              </div>
-              <div className="level has-margin-top-40">
-                <div className="level-item">
-                  <a href="https://stackshare.io/">
-                    <Img fixed={data.stackShareLogo.childImageSharp.fixed} />
-                  </a>
-                </div>
-                <div className="level-item">
-                  <a href="https://developermode.com/">
-                    <Img fixed={data.developerModeLogo.childImageSharp.fixed} />
-                  </a>
-                </div>
+                <MDXRenderer scope={{ React, MDXTag, Img, data }}>
+                  {data.mdx.code.body}
+                </MDXRenderer>
               </div>
             </div>
           </div>
+          <div className="has-margin-top-60"></div>
         </div>
       </div>
     </Layout>

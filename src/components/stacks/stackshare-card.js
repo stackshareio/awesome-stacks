@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from "./card"
-import { truncate } from "../../utils"
+import { truncate, shortenLargeNumber } from "../../utils"
 
 function StackShare({ name, description, stackshare }) {
   if (!stackshare) {
@@ -18,13 +18,13 @@ function StackShare({ name, description, stackshare }) {
             <img alt="Tool logo" className="is-logo" src={stackshare.imageUrl}></img>
           </a>
         </div>
-        <div className="has-margin-top-5 has-text-centered">
-          <a className="has-text-info is-size-5" href={stackshare.websiteUrl}>
+        <div className="has-margin-top-10 has-text-centered">
+          <a className="has-text-info is-size-4 is-strong" href={stackshare.websiteUrl} title={stackshare.name}>
             {stackshare.name}
           </a>
         </div>
       </div>
-      <div className="is-size-7 has-text-centered has-margin-bottom-10">
+      <div className="is-size-7 has-text-centered has-margin-top-10 has-margin-bottom-10">
         <a className="has-text-grey" href={stackshare.profileUrl}>
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>StackShare</span>
         </a>
@@ -36,25 +36,25 @@ function StackShare({ name, description, stackshare }) {
           </span>
           : ``}
       </div>
-      <div className="is-size-7 is-description has-text-centered">
+      <div className="is-description has-text-centered" title={stackshare.description}>
         {truncate(stackshare.description, 70)}
       </div>
-      <div className="is-bottom has-margin-top-20">
+      <div className="is-bottom has-margin-top-10">
         <div className="level is-mobile has-overflow-hidden">
           <div className="level-item has-text-left">
             <div>
-              {stacksMetric ? metricsLevelItem(`bars`, `https://stackshare.io/${stackshare.name}`, stacksMetric.value) : ``}
-              {starsMetric ? metricsLevelItem(`star`, `${stackshare.gitHubURL}/stargazers`, starsMetric.value) : ``}
-              {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.gitHubURL}/network/members`, forksMetric.value) : ``}
+              {starsMetric ? metricsLevelItem(`star`, `${stackshare.githubUrl}/stargazers`, starsMetric.value) : ``}
+              {forksMetric ? metricsLevelItem(`code-branch`, `${stackshare.githubUrl}/network/members`, forksMetric.value) : ``}
+              {stacksMetric ? metricsLevelItem(`layer-group`, `${stackshare.profileUrl}/in-stacks`, stacksMetric.value) : ``}
             </div>
           </div>
           <div className="level-item has-text-right">
             <div>
               <div>
-                <a className="tag is-grey" href={stackshare.group.url}>{truncate(stackshare.group.name)}</a>
+                <a className="tag" href={stackshare.group.url}>{truncate(stackshare.group.name)}</a>
               </div>
               <div>
-                <a className="tag is-grey" href={stackshare.category.url}>{truncate(stackshare.category.name)}</a>
+                <a className="tag" href={stackshare.category.url}>{truncate(stackshare.category.name)}</a>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ function metricsLevelItem(icon, url, value) {
   return (
     <div>
       <a className="has-text-grey" href={url}>
-        <FontAwesomeIcon icon={icon} fixedWidth /> <span>{value}</span>
+        <FontAwesomeIcon icon={icon} fixedWidth /> <span>{shortenLargeNumber(value, 1)}</span>
       </a>
     </div>
   );

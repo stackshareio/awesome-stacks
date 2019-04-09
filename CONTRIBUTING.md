@@ -2,37 +2,41 @@
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
+## tl;dr
+
+- Edit the README file
+- Add a new stack using markdown
+- Open a pull request
+- StackShare team approves or gives feedback on the PR
+- When merged, your stack will appear in the README and on [awesomestacks.dev](https://awesomestacks.dev/)
+
 ## What should I contribute?
 
 The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
 
-In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it 🤘
+In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it. 🤘
 
 ## Adding an awesome stack
 
-To add an awesome stack to both the README and the companion website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely on GitHub.com (see below) or clone the repository and edit locally.
+To add an awesome stack to both the README and the website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely from github.com (see below) or clone the repository and edit locally.
 
-one thought near the top of the guide: after "You can do this entirely on GitHub.com (see below) or clone the repository and edit locally." you might consider the following edits:
+## Stack markdown
 
-### Category
-
-To get started, review the categories of stacks in the README, and determine where your stack fits. If you're not sure where to put a stack, just make your best guess and we'll review it in the PR.
-
-If you don't see a category that makes sense for your stack, you can create a new one. Aim for a category broad enough to contain multiple stacks, and use an H2 for the category name. Categories are sorted alphabetically.
-
-Once you have the category in mind, it's time to create the stack with some markdown. Here's an example:
+Here's what the markdown for a stack looks like, using "PWA with Gatsby" as an example.
 
 ```markdown
-### [PWA with Gatsby](https://awesomestacks.dev/pwa-with-gatsby)
+## PWA with Gatsby [↗](https://awesomestacks.dev/pwa-with-gatsby)
 
 Build a simple polling progressive web application with some great modern tech.
 
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
 - [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
 - [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
-- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components) - A react-specific css-in-js solution.
+- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components/styled-components) - A react-specific css-in-js solution.
 
-> Get the [code](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
+#### Resources
+
+- [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 ```
 
 Here's a breakdown of all of the different elements in the markdown.
@@ -43,15 +47,21 @@ This goes first. It must be an `H3` that contains a link. The link text is the n
 
 The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site, which will be built automatically from the markdown you're creating!
 
+If you're having trouble coming up with the name, here's a quick guide:
+
+- If the stack is based on a boilerplate or starter kit, just call it that, e.g. "React Starter Kit"
+- If the stack is for a specific use case or task, write it like "*task* with *key tool(s)*", e.g. "Caching with Redis and Node.js"
+- Otherwise, just highlight the key tools: "Electron with Meteor and Electrify"
+
 ### Stack description
 
-In a paragraph under the description, please describe what the stack is used for, what makes it different than other stacks, and anything else useful to mention.
+In a paragraph under the description, please describe what the stack is used for. Mention if the stack is associated to a particular starter kit, boilerplate or other project.
 
 ### Tools
 
 Next, specify the key tools in the stack in an unordered list. 5 tools is the recommended maximum. Choose tools that complement each other and form the basis of the stack.
 
-For each tool, there are 4 types of information you are asked to provide:
+For each tool, these elements can be provided:
 
 **Tool name and homepage** (required): The first link must be the name of the tool and a link to its homepage. If it doesn't have a homepage, you can point the link to its GitHub or StackShare page.
 
@@ -59,25 +69,38 @@ For each tool, there are 4 types of information you are asked to provide:
 
 **GitHub repository link** (optional): If the tool has a GitHub repository, link to it next using the 🐙 (`:octopus`) emoji as the link content. The link URL should be to the repository (`https://github.com/{owner}/{name}`).
 
-**Description** (optional): After all of the links, you can provide a short description of the tool. Try to stick to 20 words or less. This description will show up on the awesomestacks.dev stack page as a comment attached underneath the tool's card.
+**Tool description** (required): After all of the links, please provide a short description of the tool. Stick to about 20 words or less.
 
 The markdown must follow these conventions precisely for the companion web site to build correctly, including the URLs provided for GitHub and StackShare pages. Don't worry if you won't get it right the first time, any errors will be detected in the pull request process and can be addressed there.
 
 ### Resources
 
-If there is a starter kit of blog post that would help someone get started with this stack, link to it after the tools in a blockquote element, just like this:
+Underneath the tools, you can provide a list of resources to help developers learn more about the stack or get up and running quickly. Use an h4 heading called `Resources` followed by a list.
 
 ```markdown
-> Get [vue-starter](https://github.com/devCrossNet/vue-starter)
+
+#### Resources
+
+- [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 ```
 
 ## Improving an awesome stack
 
 The process is roughly the same as creating the stack, but instead of creating a whole markdown block you will just add to or change one that already exists. We welcome contributions for adding additional tools or improving the descriptions of both stacks and tools.
 
-> If you aren't yet ready to add an entire stack, this is a great way to make a first contribution!
+You can also add relevant content to the resources section - a guideline is that it should describe at least a few of the tools in the stack and how to integrate them (as opposed to just a tutorial for one tool). If you aren't yet ready to add an entire stack, this is a great way to make a first contribution!
 
-## Finding tool pages
+## Contributing do's and don'ts
+
+- ✅ Do include at least 3 tools in your stack
+- ✅ Do include up to 10 of the most important and/or commonly used tools in the stack
+- ✅ Do submit stacks that represent a reusable pattern or architecture like LAMP or MEVN
+- ✅ Do submit stacks based on well-known starter kits and boilerplates (and link to the kit in the resources section)
+- ✅ Do link to the GitHub and StackShare profiles that exist for each tool
+- ❌ Don't submit a very generic stack like "Rails" or "React"; make it more specific ("React for doing X" or "React with tools X and Y")
+- ❌ Don't submit a stack you used to build a specific thing but isn't necessarily resuable - put that on [StackShare instead](https://stackshare.io/)
+
+## Tip: finding tool links
 
 To quickly locate the right pages for the tools you're adding, here are two handy links:
 

@@ -20,10 +20,6 @@
   .navbar-item
     padding-top: 18px
 
-.navbar-brand
-  +desktop
-    margin-left: -90px !important
-
 .is-uppercase
   text-transform: uppercase
   font-family: 'BebasNeue', serif
@@ -82,13 +78,21 @@ body hr, .has-dotted-line
     top: -100px
 
 .card
-  height: 350px
+  height: 360px
   .is-top
     height: 120px
     .is-logo-link
       height: 80px
   .is-description
-    height: 50px
+    height: 65px
+    font-size: 0.8rem
+  .tag
+    color: $white
+    background: $blue
+    background: linear-gradient(90deg, rgba(8,31,50,1) 0%, rgba(19,58,89,1) 50%, rgba(24,84,130,1) 100%)
+
+.is-comment
+  font-size: 0.8rem
 
 .has-overflow-hidden
   overflow: hidden
@@ -102,3 +106,18 @@ body hr, .has-dotted-line
 .is-avatar-image
   max-width: 75px
   border-radius: 3px
+
+.arrow
+  display: none
+  @media(min-width: 960px)
+    display: block
+  position: absolute
+  top: 40%
+  &.prev-arrow
+    left: -10%
+  &.next-arrow
+    right: -10%
+
+.has-grey-lighter-hover
+  &:hover
+    background-color: $grey-lighter

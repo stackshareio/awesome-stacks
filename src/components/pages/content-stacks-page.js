@@ -10,9 +10,9 @@ import Tools from "../mdx/tools"
 // import StackCard from "../stacks/stack-card"
 import GitHub from "../mdx/github"
 import StackShare from "../mdx/stackshare"
-import StackHero from "../stacks/stack-hero"
+import ContentStackHero from "../stacks/content-stack-hero"
 
-const MyH1 = props => <><hr /><h1>{props.children}</h1></>
+const MyH1 = props => <h1>{props.children}</h1>
 const components = {
   h1: MyH1
 }
@@ -29,13 +29,13 @@ function ContentStacksPage({ data }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <StackHero {...mdx.frontmatter} />
+      <ContentStackHero {...mdx} />
       <div className="section has-padding-top-20" style={{ position: "absolute", left: 0, right: 0, paddingBottom: 0 }}>
         <div className="container">
           <div className="columns">
             <div className="column">
               <div className="has-text-right">
-                <a className="button is-small is-rounded is-grey" href={`${data.site.siteMetadata.repository}/blob/master/content/stacks/${mdx.parent.name}.mdx`}>
+                <a className="button is-grey" href={`${data.site.siteMetadata.repository}/blob/master/content/stacks/${mdx.parent.name}.mdx`}>
                   <FontAwesomeIcon icon={["fab", "github"]} />
                   <span>&nbsp;&nbsp;Edit this page</span>
                 </a>

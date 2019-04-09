@@ -4,10 +4,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StackCard from "../components/stacks/stack-card"
 import logomarkImage from "../images/awesome-stacks-logo-sunglasses.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const IndexPage = ({
   data: {
-    site: { siteMetadata: { title, description, contributing } },
+    site: { siteMetadata: { title, description, contributing, repository } },
     allGithubContributors,
     allMarkdownRemark
   },
@@ -29,9 +30,9 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title={title} titleTemplate={`%s`} keywords={[`awesome`, `techstack`, `stackshare`]} />
-      <div className="hero has-background-blue-gradient has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "2.2rem" }}>
+      <div className="hero has-background-blue-gradient has-text-centered" style={{ paddingTop: "1.8rem", paddingBottom: "1.0rem" }}>
         <div className="hero-body">
-        <div className="container">
+          <div className="container">
             <div className="columns is-centered is-multiline">
               <div className="column is-12">
                 <img src={logomarkImage} alt="Pink slotted sunglasses" style={{ height: "105px" }}></img>
@@ -41,6 +42,14 @@ const IndexPage = ({
               </div>
               <div className="column is-8 is-paddingless">
                 <p className="is-size-4 has-text-white">{description}</p>
+              </div>
+            </div>
+            <div className="columns is-centered has-margin-top-30">
+              <div className="column">
+                <a className="button is-borderless has-grey-lighter-hover" style={{ boxShadow: "0 0 0 none" }} href={repository}>
+                  <FontAwesomeIcon icon={["fab", "github"]} />
+                  <span>&nbsp;&nbsp;View on GitHub</span>
+                </a>
               </div>
             </div>
           </div>
@@ -75,6 +84,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+        repository
         contributing
       }
     }
@@ -208,6 +218,7 @@ export const mdxQuery = graphql`
               topic {
                 name
               }
+              url
             }
           }
         }
