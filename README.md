@@ -24,7 +24,11 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 🛠 - StackShare tool profile<br>
 🐙 - GitHub repository
 
-# Contents
+## Contents
+* [Ethereum DApp stack](#ethereum-dapp-stack-)
+* [GraphCMS React + Apollo](#graphcms-react--apollo-)
+* [PWA with Gatsby](#pwa-with-gatsby-)
+
 
 ## Ethereum DApp stack [↗](https://awesomestacks.dev/ethereum-d-app-stack)
 
