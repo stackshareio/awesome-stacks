@@ -187,6 +187,14 @@ Learn how to build a full-stack production ready note taking app using Serverles
 
 # Back-end
 
+## GCP Kubernetes [↗](https://awesomestacks.dev/gcp-kubernetes)
+
+Stack used to deploy and manage a cluster of Docker containerized applications using Google Cloud services.
+
+- [GKE](https://cloud.google.com/kubernetes-engine/) - [🛠](https://stackshare.io/google-kubernetes-engine) – Kubernetes cluster managed by Google.
+- [Docker](https://www.docker.com/) – [🛠](https://stackshare.io/docker) – [🐙](https://github.com/docker/docker) – A tool to create, deploy and run applications inside containers. 
+- [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver)
+
 ## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
 
 A collection of tools for building decentralized applications on the Ethereum blockchain.
