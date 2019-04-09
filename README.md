@@ -26,6 +26,13 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 
 # Contents
 
+## React Apollo
+
+React with Apollo for querying data from an existing GraphQL backend.
+
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
+- [Apollo Client](https://www.apollographql.com/docs/react/api/react-apollo/) - [🛠](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - React library for Apollo Client.
+
 ## React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
 
 React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync. 
