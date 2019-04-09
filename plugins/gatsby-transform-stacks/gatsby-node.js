@@ -56,7 +56,7 @@ exports.onCreateNode = async ({ node,
       name, path, index,
       url: $(h2).find("a").attr("href"),
       description: $(h2).next("p").text(),
-      tools: $(h2).nextUntil(`h2`, `ul`).find(`li`).map((_, li) => {
+      tools: $(h2).nextUntil(`h2, h4`, `ul`).find(`li`).map((_, li) => {
         toolCount++;
         const toolObj = {};
         $(li).find("a").each((_, link) => {
