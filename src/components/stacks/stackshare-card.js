@@ -19,7 +19,7 @@ function StackShare({ name, description, stackshare }) {
           </a>
         </div>
         <div className="has-margin-top-10 has-text-centered">
-          <a className="has-text-info is-size-4 is-strong" href={stackshare.websiteUrl} title={stackshare.name}>
+          <a className="has-text-info is-size-4 is-strong" href={stackshare.websiteUrl} title={stackshare.name} style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>
             {stackshare.name}
           </a>
         </div>
