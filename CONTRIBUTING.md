@@ -47,6 +47,12 @@ This goes first. It must be an `H3` that contains a link. The link text is the n
 
 The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site, which will be built automatically from the markdown you're creating!
 
+If you're having trouble coming up with the name, here's a quick guide:
+
+- If the stack is based on a boilerplate or starter kit, just call it that, e.g. "React Starter Kit"
+- If the stack is for a specific use case or task, write it like "*task* with *key tool(s)*", e.g. "Caching with Redis and Node.js"
+- Otherwise, just highlight the key tools: "Electron with Meteor and Electrify"
+
 ### Stack description
 
 In a paragraph under the description, please describe what the stack is used for. Mention if the stack is associated to a particular starter kit, boilerplate or other project.
