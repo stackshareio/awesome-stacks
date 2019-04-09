@@ -14,7 +14,7 @@ function GitHubCard({ name, description, github }) {
       <div className="is-top has-padding-top-5 has-text-centered">
         <a href={url}><GitHubIcon github={github} /></a>
         <div className="has-margin-top-10">
-          <a href={url} className="has-text-info is-size-4 is-strong" style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }}>{github.name}</a>
+          <a href={url} className="has-text-info is-size-4 is-strong" style={{ whiteSpace: "nowrap", overflow: "hidden", display: "block" }} title={github.name}>{github.name}</a>
         </div>
       </div>
       <div className="is-size-7 has-text-centered has-margin-top-10 has-margin-bottom-10">
@@ -22,7 +22,7 @@ function GitHubCard({ name, description, github }) {
           <FontAwesomeIcon icon="external-link-alt" fixedWidth /> <span>GitHub</span>
         </a>
       </div>
-      <div className="is-description has-text-centered">
+      <div className="is-description has-text-centered" title={github.description}>
         {truncate(github.description, 70)}
       </div>
       <div className="level is-mobile is-bottom has-overflow-hidden has-margin-top-10">

@@ -19,7 +19,7 @@ function StackShare({ name, description, stackshare }) {
           </a>
         </div>
         <div className="has-margin-top-10 has-text-centered">
-          <a className="has-text-info is-size-4 is-strong" href={stackshare.websiteUrl}>
+          <a className="has-text-info is-size-4 is-strong" href={stackshare.websiteUrl} title={stackshare.name}>
             {stackshare.name}
           </a>
         </div>
@@ -36,7 +36,7 @@ function StackShare({ name, description, stackshare }) {
           </span>
           : ``}
       </div>
-      <div className="is-description has-text-centered">
+      <div className="is-description has-text-centered" title={stackshare.description}>
         {truncate(stackshare.description, 70)}
       </div>
       <div className="is-bottom has-margin-top-10">
