@@ -64,7 +64,7 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
             </div>
             <div className="column is-6">
               <div className="has-text-right">
-                <a className="button is-rounded is-grey" href={`${data.site.siteMetadata.repository}/blob/master/README.md#${stack.path}`}>
+                <a className="button is-grey" href={`${data.site.siteMetadata.repository}/blob/master/README.md#${stack.path}`}>
                   <FontAwesomeIcon icon={["fab", "github"]} />
                   <span>&nbsp;&nbsp;Edit this stack</span>
                 </a>

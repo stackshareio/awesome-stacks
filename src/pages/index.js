@@ -44,9 +44,9 @@ const IndexPage = ({
                 <p className="is-size-4 has-text-white">{description}</p>
               </div>
             </div>
-            <div className="columns is-centered has-margin-top-40">
+            <div className="columns is-centered has-margin-top-30">
               <div className="column">
-                <a className="button" href={repository}>
+                <a className="button is-borderless has-grey-lighter-hover" style={{ boxShadow: "0 0 0 none" }} href={repository}>
                   <FontAwesomeIcon icon={["fab", "github"]} />
                   <span>&nbsp;&nbsp;View on GitHub</span>
                 </a>

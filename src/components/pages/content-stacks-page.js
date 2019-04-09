@@ -35,7 +35,7 @@ function ContentStacksPage({ data }) {
           <div className="columns">
             <div className="column">
               <div className="has-text-right">
-                <a className="button is-rounded is-grey" href={`${data.site.siteMetadata.repository}/blob/master/content/stacks/${mdx.parent.name}.mdx`}>
+                <a className="button is-grey" href={`${data.site.siteMetadata.repository}/blob/master/content/stacks/${mdx.parent.name}.mdx`}>
                   <FontAwesomeIcon icon={["fab", "github"]} />
                   <span>&nbsp;&nbsp;Edit this page</span>
                 </a>
