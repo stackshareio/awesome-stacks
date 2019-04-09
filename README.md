@@ -161,18 +161,6 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 
-## React Native for the F8 App [↗](https://awesomestacks.dev/react-native-for-the-f8-app)
-
-Every year, as part of the F8 conference, Facebook builds iOS and Android apps that give attendees a schedule for the conference.
-
-- [React Native](https://facebook.github.io/react-native/) - [🛠️](https://stackshare.io/react-native) - [🐙](https://github.com/facebook/react-native) - Build native mobile apps using JavaScript and React.
-- [Parse Server](http://parseplatform.org/) - [🛠️](https://stackshare.io/parse-server) - [🐙](https://github.com/parse-community/parse-server) - Parse-compatible API server module for Node/Express.
-- [Yarn](https://yarnpkg.org) - [🛠️](https://stackshare.io/yarn) - [🐙](https://github.com/yarnpkg/yarn) - Fast, reliable, and secure dependency management. 
-
-#### Resources
-
-- [Building the F8 App - makeitopen.com](https://makeitopen.com/)
-
 ## serverless-stack.com [↗](https://awesomestacks.dev/serverless-stack)
 
 Build a full-stack production ready note taking app using Serverless and React on AWS. 
