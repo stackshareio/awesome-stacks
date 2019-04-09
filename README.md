@@ -145,7 +145,7 @@ Add search to your JAMStack website, through a static site integration or by cra
 - [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
 - [DocSearch](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-scraper) - Crawls a website and uploads it to an index.
 - [gatsby-plugin-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/algolia/gatsby-plugin-algolia) - Use GraphQL to specify Gatsby object to index with Algolia (beta).
-- [hugo-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/replicatedhq/hugo-algolia) - Generate and send indices from Hugo static sites for use with Algolia.
+- [hugo-algolia](https://github.com/replicatedhq/hugo-algolia) - [🐙](https://github.com/replicatedhq/hugo-algolia) - Generate and send indices from Hugo static sites for use with Algolia.
 - [instantsearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/) - [🐙](https://github.com/algolia/instantsearch.js) - JavaScript library for building performant and instant search experiences.
 
 #### Resources
