@@ -86,13 +86,13 @@ You can also add relevant content to the resources section - a guideline is that
 
 ## Contributing do's and don'ts
 
-- Do include at least 3 tools in your stack
-- Do include up to 10 of the most important and/or commonly used tools in the stack
-- Don't submit a very generic stack like "Rails" or "React"; make it more specific ("React for doing X" or "React with tools X and Y")
-- Do submit stacks that represent a reusable pattern or architecture like LAMP or MEVN
-- Do submit stacks based on well-known starter kits and boilerplates (and link to the kit in the resources section)
-- Don't submit a stack you used to build a specific thing but isn't necessarily resuable - put that on [StackShare instead](https://stackshare.io/)
-- Do link to the GitHub and StackShare profiles that exist for each tool
+- ✅ Do include at least 3 tools in your stack
+- ✅ Do include up to 10 of the most important and/or commonly used tools in the stack
+- ✅ Do submit stacks that represent a reusable pattern or architecture like LAMP or MEVN
+- ✅ Do submit stacks based on well-known starter kits and boilerplates (and link to the kit in the resources section)
+- ✅ Do link to the GitHub and StackShare profiles that exist for each tool
+- ❌ Don't submit a very generic stack like "Rails" or "React"; make it more specific ("React for doing X" or "React with tools X and Y")
+- ❌ Don't submit a stack you used to build a specific thing but isn't necessarily resuable - put that on [StackShare instead](https://stackshare.io/)
 
 ## Tip: finding tool links
 
