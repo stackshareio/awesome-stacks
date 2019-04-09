@@ -185,6 +185,19 @@ Learn how to build a full-stack production ready note taking app using Serverles
 
 - [serverless-stack.com](https://serverless-stack.com/)
 
+## Electron React Boilerplate [↗](https://awesomestacks.dev/electron-react-boilerplate)
+
+A foundation for scalable cross-platform desktop apps all the way from development to distributing your app.
+
+- [Electron](http://electron.atom.io/) - [🛠️](https://stackshare.io/electron) - [🐙](https://github.com/electron/electron) - Build cross-platform desktop apps with JavaScript, HTML, and CSS.
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
+- [Redux](https://redux.js.org/) - [🛠](https://stackshare.io/reduxjs) - [🐙](https://github.com/reduxjs/redux) - Predictable state container for JavaScript apps.
+- [electron-builder](https://www.electron.build) - [🐙](https://github.com/electron-userland/electron-builder) - A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box.
+
+#### Resources
+
+- [Electron React Boilerplate website](https://electron-react-boilerplate.js.org/)
+
 # Back-end
 
 ## GCP Kubernetes [↗](https://awesomestacks.dev/gcp-kubernetes)
