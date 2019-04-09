@@ -60,7 +60,7 @@ Build a simple polling progressive web application with some great modern tech.
 
 - [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 
-## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo)
+## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo-boilerplate)
 
 A Hugo boilerplate for creating truly epic websites. This is a boilerplate for using Hugo as a static site generator and Webpack as your asset pipeline.
 
