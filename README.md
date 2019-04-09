@@ -26,67 +26,6 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 
 # Contents
 
-## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
-
-A collection of tools for building decentralized applications on the Ethereum blockchain.
-
-- [Solidity](https://solidity.readthedocs.io) - [🐙](https://github.com/ethereum/solidity) - Solidity is an object-oriented, high-level language for implementing smart contracts.
-- [web3.js](https://web3js.readthedocs.io) - [🐙](https://github.com/ethereum/web3.js) - Ethereum JavaScript API.
-- [Truffle](https://truffleframework.com/truffle) - [🐙](https://github.com/trufflesuite/truffle) - A world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
-- [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
-- [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
-
-## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graphcms-react-apollo)
-
-Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
-
-- [GraphCMS](https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - GraphCMS providing a backend to your app, giving you the tools to manage content.
-- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
-- [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - Apollo Client is the best way to use GraphQL to build client applications.
-
-#### Resources
-
-- [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
-
-## PWA with Gatsby [↗](https://awesomestacks.dev/pwa-with-gatsby)
-
-Build a simple polling progressive web application with some great modern tech.
-
-- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
-- [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
-- [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
-- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components/styled-components) - A react-specific css-in-js solution.
-#### Resources
-
-- [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
-
-## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo-boilerplate)
-
-A Hugo boilerplate for creating truly epic websites. This is a boilerplate for using Hugo as a static site generator and Webpack as your asset pipeline.
-
-- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
-- [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
-- [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
-- [PostCSS](https://postcss.org/) - [🛠](https://stackshare.io/postcss) - [🐙](https://github.com/postcss/postcss) - A tool for transforming CSS with JavaScript.
-
-#### Resources
-
-- [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
-
-## Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
-
-Add search to your JAMStack website, through a static site integration or by crawling the content.
-
-- [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
-- [DocSearch](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-scraper) - Crawls a website and uploads it to an index.
-- [gatsby-plugin-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/algolia/gatsby-plugin-algolia) - Use GraphQL to specify Gatsby object to index with Algolia (beta).
-- [hugo-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/replicatedhq/hugo-algolia) - Generate and send indices from Hugo static sites for use with Algolia.
-- [instantsearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/) - [🐙](https://github.com/algolia/instantsearch.js) - JavaScript library for building performant and instant search experiences.
-
-#### Resources
-
-- [Static site search with Hugo + Algolia](https://forestry.io/blog/search-with-algolia-in-hugo/)
-
 ## React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
 
 React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync. 
@@ -146,6 +85,18 @@ An ever-evolving and opinionated architecture and dev environment for new Vue SP
 
 - [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
 
+## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graphcms-react-apollo)
+
+Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
+
+- [GraphCMS](https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - GraphCMS providing a backend to your app, giving you the tools to manage content.
+- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
+- [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - Apollo Client is the best way to use GraphQL to build client applications.
+
+#### Resources
+
+- [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
+
 ## React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
 
 Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL APIs on any Postgres database. This React Native stack uses Hasura droplets hosted on Digital Ocean.
@@ -161,18 +112,44 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 
-## serverless-stack.com [↗](https://awesomestacks.dev/serverless-stack)
+## PWA with Gatsby [↗](https://awesomestacks.dev/pwa-with-gatsby)
 
-Build a full-stack production ready note taking app using Serverless and React on AWS. 
+Build a simple polling progressive web application with some great modern tech.
 
-- [Serverless Framework](https://serverless.com/) - [🛠️](https://stackshare.io/serverless) - [🐙](https://github.com/serverless/serverless) - A toolkit for building serverless applications.
-- [AWS Lambda](https://aws.amazon.com/lambda) - [🛠️](https://stackshare.io/aws-lambda) - A compute service that runs your code in response to events.
-- [DynamoDB](http://aws.amazon.com/dynamodb/) - [🛠️](https://stackshare.io/amazon-dynamodb) - Fully managed NoSQL database service.
-- [Amazon Cognito](https://aws.amazon.com/cognito/) - [🛠️](https://stackshare.io/amazon-cognito) - Securely manage and synchronize app data for your users across their mobile devices.
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
+- [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
+- [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
+- [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components/styled-components) - A react-specific css-in-js solution.
+#### Resources
+
+- [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
+
+## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo-boilerplate)
+
+A Hugo boilerplate for creating truly epic websites. This is a boilerplate for using Hugo as a static site generator and Webpack as your asset pipeline.
+
+- [Hugo](https://gohugo.io/) - [🛠](https://stackshare.io/hugo_2)- [🐙](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
+- [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
+- [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
+- [PostCSS](https://postcss.org/) - [🛠](https://stackshare.io/postcss) - [🐙](https://github.com/postcss/postcss) - A tool for transforming CSS with JavaScript.
 
 #### Resources
 
-- [serverless-stack.com](https://serverless-stack.com/)
+- [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
+
+## Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
+
+Add search to your JAMStack website, through a static site integration or by crawling the content.
+
+- [Algolia](https://algolia.com/) - [🛠](https://stackshare.io/algolia) - Hosted search API, free up to 10,000 records.
+- [DocSearch](https://community.algolia.com/docsearch) - [🐙](https://github.com/algolia/docsearch-scraper) - Crawls a website and uploads it to an index.
+- [gatsby-plugin-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/algolia/gatsby-plugin-algolia) - Use GraphQL to specify Gatsby object to index with Algolia (beta).
+- [hugo-algolia](https://www.gatsbyjs.org/packages/gatsby-plugin-algolia/) - [🐙](https://github.com/replicatedhq/hugo-algolia) - Generate and send indices from Hugo static sites for use with Algolia.
+- [instantsearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/) - [🐙](https://github.com/algolia/instantsearch.js) - JavaScript library for building performant and instant search experiences.
+
+#### Resources
+
+- [Static site search with Hugo + Algolia](https://forestry.io/blog/search-with-algolia-in-hugo/)
 
 ## MEVN: Mongo Express Vue Node [↗](https://awesomestacks.dev/mevn-mongo-express-vue-node)
 
@@ -196,6 +173,29 @@ A Rails/JavaScript-based stack with modern/developer friendly technologies
 - [GraphQL Ruby](https://graphql-ruby.org/) - [🛠](https://stackshare.io/graphql-ruby) - [🐙](https://github.com/rmosolgo/graphql-ruby) - Ruby server implementation of the GraphQL specification
 - [Apollo Client](https://dev.apollodata.com/) - [🛠](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - A powerfully extensible GraphQL JavaScript client
 - [Heroku](https://heroku.com) - [🛠️](https://stackshare.io/heroku) Developer friendly web app infrastructure provider with seamless Ruby/Rails support
+
+## Serverless Stack [↗](https://awesomestacks.dev/serverless-stack)
+
+Learn how to build a full-stack production ready note taking app using Serverless and React on AWS from serverless-stack.com. Step-by-step open-source tutorials with screenshots and code samples included.
+
+- [Serverless Framework](https://serverless.com/) - [🛠️](https://stackshare.io/serverless) - [🐙](https://github.com/serverless/serverless) - A toolkit for building serverless applications.
+- [AWS Lambda](https://aws.amazon.com/lambda) - [🛠️](https://stackshare.io/aws-lambda) - A compute service that runs your code in response to events.
+- [DynamoDB](http://aws.amazon.com/dynamodb/) - [🛠️](https://stackshare.io/amazon-dynamodb) - Fully managed NoSQL database service.
+- [Amazon Cognito](https://aws.amazon.com/cognito/) - [🛠️](https://stackshare.io/amazon-cognito) - Securely manage and synchronize app data for your users across their mobile devices.
+
+#### Resources
+
+- [serverless-stack.com](https://serverless-stack.com/)
+
+## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
+
+A collection of tools for building decentralized applications on the Ethereum blockchain.
+
+- [Solidity](https://solidity.readthedocs.io) - [🐙](https://github.com/ethereum/solidity) - Solidity is an object-oriented, high-level language for implementing smart contracts.
+- [web3.js](https://web3js.readthedocs.io) - [🐙](https://github.com/ethereum/web3.js) - Ethereum JavaScript API.
+- [Truffle](https://truffleframework.com/truffle) - [🐙](https://github.com/trufflesuite/truffle) - A world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
+- [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
+- [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
 #### Resources
 
