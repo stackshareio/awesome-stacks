@@ -14,12 +14,11 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
 
-In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it 🤘
+In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it. 🤘
 
 ## Adding an awesome stack
 
 To add an awesome stack to both the README and the website [awesomestacks.dev](https://awesomestacks.dev/), you will write markdown that conforms to a specific format and then open a pull request to propose your changes. You can do this entirely from github.com (see below) or clone the repository and edit locally.
-
 
 ## Stack markdown
 
@@ -84,6 +83,16 @@ Underneath the tools, you can provide a list of resources to help developers lea
 The process is roughly the same as creating the stack, but instead of creating a whole markdown block you will just add to or change one that already exists. We welcome contributions for adding additional tools or improving the descriptions of both stacks and tools.
 
 You can also add relevant content to the resources section - a guideline is that it should describe at least a few of the tools in the stack and how to integrate them (as opposed to just a tutorial for one tool). If you aren't yet ready to add an entire stack, this is a great way to make a first contribution!
+
+## Contributing do's and don'ts
+
+- Do include at least 3 tools in your stack
+- Do include up to 10 of the most important and/or commonly used tools in the stack
+- Don't submit a very generic stack like "Rails" or "React"; make it more specific ("React for doing X" or "React with tools X and Y")
+- Do submit stacks that represent a reusable pattern or architecture like LAMP or MEVN
+- Do submit stacks based on well-known starter kits and boilerplates (and link to the kit in the resources section)
+- Don't submit a stack you used to build a specific thing but isn't necessarily resuable - put that on [StackShare instead](https://stackshare.io/)
+- Do link to the GitHub and StackShare profiles that exist for each tool
 
 ## Tip: finding tool links
 
