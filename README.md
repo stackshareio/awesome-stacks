@@ -193,7 +193,7 @@ Stack used to deploy and manage a cluster of Docker containerized applications u
 
 - [GKE](https://cloud.google.com/kubernetes-engine/) - [🛠](https://stackshare.io/google-kubernetes-engine) – Kubernetes cluster managed by Google.
 - [Docker](https://www.docker.com/) – [🛠](https://stackshare.io/docker) – [🐙](https://github.com/docker/docker) – A tool to create, deploy and run applications inside containers. 
-- [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver)
+- [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver) - Stackdriver Logging allows you to store, search, analyze, monitor, and alert on log data and events. 
 
 ## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
 
