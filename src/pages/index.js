@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StackCard from "../components/stacks/stack-card"
+import Banner from "../components/banner"
 import logomarkImage from "../images/awesome-stacks-logo-sunglasses.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -55,6 +56,7 @@ const IndexPage = ({
           </div>
         </div>
       </div>
+      <Banner />
       <div className="section">
         {Stacks}
       </div>
