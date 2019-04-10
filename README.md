@@ -120,7 +120,7 @@ A Hugo boilerplate for creating truly epic websites. This is a boilerplate for u
 
 # Full stack
 
-## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graphcms-react-apollo)
+## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graph-cms-react-apollo)
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
 
