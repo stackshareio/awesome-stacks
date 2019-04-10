@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Pink sunglasses with text Awesome Stacks" src="src/images/awesome-stacks-logo-github.png">
+<img alt="Pink sunglasses with text Awesome Stacks" width="680px" src="src/images/awesome-stacks-logo-github.png">
 </div>
 
 # Awesome Stacks
