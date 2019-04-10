@@ -65,6 +65,14 @@ function SEO({ description, lang, meta, keywords, title, titleTemplate, image })
           content: `summary_large_image`,
         },
         {
+          property: `twitter:image`,
+          content: `${site.siteMetadata.url}${image || site.siteMetadata.image}`,
+        },
+        {
+          property: `twitter:image:alt`,
+          content: `Pink sunglasses on blue background`,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
         },
