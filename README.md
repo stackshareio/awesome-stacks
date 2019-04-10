@@ -204,7 +204,7 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 
 # Back-end
 
-## GCP Kubernetes [↗](https://awesomestacks.dev/gcp-kubernetes)
+## GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
 
 Stack used to deploy and manage a cluster of Docker containerized applications using Google Cloud services.
 
@@ -223,9 +223,13 @@ A collection of tools for building decentralized applications on the Ethereum bl
 - [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
 - [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
-#### Resources
+## Rails Monitoring Stack [↗](https://awesomestacks.dev/rails-monitoring-stack)
 
-- [A Rock Solid, Modern Web Stack—Rails 5 API + ActiveAdmin + Create React App on Heroku](https://blog.heroku.com/a-rock-solid-modern-web-stack)
+Tools to use to monitor your Rails app in production.
+
+- [Skylight](https://www.skylight.io) - [🛠](https://stackshare.io/skylight) - The smart profiler for your Rails apps
+- [New Relic](https://newrelic.com) - [🛠](https://stackshare.io/new-relic) - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps
+- [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) - [🐙](https://github.com/MiniProfiler/rack-mini-profiler) - Profiler for your development and production Ruby rack apps.
 
 # Mobile
 
