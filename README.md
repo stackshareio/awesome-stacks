@@ -248,6 +248,21 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
 
+## Developer Productivity [↗](https://awesomestacks.dev/developer-productivity)
+
+Boost your Productivty with GitHub, Jira, Jenkins, Grafana and Prometheus.
+
+- [GitHub](https://github.com/) - [🛠](https://stackshare.io/github) - The site to keep your code and open it to world.
+- [Jira](https://es.atlassian.com/software/jira) - [🛠️](https://stackshare.io/jira) - Agile software development.
+- [Jenkins](https://jenkins.io/) - [🛠️](https://stackshare.io/jenkins) - [🐙](https://github.com/jenkinsci/jenkins) - Open source automation server for CI/CD.
+- [Grafana](https://grafana.com/) - [🛠](https://stackshare.io/grafana) - [🐙](https://github.com/grafana/grafana) - Analityc platform for all your metrics.
+- [Prometheus](https://prometheus.io/) - [🛠](https://stackshare.io/prometheus) - [🐙](https://github.com/prometheus/prometheus) - Monitoring and Alerting tool.
+#### Resources
+
+- [Integrating JIRA, GitHub, Jenkins, and Slack in your workflow](https://support.acquia.com/hc/en-us/articles/360005167214-Integrating-JIRA-GitHub-Jenkins-and-Slack-in-your-workflow)
+- [Grafana Dashboards for Jenkins](https://grafana.com/dashboards?search=jenkins)
+- [Monitoring Jenkins with Grafana and Prometheus](https://medium.com/@eng.mohamed.m.saeed/monitoring-jenkins-with-grafana-and-prometheus-a7e037cbb376)
+
 # Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
