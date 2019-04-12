@@ -248,13 +248,13 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
 
-## Unity gamedev and desing with Plastic SCM starter kit [↗](https://awesomestacks.dev/unity-gamedev-and-desing-with-plastic-scm)
+## Unity Game Development boilerplate [↗](https://awesomestacks.dev/unity-Game-Development-boilerplate)
 
 Unity is a game engine that connects to Plastic SCM to keep version control and large asset and huge repo management clean and frictionless. 
 
 - [Unity](https://unity.com/) - [🛠](https://stackshare.io/unity-3d) - [🐙](https://github.com/Unity-Technologies/UnityCsReference) - The C# part of the Unity engine and editor source code. May be used for reference purposes only.
 - [Plastic SCM](https://www.plasticscm.com/ ) - [🛠️](https://stackshare.io/plastic-scm) - [🐙](https://github.com/PlasticSCM/plastic-docker) - PlasticSCM Docker image.
-- [TeamCity](https://www.jetbrains.com/teamcity/) - [🛠](https://stackshare.io/teamcity) - [🐙] (https://github.com/JetBrains/teamcity-docker-agent) - Team City Docker image sources
+- [TeamCity](https://www.jetbrains.com/teamcity/) - [🛠](https://stackshare.io/teamcity) 
 
 #### Resources
 
