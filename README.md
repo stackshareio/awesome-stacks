@@ -53,7 +53,7 @@ React Starter Kit is an opinionated boilerplate for web development built on top
 React Starter Kit for Firebase is a popular project template (aka, boilerplate) for building modern, scalable web applications with React, Relay, and GraphQL using serverless infrastructure provided by Google Cloud (Cloud SQL, Cloud Functions, CDN hosting, and file storage).
 
 - [Firebase](https://firebase.google.com/) - [🛠️](https://stackshare.io/firebase) - A cloud-hosted NoSQL database that lets you store and sync data between your users in realtime.
-- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](facebook/create-react-app) - Set up a modern web app by running one command.
+- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
 - [Material UI](https://material-ui.com/) - [🛠️](https://stackshare.io/material-ui) - [🐙](https://github.com/mui-org/material-ui) - React components that implement Google's Material Design.
 - [Relay](https://facebook.github.io/relay/) - [🛠️](https://stackshare.io/relay) - [🐙](https://github.com/facebook/relay) - A JavaScript framework for building data-driven React applications.
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
