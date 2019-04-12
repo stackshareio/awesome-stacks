@@ -202,7 +202,7 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 
 - [Electron React Boilerplate website](https://electron-react-boilerplate.js.org/)
 
-## Using Vue with Electron [↗](https://awesomestacks.dev/using-vue-with-electron)
+## Vue with Electron [↗](https://awesomestacks.dev/using-vue-with-electron)
 
 A foundation for scalable cross-platform desktop apps all the way from development to distributing your app using Vue and Electron.
 
