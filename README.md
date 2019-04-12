@@ -100,6 +100,7 @@ Build a simple polling progressive web application with some great modern tech.
 - [Cloud Firestore](https://firebase.google.com/docs/firestore/) - [🛠️](https://stackshare.io/cloud-firestore) - A noSQL cloud database that exposes event listeners for real-time updates.
 - [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
 - [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components/styled-components) - A react-specific css-in-js solution.
+- [Contentful](https://www.contentful.com/) - [🛠](https://stackshare.io/contentful) - [🐙](https://github.com/contentful) - Contentful is a flexible and future-friendly content platform that helps editors to manage and developers to serve content into mobile or web applications. Last but not least a powerhouse when worked with Gatsby.
 
 #### Resources
 
