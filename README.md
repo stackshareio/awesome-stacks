@@ -105,6 +105,8 @@ Build a simple polling progressive web application with some great modern tech.
 #### Resources
 
 - [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
+- [Learn how to easily build a GatsbyJS website powered by Contentful](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/)
+
 
 ## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo-boilerplate)
 
