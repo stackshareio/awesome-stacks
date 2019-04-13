@@ -135,6 +135,20 @@ Lightning fast starter for bloggers, content creators, and really anyone who wan
 
 - [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
 
+## Strapi CMS with Gatsby [↗](https://awesomestacks.dev/strapi-cms-with-gatsby)
+
+Use Strapi CMS to maintain and manage your Gatsby static site. Deploy to Heroku.
+
+- [Strapi CMS](https://strapi.io) - [🐙](https://github.com/strapi/strapi) - Strapi is the Headless CMS developers love
+- [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
+- [Heroku](https://www.heroku.com/) - Heroku is a powerful platform for deploying your apps.
+
+#### Resources
+
+- [Building a Static Blog using Gatsby and Strapi](https://blog.strapi.io/building-a-static-website-using-gatsby-and-strapi/)
+- [Learn Gatsby with Strapi Headless CMS Video Series](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgGiz0MbbsMA_aB1V0yLE7a)
+- [Deploying Strapi to Heroku](https://strapi.io/documentation/3.x.x/guides/deployment.html#heroku)
+
 ## Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
 
 Add search to your JAMStack website, through a static site integration or by crawling the content.
