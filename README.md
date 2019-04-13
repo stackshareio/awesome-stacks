@@ -295,7 +295,7 @@ Unity is a game engine that connects to Plastic SCM to keep version control and 
 - [First steps with Plastic SCM in Unity](https://www.youtube.com/playlist?list=PL29P1RRr5_NzEhAustJCTwdahs60JvcMm)
 - [Plastic SCM for Games](https://www.plasticscm.com/games)
 
-## Workflow Automation with GitHub, Jira and Jenkins [↗](https://awesomestacks.dev/workflow-automation-with-github-jira-and-jenkins)
+## Workflow Automation with GitHub, Jira and Jenkins [↗](https://awesomestacks.dev/workflow-automation-with-git-hub-jira-and-jenkins)
 
 Boost your Productivty with GitHub, Jira and Jenkins.
 
