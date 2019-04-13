@@ -51,7 +51,7 @@ exports.onCreateNode = async ({ node,
 
   const contributors = node.frontmatter.contributors;
   if (contributors) {
-    const contributorsLoaded = await Promise.all(contributors.map(github.getGitHubUser)).filter(user => user);
+    const contributorsLoaded = await Promise.all(contributors.map(github.getGitHubUser)).then(users => users.filter(user => user));
     createNodeField({
       name: "contributors",
       node,
@@ -66,7 +66,7 @@ exports.onCreateNode = async ({ node,
     const [owner, name] = nameWithOwner.split('/');
     return { owner, name };
   });
-  const githubsLoaded = await Promise.all(githubs.map(github.getGitHubTool)).filter(tool => tool);
+  const githubsLoaded = await Promise.all(githubs.map(github.getGitHubTool)).then(tools => tools.filter(tool => tool));
   createNodeField({
     name: "gitHubTools",
     node,
@@ -81,7 +81,7 @@ exports.onCreateNode = async ({ node,
 
   // fetch the data from stackshare for each tool
   // filter out any tools that aren't found
-  const stacksharesLoaded = await Promise.all(stackshares.map(stackshare.getStackShareTool)).filter(tool => tool && tool.name);
+  const stacksharesLoaded = await Promise.all(stackshares.map(stackshare.getStackShareTool)).then(tools => tools.filter(tool => tool && tool.name));
   createNodeField({
     name: "stackShareTools",
     node,
