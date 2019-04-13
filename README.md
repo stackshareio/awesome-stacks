@@ -53,7 +53,7 @@ React Starter Kit is an opinionated boilerplate for web development built on top
 React Starter Kit for Firebase is a popular project template (aka, boilerplate) for building modern, scalable web applications with React, Relay, and GraphQL using serverless infrastructure provided by Google Cloud (Cloud SQL, Cloud Functions, CDN hosting, and file storage).
 
 - [Firebase](https://firebase.google.com/) - [🛠️](https://stackshare.io/firebase) - A cloud-hosted NoSQL database that lets you store and sync data between your users in realtime.
-- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](facebook/create-react-app) - Set up a modern web app by running one command.
+- [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
 - [Material UI](https://material-ui.com/) - [🛠️](https://stackshare.io/material-ui) - [🐙](https://github.com/mui-org/material-ui) - React components that implement Google's Material Design.
 - [Relay](https://facebook.github.io/relay/) - [🛠️](https://stackshare.io/relay) - [🐙](https://github.com/facebook/relay) - A JavaScript framework for building data-driven React applications.
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
@@ -202,6 +202,22 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 
 - [Electron React Boilerplate website](https://electron-react-boilerplate.js.org/)
 
+## Vue with Electron [↗](https://awesomestacks.dev/using-vue-with-electron)
+
+A foundation for scalable cross-platform desktop apps all the way from development to distributing your app using Vue and Electron.
+
+- [Electron](http://electron.atom.io/) - [🛠️](https://stackshare.io/electron) - [🐙](https://github.com/electron/electron) - Build cross-platform desktop apps with JavaScript, HTML, and CSS.
+- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
+- [Vuex](https://redux.js.org/) - [🛠](https://stackshare.io/reduxjs) - [🐙](https://github.com/reduxjs/redux) - Predictable state container for JavaScript apps.
+- [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
+- [Vue CLI](https://cli.vuejs.org/) - [🐙](https://github.com/vuejs/vue-cli) - An approachable core library that focuses on the view layer only.
+- [electron-builder](https://www.electron.build) - [🐙](https://github.com/electron-userland/electron-builder) - A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box.
+
+#### Resources
+
+- [Vue.js & Electron: The easy way. – Mikeal](https://medium.com/@mikeal/vue-js-electron-the-easy-way-adc3ca09234a)
+- [How to use Vue.js with Electron and Vuex](https://alligator.io/vuejs/vue-electron/)
+
 # Back-end
 
 ## GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
@@ -247,6 +263,19 @@ Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL A
 
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
+
+## Unity Game Development boilerplate [↗](https://awesomestacks.dev/unity-Game-Development-boilerplate)
+
+Unity is a game engine that connects to Plastic SCM to keep version control and large asset and huge repo management clean and frictionless. 
+
+- [Unity](https://unity.com/) - [🛠](https://stackshare.io/unity-3d) - [🐙](https://github.com/Unity-Technologies/UnityCsReference) - The C# part of the Unity engine and editor source code. May be used for reference purposes only.
+- [Plastic SCM](https://www.plasticscm.com/) - [🛠️](https://stackshare.io/plastic-scm) - [🐙](https://github.com/PlasticSCM/plastic-docker) - PlasticSCM Docker image.
+- [TeamCity](https://www.jetbrains.com/teamcity/) - [🛠](https://stackshare.io/teamcity) - A Java-based build management and continuous integration server from JetBrains.
+
+#### Resources
+
+- [First steps with Plastic SCM in Unity](https://www.youtube.com/playlist?list=PL29P1RRr5_NzEhAustJCTwdahs60JvcMm)
+- [Plastic SCM for Games](https://www.plasticscm.com/games)
 
 # Contributing
 
