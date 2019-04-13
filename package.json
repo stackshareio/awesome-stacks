@@ -15,6 +15,7 @@
     "bulma": "^0.7.4",
     "cheerio": "^1.0.0-rc.2",
     "gatsby": "^2.1.19",
+    "gatsby-cli": "^2.5.7",
     "gatsby-image": "^2.0.30",
     "gatsby-mdx": "^0.4.2",
     "gatsby-plugin-favicon": "^3.1.5",
