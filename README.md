@@ -190,7 +190,7 @@ A Rails/JavaScript-based stack with modern/developer friendly technologies
 
 - [A Rock Solid, Modern Web Stack—Rails 5 API + ActiveAdmin + Create React App on Heroku](https://blog.heroku.com/a-rock-solid-modern-web-stack)
 
-## Serverless Stack [↗](https://awesomestacks.dev/serverless-stack)
+## Serverless Stack with React on AWS [↗](https://awesomestacks.dev/serverless-stack-with-react-on-aws)
 
 Learn how to build a full-stack production ready note taking app using Serverless and React on AWS from serverless-stack.com. Step-by-step open-source tutorials with screenshots and code samples included.
 
