@@ -141,7 +141,7 @@ Use Strapi CMS to maintain and manage your Gatsby static site. Deploy to Heroku.
 
 - [Strapi CMS](https://strapi.io) - [🐙](https://github.com/strapi/strapi) - Strapi is the Headless CMS developers love
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
-- [Heroku](https://www.heroku.com/) - Heroku is a powerful platform for deploying your apps.
+- [Heroku](https://www.heroku.com/) - [🛠️](https://stackshare.io/heroku) - Heroku is a powerful platform for deploying your apps.
 
 #### Resources
 
