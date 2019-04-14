@@ -236,6 +236,13 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 - [Vue.js & Electron: The easy way. – Mikeal](https://medium.com/@mikeal/vue-js-electron-the-easy-way-adc3ca09234a)
 - [How to use Vue.js with Electron and Vuex](https://alligator.io/vuejs/vue-electron/)
 
+## No Code [↗](https://awesomestacks.dev/no-code)
+The best way to write secure and reliable applications.
+
+- [No Code](https://github.com/kelseyhightower/nocode) – [🐙](https://github.com/kelseyhightower/nocode) - Write nothing; deploy nowhere.
+
+#### Resources
+
 # Back-end
 
 ## GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
