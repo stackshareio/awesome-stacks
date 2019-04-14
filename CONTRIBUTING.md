@@ -14,7 +14,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 The goal of Awesome Stacks is to gather a variety of tech stacks that are widely recognized to be good at solving a particular problem or implementing a certain feature, like "user authentication" or "handling file uploads" or "adding site search" or "building mobile apps". Because there is usually more than one way to build a feature, there may be multiple awesome stacks with the same goal in mind, each one having a different approach and tools.
 
-In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, than we encourage you to submit it to Awesome Stacks so other developers will know about it. 🤘
+In general, if you have a stack that you think works great for solving a particular problem, and there is some evidence that the community agrees, then we encourage you to submit it to Awesome Stacks so other developers will know about it. 🤘
 
 ## Adding an awesome stack
 
@@ -43,7 +43,7 @@ Here's a breakdown of all of the different elements in the markdown.
 
 ### Stack name
 
-This goes first. It must be an `H3` that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
+This goes first. It must be an `H2` that contains a link. The link text is the name of the stack. This should be short and including something about the use case and/or solution, e.g. "User authentication with OAuth".
 
 The link should go to `https://awesomestacks.dev/{slug}` where slug is the URL-ized version stack name you've chosen (spaces converted to dashes, punctuation removed, all lowercase). E.g. `React and Firebase` becomes `react-and-firebase`. This is necessary so that the link goes to the correct page on the awesomestacks.dev site, which will be built automatically from the markdown you're creating!
 
