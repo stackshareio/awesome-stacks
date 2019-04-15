@@ -302,6 +302,7 @@ Boost your Productivty with GitHub, Jira and Jenkins.
 - [Jenkins](https://jenkins.io/) - [🛠️](https://stackshare.io/jenkins) - [🐙](https://github.com/jenkinsci/jenkins) - Open source automation server for CI/CD.
 - [GitHub](https://github.com/) - [🛠](https://stackshare.io/github) - The site to keep your code and open it to world.
 - [Jira](https://es.atlassian.com/software/jira) - [🛠️](https://stackshare.io/jira) - Agile software development.
+- [Slack](https://slack.com) - [🛠️](https://stackshare.io/slack) - Where work flows.
 
 #### Resources
 
