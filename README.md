@@ -244,7 +244,7 @@ Stack used to deploy and manage a cluster of Docker containerized applications u
 
 - [GKE](https://cloud.google.com/kubernetes-engine/) - [🛠](https://stackshare.io/google-kubernetes-engine) - Kubernetes cluster managed by Google.
 - [Kubernetes](https://kubernetes.io/) - [🐙](https://github.com/kubernetes/kubernetes) - [🛠](https://stackshare.io/kubernetes) - Production-Grade Container Scheduling and Management
-- [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) A tool to create, deploy and run applications inside containers. 
+- [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) - A tool to create, deploy and run applications inside containers. 
 - [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver) - Stackdriver Logging allows you to store, search, analyze, monitor, and alert on log data and events. 
 
 ## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
@@ -273,6 +273,32 @@ Hosted tools to use to analyze user behavior for a web app.
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/) - [🛠️](https://stackshare.io/google-analytics) - Enterprise-class web analytics.
 - [Amplitude](https://amplitude.com) - [🛠️](https://stackshare.io/amplitude) - User analytics to fuel explosive user growth
 - [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform
+
+## Streaming Analytics with Kafka, Spark, and Cassandra [↗](https://awesomestacks.dev/streaming-analytics-with-kafka-spark-and-cassandra)
+
+The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
+
+- [Kafka](http://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - [🐙](https://github.com/apache/kafka) - Distributed, fault tolerant, high throughput pub-sub messaging system
+- [Apache Spark](https://spark.apache.org) - [🛠](https://stackshare.io/spark) - [🐙](https://github.com/apache/spark) - Fast and general engine for large-scale data processing
+- [Cassandra](http://cassandra.apache.org) - [🛠](https://stackshare.io/cassandra) - [🐙](https://github.com/apache/cassandra) - Highly-scalable partitioned row store
+
+#### Resources
+
+- [kafka-sparkstreaming-cassandra](https://github.com/Yannael/kafka-sparkstreaming-cassandra)
+- [Applying the Lambda Architecture with Spark, Kafka, and Cassandra](https://www.pluralsight.com/courses/spark-kafka-cassandra-applying-lambda-architecture)
+- [Streaming Analytics with Spark, Kafka, Cassandra, and Akka](https://databricks.com/session/streaming-analytics-with-spark-kafka-cassandra-and-akka)
+
+## Self-Hosted Devops and Collaboration [↗](https://awesomestacks.dev/self-hosted-devops-and-collaboration)
+
+Self-hosted open source devops and collaboration tools, suitable for enterprise.
+
+- [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software
+- [Zulip](https://zulipchat.com) - [🛠](https://stackshare.io/zulip) - [🐙](https://github.com/zulip/zulip) - Powerful open source team chat
+- [Hubot](https://hubot.github.com) - [🛠](https://stackshare.io/hubot) - [🐙](https://github.com/hubotio/hubot) - A customizable life embetterment robot
+- [Sentry](https://sentry.io) - [🛠](https://stackshare.io/sentry) - [🐙](https://github.com/getsentry/sentry) - Cross-platform application monitoring, with a focus on error reporting
+- [Taiga.io](https://taiga.io) - [🛠](https://stackshare.io/taiga) - [🐙](https://github.com/taigaio) - Project management web application with scrum in mind
+- [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool
+
 
 # Mobile
 
