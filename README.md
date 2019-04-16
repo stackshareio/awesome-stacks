@@ -300,6 +300,24 @@ Self-hosted open source devops and collaboration tools, suitable for enterprise.
 - [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool
 
 
+## Production Ready Django + Docker [↗](https://awesomestacks.dev/production-ready-django-docker)
+
+Bleeding edge django template focused on code quality and security.
+
+Build, test, and deploy pipelines are configured by default.
+
+- [Python3](https://www.python.org/) - [🛠](https://stackshare.io/python) - [🐙](https://github.com/cpython/python) - A programming language that lets you work quickly.
+- [Django](https://www.djangoproject.com/) - [🛠](https://stackshare.io/django) - [🐙](https://github.com/django/django) - The Web framework for perfectionists with deadlines.
+- [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) - A tool to create, deploy and run applications inside containers.
+- [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software.
+- [Caddy](https://caddyserver.com/) - [🛠](https://stackshare.io/caddy) - [🐙](https://github.com/mholt/caddy) - The HTTP/2 Web Server with Automatic HTTPS.
+
+#### Resources
+
+- [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
+- [wemake-django-template docs](https://wemake-django-template.rtfd.io/)
+
+
 # Mobile
 
 ## React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
