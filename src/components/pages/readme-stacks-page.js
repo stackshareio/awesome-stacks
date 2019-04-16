@@ -32,7 +32,7 @@ function ReadmeStacksPage({ data, pageContext: { stackName } }) {
   });
   return (
     <Layout>
-      <SEO title={stack.name} />
+      <SEO title={stack.name} description={stack.description} />
       <ReadmeStackHero {...{ stack, stacks }} />
       <div className="section has-margin-bottom-60">
         <div className="container">
