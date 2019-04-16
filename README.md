@@ -63,6 +63,18 @@ React Starter Kit for Firebase is a popular project template (aka, boilerplate) 
 
 - [react-firebase-starter](https://github.com/kriasoft/react-firebase-starter)
 
+## Preact-on-Parcel[↗](https://awesomestacks.dev/preact-on-parcel)
+
+A supersonic, featherweight, teflon-zen front-end web app starter kit. Simple beginnings, very extensible. Zero-config.
+
+- [Preact](https://preactjs.com) - [🛠](https://stackshare.io/preact) - [🐙](https://github.com/developit/preact/) - A fast 3kB alternative to React with the same modern API.
+- [Parcel](https://parceljs.org) - [🛠](https://stackshare.io/parcel) - [🐙](https://github.com/parcel-bundler/parcel) - A web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration.
+
+#### Resources
+
+- [Preact-on-Parcel Repo and How-to](https://github.com/krry/preact-on-parcel)
+- [Preact-on-Parcel Example](https://preact-on-parcel.now.sh)
+
 ## vue-starter [↗](https://awesomestacks.dev/vue-starter)
 
 The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices.
