@@ -123,13 +123,13 @@ A Hugo boilerplate for creating truly epic websites. This is a boilerplate for u
 - [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
 
 
-## Nuxt, TypeScript, Docker [↗](https://awesomestacks.dev/wemake-vue-template)
+## Nuxt, TypeScript + Docker [↗](https://awesomestacks.dev/nuxtjs-typescript-docker)
 
 Bleeding edge vue template focused on code quality and developer happiness.
 
 Offers a complete setup for both small and enterprise-scale apps.
 
-- [Nuxt](https://nuxtjs.org/) - [🛠](https://stackshare.io/nuxt)- [🐙](https://github.com/nuxt/nuxtjs) - Vue.js Meta Framework to create complex, fast & universal web applications quickly.
+- [Nuxt](https://nuxtjs.org/) - [🛠](https://stackshare.io/nuxt) - [🐙](https://github.com/nuxt/nuxt.js) - Vue.js Meta Framework to create complex, fast & universal web applications quickly.
 - [TypeScript](https://www.typescriptlang.org/) - [🛠️](https://stackshare.io/typescript) - [🐙](https://github.com/Microsoft/TypeScript) - A typed superset of JavaScript that compiles to plain JavaScript.
 - [Sass](https://sass-lang.com) - [🛠️](https://stackshare.io/sass) - [🐙](https://github.com/sass/sass) - Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
 - [Jest](https://jestjs.io/) - [🛠️](https://stackshare.io/jest) - [🐙](https://github.com/facebook/jest) - A comprehensive, delightful JavaScript testing solution.
