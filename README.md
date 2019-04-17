@@ -140,7 +140,6 @@ Offers a complete setup for both small and enterprise-scale apps.
 #### Resources
 
 - [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
-- [wemake-vue-template docs](https://wemake-services.gitbook.io/wemake-vue-template/)
 
 
 # Full stack
