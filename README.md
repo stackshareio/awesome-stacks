@@ -256,6 +256,21 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 - [Vue.js & Electron: The easy way. – Mikeal](https://medium.com/@mikeal/vue-js-electron-the-easy-way-adc3ca09234a)
 - [How to use Vue.js with Electron and Vuex](https://alligator.io/vuejs/vue-electron/)
 
+## Code Coverage & CI [↗](https://awesomestacks.dev/code-coverage-ci)
+
+Quickest way to get started with CI and Code Coverage. 
+
+- [CircleCI](https://stackshare.io/circleci) - [🛠](https://stackshare.io/circleci) - Popular managed CI server.
+- [Codecov](https://stackshare.io/codecov) - [🛠️](https://stackshare.io/codecov) - Hosted coverage reports with awesome features to enhance your CI workflow.
+- [Bash](https://stackshare.io/gnu-bash) - [🛠](https://stackshare.io/gnu-bash) - The Bourne Again SHell is an sh-compatible shell.
+- [GitHub](https://stackshare.io/github) - [🛠](https://stackshare.io/github) - Powerful collaboration, review, and code management for open source and private development projects.
+
+#### Resources
+
+- [Making code coverage easy to see with Codecov & CircleCI](https://circleci.com/blog/making-code-coverage-easy-to-see-with-the-codecov-orb/)
+- [CI Provider Relationship](https://docs.codecov.io/docs/ci-service-relationship)
+- [Codecov Bash Uploader](https://docs.codecov.io/docs/about-the-codecov-bash-uploader)
+
 # Back-end
 
 ## GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
