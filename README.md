@@ -260,10 +260,10 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 
 Quickest way to get started with CI and Code Coverage. 
 
-- [CircleCI](https://stackshare.io/circleci) - [🛠](https://stackshare.io/circleci) - Popular managed CI server.
-- [Codecov](https://stackshare.io/codecov) - [🛠️](https://stackshare.io/codecov) - Hosted coverage reports with awesome features to enhance your CI workflow.
-- [Bash](https://stackshare.io/gnu-bash) - [🛠](https://stackshare.io/gnu-bash) - The Bourne Again SHell is an sh-compatible shell.
-- [GitHub](https://stackshare.io/github) - [🛠](https://stackshare.io/github) - Powerful collaboration, review, and code management for open source and private development projects.
+- [CircleCI](https://circleci.com/) - [🛠](https://stackshare.io/circleci) - Popular managed CI server.
+- [Codecov](https://codecov.io/) - [🛠️](https://stackshare.io/codecov) - Hosted coverage reports with awesome features to enhance your CI workflow.
+- [Bash](https://www.gnu.org/software/bash/) - [🛠](https://stackshare.io/gnu-bash) - The Bourne Again SHell is an sh-compatible shell.
+- [GitHub](https://github.com/) - [🛠](https://stackshare.io/github) - Powerful collaboration, review, and code management for open source and private development projects.
 
 #### Resources
 
