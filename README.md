@@ -276,7 +276,7 @@ Quickest way to get started with CI and Code Coverage.
 The best way to create a versatile and scalable PHP Web Application! It sure will make you fall in love with PHP (if not, Laravel). Laravel team has an official collaboration with the Vue, so Vue, Babel and Sass is already integrated before you even started!
 
 "Laravel + Vue = ❤️ "- Some Really Famous Person said it
-- [PHP 7.2](https://http://php.net)- [🛠](https://stackshare.io/php)  - [🐙](https://github.com/php/php-src) - A popular general-purpose scripting language that is especially suited to web development.
+- [PHP 7](https://php.net)- [🛠](https://stackshare.io/php)  - [🐙](https://github.com/php/php-src) - A popular general-purpose scripting language that is especially suited to web development.
 - [Laravel](https://laravel.com/)- [🛠](https://stackshare.io/laravel)  - [🐙](https://github.com/laravel/laravel) - One of the most popular Object Oriented MVC PHP Framework with elegant syntax and golden standard software patterns. Officially integrated with Vue.
 - [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
 - [Laravel Mix](https://laravel.com/docs/5.8/mix) - [🐙](https://github.com/JeffreyWay/laravel-mix) - A build tool built on top of webpack, to easily compile any front end assets. (secret: works with or without Laravel)
@@ -286,9 +286,6 @@ The best way to create a versatile and scalable PHP Web Application! It sure wil
 #### Resources
 - [Building a Vue SPA with Laravel](https://laravel-news.com/using-vue-router-laravel)
 - [Laravel Tutorial: Step by Step Guide to Building Your First Laravel Application](https://laravel-news.com/your-first-laravel-application)
-- [9gag](https://www.9gag.com)
-- [LaraCast](https://laracast.com)
-- [Vue School] (https://vueschool.io/)
 
 
 # Back-end
@@ -417,5 +414,8 @@ Boost your Productivty with GitHub, Jira and Jenkins.
 
 
 # Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
+uting
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
