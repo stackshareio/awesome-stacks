@@ -271,7 +271,7 @@ Quickest way to get started with CI and Code Coverage.
 - [CI Provider Relationship](https://docs.codecov.io/docs/ci-service-relationship)
 - [Codecov Bash Uploader](https://docs.codecov.io/docs/about-the-codecov-bash-uploader)
 
-## Make PHP Awesome Again [↗](https://awesomestacks.dev/make-php-awesome-again)
+## Vue SPA with Laravel [↗](https://awesomestacks.dev/vue-spa-with-laravel)
 
 The best way to create a versatile and scalable PHP Web Application! It sure will make you fall in love with PHP (if not, Laravel). Laravel team has an official collaboration with the Vue, so Vue, Babel and Sass is already integrated before you even started!
 
