@@ -271,6 +271,22 @@ Quickest way to get started with CI and Code Coverage.
 - [CI Provider Relationship](https://docs.codecov.io/docs/ci-service-relationship)
 - [Codecov Bash Uploader](https://docs.codecov.io/docs/about-the-codecov-bash-uploader)
 
+## Vue SPA with Laravel [↗](https://awesomestacks.dev/vue-spa-with-laravel)
+
+The best way to create a versatile and scalable PHP Web Application! It sure will make you fall in love with PHP (if not, Laravel). Laravel team has an official collaboration with the Vue, so Vue, Babel and Sass is already integrated before you even started!
+
+- [PHP 7](https://php.net)- [🛠](https://stackshare.io/php)  - [🐙](https://github.com/php/php-src) - A popular general-purpose scripting language that is especially suited to web development.
+- [Laravel](https://laravel.com/)- [🛠](https://stackshare.io/laravel)  - [🐙](https://github.com/laravel/laravel) - One of the most popular Object Oriented MVC PHP Framework with elegant syntax and golden standard software patterns. Officially integrated with Vue.
+- [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
+- [Laravel Mix](https://laravel.com/docs/5.8/mix) - [🐙](https://github.com/JeffreyWay/laravel-mix) - A build tool built on top of webpack, to easily compile any front end assets. (secret: works with or without Laravel)
+- [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - compiler for writing next generation JavaScript; Babel will turn your ES6+ code into ES5 friendly code, so you can start using it right now without waiting for browser support.
+- [Sass](https://sass-lang.com) - [🛠️](https://stackshare.io/sass) - [🐙](https://github.com/sass/sass) - Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
+
+#### Resources
+- [Building a Vue SPA with Laravel](https://laravel-news.com/using-vue-router-laravel)
+- [Laravel Tutorial: Step by Step Guide to Building Your First Laravel Application](https://laravel-news.com/your-first-laravel-application)
+
+
 # Back-end
 
 ## GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
@@ -397,5 +413,8 @@ Boost your Productivty with GitHub, Jira and Jenkins.
 
 
 # Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
+uting
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
