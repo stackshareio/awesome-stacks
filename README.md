@@ -415,6 +415,3 @@ Boost your Productivty with GitHub, Jira and Jenkins.
 # Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
-uting
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
