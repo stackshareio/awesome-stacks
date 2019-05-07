@@ -99,6 +99,7 @@ You can also add relevant content to the resources section - a guideline is that
 - ✅ Do link to the GitHub and StackShare profiles that exist for each tool
 - ❌ Don't submit a very generic stack like "Rails" or "React"; make it more specific ("React for doing X" or "React with tools X and Y")
 - ❌ Don't submit a stack you used to build a specific thing but isn't necessarily resuable - put that on [StackShare instead](https://stackshare.io/)
+- ❌ Don't edit a stack without opening an issue first explaining why a tool needs to be added/removed/replaced. PR's will be closed otherwise.
 
 ## Tip: finding tool links
 
