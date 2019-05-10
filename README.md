@@ -315,6 +315,7 @@ Tools to use to monitor your Rails app in production.
 - [Skylight](https://www.skylight.io) - [🛠](https://stackshare.io/skylight) - The smart profiler for your Rails apps
 - [New Relic](https://newrelic.com) - [🛠](https://stackshare.io/new-relic) - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps
 - [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) - [🐙](https://github.com/MiniProfiler/rack-mini-profiler) - Profiler for your development and production Ruby rack apps.
+- [Sqreen](https://www.sqreen.com/) - [🛠](https://stackshare.io/sqreen) - Security monitoring and protection for Ruby, PHP, Java, Go, Python, and Node.js Apps
 
 ## User Behavior Analytics via Segment [↗](https://awesomestacks.dev/user-behavior-analytics-via-segment)
 
