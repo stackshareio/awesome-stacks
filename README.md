@@ -23,7 +23,7 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 🛠 - StackShare tool profile<br>
 🐙 - GitHub repository
 
-# Contents
+## Contents
 
 - [Front-end](#front-end)
 - [Full stack](#full-stack)
