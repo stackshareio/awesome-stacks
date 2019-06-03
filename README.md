@@ -311,10 +311,10 @@ A collection of tools for building decentralized applications on the Ethereum bl
 
 Tools to use to monitor your Rails app in production.
 
-- [Skylight](https://www.skylight.io) - [🛠](https://stackshare.io/skylight) - The smart profiler for your Rails apps
-- [New Relic](https://newrelic.com) - [🛠](https://stackshare.io/new-relic) - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps
+- [Skylight](https://www.skylight.io) - [🛠](https://stackshare.io/skylight) - The smart profiler for your Rails apps.
+- [New Relic](https://newrelic.com) - [🛠](https://stackshare.io/new-relic) - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps.
 - [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) - [🐙](https://github.com/MiniProfiler/rack-mini-profiler) - Profiler for your development and production Ruby rack apps.
-- [Sqreen](https://www.sqreen.com/) - [🛠](https://stackshare.io/sqreen) - Security monitoring and protection for Ruby, PHP, Java, Go, Python, and Node.js Apps
+- [Sqreen](https://www.sqreen.com/) - [🛠](https://stackshare.io/sqreen) - Security monitoring and protection for Ruby, PHP, Java, Go, Python, and Node.js Apps.
 
 ## User Behavior Analytics via Segment [↗](https://awesomestacks.dev/user-behavior-analytics-via-segment)
 
@@ -323,15 +323,15 @@ Hosted tools to use to analyze user behavior for a web app.
 - [Segment](https://segment.com) - [🛠️](https://stackshare.io/segment) - A single hub to collect, translate and send your data with the flip of a switch.
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/) - [🛠️](https://stackshare.io/google-analytics) - Enterprise-class web analytics.
 - [Amplitude](https://amplitude.com) - [🛠️](https://stackshare.io/amplitude) - User analytics to fuel explosive user growth
-- [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform
+- [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform.
 
 ## Streaming Analytics with Kafka, Spark, and Cassandra [↗](https://awesomestacks.dev/streaming-analytics-with-kafka-spark-and-cassandra)
 
 The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
 
-- [Kafka](http://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - [🐙](https://github.com/apache/kafka) - Distributed, fault tolerant, high throughput pub-sub messaging system
-- [Apache Spark](https://spark.apache.org) - [🛠](https://stackshare.io/spark) - [🐙](https://github.com/apache/spark) - Fast and general engine for large-scale data processing
-- [Cassandra](http://cassandra.apache.org) - [🛠](https://stackshare.io/cassandra) - [🐙](https://github.com/apache/cassandra) - Highly-scalable partitioned row store
+- [Kafka](http://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - [🐙](https://github.com/apache/kafka) - Distributed, fault tolerant, high throughput pub-sub messaging system.
+- [Apache Spark](https://spark.apache.org) - [🛠](https://stackshare.io/spark) - [🐙](https://github.com/apache/spark) - Fast and general engine for large-scale data processing.
+- [Cassandra](http://cassandra.apache.org) - [🛠](https://stackshare.io/cassandra) - [🐙](https://github.com/apache/cassandra) - Highly-scalable partitioned row store.
 
 #### Resources
 
@@ -343,12 +343,12 @@ The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
 
 Self-hosted open source devops and collaboration tools, suitable for enterprise.
 
-- [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software
-- [Zulip](https://zulipchat.com) - [🛠](https://stackshare.io/zulip) - [🐙](https://github.com/zulip/zulip) - Powerful open source team chat
-- [Hubot](https://hubot.github.com) - [🛠](https://stackshare.io/hubot) - [🐙](https://github.com/hubotio/hubot) - A customizable life embetterment robot
+- [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software.
+- [Zulip](https://zulipchat.com) - [🛠](https://stackshare.io/zulip) - [🐙](https://github.com/zulip/zulip) - Powerful open source team chat.
+- [Hubot](https://hubot.github.com) - [🛠](https://stackshare.io/hubot) - [🐙](https://github.com/hubotio/hubot) - A customizable life embetterment robot.
 - [Sentry](https://sentry.io) - [🛠](https://stackshare.io/sentry) - [🐙](https://github.com/getsentry/sentry) - Cross-platform application monitoring, with a focus on error reporting
-- [Taiga.io](https://taiga.io) - [🛠](https://stackshare.io/taiga) - [🐙](https://github.com/taigaio) - Project management web application with scrum in mind
-- [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool
+- [Taiga.io](https://taiga.io) - [🛠](https://stackshare.io/taiga) - [🐙](https://github.com/taigaio) - Project management web application with scrum in mind.
+- [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool.
 
 
 ## Production Ready Django + Docker [↗](https://awesomestacks.dev/production-ready-django-docker)
