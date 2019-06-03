@@ -1,12 +1,11 @@
 <div align="center">
-<img alt="Pink sunglasses with text Awesome Stacks" width="680px" src="src/images/awesome-stacks-logo-github.png">
+<a href="https://awesomestacks.dev/"><img alt="Pink sunglasses with text Awesome Stacks" width="680px" src="src/images/awesome-stacks-logo-github.png"></a>
+<br><br>
+<a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg"></a>
 </div>
 
 # Awesome Stacks
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/stackshare/awesome-stacks)
-[![StackShare Blog](https://img.shields.io/badge/blog-Introducing%20Awesome%20Stacks-success.svg?style=flat)](https://stackshare.io/posts/introducing-awesome-stacks)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7fb9c28c-1e1e-41e0-a0c6-95a5770f4abf/deploy-status)](https://app.netlify.com/sites/awesomestacks/deploys)
 
 > Awesome tech stacks for all kinds of applications, inspired by [awesome.re](http://awesome.re).
 
@@ -53,7 +52,7 @@ React Starter Kit is an opinionated boilerplate for web development built on top
 
 React Starter Kit for Firebase is a popular project template (aka, boilerplate) for building modern, scalable web applications with React, Relay, and GraphQL using serverless infrastructure provided by Google Cloud (Cloud SQL, Cloud Functions, CDN hosting, and file storage).
 
-- [Firebase](https://firebase.google.com/) - [🛠️](https://stackshare.io/firebase) - A cloud-hosted NoSQL database that lets you store and sync data between your users in realtime.
+- [Firebase](https://firebase.google.com/) - [🛠️](https://stackshare.io/firebase) - A cloud-hosted NoSQL database that lets you store and sync data between your users in real-time.
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
 - [Material UI](https://material-ui.com/) - [🛠️](https://stackshare.io/material-ui) - [🐙](https://github.com/mui-org/material-ui) - React components that implement Google's Material Design.
 - [Relay](https://facebook.github.io/relay/) - [🛠️](https://stackshare.io/relay) - [🐙](https://github.com/facebook/relay) - A JavaScript framework for building data-driven React applications.
@@ -146,7 +145,7 @@ Offers a complete setup for both small and enterprise-scale apps.
 
 ## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graph-cms-react-apollo)
 
-Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from Wordpress. 
+Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from WordPress. 
 
 - [GraphCMS](https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - GraphCMS providing a backend to your app, giving you the tools to manage content.
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
@@ -185,7 +184,7 @@ Add search to your JAMStack website, through a static site integration or by cra
 
 ## MEVN: Mongo Express Vue Node [↗](https://awesomestacks.dev/mevn-mongo-express-vue-node)
 
-This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB.
+This is a full stack web app boilerplate project with VueJS + ExpressJS + MongoDB.
 
 - [Vue.js](https://vuejs.org/) - [🛠️](https://stackshare.io/vue-js) - [🐙](https://github.com/vuejs/vue) - An approachable core library that focuses on the view layer only.
 - [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo) - A document and JSON-oriented database.
@@ -200,7 +199,7 @@ This is a full stack webapp boilerplate project with VueJS + ExpressJS + MongoDB
 
 A Rails/JavaScript-based stack with modern/developer friendly technologies
 
-- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - An established webapp framework with a focus on simplicity and productivity.
+- [Rails](https://rubyonrails.org/) - [🛠](https://stackshare.io/rails) - [🐙](https://github.com/rails/rails) - An established web app framework with a focus on simplicity and productivity.
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
 - [GraphQL Ruby](https://graphql-ruby.org/) - [🛠](https://stackshare.io/graphql-ruby) - [🐙](https://github.com/rmosolgo/graphql-ruby) - Ruby server implementation of the GraphQL specification
 - [Apollo Client](https://dev.apollodata.com/) - [🛠](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - A powerfully extensible GraphQL JavaScript client
@@ -256,7 +255,7 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 - [Vue.js & Electron: The easy way. – Mikeal](https://medium.com/@mikeal/vue-js-electron-the-easy-way-adc3ca09234a)
 - [How to use Vue.js with Electron and Vuex](https://alligator.io/vuejs/vue-electron/)
 
-## Code Coverage & CI [↗](https://awesomestacks.dev/code-coverage-ci)
+## Code Coverage & CI [↗](https://awesomestacks.dev/code-coverage-and-ci)
 
 Quickest way to get started with CI and Code Coverage. 
 
@@ -312,10 +311,10 @@ A collection of tools for building decentralized applications on the Ethereum bl
 
 Tools to use to monitor your Rails app in production.
 
-- [Skylight](https://www.skylight.io) - [🛠](https://stackshare.io/skylight) - The smart profiler for your Rails apps
-- [New Relic](https://newrelic.com) - [🛠](https://stackshare.io/new-relic) - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps
+- [Skylight](https://www.skylight.io) - [🛠](https://stackshare.io/skylight) - The smart profiler for your Rails apps.
+- [New Relic](https://newrelic.com) - [🛠](https://stackshare.io/new-relic) - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps.
 - [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) - [🐙](https://github.com/MiniProfiler/rack-mini-profiler) - Profiler for your development and production Ruby rack apps.
-- [Sqreen](https://www.sqreen.com/) - [🛠](https://stackshare.io/sqreen) - Security monitoring and protection for Ruby, PHP, Java, Go, Python, and Node.js Apps
+- [Sqreen](https://www.sqreen.com/) - [🛠](https://stackshare.io/sqreen) - Security monitoring and protection for Ruby, PHP, Java, Go, Python, and Node.js Apps.
 
 ## User Behavior Analytics via Segment [↗](https://awesomestacks.dev/user-behavior-analytics-via-segment)
 
@@ -324,15 +323,15 @@ Hosted tools to use to analyze user behavior for a web app.
 - [Segment](https://segment.com) - [🛠️](https://stackshare.io/segment) - A single hub to collect, translate and send your data with the flip of a switch.
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/) - [🛠️](https://stackshare.io/google-analytics) - Enterprise-class web analytics.
 - [Amplitude](https://amplitude.com) - [🛠️](https://stackshare.io/amplitude) - User analytics to fuel explosive user growth
-- [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform
+- [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform.
 
 ## Streaming Analytics with Kafka, Spark, and Cassandra [↗](https://awesomestacks.dev/streaming-analytics-with-kafka-spark-and-cassandra)
 
 The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
 
-- [Kafka](http://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - [🐙](https://github.com/apache/kafka) - Distributed, fault tolerant, high throughput pub-sub messaging system
-- [Apache Spark](https://spark.apache.org) - [🛠](https://stackshare.io/spark) - [🐙](https://github.com/apache/spark) - Fast and general engine for large-scale data processing
-- [Cassandra](http://cassandra.apache.org) - [🛠](https://stackshare.io/cassandra) - [🐙](https://github.com/apache/cassandra) - Highly-scalable partitioned row store
+- [Kafka](http://kafka.apache.org/) - [🛠](https://stackshare.io/kafka) - [🐙](https://github.com/apache/kafka) - Distributed, fault tolerant, high throughput pub-sub messaging system.
+- [Apache Spark](https://spark.apache.org) - [🛠](https://stackshare.io/spark) - [🐙](https://github.com/apache/spark) - Fast and general engine for large-scale data processing.
+- [Cassandra](http://cassandra.apache.org) - [🛠](https://stackshare.io/cassandra) - [🐙](https://github.com/apache/cassandra) - Highly-scalable partitioned row store.
 
 #### Resources
 
@@ -344,12 +343,12 @@ The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
 
 Self-hosted open source devops and collaboration tools, suitable for enterprise.
 
-- [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software
-- [Zulip](https://zulipchat.com) - [🛠](https://stackshare.io/zulip) - [🐙](https://github.com/zulip/zulip) - Powerful open source team chat
-- [Hubot](https://hubot.github.com) - [🛠](https://stackshare.io/hubot) - [🐙](https://github.com/hubotio/hubot) - A customizable life embetterment robot
+- [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software.
+- [Zulip](https://zulipchat.com) - [🛠](https://stackshare.io/zulip) - [🐙](https://github.com/zulip/zulip) - Powerful open source team chat.
+- [Hubot](https://hubot.github.com) - [🛠](https://stackshare.io/hubot) - [🐙](https://github.com/hubotio/hubot) - A customizable life embetterment robot.
 - [Sentry](https://sentry.io) - [🛠](https://stackshare.io/sentry) - [🐙](https://github.com/getsentry/sentry) - Cross-platform application monitoring, with a focus on error reporting
-- [Taiga.io](https://taiga.io) - [🛠](https://stackshare.io/taiga) - [🐙](https://github.com/taigaio) - Project management web application with scrum in mind
-- [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool
+- [Taiga.io](https://taiga.io) - [🛠](https://stackshare.io/taiga) - [🐙](https://github.com/taigaio) - Project management web application with scrum in mind.
+- [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool.
 
 
 ## Production Ready Django + Docker [↗](https://awesomestacks.dev/production-ready-django-docker)
@@ -373,9 +372,9 @@ Build, test, and deploy pipelines are configured by default.
 
 ## React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
 
-Hasura is an open source GraphQL engine that deploys instant, realtime GraphQL APIs on any Postgres database. This React Native stack uses Hasura droplets hosted on Digital Ocean.
+Hasura is an open source GraphQL engine that deploys instant, real-time GraphQL APIs on any Postgres database. This React Native stack uses Hasura droplets hosted on Digital Ocean.
 
-- [Hasura](https://hasura.io/) - [🛠️](https://stackshare.io/hasura) - [🐙](https://github.com/hasura/graphql-engine) - Blazing fast, instant realtime GraphQL APIs on Postgres with fine grained access control.
+- [Hasura](https://hasura.io/) - [🛠️](https://stackshare.io/hasura) - [🐙](https://github.com/hasura/graphql-engine) - Blazing fast, instant real-time GraphQL APIs on Postgres with fine grained access control.
 - [React Native](https://facebook.github.io/react-native/) - [🛠️](https://stackshare.io/react-native) - [🐙](https://github.com/facebook/react-native) - Build native mobile apps using JavaScript and React.
 - [Expo](https://expo.io/) - [🛠️](https://stackshare.io/expo) - [🐙](https://github.com/expo/expo) - Build, deploy, and quickly iterate on native iOS and Android apps from the same JavaScript codebase.
 - [Digital Ocean](https://www.digitalocean.com/) - [🛠️](https://stackshare.io/digitalocean) - [🐙](https://github.com/digitalocean/) - Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.
@@ -401,7 +400,7 @@ Unity is a game engine that connects to Plastic SCM to keep version control and 
 
 ## Workflow Automation with GitHub, Jira and Jenkins [↗](https://awesomestacks.dev/workflow-automation-with-git-hub-jira-and-jenkins)
 
-Boost your Productivty with GitHub, Jira and Jenkins.
+Boost your Productivity with GitHub, Jira and Jenkins.
 
 - [Jenkins](https://jenkins.io/) - [🛠️](https://stackshare.io/jenkins) - [🐙](https://github.com/jenkinsci/jenkins) - Open source automation server for CI/CD.
 - [GitHub](https://github.com/) - [🛠](https://stackshare.io/github) - The site to keep your code and open it to world.
@@ -410,9 +409,19 @@ Boost your Productivty with GitHub, Jira and Jenkins.
 
 #### Resources
 
-- [Integrating JIRA, GitHub, Jenkins, and Slack in your workflow](https://support.acquia.com/hc/en-us/articles/360005167214-Integrating-JIRA-GitHub-Jenkins-and-Slack-in-your-workflow)
+- [Integrating Jira, GitHub, Jenkins, and Slack in your workflow](https://support.acquia.com/hc/en-us/articles/360005167214-Integrating-JIRA-GitHub-Jenkins-and-Slack-in-your-workflow)
 
 
 # Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
+
+# License
+
+**The Awesome List**
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [StackShare](https://stackshare.io) has waived all copyright and related or neighboring rights to this work [README](/README.md).
+
+**The Web App**
+MIT
