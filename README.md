@@ -122,7 +122,7 @@ A Hugo boilerplate for creating truly epic websites. This is a boilerplate for u
 - [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
 
 
-## Nuxt, TypeScript + Docker [↗](https://awesomestacks.dev/nuxtjs-typescript-docker)
+## Nuxt, TypeScript + Docker [↗](https://awesomestacks.dev/nuxt-type-script-docker)
 
 Bleeding edge vue template focused on code quality and developer happiness.
 
@@ -239,7 +239,7 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 
 - [Electron React Boilerplate website](https://electron-react-boilerplate.js.org/)
 
-## Vue with Electron [↗](https://awesomestacks.dev/using-vue-with-electron)
+## Vue with Electron [↗](https://awesomestacks.dev/vue-with-electron)
 
 A foundation for scalable cross-platform desktop apps all the way from development to distributing your app using Vue and Electron.
 
