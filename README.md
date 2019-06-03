@@ -1,9 +1,10 @@
 <div align="center">
 <a href="https://awesomestacks.dev/"><img alt="Pink sunglasses with text Awesome Stacks" width="680px" src="src/images/awesome-stacks-logo-github.png"></a>
+<br><br>
+<a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg"></a>
 </div>
 
 # Awesome Stacks
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/stackshare/awesome-stacks)
 
 > Awesome tech stacks for all kinds of applications, inspired by [awesome.re](http://awesome.re).
