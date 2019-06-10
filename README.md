@@ -7,7 +7,7 @@
 # Awesome Stacks
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/stackshare/awesome-stacks)
 
-> Awesome tech stacks for all kinds of applications, inspired by [awesome.re](http://awesome.re).
+> Tech stacks for building different applications and features.
 
 Awesome Stacks is a community-curated list of tech stacks for building different applications and features. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
