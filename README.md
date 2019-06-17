@@ -9,31 +9,31 @@
 
 > Tech stacks for building different applications and features.
 
-Awesome Stacks is a community-curated list of tech stacks for building different applications and features. It is open source and inspired by the original [awesome list](http://awesome.re/).
-
-Each stack in the list has a name, description, and list of a few of the key tools and technologies. Optionally, it links to a tutorial, starter kit or boilerplate that makes it easy to get started with.
-
-Got a stack you think is a great way to build something? Please edit this file and add it! Check out [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
-
-### Browsing the stacks
-
-Stacks can be browsed in two places—on the README and on [awesomestacks.dev](https://awesomestacks.dev/). The site, built with Gatsby and React, displays logos and metrics about each tool listed in the README by pulling data from the GitHub and StackShare APIs.
-
-### Legend
-
-🛠 - StackShare tool profile<br>
-🐙 - GitHub repository
-
-# Contents
+## Contents
 
 - [Front-end](#front-end)
 - [Full stack](#full-stack)
 - [Back-end](#back-end)
 - [Mobile](#mobile)
 
-# Front-end
+Awesome Stacks is a community-curated list of tech stacks for building different applications and features. It is open source and inspired by the original [awesome list](http://awesome.re/).
 
-## React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
+Each stack in the list has a name, description, and list of a few of the key tools and technologies. Optionally, it links to a tutorial, starter kit or boilerplate that makes it easy to get started with.
+
+Got a stack you think is a great way to build something? Please edit this file and add it! Check out [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+
+#### Browsing the stacks
+
+Stacks can be browsed in two places—on the README and on [awesomestacks.dev](https://awesomestacks.dev/). The site, built with Gatsby and React, displays logos and metrics about each tool listed in the README by pulling data from the GitHub and StackShare APIs.
+
+#### Legend
+
+🛠 - StackShare tool profile<br>
+🐙 - GitHub repository
+
+## Front-end
+
+### React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
 
 React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync. 
 
@@ -44,11 +44,11 @@ React Starter Kit is an opinionated boilerplate for web development built on top
 - [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
 - [Node.js](https://nodejs.org/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-#### Resources
+##### Resources
 
 - [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 
-## React Firebase starter [↗](https://awesomestacks.dev/react-firebase-starter)
+### React Firebase starter [↗](https://awesomestacks.dev/react-firebase-starter)
 
 React Starter Kit for Firebase is a popular project template (aka, boilerplate) for building modern, scalable web applications with React, Relay, and GraphQL using serverless infrastructure provided by Google Cloud (Cloud SQL, Cloud Functions, CDN hosting, and file storage).
 
@@ -58,11 +58,11 @@ React Starter Kit for Firebase is a popular project template (aka, boilerplate) 
 - [Relay](https://facebook.github.io/relay/) - [🛠️](https://stackshare.io/relay) - [🐙](https://github.com/facebook/relay) - A JavaScript framework for building data-driven React applications.
 - [GraphQL](https://graphql.org/) - [🛠](https://stackshare.io/graphql) - [🐙](https://github.com/graphql/graphql-js) - A query language for APIs and a runtime for fulfilling those queries with your existing data.
 
-#### Resources
+##### Resources
 
 - [react-firebase-starter](https://github.com/kriasoft/react-firebase-starter)
 
-## vue-starter [↗](https://awesomestacks.dev/vue-starter)
+### vue-starter [↗](https://awesomestacks.dev/vue-starter)
 
 The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices.
 
@@ -73,11 +73,11 @@ The most complete boilerplate for production-ready PWAs. With focus on performan
 - [Vuex](https://vuex.vuejs.org/) - [🐙](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
 - [Vue Router](https://router.vuejs.org/) - [🐙](https://github.com/vuejs/vue-router) - Vue Router is the official router for Vue.js.
 
-#### Resources
+##### Resources
 
 - [vue-starter](https://vue-starter.herokuapp.com/docs/)
 
-## Vue Enterprise Boilerplate [↗](https://awesomestacks.dev/vue-enterprise-boilerplate)
+### Vue Enterprise Boilerplate [↗](https://awesomestacks.dev/vue-enterprise-boilerplate)
 
 An ever-evolving and opinionated architecture and dev environment for new Vue SPA projects using Vue CLI 3.
 
@@ -88,11 +88,11 @@ An ever-evolving and opinionated architecture and dev environment for new Vue SP
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - compiler for writing next generation JavaScript; Babel will turn your ES6+ code into ES5 friendly code, so you can start using it right now without waiting for browser support.
 - [Sass](https://sass-lang.com) - [🛠️](https://stackshare.io/sass) - [🐙](https://github.com/sass/sass) - Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
 
-#### Resources
+##### Resources
 
 - [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
 
-## Progressive Web App with Gatsby [↗](https://awesomestacks.dev/progressive-web-app-with-gatsby)
+### Progressive Web App with Gatsby [↗](https://awesomestacks.dev/progressive-web-app-with-gatsby)
 
 Build a simple polling progressive web application with some great modern tech.
 
@@ -102,13 +102,13 @@ Build a simple polling progressive web application with some great modern tech.
 - [styled components](https://www.styled-components.com/) - [🛠](https://stackshare.io/styled-components) - [🐙](https://github.com/styled-components/styled-components) - A react-specific css-in-js solution.
 - [Contentful](https://www.contentful.com/) - [🛠](https://stackshare.io/contentful) - [🐙](https://github.com/contentful) - Contentful is a flexible and future-friendly content platform that helps editors to manage and developers to serve content into mobile or web applications. Last but not least a powerhouse when worked with Gatsby.
 
-#### Resources
+##### Resources
 
 - [JAMstack PWA — Let’s Build a Polling App. with Gatsby.js, Firebase, and Styled-components](https://medium.com/@UnicornAgency/jamstack-pwa-lets-build-a-polling-app-with-gatsby-js-firebase-and-styled-components-pt-1-78a03a633092)
 - [Learn how to easily build a GatsbyJS website powered by Contentful](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/)
 
 
-## Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo-boilerplate)
+### Victor Hugo boilerplate [↗](https://awesomestacks.dev/victor-hugo-boilerplate)
 
 A Hugo boilerplate for creating truly epic websites. This is a boilerplate for using Hugo as a static site generator and Webpack as your asset pipeline.
 
@@ -117,12 +117,12 @@ A Hugo boilerplate for creating truly epic websites. This is a boilerplate for u
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
 - [PostCSS](https://postcss.org/) - [🛠](https://stackshare.io/postcss) - [🐙](https://github.com/postcss/postcss) - A tool for transforming CSS with JavaScript.
 
-#### Resources
+##### Resources
 
 - [netlify-templates/victor-hugo](https://github.com/netlify-templates/victor-hugo)
 
 
-## Nuxt, TypeScript + Docker [↗](https://awesomestacks.dev/nuxt-type-script-docker)
+### Nuxt, TypeScript + Docker [↗](https://awesomestacks.dev/nuxt-type-script-docker)
 
 Bleeding edge vue template focused on code quality and developer happiness.
 
@@ -136,14 +136,14 @@ Offers a complete setup for both small and enterprise-scale apps.
 - [stylelint](https://stylelint.io/) - [🛠️](https://stackshare.io/stylelint) - [🐙](https://github.com/stylelint/stylelint) - A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
 - [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) A tool to create, deploy and run applications inside containers.
 
-#### Resources
+##### Resources
 
 - [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
 
 
-# Full stack
+## Full stack
 
-## GraphCMS React + Apollo [↗](https://awesomestacks.dev/graph-cms-react-apollo)
+### GraphCMS React + Apollo [↗](https://awesomestacks.dev/graph-cms-react-apollo)
 
 Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from WordPress. 
 
@@ -151,11 +151,11 @@ Lightning fast starter for bloggers, content creators, and really anyone who wan
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
 - [Apollo](https://www.apollographql.com/) - [🛠️](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - Apollo Client is the best way to use GraphQL to build client applications.
 
-#### Resources
+##### Resources
 
 - [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
 
-## Strapi CMS with Gatsby [↗](https://awesomestacks.dev/strapi-cms-with-gatsby)
+### Strapi CMS with Gatsby [↗](https://awesomestacks.dev/strapi-cms-with-gatsby)
 
 Use Strapi CMS to maintain and manage your Gatsby static site. Deploy to Heroku.
 
@@ -163,13 +163,13 @@ Use Strapi CMS to maintain and manage your Gatsby static site. Deploy to Heroku.
 - [Gatsby](https://gatsbyjs.org/) - [🛠](https://stackshare.io/gatsbyjs) - [🐙](https://github.com/gatsbyjs/gatsby) - Gatsby is a blazing fast modern site generator for React.
 - [Heroku](https://www.heroku.com/) - [🛠️](https://stackshare.io/heroku) - Heroku is a powerful platform for deploying your apps.
 
-#### Resources
+##### Resources
 
 - [Building a Static Blog using Gatsby and Strapi](https://blog.strapi.io/building-a-static-website-using-gatsby-and-strapi/)
 - [Learn Gatsby with Strapi Headless CMS Video Series](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgGiz0MbbsMA_aB1V0yLE7a)
 - [Deploying Strapi to Heroku](https://strapi.io/documentation/3.x.x/guides/deployment.html#heroku)
 
-## Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
+### Algolia site search [↗](https://awesomestacks.dev/algolia-site-search)
 
 Add search to your JAMStack website, through a static site integration or by crawling the content.
 
@@ -179,10 +179,11 @@ Add search to your JAMStack website, through a static site integration or by cra
 - [hugo-algolia](https://github.com/replicatedhq/hugo-algolia) - [🐙](https://github.com/replicatedhq/hugo-algolia) - Generate and send indices from Hugo static sites for use with Algolia.
 - [instantsearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/) - [🐙](https://github.com/algolia/instantsearch.js) - JavaScript library for building performant and instant search experiences.
 
-#### Resources
+##### Resources
+
 - [Static site search with Hugo + Algolia](https://forestry.io/blog/search-with-algolia-in-hugo/)
 
-## MEVN: Mongo Express Vue Node [↗](https://awesomestacks.dev/mevn-mongo-express-vue-node)
+### MEVN: Mongo Express Vue Node [↗](https://awesomestacks.dev/mevn-mongo-express-vue-node)
 
 This is a full stack web app boilerplate project with VueJS + ExpressJS + MongoDB.
 
@@ -191,11 +192,11 @@ This is a full stack web app boilerplate project with VueJS + ExpressJS + MongoD
 - [Express](https://expressjs.com/) - [🛠️](https://stackshare.io/expressjs) - [🐙](https://github.com/expressjs/express) - A minimal and flexible Node.js web application framework.
 - [Node.js](https://nodejs.org/en/) - [🛠️](https://stackshare.io/nodejs) - [🐙](https://github.com/nodejs/node) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-#### Resources
+##### Resources
 
 - [Welcome to Vue-Express-Mongo BoilerPlate](http://vemapp.moleculer.services/)
 
-## Rock Solid Modern Rails [↗](https://awesomestacks.dev/rock-solid-modern-rails)
+### Rock Solid Modern Rails [↗](https://awesomestacks.dev/rock-solid-modern-rails)
 
 A Rails/JavaScript-based stack with modern/developer friendly technologies
 
@@ -205,11 +206,11 @@ A Rails/JavaScript-based stack with modern/developer friendly technologies
 - [Apollo Client](https://dev.apollodata.com/) - [🛠](https://stackshare.io/apollo) - [🐙](https://github.com/apollographql/apollo-client) - A powerfully extensible GraphQL JavaScript client.
 - [Heroku](https://heroku.com) - [🛠️](https://stackshare.io/heroku) Developer friendly web app infrastructure provider with seamless Ruby/Rails support.
 
-#### Resources
+##### Resources
 
 - [A Rock Solid, Modern Web Stack—Rails 5 API + ActiveAdmin + Create React App on Heroku](https://blog.heroku.com/a-rock-solid-modern-web-stack)
 
-## Serverless Stack with React on AWS [↗](https://awesomestacks.dev/serverless-stack-with-react-on-aws)
+### Serverless Stack with React on AWS [↗](https://awesomestacks.dev/serverless-stack-with-react-on-aws)
 
 Learn how to build a full-stack production ready note taking app using Serverless and React on AWS from serverless-stack.com. Step-by-step open-source tutorials with screenshots and code samples included.
 
@@ -222,11 +223,11 @@ Learn how to build a full-stack production ready note taking app using Serverles
 - [Amazon CloudFront](https://aws.amazon.com/cloudfront/) - [🛠️](https://stackshare.io/amazon-cloudfront) - Content delivery with low latency and high data transfer speeds.
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
 
-#### Resources
+##### Resources
 
 - [serverless-stack.com](https://serverless-stack.com/)
 
-## Electron React Boilerplate [↗](https://awesomestacks.dev/electron-react-boilerplate)
+### Electron React Boilerplate [↗](https://awesomestacks.dev/electron-react-boilerplate)
 
 A foundation for scalable cross-platform desktop apps all the way from development to distributing your app.
 
@@ -235,11 +236,11 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 - [Redux](https://redux.js.org/) - [🛠](https://stackshare.io/reduxjs) - [🐙](https://github.com/reduxjs/redux) - Predictable state container for JavaScript apps.
 - [electron-builder](https://www.electron.build) - [🐙](https://github.com/electron-userland/electron-builder) - A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box.
 
-#### Resources
+##### Resources
 
 - [Electron React Boilerplate website](https://electron-react-boilerplate.js.org/)
 
-## Vue with Electron [↗](https://awesomestacks.dev/vue-with-electron)
+### Vue with Electron [↗](https://awesomestacks.dev/vue-with-electron)
 
 A foundation for scalable cross-platform desktop apps all the way from development to distributing your app using Vue and Electron.
 
@@ -250,12 +251,12 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 - [Vue CLI](https://cli.vuejs.org/) - [🐙](https://github.com/vuejs/vue-cli) - An approachable core library that focuses on the view layer only.
 - [electron-builder](https://www.electron.build) - [🐙](https://github.com/electron-userland/electron-builder) - A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box.
 
-#### Resources
+##### Resources
 
 - [Vue.js & Electron: The easy way. – Mikeal](https://medium.com/@mikeal/vue-js-electron-the-easy-way-adc3ca09234a)
 - [How to use Vue.js with Electron and Vuex](https://alligator.io/vuejs/vue-electron/)
 
-## Code Coverage & CI [↗](https://awesomestacks.dev/code-coverage-and-ci)
+### Code Coverage & CI [↗](https://awesomestacks.dev/code-coverage-and-ci)
 
 Quickest way to get started with CI and Code Coverage. 
 
@@ -264,13 +265,13 @@ Quickest way to get started with CI and Code Coverage.
 - [Bash](https://www.gnu.org/software/bash/) - [🛠](https://stackshare.io/gnu-bash) - The Bourne Again SHell is an sh-compatible shell.
 - [GitHub](https://github.com/) - [🛠](https://stackshare.io/github) - Powerful collaboration, review, and code management for open source and private development projects.
 
-#### Resources
+##### Resources
 
 - [Making code coverage easy to see with Codecov & CircleCI](https://circleci.com/blog/making-code-coverage-easy-to-see-with-the-codecov-orb/)
 - [CI Provider Relationship](https://docs.codecov.io/docs/ci-service-relationship)
 - [Codecov Bash Uploader](https://docs.codecov.io/docs/about-the-codecov-bash-uploader)
 
-## Vue SPA with Laravel [↗](https://awesomestacks.dev/vue-spa-with-laravel)
+### Vue SPA with Laravel [↗](https://awesomestacks.dev/vue-spa-with-laravel)
 
 The best way to create a versatile and scalable PHP Web Application! It sure will make you fall in love with PHP (if not, Laravel). Laravel team has an official collaboration with the Vue, so Vue, Babel and Sass is already integrated before you even started!
 
@@ -281,14 +282,14 @@ The best way to create a versatile and scalable PHP Web Application! It sure wil
 - [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - compiler for writing next generation JavaScript; Babel will turn your ES6+ code into ES5 friendly code, so you can start using it right now without waiting for browser support.
 - [Sass](https://sass-lang.com) - [🛠️](https://stackshare.io/sass) - [🐙](https://github.com/sass/sass) - Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
 
-#### Resources
+##### Resources
 - [Building a Vue SPA with Laravel](https://laravel-news.com/using-vue-router-laravel)
 - [Laravel Tutorial: Step by Step Guide to Building Your First Laravel Application](https://laravel-news.com/your-first-laravel-application)
 
 
-# Back-end
+## Back-end
 
-## GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
+### GCP Kubernetes Stack [↗](https://awesomestacks.dev/gcp-kubernetes-stack)
 
 Stack used to deploy and manage a cluster of Docker containerized applications using Google Cloud services.
 
@@ -297,7 +298,7 @@ Stack used to deploy and manage a cluster of Docker containerized applications u
 - [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) - A tool to create, deploy and run applications inside containers. 
 - [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver) - Stackdriver Logging allows you to store, search, analyze, monitor, and alert on log data and events. 
 
-## Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
+### Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
 
 A collection of tools for building decentralized applications on the Ethereum blockchain.
 
@@ -307,7 +308,7 @@ A collection of tools for building decentralized applications on the Ethereum bl
 - [Ganache](https://truffleframework.com/ganache) - [🐙](https://github.com/trufflesuite/ganache) - Personal blockchain for Ethereum development.
 - [drizzle](https://truffleframework.com/drizzle) - [🐙](https://github.com/trufflesuite/drizzle) - A collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
-## Rails Monitoring Stack [↗](https://awesomestacks.dev/rails-monitoring-stack)
+### Rails Monitoring Stack [↗](https://awesomestacks.dev/rails-monitoring-stack)
 
 Tools to use to monitor your Rails app in production.
 
@@ -316,7 +317,7 @@ Tools to use to monitor your Rails app in production.
 - [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) - [🐙](https://github.com/MiniProfiler/rack-mini-profiler) - Profiler for your development and production Ruby rack apps.
 - [Sqreen](https://www.sqreen.com/) - [🛠](https://stackshare.io/sqreen) - Security monitoring and protection for Ruby, PHP, Java, Go, Python, and Node.js Apps.
 
-## User Behavior Analytics via Segment [↗](https://awesomestacks.dev/user-behavior-analytics-via-segment)
+### User Behavior Analytics via Segment [↗](https://awesomestacks.dev/user-behavior-analytics-via-segment)
 
 Hosted tools to use to analyze user behavior for a web app.
 
@@ -325,7 +326,7 @@ Hosted tools to use to analyze user behavior for a web app.
 - [Amplitude](https://amplitude.com) - [🛠️](https://stackshare.io/amplitude) - User analytics to fuel explosive user growth.
 - [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform.
 
-## Streaming Analytics with Kafka, Spark, and Cassandra [↗](https://awesomestacks.dev/streaming-analytics-with-kafka-spark-and-cassandra)
+### Streaming Analytics with Kafka, Spark, and Cassandra [↗](https://awesomestacks.dev/streaming-analytics-with-kafka-spark-and-cassandra)
 
 The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
 
@@ -333,13 +334,13 @@ The Kafka-Spark-Cassandra pipeline for processing a firehose of incoming events.
 - [Apache Spark](https://spark.apache.org) - [🛠](https://stackshare.io/spark) - [🐙](https://github.com/apache/spark) - Fast and general engine for large-scale data processing.
 - [Cassandra](http://cassandra.apache.org) - [🛠](https://stackshare.io/cassandra) - [🐙](https://github.com/apache/cassandra) - Highly-scalable partitioned row store.
 
-#### Resources
+##### Resources
 
 - [kafka-sparkstreaming-cassandra](https://github.com/Yannael/kafka-sparkstreaming-cassandra)
 - [Applying the Lambda Architecture with Spark, Kafka, and Cassandra](https://www.pluralsight.com/courses/spark-kafka-cassandra-applying-lambda-architecture)
 - [Streaming Analytics with Spark, Kafka, Cassandra, and Akka](https://databricks.com/session/streaming-analytics-with-spark-kafka-cassandra-and-akka)
 
-## Self-Hosted Devops and Collaboration [↗](https://awesomestacks.dev/self-hosted-devops-and-collaboration)
+### Self-Hosted Devops and Collaboration [↗](https://awesomestacks.dev/self-hosted-devops-and-collaboration)
 
 Self-hosted open source devops and collaboration tools, suitable for enterprise.
 
@@ -351,7 +352,7 @@ Self-hosted open source devops and collaboration tools, suitable for enterprise.
 - [Metabase](https://www.metabase.com/) - [🛠](https://stackshare.io/metabase) - [🐙](https://github.com/metabase/metabase) - An open-source business intelligence tool.
 
 
-## Production Ready Django + Docker [↗](https://awesomestacks.dev/production-ready-django-docker)
+### Production Ready Django + Docker [↗](https://awesomestacks.dev/production-ready-django-docker)
 
 Bleeding edge Django template focused on code quality and security.
 
@@ -363,14 +364,14 @@ Build, test, and deploy pipelines are configured by default.
 - [GitLab](https://about.gitlab.com/) - [🛠](https://stackshare.io/gitlab) - [🐙](https://github.com/gitlabhq/gitlabhq) - Open source self-hosted Git management software.
 - [Caddy](https://caddyserver.com/) - [🛠](https://stackshare.io/caddy) - [🐙](https://github.com/mholt/caddy) - The HTTP/2 Web Server with Automatic HTTPS.
 
-#### Resources
+##### Resources
 
 - [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
 
 
-# Mobile
+## Mobile
 
-## React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
+### React Native with Expo and Hasura [↗](https://awesomestacks.dev/react-native-with-expo-and-hasura)
 
 Hasura is an open source GraphQL engine that deploys instant, real-time GraphQL APIs on any Postgres database. This React Native stack uses Hasura droplets hosted on Digital Ocean.
 
@@ -380,12 +381,12 @@ Hasura is an open source GraphQL engine that deploys instant, real-time GraphQL 
 - [Digital Ocean](https://www.digitalocean.com/) - [🛠️](https://stackshare.io/digitalocean) - [🐙](https://github.com/digitalocean/) - Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.
 - [Auth0](https://auth0.com/) - [🛠️](https://stackshare.io/auth0) - A universal authentication & authorization platform for web, mobile and legacy applications.
 
-#### Resources
+##### Resources
 
 - [Tutorial: Fullstack React Native with GraphQL and Authentication](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a/)
 - [Guide: Hasura GraphQL Engine One-click App on DigitalOcean Marketplace](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/digital-ocean-one-click.html)
 
-## Unity Game Development boilerplate [↗](https://awesomestacks.dev/unity-Game-Development-boilerplate)
+### Unity Game Development boilerplate [↗](https://awesomestacks.dev/unity-Game-Development-boilerplate)
 
 Unity is a game engine that connects to Plastic SCM to keep version control and large asset and huge repo management clean and frictionless. 
 
@@ -393,12 +394,12 @@ Unity is a game engine that connects to Plastic SCM to keep version control and 
 - [Plastic SCM](https://www.plasticscm.com/) - [🛠️](https://stackshare.io/plastic-scm) - [🐙](https://github.com/PlasticSCM/plastic-docker) - PlasticSCM Docker image.
 - [TeamCity](https://www.jetbrains.com/teamcity/) - [🛠](https://stackshare.io/teamcity) - A Java-based build management and continuous integration server from JetBrains.
 
-#### Resources
+##### Resources
 
 - [First steps with Plastic SCM in Unity](https://www.youtube.com/playlist?list=PL29P1RRr5_NzEhAustJCTwdahs60JvcMm)
 - [Plastic SCM for Games](https://www.plasticscm.com/games)
 
-## Workflow Automation with GitHub, Jira and Jenkins [↗](https://awesomestacks.dev/workflow-automation-with-git-hub-jira-and-jenkins)
+### Workflow Automation with GitHub, Jira and Jenkins [↗](https://awesomestacks.dev/workflow-automation-with-git-hub-jira-and-jenkins)
 
 Boost your Productivity with GitHub, Jira and Jenkins.
 
@@ -407,16 +408,16 @@ Boost your Productivity with GitHub, Jira and Jenkins.
 - [Jira](https://es.atlassian.com/software/jira) - [🛠️](https://stackshare.io/jira) - Agile software development.
 - [Slack](https://slack.com) - [🛠️](https://stackshare.io/slack) - Where work flows.
 
-#### Resources
+##### Resources
 
 - [Integrating Jira, GitHub, Jenkins, and Slack in your workflow](https://support.acquia.com/hc/en-us/articles/360005167214-Integrating-JIRA-GitHub-Jenkins-and-Slack-in-your-workflow)
 
 
-# Contributing
+## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information and guides on how to contribute stacks and tools.
 
-# License
+## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 

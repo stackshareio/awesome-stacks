@@ -41,22 +41,22 @@ exports.onCreateNode = async ({ node,
 
   const $ = cheerio.load(nodeContentHtml.contents);
 
-  const h2s = $(`h2`);
+  const h3s = $(`h3`);
 
   var toolCount = 0;
-  var stackCount = $(`h2`.length);
+  var stackCount = $(`h3`.length);
 
   console.log(`Processing ${stackCount} stacks in the README`)
 
-  const stacks = h2s.map((index, h2) => {
+  const stacks = h3s.map((index, h3) => {
     stackCount++;
-    const name = $(h2).text().replace(/↗/, '').trim();
+    const name = $(h3).text().replace(/↗/, '').trim();
     const path = slugify(name, { customReplacements });
     return {
       name, path, index,
-      url: $(h2).find("a").attr("href"),
-      description: $(h2).next("p").text(),
-      tools: $(h2).nextUntil(`h2, h4`, `ul`).find(`li`).map((_, li) => {
+      url: $(h3).find("a").attr("href"),
+      description: $(h3).next("p").text(),
+      tools: $(h3).nextUntil(`h3, h5`, `ul`).find(`li`).map((_, li) => {
         toolCount++;
         const toolObj = {};
         $(li).find("a").each((_, link) => {
@@ -72,7 +72,7 @@ exports.onCreateNode = async ({ node,
         toolObj.description = $(li).clone().children().remove().end().contents().text();
         return toolObj;
       }).get(),
-      resources: $(h2).nextUntil(`h2`, `h4`).nextUntil(`h2`, `ul`).find(`li > a`).map((_, a) => {
+      resources: $(h3).nextUntil(`h3`, `h5`).nextUntil(`h3`, `ul`).find(`li > a`).map((_, a) => {
         return {
           text: $(a).text(),
           href: $(a).attr(`href`)
