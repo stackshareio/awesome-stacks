@@ -368,7 +368,7 @@ Build, test, and deploy pipelines are configured by default.
 
 - [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
 
-### RESTful API with Java and Spring Boot [↗](https://awesomestacks.dev/restful-api-with-java-and-spring-boot)
+### RESTful API with Java and Spring Boot [↗](https://awesomestacks.dev/res-tful-api-with-java-and-spring-boot)
 
 Build a simple and robust RESTful API.
 
