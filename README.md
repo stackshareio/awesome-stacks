@@ -368,9 +368,9 @@ Build, test, and deploy pipelines are configured by default.
 
 - [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
 
-## RESTful Api with Java and Springboot [↗](https://awesomestacks.dev/restful-api-with-java-and-springboot)
+### RESTful API with Java and Spring Boot [↗](https://awesomestacks.dev/restful-api-with-java-and-spring-boot)
 
-Build a simple and robust RESTful Api.
+Build a simple and robust RESTful API.
 
 - [Spring Boot](https://spring.io/projects/spring-boot) - [🛠](https://stackshare.io/spring-boot) - [🐙](https://github.com/spring-projects/spring-boot) - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 - [Gradle](https://gradle.org/) - [🛠️](https://stackshare.io/gradle) - [🐙](https://github.com/gradle/gradle)- A build tool with a focus on build automation and support for multi-language development.
