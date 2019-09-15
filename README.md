@@ -195,6 +195,7 @@ This is a full stack web app boilerplate project with VueJS + ExpressJS + MongoD
 ##### Resources
 
 - [Welcome to Vue-Express-Mongo BoilerPlate](http://vemapp.moleculer.services/)
+- [Factor Platform](https://factor.dev) - Extension-driven SSR platform for the MEVN stack [Repo](https://github.com/fiction-com/factor)
 
 ### Rock Solid Modern Rails [↗](https://awesomestacks.dev/rock-solid-modern-rails)
 
