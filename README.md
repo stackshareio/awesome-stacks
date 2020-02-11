@@ -33,9 +33,23 @@ Stacks can be browsed in two places—on the README and on [awesomestacks.dev](h
 
 ## Front-end
 
+### React Next Boilerplate [↗](https://awesomestacks.dev/react-next-boilerplate)
+
+A basis for reducing the configuration of your projects with Next.js, best development practices and popular libraries in the developer community.
+
+- [Next.js](https://nextjs.org/) - [🛠](https://stackshare.io/next-js) - [🐙](https://github.com/zeit/next.js) - The React Framework for server rendering, static websites, PWAs.
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) - [🛠](https://stackshare.io/react-testing-library) - [🐙](https://github.com/testing-library/react-testing-library) - react-testing-library is a tool in the Testing Frameworks category of a tech stack.
+- [Emotion](https://emotion.sh/) - [🛠](https://stackshare.io/emotion) - [🐙](https://github.com/emotion-js/emotion) - CSS-in-JS library designed for high performance style composition.
+- [I18next](https://www.i18next.com/) - [🐙](https://github.com/i18next/i18next) - I18next is an internationalization-framework written in and for JavaScript. But it's much more than that.
+- [Redux Saga](https://redux-saga.js.org/) - [🐙](https://github.com/redux-saga/redux-saga) - is a library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
+
+##### Resources
+
+- [react-next-boilerplate](https://github.com/react-next-boilerplate/react-next-boilerplate)
+
 ### React starter kit [↗](https://awesomestacks.dev/react-starter-kit)
 
-React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync. 
+React Starter Kit is an opinionated boilerplate for web development built on top of Node.js, Express, GraphQL and React, containing modern web development tools such as Webpack, Babel and Browsersync.
 
 - [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
 - [Webpack](https://webpack.js.org/) - [🛠️](https://stackshare.io/webpack) - [🐙](https://github.com/webpack/webpack) - A static module bundler for modern JavaScript applications.
@@ -145,7 +159,7 @@ Offers a complete setup for both small and enterprise-scale apps.
 
 ### GraphCMS React + Apollo [↗](https://awesomestacks.dev/graph-cms-react-apollo)
 
-Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from WordPress. 
+Lightning fast starter for bloggers, content creators, and really anyone who wants to break free from WordPress.
 
 - [GraphCMS](https://graphcms.com/) - [🛠️](https://stackshare.io/graphcms) - GraphCMS providing a backend to your app, giving you the tools to manage content.
 - [Create React App](https://facebook.github.io/create-react-app/) - [🛠](https://stackshare.io/create-react-app) - [🐙](https://github.com/facebook/create-react-app) - Set up a modern web app by running one command.
@@ -258,7 +272,7 @@ A foundation for scalable cross-platform desktop apps all the way from developme
 
 ### Code Coverage & CI [↗](https://awesomestacks.dev/code-coverage-and-ci)
 
-Quickest way to get started with CI and Code Coverage. 
+Quickest way to get started with CI and Code Coverage.
 
 - [CircleCI](https://circleci.com/) - [🛠](https://stackshare.io/circleci) - Popular managed CI server.
 - [Codecov](https://codecov.io/) - [🛠️](https://stackshare.io/codecov) - Hosted coverage reports with awesome features to enhance your CI workflow.
@@ -295,8 +309,8 @@ Stack used to deploy and manage a cluster of Docker containerized applications u
 
 - [GKE](https://cloud.google.com/kubernetes-engine/) - [🛠](https://stackshare.io/google-kubernetes-engine) - Kubernetes cluster managed by Google.
 - [Kubernetes](https://kubernetes.io/) - [🐙](https://github.com/kubernetes/kubernetes) - [🛠](https://stackshare.io/kubernetes) - Production-Grade Container Scheduling and Management.
-- [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) - A tool to create, deploy and run applications inside containers. 
-- [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver) - Stackdriver Logging allows you to store, search, analyze, monitor, and alert on log data and events. 
+- [Docker](https://www.docker.com/) - [🛠](https://stackshare.io/docker) - [🐙](https://github.com/docker/docker) - A tool to create, deploy and run applications inside containers.
+- [Stackdriver](https://cloud.google.com/stackdriver/) - [🛠️](https://stackshare.io/stackdriver) - Stackdriver Logging allows you to store, search, analyze, monitor, and alert on log data and events.
 
 ### Ethereum DApp [↗](https://awesomestacks.dev/ethereum-d-app)
 
@@ -400,7 +414,7 @@ Hasura is an open source GraphQL engine that deploys instant, real-time GraphQL 
 
 ### Unity Game Development boilerplate [↗](https://awesomestacks.dev/unity-Game-Development-boilerplate)
 
-Unity is a game engine that connects to Plastic SCM to keep version control and large asset and huge repo management clean and frictionless. 
+Unity is a game engine that connects to Plastic SCM to keep version control and large asset and huge repo management clean and frictionless.
 
 - [Unity](https://unity.com/) - [🛠](https://stackshare.io/unity-3d) - [🐙](https://github.com/Unity-Technologies/UnityCsReference) - The C# part of the Unity engine and editor source code. May be used for reference purposes only.
 - [Plastic SCM](https://www.plasticscm.com/) - [🛠️](https://stackshare.io/plastic-scm) - [🐙](https://github.com/PlasticSCM/plastic-docker) - PlasticSCM Docker image.
