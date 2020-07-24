@@ -315,8 +315,8 @@ FReMP stack is a highly scalable full stack framework, which can be used to buil
 - [How to build a full stack web app using FReMP?](https://medium.com/@akhilmaulloo/the-fremp-stack-building-a-full-stack-web-application-91308e505250)
 - [How to deploy the app to Heroku?](https://medium.com/@akhilmaulloo/the-fremp-stack-deploying-to-heroku-163254c3ca4d)
 - [Official Website](https://fremp.github.io)
-- [Official Github Repo](https://github.com/FReMP)
-- [FReMP App Boilerplate](https://github.com/FReMP/fremp)
+- [Github](https://github.com/FReMP)
+- [Boilerplate](https://github.com/FReMP/fremp)
 
 ## Back-end
 
