@@ -300,6 +300,23 @@ The best way to create a versatile and scalable PHP Web Application! It sure wil
 - [Building a Vue SPA with Laravel](https://laravel-news.com/using-vue-router-laravel)
 - [Laravel Tutorial: Step by Step Guide to Building Your First Laravel Application](https://laravel-news.com/your-first-laravel-application)
 
+### FReMP: Flask ReactJS MongoDB Python [↗](https://awesomestacks.dev/fremp-flask-reactjs-mongodb-python)
+
+FReMP stack is a highly scalable full stack framework, which can be used to build robust and modern web apps using Flask, ReactJS, MongoDB and Python.
+
+- [Flask](https://flask.palletsprojects.com/) - [🛠️](https://stackshare.io/flask) - [🐙](https://github.com/pallets/flask) - The Python micro framework for building web applications.
+- [ReactJS](https://reactjs.org/) - [🛠️](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - A declarative, efficient, and flexible JavaScript library for building user interfaces.
+- [MongoDB](https://www.mongodb.com/) - [🛠️](https://stackshare.io/mongodb) - [🐙](https://github.com/mongodb/mongo) - A document and JSON-oriented database.
+- [Python](https://www.python.org/) - [🛠️](https://stackshare.io/python) - [🐙](https://github.com/python/cpython) - A programming language that lets you work quickly.
+
+##### Resources
+
+- [How to install FReMP Stack on Ubuntu?](https://medium.com/@akhilmaulloo/how-to-install-fremp-stack-on-ubuntu-20-04-e4be2a3a88b9)
+- [How to build a full stack web app using FReMP?](https://medium.com/@akhilmaulloo/the-fremp-stack-building-a-full-stack-web-application-91308e505250)
+- [How to deploy the app to Heroku?](https://medium.com/@akhilmaulloo/the-fremp-stack-deploying-to-heroku-163254c3ca4d)
+- [Official Website](https://fremp.github.io)
+- [Github](https://github.com/FReMP)
+- [Boilerplate](https://github.com/FReMP/fremp)
 
 ## Back-end
 
