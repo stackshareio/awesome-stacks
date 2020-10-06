@@ -155,6 +155,24 @@ Offers a complete setup for both small and enterprise-scale apps.
 - [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
 
 
+### Nextjs Blog Starter [↗](https://awesomestacks.dev/nextjs-blog-starter)
+
+A Nextjs Boilerplate code for creating a blog. The perfect solution to start a blog in React and use Tailwind CSS for styling.
+
+- [Next.js](https://nextjs.org/) - [🛠](https://stackshare.io/next-js) - [🐙](https://github.com/zeit/next.js) - The React Framework for server rendering, static websites, PWAs.
+- [React](https://reactjs.org/) - [🛠](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - React components can be used on the client and server side.
+- [TypeScript](https://www.typescriptlang.org/) - [🛠️](https://stackshare.io/typescript) - [🐙](https://github.com/Microsoft/TypeScript) - A typed superset of JavaScript that compiles to plain JavaScript.
+- [eslint](https://eslint.org/) - [🛠️](https://stackshare.io/eslint) - [🐙](https://github.com/eslint/eslint) - The pluggable linting utility for JavaScript and JSX.
+- [Babel](https://babeljs.io/) - [🛠️](https://stackshare.io/babel) - [🐙](https://github.com/babel/babel) - A JavaScript compiler; use next generation JavaScript, today.
+- [PostCSS](https://postcss.org/) - [🛠](https://stackshare.io/postcss) - [🐙](https://github.com/postcss/postcss) - A tool for transforming CSS with JavaScript.
+- [Netlify](https://netlify.com/) - [🛠️](https://stackshare.io/netlify) - Netlify is a global CDN that makes continuous deployments as simple as a few clicks.
+
+##### Resources
+
+- [Nextjs Blog Starter](https://github.com/ixartz/Next-js-Blog-Boilerplate)
+- [Nextjs Blog Starter Demo](https://creativedesignsguru.com/demo/Nextjs-Blog-Boilerplate/)
+
+
 ## Full stack
 
 ### GraphCMS React + Apollo [↗](https://awesomestacks.dev/graph-cms-react-apollo)
