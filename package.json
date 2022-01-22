@@ -32,7 +32,7 @@
     "gatsby-transformer-sharp": "^2.1.15",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^3.1.1",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
