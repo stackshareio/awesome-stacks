@@ -185,7 +185,7 @@ Lightning fast starter for bloggers, content creators, and really anyone who wan
 
 ##### Resources
 
-- [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-apollo-blog)
+- [GraphCMS starter blog with React & Apollo Client](https://github.com/GraphCMS/graphcms-examples/tree/master/with-reactjs)
 
 ### Strapi CMS with Gatsby [↗](https://awesomestacks.dev/strapi-cms-with-gatsby)
 
