@@ -444,6 +444,18 @@ Build a simple and robust RESTful API.
 
 - [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
 
+### Graphweaver - GraphQL API Over Multiple Datasources [↗](https://awesomestacks.dev/graphweaver-graphql-api-over-multiple-datasources)
+
+Connect to various datasources and combine the data into a real-time GraphQL API and AdminUI. Useful stack when you have multiple datasources such as Postgres, MySql, Sqlite, Rest, etc.
+
+- [Graphweaver](https://graphweaver.com/) - [🛠️](https://stackshare.io/graphweaver) - [🐙](https://github.com/exogee-technology/graphweaver) - Data Everywhere - Instant GraphQL.
+- [ReactJS](https://reactjs.org/) - [🛠️](https://stackshare.io/react) - [🐙](https://github.com/facebook/react) - The adminUI is built in React and can be extended.
+- [AWS Lambda](https://aws.amazon.com/lambda) - [🛠️](https://stackshare.io/aws-lambda) - Deployable as a single JS bundle to lambda.
+- [AWS Cognito](https://aws.amazon.com/cognito) - Pre-built integration with AWS Cognito.
+
+##### Resources
+
+- [Connect to a datasource](https://graphweaver.com/docs/connect-to-a-data-source)
 
 ## Mobile
 
