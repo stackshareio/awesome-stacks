@@ -2,7 +2,7 @@ repo_name: stackshareio/awesome-stacks
 report_id: 46c084a1b8deb2640159abb0ae6c5a40
 version: 0.1
 repo_type: Public
-timestamp: '2024-03-01T20:36:48+00:00'
+timestamp: '2024-03-08T13:22:18+00:00'
 requested_by: dzello
 provider: github
 branch: master
@@ -433,7 +433,7 @@ tools:
     severity: moderate
     first_patched: 7.0.0
   - name: Denial of Service in node-sass
-    cve_id: 
+    cve_id:
     cve_url: https://github.com/advisories/GHSA-9v62-24cr-58cx
     detected_date: Aug 22
     severity: moderate
@@ -510,7 +510,7 @@ tools:
   last_updated_on: 2019-04-02 20:20:54.000000000 Z
   vulnerabilities:
   - name: sharp vulnerability in libwebp dependency CVE-2023-4863
-    cve_id: 
+    cve_id:
     cve_url: https://github.com/advisories/GHSA-54xq-cgqr-rpm3
     detected_date: Nov 17
     severity: high
