@@ -389,6 +389,7 @@ Hosted tools to use to analyze user behavior for a web app.
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/) - [🛠️](https://stackshare.io/google-analytics) - Enterprise-class web analytics.
 - [Amplitude](https://amplitude.com) - [🛠️](https://stackshare.io/amplitude) - User analytics to fuel explosive user growth.
 - [FullStory](https://www.fullstory.com/) - [🛠️](https://stackshare.io/fullstory) - Capture all your customer experience data in one powerful, easy-to-use platform.
+- [Smartlook](https://www.smartlook.com/) - [🛠️](https://stackshare.io/smartlook) - Qualitive analytics, session replay and heatmaps for websites and mobile apps. 
 
 ### Streaming Analytics with Kafka, Spark, and Cassandra [↗](https://awesomestacks.dev/streaming-analytics-with-kafka-spark-and-cassandra)
 
